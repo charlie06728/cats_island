@@ -28,6 +28,11 @@ namespace Player {
             PlayerCamera = UnityEngine.Camera.main;
             PlayerCamera.transform.parent = Head.transform;
             
+            /* Get rigidbody */
+            Rigidbody = GetComponent<Rigidbody>();
+            if (Rigidbody == null) Rigidbody = gameObject.AddComponent<Rigidbody>();
+            Rigidbody.useGravity = true;
+            
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
                 _look = context.ReadValue<Vector2>();
@@ -45,6 +50,12 @@ namespace Player {
             Server.Server.Instance.InputActionMap["A"].canceled += context => { _keyDown["A"] = false; };
             Server.Server.Instance.InputActionMap["D"].performed += context => { _keyDown["D"] = true; };
             Server.Server.Instance.InputActionMap["D"].canceled += context => { _keyDown["D"] = false; };
+            Server.Server.Instance.InputActionMap["Space"].performed += context => {
+                /* Check if body is very close to the terrain */
+                if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
+                    Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce, ForceMode.Impulse);
+                }
+            };
         }
 
         private void Update() {

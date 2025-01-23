@@ -8,6 +8,7 @@ namespace Server {
         public float GameSpeed = 1f;
         public float MouseSensitivity = 1f;
         public float MoveSpeed = 1f;
+        public float JumpForce = 1f;
         
         /* Input Action Map */
         public InputActionMap InputActionMap;
