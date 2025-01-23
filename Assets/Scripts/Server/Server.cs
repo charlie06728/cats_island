@@ -6,6 +6,8 @@ namespace Server {
     public class Server : MonoBehaviour {
         /* Game speed, set int editor */
         public float GameSpeed = 1f;
+        public float MouseSensitivity = 1f;
+        public float MoveSpeed = 1f;
         
         /* Input Action Map */
         public InputActionMap InputActionMap;
@@ -19,6 +21,9 @@ namespace Server {
             } else {
                 Destroy(gameObject);
             }
+            
+            /* Enable inputAction */
+            InputActionMap.Enable();
         }
 
         protected void Update() {

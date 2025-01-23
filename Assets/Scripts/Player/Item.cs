@@ -4,8 +4,9 @@ using UnityEngine;
 namespace Player {
     public class Item : MonoBehaviour {
         public Animator Animator;
+        [NonSerialized] private PlayerPocket Player;
 
-        /* When taking this item out */
+        /* taking this item out of pocket, trigger animation */
         public virtual void TakeOut() {
             throw new NotImplementedException();
         }
