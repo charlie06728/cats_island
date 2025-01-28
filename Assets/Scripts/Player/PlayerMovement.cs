@@ -53,7 +53,8 @@ namespace Player {
             Server.Server.Instance.InputActionMap["Space"].performed += context => {
                 /* Check if body is very close to the terrain */
                 if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
-                    Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce, ForceMode.Impulse);
+                    Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce * Rigidbody.mass, ForceMode.Impulse);
+                    Debug.Log("Jumping");
                 }
             };
         }
