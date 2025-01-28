@@ -29,7 +29,7 @@ namespace Player {
         }
 
         protected void PutBackAll() {
-            // Player.Album.PutBack();
+            PlayerPocket.Album.PutBack();
             PlayerPocket.CameraObject.PutBack();
             // Player.Treat.PutBack();
         }
@@ -39,16 +39,28 @@ namespace Player {
             Vector3 delta = PlayerPocket.Player.ItemHook.transform.position - hook.transform.position;
             
             /* Set the position of item to be the edge of player hand */
-            hook.transform.position = PlayerPocket.Player.ItemHook.transform.position;
+            // hook.transform.position += delta;
             transform.position += delta;
-            transform.rotation = PlayerPocket.Player.Head.transform.rotation;
+            
+            Quaternion targetWorldRotation = PlayerPocket.Player.ItemHook.transform.rotation;
+            Quaternion currentWorldRotation = hook.transform.rotation;
+            Quaternion deltaRotation = targetWorldRotation * Quaternion.Inverse(currentWorldRotation);
+            transform.rotation = deltaRotation * transform.rotation;
+            
+            /* Calculate the rotation delta for hook */
+            // Quaternion deltaRotation = PlayerPocket.Player.ItemHook.transform.rotation * Quaternion.Inverse(hook.transform.rotation);
+            
+            /* Set the rotation for item */
+            // transform.Rotate(deltaRotation.eulerAngles);
+            // transform.rotation = deltaRotation * transform.rotation;
+            // transform.rotation = PlayerPocket.Player.Head.transform.rotation;
         }
 
         protected void Update() {
             // FixItemOnHook();
         }
 
-        protected void Awake() {
+        protected virtual void Awake() {
             /* Throw error if hook is not set */
             if (hook == null) {
                 throw new Exception("Hook is not set for item!");

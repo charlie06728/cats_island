@@ -430,6 +430,14 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+    - m_Name: LeftMouse
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 5205bf40-2633-49a5-ae5d-13b3560ba03b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
     m_Bindings:
     - m_Name: 
       m_Id: 9a0f700e-7c9a-460e-88bf-4b36300c7dc9
@@ -502,6 +510,14 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: 3
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 62ee4b02-b6f5-48e3-ab97-8ddb60e87327
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: LeftMouse
       m_Flags: 0
 --- !u!114 &1178618261
 MonoBehaviour:
@@ -824,6 +840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1047616094570437615, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: albumPrefab
+      value: 
+      objectReference: {fileID: 4823796143787261158, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
     - target: {fileID: 1787783464381194674, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -881,6 +901,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+--- !u!1001 &7655957725996730230
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 503.282
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 265.95502
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 501.193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341897820327563047, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823796143787261158, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+      propertyPath: m_Name
+      value: Album
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -891,3 +968,4 @@ SceneRoots:
   - {fileID: 2134049794}
   - {fileID: 1396723200690938695}
   - {fileID: 1687051393}
+  - {fileID: 7655957725996730230}
