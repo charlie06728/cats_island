@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 namespace Player {
@@ -9,15 +10,34 @@ namespace Player {
         public GameObject photoPrefab;
         [NonSerialized] public Photo CurrentPhoto;
         private RenderTexture _renderTexture;
+        
+        private Action<InputAction.CallbackContext> _takePhotoAction;
+
+        public override void TakeOut() {
+            base.TakeOut();
+            
+            /* define the input action behaviours */
+            Server.Server.Instance.InputActionMap["LeftMouse"].performed += _takePhotoAction;
+        }
+        
+        public override void PutBack() {
+            base.PutBack();
+            
+            /* define the input action behaviours */
+            Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _takePhotoAction;
+        }
 
         public void TakePhoto() {
+            /* Enable the current photo */
+            CurrentPhoto.gameObject.SetActive(true);
+            
             // Render the photo camera
             photoCamera.Render();
 
             // Copy the RenderTexture to the Texture2D
             RenderTexture.active = _renderTexture;
             CurrentPhoto.PhotoTexture.ReadPixels(
-                new Rect(0, 0, Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight), 0, 0);
+                new Rect(0, 0, Server.Server.Instance.photoHeight, Server.Server.Instance.photoWidth), 0, 0);
             CurrentPhoto.PhotoTexture.Apply();
             RenderTexture.active = null;
 
@@ -25,6 +45,9 @@ namespace Player {
             if (CurrentPhoto.PhotoRenderer != null) {
                 CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
             }
+            
+            PlayerPocket.Album.Photos.Add(CurrentPhoto);
+            LoadFilm();
 
             Debug.Log("Photo captured and displayed!");
         }
@@ -34,9 +57,15 @@ namespace Player {
             GameObject photoObject = Instantiate(photoPrefab, transform.position, transform.rotation);
             CurrentPhoto = photoObject.GetComponent<Photo>();
             if (CurrentPhoto == null) CurrentPhoto = photoObject.AddComponent<Photo>();
+            
+            /* disable the current photo so cannot be seen */
+            CurrentPhoto.gameObject.SetActive(false);            
         }
 
-        protected void Awake() {
+        protected override void Awake() {
+            base.Awake();
+            _takePhotoAction = ctx => TakePhoto();
+            
             photoCamera = GetComponent<Camera>();
             if (photoCamera == null) photoCamera = gameObject.AddComponent<Camera>();
             /* photo camera same rotation as camera object */

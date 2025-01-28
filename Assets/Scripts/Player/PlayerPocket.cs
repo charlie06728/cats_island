@@ -21,10 +21,11 @@ namespace Player {
 
         protected void Awake() {
             /* Initialize the album */
-            // GameObject albumObj = Instantiate(albumPrefab, transform);
-            // Album = albumObj.GetComponent<Album>();
-            // if (Album == null) throw new Exception("Album prefab does not have an Album component!");
-            // Album.gameObject.SetActive(false);
+            GameObject albumObj = Instantiate(albumPrefab, transform);
+            Album = albumObj.GetComponent<Album>();
+            if (Album == null) throw new Exception("Album prefab does not have an Album component!");
+            Album.PlayerPocket = this;
+            Album.gameObject.SetActive(false);
             
             /* initialize the camera */
             GameObject cameraObj = Instantiate(cameraPrefab, transform);
