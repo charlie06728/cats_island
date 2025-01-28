@@ -14,6 +14,10 @@ namespace Server {
         public float CatRandomMoveInterval = 1.5f;
         public float CatMoveSpeed = 10f;
         
+        /* Photo related fields */
+        public int photoWidth = 1920;
+        public int photoHeight = 1080;
+        
         /* Input Action Map */
         public InputActionMap InputActionMap;
         
