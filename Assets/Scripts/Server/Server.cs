@@ -10,6 +10,10 @@ namespace Server {
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
         
+        /* cat related fields */
+        public float CatRandomMoveInterval = 1.5f;
+        public float CatMoveSpeed = 10f;
+        
         /* Input Action Map */
         public InputActionMap InputActionMap;
         
