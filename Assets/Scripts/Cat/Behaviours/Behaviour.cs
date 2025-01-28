@@ -9,14 +9,14 @@ namespace Cat {
 
         public Behaviour(Cat cat) { Cat = cat;}
 
-        public void Enable() {
+        public virtual void Enable() {
             Enabled = true;
             
             /* set the previous evaluate time to current time */
             PreviousEvaluateTime = Time.time;
         }
         
-        public void Disable() {
+        public virtual void Disable() {
             Enabled = false;
         }
         

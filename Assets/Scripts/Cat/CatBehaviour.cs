@@ -7,7 +7,8 @@ namespace Cat {
 
     public enum CatState {
         Idle,
-        Treat
+        Treat,
+        Pose
     }
     
     public class CatBehaviour : MonoBehaviour {
@@ -30,6 +31,7 @@ namespace Cat {
             StateToBehaviour[CatState.Idle] = new CatIdleBehaviour(Cat);
             //TODO: change to other behaviours
             StateToBehaviour[CatState.Treat] = new CatIdleBehaviour(Cat);
+            StateToBehaviour[CatState.Pose] = new CatPoseBehaviour(Cat);
             
             SwitchState(CatState.Idle);
         }
