@@ -47,6 +47,8 @@ namespace Player {
             }
             
             PlayerPocket.Album.Photos.Add(CurrentPhoto);
+            CurrentPhoto.gameObject.SetActive(false);
+            
             LoadFilm();
 
             Debug.Log("Photo captured and displayed!");
