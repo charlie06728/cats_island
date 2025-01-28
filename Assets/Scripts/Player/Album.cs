@@ -28,8 +28,9 @@ namespace Player {
                 photo.transform.localScale = new Vector3(1f, 1f, 1f);
                 photo.transform.localPosition = new Vector3(0f, 0f, 0f);
                 
-                /* Set parent to null */
-                photo.transform.SetParent(transform);
+                /* Set parent and rotate 180 degrees */
+                photo.transform.SetParent(Slots[currentSlot].transform.parent);
+                photo.transform.Rotate(0f, 180f, 0f);
                 /* Disable the slot */
                 Slots[currentSlot].SetActive(false);
                 
@@ -43,6 +44,12 @@ namespace Player {
             /* Hide all the photos */
             foreach (var photo in Photos) {
                 photo.gameObject.SetActive(false);
+            }
+            
+            /* Enable all the slots */
+            foreach (var slot in Slots) {
+                slot.SetActive(true);
+                slot.transform.rotation = transform.rotation;
             }
         }
 
