@@ -12,8 +12,8 @@ namespace Player {
 
         protected void Awake() {
             /* Initialize the photo texture */
-            PhotoTexture = new Texture2D(Server.Server.Instance.photoWidth,
-                Server.Server.Instance.photoHeight, TextureFormat.RGB24, false);
+            PhotoTexture = new Texture2D(Server.Server.Instance.photoHeight,
+                Server.Server.Instance.photoWidth, TextureFormat.RGB24, false);
         }
     }
 }

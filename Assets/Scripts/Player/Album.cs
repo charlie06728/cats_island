@@ -22,7 +22,7 @@ namespace Player {
                 Slots[currentSlot].SetActive(true);
                 photo.gameObject.SetActive(true);
                 photo.transform.SetParent(Slots[currentSlot].transform);
-                photo.transform.localRotation = Quaternion.identity;
+                photo.transform.rotation = Slots[currentSlot].transform.rotation;
                 
                 /* Make photo fits within the plane */
                 photo.transform.localScale = new Vector3(1f, 1f, 1f);
