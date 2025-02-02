@@ -844,6 +844,10 @@ PrefabInstance:
       propertyPath: albumPrefab
       value: 
       objectReference: {fileID: 4823796143787261158, guid: e099169d5b3eaf8418f0d70f2e442a84, type: 3}
+    - target: {fileID: 1047616094570437615, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: treatPrefab
+      value: 
+      objectReference: {fileID: 7874631266701535451, guid: b3fefe5dfb13642dcbfa29cba4097c92, type: 3}
     - target: {fileID: 1787783464381194674, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: m_Name
       value: Player
