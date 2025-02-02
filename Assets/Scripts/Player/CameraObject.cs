@@ -75,8 +75,8 @@ namespace Player {
             // hand.SetActive(!is_zoomed);
             hand_renderer.enabled = !is_zoomed;
             camera_renderer.enabled = !is_zoomed;
-            screen_renderer.enabled = !is_zoomed;
-        }
+            // screen_renderer.enabled = !is_zoomed;
+
 
         public void TakePhoto() {
             /* Enable the current photo */
