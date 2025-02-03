@@ -16,7 +16,7 @@ namespace Player {
         [NonSerialized] public CameraObject CameraObject;
         
         /* treat prefab and component after it being initialized */
-        public CameraObject treatPrefab;
+        public GameObject treatPrefab;
         [NonSerialized] public Treat Treat;
 
         protected void Awake() {
@@ -33,6 +33,13 @@ namespace Player {
             if (CameraObject == null) throw new Exception("Camera prefab does not have a CameraObject component!");
             CameraObject.PlayerPocket = this;
             CameraObject.gameObject.SetActive(false);
+
+
+            GameObject treatObj = Instantiate(treatPrefab, transform);
+            Treat = treatObj.GetComponent<Treat>();
+            if (Treat == null) throw new Exception("Treat prefab does not have an Treat component!");
+            Treat.PlayerPocket = this;
+            Treat.gameObject.SetActive(false);
             
             /* Define the item switch behaviour */
             Server.Server.Instance.InputActionMap["1"].performed += context => { CameraObject.TakeOut(); };
