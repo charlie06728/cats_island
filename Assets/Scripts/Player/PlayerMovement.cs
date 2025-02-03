@@ -18,6 +18,10 @@ namespace Player {
         private Vector2 _look;
         private Vector2 _currentRotation;
         private Vector2 _rotationVelocity;
+        private bool _isGrounded = false;
+        private float _upVelocity;
+        private float _upAcceleration;
+        private float _playerHeight = 2.5f;
         
         /*  */
         private Vector3 MoveDirection = new Vector3();
@@ -31,7 +35,7 @@ namespace Player {
             /* Get rigidbody */
             Rigidbody = GetComponent<Rigidbody>();
             if (Rigidbody == null) Rigidbody = gameObject.AddComponent<Rigidbody>();
-            Rigidbody.useGravity = true;
+            // Rigidbody.useGravity = true;
             
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
@@ -54,14 +58,52 @@ namespace Player {
                 /* Check if body is very close to the terrain */
                 if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
                     Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce * Rigidbody.mass, ForceMode.Impulse);
+                    _upAcceleration = Physics.gravity.y;
                     Debug.Log("Jumping");
                 }
             };
         }
 
         private void Update() {
+            bool keyDown = false;
+            foreach (string k in _keyDown.Keys) {
+                if (_keyDown[k]) {
+                    keyDown = true;
+                    Rigidbody.isKinematic = false;
+                    break;
+                }
+            }
+            
             /* Make sure the body is not tilted */
             transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
+            
+            /* Check if body is very close to the terrain */
+            if (IsOnGround()) {
+                _isGrounded = true;
+                _upAcceleration = 0;
+                _upVelocity = 0;
+                Rigidbody.linearVelocity = new Vector3();
+                Rigidbody.angularVelocity = new Vector3();
+                
+                /* Set player height to terrain sample height + player physical height */
+                transform.position = new Vector3(transform.position.x,
+                    Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position) + _playerHeight,
+                    transform.position.z);
+                
+                // Rigidbody.useGravity = false;
+            } else {
+                _isGrounded = false;
+                // Rigidbody.useGravity = true;
+                // Rigidbody.isKinematic = false;
+            }
+            //
+            // if (_isGrounded) {
+            //     if (!keyDown) Rigidbody.isKinematic = true;
+            //
+            //     if (!keyDown || IsOnSlope()) {
+            //         Rigidbody.useGravity = false;
+            //     }
+            // }
             
             /* Rotate camera */
             Vector2 delta = _look * Time.deltaTime * Server.Server.Instance.MouseSensitivity;
@@ -93,7 +135,70 @@ namespace Player {
                         break;
                 }
             }
-            transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            
+            if (!_isGrounded) {
+                _upVelocity += _upAcceleration * Time.deltaTime;
+                transform.position += new Vector3(0, _upVelocity * Time.deltaTime, 0);
+                _upAcceleration += Physics.gravity.y * Time.deltaTime * 2;
+                
+                transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            } else {
+                /* Precalculate the destination coordinate */
+                Vector3 destination = transform.position +
+                                      MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+                
+                /* Calculate the changes in terrain height */
+                float heightDelta = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) -
+                                    Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position);
+                /* Adjust the destination height */
+                destination.y += heightDelta;
+                
+                /* ray cast again  */
+                if (!IsOnGround())
+                    destination.y = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) + _playerHeight;
+                
+                /* Move the player */
+                transform.position = destination;
+            }
+            
+
+            // if (_isGrounded) {
+            //     if (IsOnSlope()) {
+            //         Rigidbody.velocity = new Vector3(Rigidbody.velocity.x,
+            //             (Physics.gravity * 0.0f * (float)Time.deltaTime).y, Rigidbody.velocity.z);
+            //     }
+            // }
+            
+            // _velocity += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            
+            // transform.position += _velocity;
+            // Rigidbody.linearVelocity += MoveDirection.normalized * Server.Server.Instance.MoveSpeed;
+            
+            // transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            
+            /* Reset the velocity except vertical */
+            // _velocity = new Vector3(0, _velocity.y, 0);
         }
+        
+        protected bool IsOnSlope()
+        {
+            if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.2f))
+            {
+                float angle = Vector3.Angle(hit.normal, Vector3.up);
+                return angle > 0 && angle < 70; // Check if within slope range
+            }
+            return false;
+        }
+
+        protected bool IsOnGround() {
+            /* Check if body is very close to the terrain */
+            if (Physics.Raycast(transform.position, Vector3.down, _playerHeight)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
     }
 }
