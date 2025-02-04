@@ -35,7 +35,6 @@ namespace Player {
             /* Get rigidbody */
             Rigidbody = GetComponent<Rigidbody>();
             if (Rigidbody == null) Rigidbody = gameObject.AddComponent<Rigidbody>();
-            // Rigidbody.useGravity = true;
             
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
@@ -59,12 +58,14 @@ namespace Player {
                 if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
                     Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce * Rigidbody.mass, ForceMode.Impulse);
                     _upAcceleration = Physics.gravity.y;
+                    Rigidbody.useGravity = true;
                     Debug.Log("Jumping");
                 }
             };
         }
 
         private void Update() {
+            Rigidbody.angularVelocity = new Vector3();
             bool keyDown = false;
             foreach (string k in _keyDown.Keys) {
                 if (_keyDown[k]) {
@@ -79,31 +80,19 @@ namespace Player {
             
             /* Check if body is very close to the terrain */
             if (IsOnGround()) {
+                if (Rigidbody.linearVelocity.y < 0) Rigidbody.useGravity = false;
                 _isGrounded = true;
                 _upAcceleration = 0;
                 _upVelocity = 0;
                 Rigidbody.linearVelocity = new Vector3();
-                Rigidbody.angularVelocity = new Vector3();
                 
                 /* Set player height to terrain sample height + player physical height */
                 transform.position = new Vector3(transform.position.x,
                     Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position) + _playerHeight,
                     transform.position.z);
-                
-                // Rigidbody.useGravity = false;
             } else {
                 _isGrounded = false;
-                // Rigidbody.useGravity = true;
-                // Rigidbody.isKinematic = false;
             }
-            //
-            // if (_isGrounded) {
-            //     if (!keyDown) Rigidbody.isKinematic = true;
-            //
-            //     if (!keyDown || IsOnSlope()) {
-            //         Rigidbody.useGravity = false;
-            //     }
-            // }
             
             /* Rotate camera */
             Vector2 delta = _look * Time.deltaTime * Server.Server.Instance.MouseSensitivity;
