@@ -18,7 +18,7 @@ namespace Player {
         private Vector2 _look;
         private Vector2 _currentRotation;
         private Vector2 _rotationVelocity;
-        private bool _isGrounded = false;
+        private bool _isGrounded = true;
         private float _upVelocity;
         private float _upAcceleration;
         private float _playerHeight = 2.5f;
@@ -57,7 +57,7 @@ namespace Player {
                 /* Check if body is very close to the terrain */
                 if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
                     Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce * Rigidbody.mass, ForceMode.Impulse);
-                    _upAcceleration = Physics.gravity.y;
+                    // _upAcceleration = Physics.gravity.y;
                     Rigidbody.useGravity = true;
                     Debug.Log("Jumping");
                 }
@@ -78,21 +78,21 @@ namespace Player {
             /* Make sure the body is not tilted */
             transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
             
-            /* Check if body is very close to the terrain */
-            if (IsOnGround()) {
-                if (Rigidbody.linearVelocity.y < 0) Rigidbody.useGravity = false;
-                _isGrounded = true;
-                _upAcceleration = 0;
-                _upVelocity = 0;
-                Rigidbody.linearVelocity = new Vector3();
-                
-                /* Set player height to terrain sample height + player physical height */
-                transform.position = new Vector3(transform.position.x,
-                    Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position) + _playerHeight,
-                    transform.position.z);
-            } else {
-                _isGrounded = false;
-            }
+            // /* Check if body is very close to the terrain */
+            // if (IsOnGround()) {
+            //     if (Rigidbody.linearVelocity.y < 0) Rigidbody.useGravity = false;
+            //     _isGrounded = true;
+            //     _upAcceleration = 0;
+            //     _upVelocity = 0;
+            //     Rigidbody.linearVelocity = new Vector3();
+            //     
+            //     /* Set player height to terrain sample height + player physical height */
+            //     transform.position = new Vector3(transform.position.x,
+            //         Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position) + _playerHeight,
+            //         transform.position.z);
+            // } else {
+            //     _isGrounded = false;
+            // }
             
             /* Rotate camera */
             Vector2 delta = _look * Time.deltaTime * Server.Server.Instance.MouseSensitivity;
@@ -125,30 +125,32 @@ namespace Player {
                 }
             }
             
-            if (!_isGrounded) {
-                _upVelocity += _upAcceleration * Time.deltaTime;
-                transform.position += new Vector3(0, _upVelocity * Time.deltaTime, 0);
-                _upAcceleration += Physics.gravity.y * Time.deltaTime * 2;
-                
-                transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
-            } else {
-                /* Precalculate the destination coordinate */
-                Vector3 destination = transform.position +
-                                      MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
-                
-                /* Calculate the changes in terrain height */
-                float heightDelta = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) -
-                                    Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position);
-                /* Adjust the destination height */
-                destination.y += heightDelta;
-                
-                /* ray cast again  */
-                if (!IsOnGround())
-                    destination.y = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) + _playerHeight;
-                
-                /* Move the player */
-                transform.position = destination;
-            }
+            transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            
+            // if (!_isGrounded) {
+            //     _upVelocity += _upAcceleration * Time.deltaTime;
+            //     transform.position += new Vector3(0, _upVelocity * Time.deltaTime, 0);
+            //     _upAcceleration += Physics.gravity.y * Time.deltaTime * 2;
+            //     
+            //     transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            // } else {
+            //     /* Precalculate the destination coordinate */
+            //     Vector3 destination = transform.position +
+            //                           MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            //     
+            //     /* Calculate the changes in terrain height */
+            //     float heightDelta = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) -
+            //                         Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position);
+            //     /* Adjust the destination height */
+            //     destination.y += heightDelta;
+            //     
+            //     /* ray cast again  */
+            //     if (!IsOnGround())
+            //         destination.y = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) + _playerHeight;
+            //     
+            //     /* Move the player */
+            //     transform.position = destination;
+            // }
             
 
             // if (_isGrounded) {
