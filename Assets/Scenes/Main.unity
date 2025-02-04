@@ -1332,6 +1332,10 @@ PrefabInstance:
       value: 18.178984
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_LocalScale.z
       value: 17.904335
       objectReference: {fileID: 0}
@@ -1341,7 +1345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1757,7 +1761,7 @@ MonoBehaviour:
   GameSpeed: 1
   MouseSensitivity: 20
   MoveSpeed: 10
-  JumpForce: 10
+  JumpForce: 15
   CatRandomMoveInterval: 4
   CatMoveSpeed: 2
   photoWidth: 1920
