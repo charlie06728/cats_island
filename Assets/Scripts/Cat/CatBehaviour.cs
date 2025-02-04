@@ -16,6 +16,10 @@ namespace Cat {
         public Cat Cat;
         [NonSerialized] public CatState State = CatState.Idle;
         
+        /* Audios */
+        public AudioSource meowAudio;
+        protected float meowCooldown = 3;
+        
         /* Behaviours script */
         public Dictionary<CatState, Behaviour> StateToBehaviour = new Dictionary<CatState, Behaviour>();
         
@@ -40,6 +44,14 @@ namespace Cat {
         protected void Update() {
             if (!StateToBehaviour[State].Enabled) return;
             StateToBehaviour[State].Update();
+            
+            /* Meow cooldown */
+            meowCooldown -= Time.deltaTime;
+            if (meowCooldown <= 0) {
+                meowAudio.Play();
+                /* Generate random number for cooldown between 2 and 8 */
+                meowCooldown = UnityEngine.Random.Range(5, 9);
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ namespace Player {
     public class CameraObject : Item {
         public Camera photoCamera;
         public GameObject photoPrefab;
+        public AudioSource cameraSoundTakePicture;
         [NonSerialized] public Photo CurrentPhoto;
         public float zoom_max = 30f; // Max amount of zoom
         public float zoom_speed = 0.1f; // Speed at which scrolling zooms in/out
@@ -79,6 +80,9 @@ namespace Player {
         }
 
         public void TakePhoto() {
+            /* Play sound */
+            cameraSoundTakePicture.Play();
+            
             /* Enable the current photo */
             CurrentPhoto.gameObject.SetActive(true);
             

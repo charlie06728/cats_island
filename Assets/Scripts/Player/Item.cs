@@ -28,10 +28,10 @@ namespace Player {
             gameObject.SetActive(false);
         }
 
-        protected void PutBackAll() {
+        public void PutBackAll() {
             PlayerPocket.Album.PutBack();
             PlayerPocket.CameraObject.PutBack();
-            // Player.Treat.PutBack();
+            PlayerPocket.Treat.PutBack();
         }
 
         protected void FixItemOnHook() {

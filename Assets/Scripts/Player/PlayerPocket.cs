@@ -45,6 +45,8 @@ namespace Player {
             Server.Server.Instance.InputActionMap["1"].performed += context => { CameraObject.TakeOut(); };
             Server.Server.Instance.InputActionMap["2"].performed += context => { Album.TakeOut(); };
             Server.Server.Instance.InputActionMap["3"].performed += context => { Treat.TakeOut(); };
+            Server.Server.Instance.InputActionMap["4"].performed += context => {
+                Player.Pocket.CameraObject.PutBackAll(); };
         }
     }
 }
