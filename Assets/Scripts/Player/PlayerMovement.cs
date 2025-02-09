@@ -58,7 +58,7 @@ namespace Player {
                 if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
                     Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce * Rigidbody.mass, ForceMode.Impulse);
                     // _upAcceleration = Physics.gravity.y;
-                    Rigidbody.useGravity = true;
+                    // Rigidbody.useGravity = true;
                     Debug.Log("Jumping");
                 }
             };
