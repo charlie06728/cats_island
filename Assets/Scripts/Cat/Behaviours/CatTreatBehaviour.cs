@@ -12,8 +12,15 @@ namespace Cat.Behaviours {
 
         public override void Update() {
             base.Update();
+
+            if (!closestTreat) {
+                // If the treat has already been eaten, cancel navigation and return to idle
+                Cat.Navigator.Agent.ResetPath();
+                Cat.Behaviour.SwitchState(CatState.Idle);
+            }
             
-            if(Cat.Navigator.Agent.remainingDistance < 0.1) {
+            if(Cat.Navigator.Agent.remainingDistance < 0.1 && closestTreat) {
+                // If they reach the treat, eat it and pose
                 GameObject.Destroy(closestTreat);
                 Cat.Behaviour.SwitchState(CatState.Pose);
             }
