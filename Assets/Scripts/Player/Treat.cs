@@ -6,14 +6,18 @@ using UnityEngine.Serialization;
 
 namespace Player {
     public class Treat : Item {
-        public float treat_distance; // Distance at which we should be able to give a treat
-
+        public float treat_distance; // Distance at which we should be able to place a treat
+        public float cat_trigger_distance; // Distance at which we trigger cats to enter treat mode
+        public GameObject treatPrefab;
+        CatBehaviour[] cats;
         // Camera mainCamera;
 
         private Action<InputAction.CallbackContext> _giveTreatAction;
 
         public override void TakeOut() {
             base.TakeOut();
+
+            cats = FindObjectsByType<CatBehaviour>(FindObjectsSortMode.None);
             
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _giveTreatAction;
@@ -26,19 +30,43 @@ namespace Player {
             Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _giveTreatAction;
         }
 
-        public bool GiveTreat() {
+        public void GiveTreat() {
+            // RaycastHit hit;
+            // // Send out a ray in the direction the camera is facing
+            // Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
+            // if (Physics.Raycast(ray, out hit, treat_distance)) {   
+            //     if (hit.transform.gameObject.GetComponent<CatBehaviour>() != null) {
+            //         CatBehaviour behaviour = hit.transform.gameObject.GetComponent<CatBehaviour>(); 
+            //         behaviour.SwitchState(CatState.Pose);
+            //         Debug.Log("Given Treat!");
+            //         return true;
+            //     }
+            // }
+            // return false;
+
+
+
             RaycastHit hit;
             // Send out a ray in the direction the camera is facing
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
             if (Physics.Raycast(ray, out hit, treat_distance)) {   
-                if (hit.transform.gameObject.GetComponent<CatBehaviour>() != null) {
-                    CatBehaviour behaviour = hit.transform.gameObject.GetComponent<CatBehaviour>(); 
-                    behaviour.SwitchState(CatState.Pose);
-                    Debug.Log("Given Treat!");
-                    return true;
+                Instantiate(treatPrefab, hit.point, new Quaternion(0,0,0,0));
+
+                Vector3 currentPos = gameObject.transform.position;
+
+                // All nearby cats move to nearest treat
+                foreach (CatBehaviour c in cats)
+                {   
+                    Transform t = c.gameObject.transform;
+                    float dist = Vector3.Distance(t.position, currentPos);
+                    if (dist < cat_trigger_distance)
+                    {
+                        c.SwitchState(CatState.Treat);
+                    }
                 }
             }
-            return false;
+
+            
         }
 
         protected override void Awake() {
