@@ -5,6 +5,7 @@ namespace Player {
     public class Player : MonoBehaviour {
         public PlayerPocket Pocket;
         public GameObject Head;
+        public GameObject Hand;
         public GameObject ItemHook;
 
         protected void Awake() {

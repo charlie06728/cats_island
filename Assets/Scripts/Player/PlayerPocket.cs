@@ -33,7 +33,6 @@ namespace Player {
             CameraObject.PlayerPocket = this;
             CameraObject.gameObject.SetActive(false);
 
-
             GameObject treatObj = Instantiate(treatPrefab, transform);
             Treat = treatObj.GetComponent<Treat>();
             if (Treat == null) throw new Exception("Treat prefab does not have an Treat component!");

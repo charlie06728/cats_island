@@ -24,6 +24,9 @@ namespace Server {
         /* Singleton pattern */
         public static Server Instance { get; private set; }
         
+        /* UI */
+        public Canvas canvas;
+        
         protected void Awake() {
             if (Instance == null) {
                 Instance = this;

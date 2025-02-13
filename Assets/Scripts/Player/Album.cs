@@ -24,13 +24,16 @@ namespace Player {
                 photo.transform.SetParent(Slots[currentSlot].transform);
                 photo.transform.rotation = Slots[currentSlot].transform.rotation;
                 
-                /* Make photo fits within the plane */
+                /* Make photo fits within the plane by adjusting the scale */
                 photo.transform.localScale = new Vector3(1f, 1f, 1f);
                 photo.transform.localPosition = new Vector3(0f, 0f, 0f);
+                photo.transform.localRotation = Quaternion.Euler(0, 0, 0);
                 
                 /* Set parent and rotate 180 degrees */
                 photo.transform.SetParent(Slots[currentSlot].transform.parent);
-                photo.transform.Rotate(0f, 180f, 0f);
+                // photo.transform.Rotate(0f, 180f, 0f);
+                photo.transform.localRotation = Quaternion.Euler(0, 180f, 0);
+                
                 /* Disable the slot */
                 Slots[currentSlot].SetActive(false);
                 
