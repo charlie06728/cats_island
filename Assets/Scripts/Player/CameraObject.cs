@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
@@ -8,15 +10,16 @@ namespace Player {
     /* The camera objet */
     public class CameraObject : Item {
         public Camera photoCamera;
+        public Vector3 cameraScale;
         public GameObject photoPrefab;
         public AudioSource cameraSoundTakePicture;
         [NonSerialized] public Photo CurrentPhoto;
         public float zoom_max = 30f; // Max amount of zoom
-        public float zoom_speed = 0.1f; // Speed at which scrolling zooms in/out
+        public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
         MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
         MeshRenderer screen_renderer;
-        Scrollbar zoomScroll;
+        public Scrollbar zoomScroll;
         bool is_zoomed = false;
         private RenderTexture _renderTexture;
         private Action<InputAction.CallbackContext> _takePhotoAction;
@@ -26,6 +29,12 @@ namespace Player {
         
         private bool _isCameraMode = false;
 
+        private Vector3 _cameraLocalPositionToItemHook;
+        private Quaternion _cameraLocalRotationToItemHook;
+        
+        /* child mesh renderers */
+        private MeshRenderer[] meshRenderers;
+
         public override void TakeOut() {
             base.TakeOut();
             
@@ -33,6 +42,12 @@ namespace Player {
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _takePhotoAction;
             Server.Server.Instance.InputActionMap["RightMouse"].performed += _enterCameraModeAction;
             Server.Server.Instance.InputActionMap["RightMouse"].canceled += _exitCameraModeAction;
+            
+            /* Record local position */
+            _cameraLocalPositionToItemHook = transform.localPosition;
+            _cameraLocalRotationToItemHook = transform.localRotation;
+            
+            SetMeshRendering(true);
         }
         
         public override void PutBack() {
@@ -82,6 +97,16 @@ namespace Player {
         }
 
         public void TakePhoto() {
+            /* Record the camera position */
+            Vector3 cameraLocalPosition = photoCamera.transform.localPosition;
+            Quaternion cameraLocalRotation = photoCamera.transform.localRotation;
+            
+            /* Set photo camera to have the same rect as main camera if zoomed in */
+            if (_isCameraMode) {
+                photoCamera.transform.position = Camera.main.transform.position;
+                photoCamera.transform.rotation = Camera.main.transform.rotation;
+            }
+            
             /* Play sound */
             cameraSoundTakePicture.Play();
             
@@ -93,17 +118,43 @@ namespace Player {
             photoCamera.fieldOfView = Camera.main.fieldOfView;
             photoCamera.Render();
 
-            // Changed to take pictures via the main camera
-            // Camera.main.Render();
-
             // Copy the RenderTexture to the Texture2D
+            // RenderTexture.active = _renderTexture;
+            // CurrentPhoto.PhotoTexture.ReadPixels(
+            //     new Rect(0, 0, Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight), 0, 0);
+            // CurrentPhoto.PhotoTexture.Apply();
+            // RenderTexture.active = null;
+            StartCoroutine(CapturePhoto());
+
+            // Apply the captured texture to the plane-like object
+            // if (CurrentPhoto.PhotoRenderer != null) {
+            //     CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
+            // }
+            
+            // PlayerPocket.Album.Photos.Add(CurrentPhoto);
+            // CurrentPhoto.gameObject.SetActive(false);
+            //
+            // LoadFilm();
+            
+            /* Set back the photo camera location */
+            if (_isCameraMode) {
+                photoCamera.transform.localPosition = cameraLocalPosition;
+                photoCamera.transform.localRotation = cameraLocalRotation;
+            }
+
+            Debug.Log("Photo captured and displayed!");
+        }
+        
+        IEnumerator CapturePhoto()
+        {
+            yield return new WaitForEndOfFrame(); // Ensures rendering is completed
+
             RenderTexture.active = _renderTexture;
             CurrentPhoto.PhotoTexture.ReadPixels(
                 new Rect(0, 0, Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight), 0, 0);
             CurrentPhoto.PhotoTexture.Apply();
             RenderTexture.active = null;
-
-            // Apply the captured texture to the plane-like object
+            
             if (CurrentPhoto.PhotoRenderer != null) {
                 CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
             }
@@ -112,8 +163,6 @@ namespace Player {
             CurrentPhoto.gameObject.SetActive(false);
             
             LoadFilm();
-
-            Debug.Log("Photo captured and displayed!");
         }
         
         protected void LoadFilm() {
@@ -127,23 +176,50 @@ namespace Player {
         }
 
         protected void EnterCameraMode() {
+            StartCoroutine(EnterCameraModeCoroutine(0.5f));
+        }
+
+        protected IEnumerator EnterCameraModeCoroutine(float moveTime = 0.5f) {
+            /* Set parent to eye view */
+            transform.SetParent(PlayerPocket.Player.EyeView.transform);
+
+            transform.localScale = cameraScale;
+
+            Vector3 destinationLocalPosition = PlayerPocket.cameraVirtualPosition.transform.localPosition;
+            Vector3 positionDelta = destinationLocalPosition - transform.localPosition;
+            Quaternion destinationLocalRotation = PlayerPocket.cameraVirtualPosition.transform.localRotation;
+            
+            float elapsedTime = 0;
+            while (elapsedTime <= moveTime) {
+                transform.localPosition += positionDelta * Time.deltaTime / moveTime;
+                transform.localRotation = Quaternion.Slerp(transform.localRotation, destinationLocalRotation, elapsedTime / moveTime);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            
             _isCameraMode = true;
             
-            /* By now the camera should be positioned where the main camera is */
-            photoCamera.transform.SetParent(PlayerPocket.Player.Head.transform);
-            photoCamera.transform.position = Camera.main.transform.position;
-            photoCamera.transform.rotation = Camera.main.transform.rotation;
+            // /* By now the camera should be positioned where the main camera is */
+            // photoCamera.transform.SetParent(PlayerPocket.Player.Head.transform);
+            // photoCamera.transform.position = Camera.main.transform.position;
+            // photoCamera.transform.rotation = Camera.main.transform.rotation;
             
             /* Hand invisible */
             PlayerPocket.Player.Hand.SetActive(false);
             
             /* Disable camera object rendering */
-            camera_renderer.enabled = false;
+            SetMeshRendering(false);
             hand_renderer.enabled = false;
             zoomScroll.gameObject.SetActive(true);
+            Server.Server.Instance.cameraMode.SetActive(true);
         }
 
         protected void ExitCameraMode() {
+            hand_renderer.enabled = true;
+            StartCoroutine(ExitCameraCoroutine(0.5f));
+        }
+
+        protected IEnumerator ExitCameraCoroutine(float moveTime = 0.5f) {
             _isCameraMode = false;
             
             /* Disable the camera mode ui */
@@ -153,20 +229,42 @@ namespace Player {
             PlayerPocket.Player.Hand.SetActive(true);
             
             /* Clear Camera object parent and set back the position & rotation to item hook */
-            photoCamera.transform.SetParent(PlayerPocket.Player.ItemHook.transform);
-            Vector3 positionDelta = PlayerPocket.Player.ItemHook.transform.position - hook.transform.position;
-            photoCamera.transform.position += positionDelta;
-            photoCamera.transform.rotation = PlayerPocket.Player.ItemHook.transform.rotation;
+            transform.SetParent(PlayerPocket.Player.ItemHook.transform);
+            // Vector3 positionDelta = PlayerPocket.Player.ItemHook.transform.position - hook.transform.position;
+            // photoCamera.transform.position += positionDelta;
+            // photoCamera.transform.rotation = PlayerPocket.Player.ItemHook.transform.rotation;
             
             /* enable mesh rendering */
-            camera_renderer.enabled = true;
+            SetMeshRendering(true);
             hand_renderer.enabled = true;
             zoomScroll.gameObject.SetActive(false);
+            Server.Server.Instance.cameraMode.SetActive(false);
             
             /* Reset the scroll and fov */
             zoomScroll.value = 0;
             Camera.main.fieldOfView = 60;
             photoCamera.fieldOfView = 60;
+            
+            transform.SetParent(PlayerPocket.Player.ItemHook.transform);
+            
+            transform.localScale = cameraScale;
+            
+            /* Need to smoothly move the camera to player hand hook */
+            Vector3 positionDelta = _cameraLocalPositionToItemHook - transform.localPosition;
+            
+            /* Calculate the rotation delta */ 
+            Quaternion startRotation = transform.localRotation;
+            Quaternion rotationDelta = _cameraLocalRotationToItemHook * Quaternion.Inverse(startRotation);
+            Quaternion destinationLocalRotation = rotationDelta * transform.localRotation;
+            
+            /* In move time, move the camera to destination */
+            float elapsedTime = 0;
+            while (elapsedTime <= moveTime) {
+                transform.localPosition += positionDelta * Time.deltaTime / moveTime;
+                transform.localRotation = Quaternion.Slerp(startRotation, destinationLocalRotation, elapsedTime / moveTime);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
         }
 
         protected void EnableCameraModeUI() {
@@ -183,16 +281,19 @@ namespace Player {
             _toggleZoomAction = ctx => ToggleZoom();
             _enterCameraModeAction = ctx => EnterCameraMode();
             _exitCameraModeAction = ctx => ExitCameraMode();
+
+            if (photoCamera == null) {
+                Debug.Log("Photo camera is null!");
+                throw new Exception("Photo camera is not set for camera object!");
+            }
+            // /* photo camera same rotation as camera object */
+            // photoCamera.transform.rotation = transform.rotation;
             
-            photoCamera = GetComponent<Camera>();
-            if (photoCamera == null) photoCamera = gameObject.AddComponent<Camera>();
-            /* photo camera same rotation as camera object */
-            photoCamera.transform.rotation = transform.rotation;
-            
-            /* Set up the camera */
-            _renderTexture =
-                new RenderTexture(Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight, 24);
-            photoCamera.targetTexture = _renderTexture;
+            // /* Set up the camera */
+            // _renderTexture =
+            //     new RenderTexture(Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight, 24);
+            // photoCamera.targetTexture = _renderTexture;
+            _renderTexture = photoCamera.targetTexture;
 
             // Get the UI scrollbar for the camera zoom
             if (zoomScroll == null) zoomScroll = GameObject.FindWithTag("CameraScroll").GetComponent<Scrollbar>();
@@ -203,6 +304,23 @@ namespace Player {
             
             /* Load the film */
             LoadFilm();
+            
+            // Get all MeshRenderer components under this GameObject (including children)
+            meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        }
+        
+        void SetMeshRendering(bool state)
+        {
+            foreach (MeshRenderer renderer in meshRenderers)
+            {
+                renderer.enabled = state;
+            }
+        }
+
+        IEnumerator ReRenderAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            SetMeshRendering(true);
         }
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace Server {
     public class Server : MonoBehaviour {
@@ -26,6 +27,8 @@ namespace Server {
         
         /* UI */
         public Canvas canvas;
+        public Scrollbar zoomScroll;
+        public GameObject cameraMode;
         
         protected void Awake() {
             if (Instance == null) {
@@ -36,6 +39,8 @@ namespace Server {
             
             /* Enable inputAction */
             InputActionMap.Enable();
+            
+            cameraMode.gameObject.SetActive(false);
         }
 
         protected void Update() {
