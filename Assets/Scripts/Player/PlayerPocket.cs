@@ -8,6 +8,7 @@ namespace Player {
         
         /* Album prefab and component after it being initialized */
         public GameObject albumPrefab;
+        public GameObject albumVirtualPosition;
         [NonSerialized] public Album Album;
         
         /* Camera prefab and component after init */
