@@ -216,6 +216,7 @@ namespace Player {
 
         protected void ExitCameraMode() {
             hand_renderer.enabled = true;
+            if (!_isCameraMode) return;
             StartCoroutine(ExitCameraCoroutine(0.5f));
         }
 
