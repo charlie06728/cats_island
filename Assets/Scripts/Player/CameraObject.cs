@@ -176,10 +176,11 @@ namespace Player {
         }
 
         protected void EnterCameraMode() {
-            StartCoroutine(EnterCameraModeCoroutine(0.5f));
+            _isCameraMode = true;
+            StartCoroutine(EnterCameraModeCoroutine(0.25f));
         }
 
-        protected IEnumerator EnterCameraModeCoroutine(float moveTime = 0.5f) {
+        protected IEnumerator EnterCameraModeCoroutine(float moveTime = 0.25f) {
             /* Set parent to eye view */
             transform.SetParent(PlayerPocket.Player.EyeView.transform);
 
@@ -191,18 +192,14 @@ namespace Player {
             
             float elapsedTime = 0;
             while (elapsedTime <= moveTime) {
+                if (!_isCameraMode) break;
                 transform.localPosition += positionDelta * Time.deltaTime / moveTime;
                 transform.localRotation = Quaternion.Slerp(transform.localRotation, destinationLocalRotation, elapsedTime / moveTime);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
             
-            _isCameraMode = true;
-            
-            // /* By now the camera should be positioned where the main camera is */
-            // photoCamera.transform.SetParent(PlayerPocket.Player.Head.transform);
-            // photoCamera.transform.position = Camera.main.transform.position;
-            // photoCamera.transform.rotation = Camera.main.transform.rotation;
+            if (!_isCameraMode) yield break;
             
             /* Hand invisible */
             PlayerPocket.Player.Hand.SetActive(false);
@@ -215,19 +212,21 @@ namespace Player {
         }
 
         protected void ExitCameraMode() {
-            hand_renderer.enabled = true;
-            if (!_isCameraMode) return;
-            StartCoroutine(ExitCameraCoroutine(0.5f));
-        }
-
-        protected IEnumerator ExitCameraCoroutine(float moveTime = 0.5f) {
             _isCameraMode = false;
-            
-            /* Disable the camera mode ui */
-            DisableCameraModeUI();
+            hand_renderer.enabled = true;
             
             /* Hand visible */
             PlayerPocket.Player.Hand.SetActive(true);
+            
+            /* enable mesh rendering */
+            SetMeshRendering(true);
+            StartCoroutine(ExitCameraCoroutine(0.25f));
+        }
+
+        protected IEnumerator ExitCameraCoroutine(float moveTime = 0.25f) {
+
+            /* Disable the camera mode ui */
+            DisableCameraModeUI();
             
             /* Clear Camera object parent and set back the position & rotation to item hook */
             transform.SetParent(PlayerPocket.Player.ItemHook.transform);
@@ -261,6 +260,7 @@ namespace Player {
             /* In move time, move the camera to destination */
             float elapsedTime = 0;
             while (elapsedTime <= moveTime) {
+                if (_isCameraMode) yield break;
                 transform.localPosition += positionDelta * Time.deltaTime / moveTime;
                 transform.localRotation = Quaternion.Slerp(startRotation, destinationLocalRotation, elapsedTime / moveTime);
                 elapsedTime += Time.deltaTime;
