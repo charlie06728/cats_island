@@ -50,6 +50,9 @@ namespace Player {
             _albumLocalRotationToItemHook = transform.localRotation;
             
             transform.localScale = albumScale;
+            
+            /* Enter album view immediately */
+            EnterAlbumView();
         }
 
         protected void RenderImages() {
@@ -98,10 +101,10 @@ namespace Player {
         }
 
         protected void EnterAlbumView() {
-            StartCoroutine(EnterAlbumViewCoroutine(0.5f));
+            StartCoroutine(EnterAlbumViewCoroutine(0.2f));
         }
 
-        protected IEnumerator EnterAlbumViewCoroutine(float moveTime = 0.5f) {
+        protected IEnumerator EnterAlbumViewCoroutine(float moveTime = 0.2f) {
             /* Set parent to eye view */
             transform.SetParent(PlayerPocket.Player.EyeView.transform);
 
@@ -121,10 +124,10 @@ namespace Player {
         }
 
         protected void ExitAlbumView() {
-            StartCoroutine(ExitAlbumViewCoroutine(0.5f));
+            StartCoroutine(ExitAlbumViewCoroutine(0.2f));
         }
 
-        protected IEnumerator ExitAlbumViewCoroutine(float moveTime = 0.5f) {
+        protected IEnumerator ExitAlbumViewCoroutine(float moveTime = 0.2f) {
             transform.SetParent(PlayerPocket.Player.ItemHook.transform);
             
             transform.localScale = albumScale;
