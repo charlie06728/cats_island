@@ -33,6 +33,7 @@ namespace Server {
         
         /* Cats */
         [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
+        [NonSerialized] public Dictionary<string, Cat.Cat> CatDictionary = new Dictionary<string, Cat.Cat>();
         
         protected void Awake() {
             if (Instance == null) {

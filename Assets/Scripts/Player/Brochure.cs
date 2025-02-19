@@ -9,17 +9,22 @@ namespace Player {
         public RawImage rawImage1;
         public RawImage rawImage2;
 
-        public Image[] image1Stars;
-        public Image[] image2Stars;
-
         public TextMeshProUGUI catName1;
         public TextMeshProUGUI catName2;
         
         public TextMeshProUGUI catBreed1;
         public TextMeshProUGUI catBreed2;
         
-        [NonSerialized] public Photo Photo1;
-        [NonSerialized] public Photo Photo2;
+        public TextMeshProUGUI preferSnack1;
+        public TextMeshProUGUI preferSnack2;
+        
+        public TextMeshProUGUI habitat1;
+        public TextMeshProUGUI habitat2;
+
+        [NonSerialized] public int CurrentStartIndex = 0;
+        
+        // [NonSerialized] public Photo Photo1;
+        // [NonSerialized] public Photo Photo2;
         
         public override void TakeOut() {
             if (gameObject.activeInHierarchy) {
@@ -45,60 +50,59 @@ namespace Player {
         }
 
         protected void DisplayPhotos() {
-            List<Photo> photos = PlayerPocket.Album.Photos;
-
-            int photoCount = 0;
-            Photo prevP = null;
-            Photo currP = null;
-            foreach (Photo photo in photos) {
-                if (photo.Cats.Count == 0) continue;
-                if (currP == null || photo.Stars >= currP.Stars) {
-                    if (currP != null) prevP = currP;
-                    currP = photo;
-                }
-            }
+            List<Cat.Cat> cats = Server.Server.Instance.CatDictionary.Values.ToList();
+            cats.Sort();
             
-            DisplayPhoto(currP, 0);
-            DisplayPhoto(prevP, 1);
+            for (int i = 0; i < 2; i++) {
+                if (CurrentStartIndex + i >= cats.Count) break;
+                DisplayCat(cats[CurrentStartIndex + i], i);
+            }
+            // List<Photo> photos = PlayerPocket.Album.Photos;
+            //
+            // int photoCount = 0;
+            // Photo prevP = null;
+            // Photo currP = null;
+            // foreach (Photo photo in photos) {
+            //     if (photo.Cats.Count == 0) continue;
+            //     if (currP == null || photo.Stars >= currP.Stars) {
+            //         if (currP != null) prevP = currP;
+            //         currP = photo;
+            //     }
+            // }
+            //
+            // DisplayPhoto(currP, 0);
+            // DisplayPhoto(prevP, 1);
         }
 
-        protected void DisplayPhoto(Photo photo, int displayIndex) {
-            if (photo == null) return;
-            
+        protected void DisplayCat(Cat.Cat cat, int displayIndex) {
             if (displayIndex == 0) {
                 rawImage1.gameObject.SetActive(true);
                 catName1.gameObject.SetActive(true);
                 catBreed1.gameObject.SetActive(true);
+                preferSnack1.gameObject.SetActive(true);
+                habitat1.gameObject.SetActive(true);
+
+                rawImage1.texture = cat.catImage.mainTexture;
+                catName1.text = cat.catName;
+                catBreed1.text = cat.catBreed;
                 
-                rawImage1.texture = photo.PhotoTexture;
-                catName1.text = photo.Cats.First().catName;
-                catBreed1.text = photo.Cats.First().catBreed;
-                for (int i = 0; i < photo.Stars; i++) {
-                    image1Stars[i].gameObject.SetActive(true);
-                }
-                /* Hide the rest of stars */
-                for (int i = photo.Stars; i < image1Stars.Length; i++) {
-                    image1Stars[i].gameObject.SetActive(false);
-                }
+                preferSnack1.text = cat.catPreferredSnack;
+                habitat1.text = cat.catHabitat;
             } else {
                 rawImage2.gameObject.SetActive(true);
                 catName2.gameObject.SetActive(true);
                 catBreed2.gameObject.SetActive(true);
+                preferSnack2.gameObject.SetActive(true);
+                habitat2.gameObject.SetActive(true);
+
+                rawImage2.texture = cat.catImage.mainTexture;
+                catName2.text = cat.catName;
+                catBreed2.text = cat.catBreed;
                 
-                rawImage2.texture = photo.PhotoTexture;
-                catName2.text = photo.Cats.First().catName;
-                catBreed2.text = photo.Cats.First().catBreed;
-                for (int i = 0; i < photo.Stars; i++) {
-                    image2Stars[i].gameObject.SetActive(true);
-                }
-                /* Hide the rest of stars */
-                for (int i = photo.Stars; i < image2Stars.Length; i++) {
-                    image2Stars[i].gameObject.SetActive(false);
-                }
+                preferSnack2.text = cat.catPreferredSnack;
+                habitat2.text = cat.catHabitat;
             }
         }
-        
-        
 
         protected void HideAll() {
             rawImage1.gameObject.SetActive(false);
@@ -107,12 +111,10 @@ namespace Player {
             catName2.gameObject.SetActive(false);
             catBreed1.gameObject.SetActive(false);
             catBreed2.gameObject.SetActive(false);
-            foreach (var image in image1Stars) {
-                image.gameObject.SetActive(false);
-            }
-            foreach (var image in image2Stars) {
-                image.gameObject.SetActive(false);
-            }
+            preferSnack1.gameObject.SetActive(false);
+            preferSnack2.gameObject.SetActive(false);
+            habitat1.gameObject.SetActive(false);
+            habitat2.gameObject.SetActive(false);
         }
         
         protected void ShowAll() {
@@ -122,12 +124,10 @@ namespace Player {
             catName2.gameObject.SetActive(true);
             catBreed1.gameObject.SetActive(true);
             catBreed2.gameObject.SetActive(true);
-            foreach (var image in image1Stars) {
-                image.gameObject.SetActive(true);
-            }
-            foreach (var image in image2Stars) {
-                image.gameObject.SetActive(true);
-            }
+            preferSnack1.gameObject.SetActive(true);
+            preferSnack2.gameObject.SetActive(true);
+            habitat1.gameObject.SetActive(true);
+            habitat2.gameObject.SetActive(true);
         }
     }
 }
