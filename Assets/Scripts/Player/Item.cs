@@ -9,6 +9,11 @@ namespace Player {
 
         /* taking this item out of pocket, trigger animation */
         public virtual void TakeOut() {
+            if (gameObject.activeInHierarchy) {
+                PutBack();
+                return;
+            }
+            
             /* put all back first */
             PutBackAll();
             

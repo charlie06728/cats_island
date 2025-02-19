@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace Server {
     public class Server : MonoBehaviour {
@@ -24,6 +26,14 @@ namespace Server {
         /* Singleton pattern */
         public static Server Instance { get; private set; }
         
+        /* UI */
+        public Canvas canvas;
+        public Scrollbar zoomScroll;
+        public GameObject cameraMode;
+        
+        /* Cats */
+        [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
+        
         protected void Awake() {
             if (Instance == null) {
                 Instance = this;
@@ -33,6 +43,8 @@ namespace Server {
             
             /* Enable inputAction */
             InputActionMap.Enable();
+            
+            cameraMode.gameObject.SetActive(false);
         }
 
         protected void Update() {
