@@ -172,7 +172,7 @@ namespace Player {
                     if (GeometryUtility.TestPlanesAABB(frustumPlanes, renderer.bounds))
                     {
                         Debug.Log($"{renderer.gameObject.name} is visible.");
-                        catsInView.Add(renderer.gameObject.GetComponent<Cat.Cat>());
+                        catsInView.Add(obj.gameObject.GetComponent<Cat.Cat>());
                         break;
                     }
                 }

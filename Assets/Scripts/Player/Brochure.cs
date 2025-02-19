@@ -32,12 +32,13 @@ namespace Player {
             /* Set item visible */
             gameObject.SetActive(true);
             
-            ShowAll();
+            HideAll();
             DisplayPhotos();
         }
         
         public override void PutBack() {
             HideAll();
+            
             /* make item invisible */
             gameObject.SetActive(false);
         }
@@ -64,6 +65,10 @@ namespace Player {
             if (photo == null) return;
             
             if (displayIndex == 0) {
+                rawImage1.gameObject.SetActive(true);
+                catName1.gameObject.SetActive(true);
+                catBreed1.gameObject.SetActive(true);
+                
                 rawImage1.texture = photo.PhotoTexture;
                 catName1.text = photo.Cats[0].catName;
                 catBreed1.text = photo.Cats[0].catBreed;
@@ -75,6 +80,10 @@ namespace Player {
                     image1Stars[i].gameObject.SetActive(false);
                 }
             } else {
+                rawImage2.gameObject.SetActive(true);
+                catName2.gameObject.SetActive(true);
+                catBreed2.gameObject.SetActive(true);
+                
                 rawImage2.texture = photo.PhotoTexture;
                 catName2.text = photo.Cats[0].catName;
                 catBreed2.text = photo.Cats[0].catBreed;

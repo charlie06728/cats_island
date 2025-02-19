@@ -7,7 +7,7 @@ namespace Cat {
         public CatNavigator Navigator;
 
         public string catName;
-        public string catBreed;
+        [NonSerialized] public string catBreed;
 
         protected virtual void Awake() {
             /* Make sure the components are set */

@@ -838,9 +838,6 @@ PrefabInstance:
       addedObject: {fileID: 556523310}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 14fdaa3c0d1870d4a8585d18eb1b6daa, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 556523309}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 14fdaa3c0d1870d4a8585d18eb1b6daa, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 556523308}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 14fdaa3c0d1870d4a8585d18eb1b6daa, type: 3}
       insertIndex: -1
@@ -851,6 +848,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 14fdaa3c0d1870d4a8585d18eb1b6daa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 556523305}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 14fdaa3c0d1870d4a8585d18eb1b6daa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 556523314}
   m_SourcePrefab: {fileID: 100100000, guid: 14fdaa3c0d1870d4a8585d18eb1b6daa, type: 3}
 --- !u!1 &556523304 stripped
 GameObject:
@@ -967,7 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Animator: {fileID: 556523308}
-  Cat: {fileID: 556523309}
+  Cat: {fileID: 0}
   meowAudio: {fileID: 556523305}
 --- !u!114 &556523307
 MonoBehaviour:
@@ -984,7 +984,7 @@ MonoBehaviour:
   Agent: {fileID: 556523310}
   Rigidbody: {fileID: 556523311}
   Collider: {fileID: 556523312}
-  Cat: {fileID: 556523309}
+  Cat: {fileID: 0}
 --- !u!95 &556523308
 Animator:
   serializedVersion: 7
@@ -1007,22 +1007,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &556523309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556523304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 221c486db8544dcab5cc9cae5364cea8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Behaviour: {fileID: 556523306}
-  Navigator: {fileID: 556523307}
-  catName: 
-  catBreed: 
 --- !u!195 &556523310
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1093,6 +1077,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 14.398574, y: 25.762249, z: 38.61498}
   m_Center: {x: 0.0642544, y: 13.757593, z: 0.2713108}
+--- !u!114 &556523314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556523304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84df2fef732b480a807d78f51b066a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Behaviour: {fileID: 556523306}
+  Navigator: {fileID: 556523307}
+  catName: Snowball
 --- !u!114 &618472579 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 700114080623917769, guid: 5a19b488341e5e042a9ba75f75ad9b46, type: 3}
@@ -2173,7 +2172,6 @@ MonoBehaviour:
   Behaviour: {fileID: 0}
   Navigator: {fileID: 0}
   catName: 
-  catBreed: 
 --- !u!54 &1687051389
 Rigidbody:
   m_ObjectHideFlags: 0

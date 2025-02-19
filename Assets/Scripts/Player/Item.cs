@@ -37,6 +37,7 @@ namespace Player {
             PlayerPocket.Album.PutBack();
             PlayerPocket.CameraObject.PutBack();
             PlayerPocket.Treat.PutBack();
+            PlayerPocket.brochure.PutBack();
         }
 
         protected void FixItemOnHook() {
