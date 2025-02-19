@@ -50,6 +50,8 @@ namespace Player {
         }
 
         protected void RenderImages() {
+            HideAll();
+            
             int endIndex = CurrentStartIndex + albumSlots.Count;
             if (endIndex > Photos.Count) {
                 endIndex = Photos.Count;
@@ -57,6 +59,7 @@ namespace Player {
 
             for (int i = CurrentStartIndex; i < endIndex; i++) {
                 int slotIndex = i % albumSlots.Count;
+                albumSlots[slotIndex].Show();
                 albumSlots[slotIndex].SetPhoto(Photos[i]);
             }
         }
@@ -129,6 +132,12 @@ namespace Player {
 
             // transform.localPosition = _albumLocalPositionToItemHook;
             // transform.localRotation = _albumLocalRotationToItemHook;
+        }
+        
+        protected void HideAll() {
+            foreach (var slot in albumSlots) {
+                slot.Hide();
+            }
         }
 
         protected void PreviousPage() {

@@ -100,6 +100,9 @@ namespace Player {
         }
 
         public void TakePhoto() {
+            if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount) return;
+            Server.Server.Instance.FilmUsed++;
+            
             /* Record the camera position */
             Vector3 cameraLocalPosition = photoCamera.transform.localPosition;
             Quaternion cameraLocalRotation = photoCamera.transform.localRotation;
@@ -180,7 +183,8 @@ namespace Player {
             
             /* Set the cats in view */
             CurrentPhoto.Cats.AddRange(catsInView);
-            CurrentPhoto.Stars = 5;
+            CurrentPhoto.Stars = CalculateStar(CurrentPhoto);
+            Server.Server.Instance.StarCount += CurrentPhoto.Stars;
             
             yield return new WaitForEndOfFrame(); // Ensures rendering is completed
 
@@ -257,6 +261,19 @@ namespace Player {
             /* enable mesh rendering */
             SetMeshRendering(true);
             StartCoroutine(ExitCameraCoroutine(0.25f));
+        }
+
+        protected int CalculateStar(Photo photo) {
+            int star = 0;
+            star += photo.Cats.Count;
+
+            foreach (Cat.Cat cat in photo.Cats) {
+                if (cat.Behaviour.Animator.GetBool("IsWondering")) {
+                    star++;
+                }
+            }
+
+            return star;
         }
 
         protected IEnumerator ExitCameraCoroutine(float moveTime = 0.25f) {

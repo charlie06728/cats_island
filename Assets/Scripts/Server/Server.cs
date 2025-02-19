@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UIs;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -34,6 +35,14 @@ namespace Server {
         /* Cats */
         [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
         [NonSerialized] public Dictionary<string, Cat.Cat> CatDictionary = new Dictionary<string, Cat.Cat>();
+        
+        /* Film */
+        [NonSerialized] public int FilmCount = 18;
+        [NonSerialized] public int FilmUsed = 0;
+        public FilmUsage filmUsage;
+        
+        /* Star Count */
+        [NonSerialized] public int StarCount = 0;
         
         protected void Awake() {
             if (Instance == null) {

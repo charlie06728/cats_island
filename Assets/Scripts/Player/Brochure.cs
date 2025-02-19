@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Player {
@@ -20,6 +21,9 @@ namespace Player {
         
         public TextMeshProUGUI habitat1;
         public TextMeshProUGUI habitat2;
+        
+        public GameObject prevPrompt;
+        public GameObject nextPrompt;
 
         [NonSerialized] public int CurrentStartIndex = 0;
         
@@ -57,6 +61,20 @@ namespace Player {
                 if (CurrentStartIndex + i >= cats.Count) break;
                 DisplayCat(cats[CurrentStartIndex + i], i);
             }
+            
+            /* Hide prompts if possible */
+            if (CurrentStartIndex - 2 < 0) {
+                prevPrompt.SetActive(false);
+            } else {
+                prevPrompt.SetActive(true);
+            }
+            
+            if (CurrentStartIndex + 2 >= cats.Count) {
+                nextPrompt.SetActive(false);
+            } else {
+                nextPrompt.SetActive(true);
+            }
+            
             // List<Photo> photos = PlayerPocket.Album.Photos;
             //
             // int photoCount = 0;
