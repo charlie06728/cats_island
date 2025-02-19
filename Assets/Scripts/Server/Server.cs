@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -29,6 +30,9 @@ namespace Server {
         public Canvas canvas;
         public Scrollbar zoomScroll;
         public GameObject cameraMode;
+        
+        /* Cats */
+        [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
         
         protected void Awake() {
             if (Instance == null) {

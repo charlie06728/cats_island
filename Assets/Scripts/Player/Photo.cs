@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Player {
@@ -6,6 +7,10 @@ namespace Player {
         public Renderer PhotoRenderer;
         public int PhotoWidth; // Width of the captured photo
         public int PhotoHeight; // Height of the captured photo
+        
+        /* Brochure related */
+        [NonSerialized] public int Stars;
+        [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
         
         /* Store the scene capture as Texture2D */
         [NonSerialized] public Texture2D PhotoTexture;

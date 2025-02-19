@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
@@ -13,6 +15,7 @@ namespace Player {
         public Vector3 cameraScale;
         public GameObject photoPrefab;
         public AudioSource cameraSoundTakePicture;
+        public LayerMask catLayerMask;
         [NonSerialized] public Photo CurrentPhoto;
         public float zoom_max = 30f; // Max amount of zoom
         public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
@@ -147,6 +150,37 @@ namespace Player {
         
         IEnumerator CapturePhoto()
         {
+            /* Find the cats with view */
+            List<Cat.Cat> catsInView = new List<Cat.Cat>();
+            
+            // Calculate camera frustum
+            Camera camera = Camera.main;
+            Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes(camera);
+            
+            /* Get all cat game objects */
+            List<GameObject> cats = new List<GameObject>();
+            foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
+
+            /* Iterate through the cats and see if within the frustum */
+            foreach (GameObject obj in cats) {
+                if (((1 << obj.layer) & catLayerMask) == 0) continue;
+                
+                // Get all renderers in this object and its children
+                Renderer[] childRenderers = obj.GetComponentsInChildren<Renderer>();
+
+                foreach (Renderer renderer in childRenderers) {
+                    if (GeometryUtility.TestPlanesAABB(frustumPlanes, renderer.bounds))
+                    {
+                        Debug.Log($"{renderer.gameObject.name} is visible.");
+                        catsInView.Add(renderer.gameObject.GetComponent<Cat.Cat>());
+                        break;
+                    }
+                }
+            }
+            
+            /* Set the cats in view */
+            CurrentPhoto.Cats = catsInView;
+            
             yield return new WaitForEndOfFrame(); // Ensures rendering is completed
 
             RenderTexture.active = _renderTexture;
