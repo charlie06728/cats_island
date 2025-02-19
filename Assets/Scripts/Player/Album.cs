@@ -22,6 +22,9 @@ namespace Player {
         private Vector3 _albumLocalPositionToItemHook;
         private Quaternion _albumLocalRotationToItemHook;
 
+        public GameObject nextPrompt;
+        public GameObject prevPrompt;
+
         [NonSerialized] public int CurrentStartIndex = 0;
         
         public override void TakeOut() {
@@ -61,6 +64,19 @@ namespace Player {
                 int slotIndex = i % albumSlots.Count;
                 albumSlots[slotIndex].Show();
                 albumSlots[slotIndex].SetPhoto(Photos[i]);
+            }
+            
+            /* Check if the prompts needs to be displayed or hidden */
+            if (CurrentStartIndex - albumSlots.Count < 0) {
+                prevPrompt.SetActive(false);
+            } else {
+                prevPrompt.SetActive(true);
+            }
+            
+            if (CurrentStartIndex + albumSlots.Count >= Photos.Count) {
+                nextPrompt.SetActive(false);
+            } else {
+                nextPrompt.SetActive(true);
             }
         }
         
