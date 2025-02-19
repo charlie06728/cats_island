@@ -3,22 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Player {
-    public class Photo : MonoBehaviour {
-        public Renderer PhotoRenderer;
+    public class Photo {
+        // public Renderer PhotoRenderer;
         public int PhotoWidth; // Width of the captured photo
         public int PhotoHeight; // Height of the captured photo
         
         /* Brochure related */
-        [NonSerialized] public int Stars;
-        [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
+        public int Stars;
+        public HashSet<Cat.Cat> Cats = new HashSet<Cat.Cat>();
         
         /* Store the scene capture as Texture2D */
-        [NonSerialized] public Texture2D PhotoTexture;
+        public Texture2D PhotoTexture;
 
-        protected void Awake() {
+        public Photo() {
             /* Initialize the photo texture */
             PhotoTexture = new Texture2D(Server.Server.Instance.photoWidth,
                 Server.Server.Instance.photoHeight, TextureFormat.RGB24, false);
+            
+            PhotoWidth = Server.Server.Instance.photoWidth;
+            PhotoHeight = Server.Server.Instance.photoHeight;
         }
+
+        // protected void Awake() {
+        //     /* Initialize the photo texture */
+        //     PhotoTexture = new Texture2D(Server.Server.Instance.photoWidth,
+        //         Server.Server.Instance.photoHeight, TextureFormat.RGB24, false);
+        // }
     }
 }

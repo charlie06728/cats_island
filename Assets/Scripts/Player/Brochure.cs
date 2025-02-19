@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine.UI;
 
@@ -51,7 +52,7 @@ namespace Player {
             Photo currP = null;
             foreach (Photo photo in photos) {
                 if (photo.Cats.Count == 0) continue;
-                if (currP == null || photo.Stars > currP.Stars) {
+                if (currP == null || photo.Stars >= currP.Stars) {
                     if (currP != null) prevP = currP;
                     currP = photo;
                 }
@@ -70,8 +71,8 @@ namespace Player {
                 catBreed1.gameObject.SetActive(true);
                 
                 rawImage1.texture = photo.PhotoTexture;
-                catName1.text = photo.Cats[0].catName;
-                catBreed1.text = photo.Cats[0].catBreed;
+                catName1.text = photo.Cats.First().catName;
+                catBreed1.text = photo.Cats.First().catBreed;
                 for (int i = 0; i < photo.Stars; i++) {
                     image1Stars[i].gameObject.SetActive(true);
                 }
@@ -85,8 +86,8 @@ namespace Player {
                 catBreed2.gameObject.SetActive(true);
                 
                 rawImage2.texture = photo.PhotoTexture;
-                catName2.text = photo.Cats[0].catName;
-                catBreed2.text = photo.Cats[0].catBreed;
+                catName2.text = photo.Cats.First().catName;
+                catBreed2.text = photo.Cats.First().catBreed;
                 for (int i = 0; i < photo.Stars; i++) {
                     image2Stars[i].gameObject.SetActive(true);
                 }

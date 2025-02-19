@@ -5,6 +5,10 @@ namespace Cat {
     public class Cat : MonoBehaviour{
         public CatBehaviour Behaviour;
         public CatNavigator Navigator;
+        public float walkProportion = 0.7f;
+        
+        /* The pointer around which cat moves */
+        public GameObject livingArea;
 
         public string catName;
         [NonSerialized] public string catBreed;

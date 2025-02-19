@@ -8,7 +8,9 @@ namespace Cat {
     public enum CatState {
         Idle,
         Treat,
-        Pose
+        Pose,
+        Wonder,
+        
     }
     
     public class CatBehaviour : MonoBehaviour {

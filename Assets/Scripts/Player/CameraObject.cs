@@ -114,7 +114,7 @@ namespace Player {
             cameraSoundTakePicture.Play();
             
             /* Enable the current photo */
-            CurrentPhoto.gameObject.SetActive(true);
+            // CurrentPhoto.gameObject.SetActive(true);
             
             // Render the photo camera
             // photoCamera.CopyFrom(Camera.main);
@@ -179,7 +179,8 @@ namespace Player {
             }
             
             /* Set the cats in view */
-            CurrentPhoto.Cats = catsInView;
+            CurrentPhoto.Cats.AddRange(catsInView);
+            CurrentPhoto.Stars = 5;
             
             yield return new WaitForEndOfFrame(); // Ensures rendering is completed
 
@@ -189,24 +190,25 @@ namespace Player {
             CurrentPhoto.PhotoTexture.Apply();
             RenderTexture.active = null;
             
-            if (CurrentPhoto.PhotoRenderer != null) {
-                CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
-            }
+            // if (CurrentPhoto.PhotoRenderer != null) {
+            //     CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
+            // }
             
             PlayerPocket.Album.Photos.Add(CurrentPhoto);
-            CurrentPhoto.gameObject.SetActive(false);
+            // CurrentPhoto.gameObject.SetActive(false);
             
             LoadFilm();
         }
         
         protected void LoadFilm() {
             /* Instantiate the photo prefab */
-            GameObject photoObject = Instantiate(photoPrefab, transform.position, transform.rotation);
-            CurrentPhoto = photoObject.GetComponent<Photo>();
-            if (CurrentPhoto == null) CurrentPhoto = photoObject.AddComponent<Photo>();
-            
-            /* disable the current photo so cannot be seen */
-            CurrentPhoto.gameObject.SetActive(false);            
+            // GameObject photoObject = Instantiate(photoPrefab, transform.position, transform.rotation);
+            // CurrentPhoto = photoObject.GetComponent<Photo>();
+            // if (CurrentPhoto == null) CurrentPhoto = photoObject.AddComponent<Photo>();
+            //
+            // /* disable the current photo so cannot be seen */
+            // CurrentPhoto.gameObject.SetActive(false);
+            CurrentPhoto = new Photo();
         }
 
         protected void EnterCameraMode() {
