@@ -918,6 +918,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 0}
   hook: {fileID: 6546605834943009380}
+  rawImage1: {fileID: 0}
+  rawImage2: {fileID: 0}
+  image1Stars: []
+  image2Stars: []
+  catName1: {fileID: 0}
+  catName2: {fileID: 0}
+  catBreed1: {fileID: 0}
+  catBreed2: {fileID: 0}
 --- !u!1 &6812129796026880622
 GameObject:
   m_ObjectHideFlags: 0

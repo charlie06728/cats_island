@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 namespace Player {
     public class Album : Item {
+        public List<AlbumSlot> albumSlots;
         public List<Photo> Photos = new List<Photo>();
         public List<RawImage> rawImages;
         public Vector3 albumScale = new Vector3(0.5f, 0.5f, 0.5f);
@@ -14,24 +15,32 @@ namespace Player {
         /* Album view related */
         private Action<InputAction.CallbackContext> _albumViewAction;
         private Action<InputAction.CallbackContext> _exitAlbumViewAction;
+        private Action<InputAction.CallbackContext> _nextPage;
+        private Action<InputAction.CallbackContext> _prevPage;
         
         /* record alum local positions */
         private Vector3 _albumLocalPositionToItemHook;
         private Quaternion _albumLocalRotationToItemHook;
+
+        [NonSerialized] public int CurrentStartIndex = 0;
         
         public override void TakeOut() {
             base.TakeOut();
             
-            int currentSlot = 0;
-            foreach (var photo in Photos) {
-                if (currentSlot >= rawImages.Count) break;
-                rawImages[currentSlot].texture = photo.PhotoTexture;
-                currentSlot++;
-            }
+            RenderImages();
+            
+            // int currentSlot = 0;
+            // foreach (var photo in Photos) {
+            //     if (currentSlot >= rawImages.Count) break;
+            //     rawImages[currentSlot].texture = photo.PhotoTexture;
+            //     currentSlot++;
+            // }
             
             /* Define the album view behaviour */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _albumViewAction;
             Server.Server.Instance.InputActionMap["RightMouse"].performed += _exitAlbumViewAction;
+            Server.Server.Instance.InputActionMap["Next"].canceled += _nextPage;
+            Server.Server.Instance.InputActionMap["Prev"].canceled += _prevPage;
             
             /* Record local position */
             _albumLocalPositionToItemHook = transform.localPosition;
@@ -39,9 +48,25 @@ namespace Player {
             
             transform.localScale = albumScale;
         }
+
+        protected void RenderImages() {
+            int endIndex = CurrentStartIndex + albumSlots.Count;
+            if (endIndex > Photos.Count) {
+                endIndex = Photos.Count;
+            }
+
+            for (int i = CurrentStartIndex; i < endIndex; i++) {
+                int slotIndex = i % albumSlots.Count;
+                albumSlots[slotIndex].SetPhoto(Photos[i]);
+            }
+        }
         
         public override void PutBack() {
             base.PutBack();
+            
+            foreach (var slot in albumSlots) {
+                slot.Hide();
+            }
             
             transform.SetParent(PlayerPocket.Player.ItemHook.transform);
             
@@ -106,11 +131,30 @@ namespace Player {
             // transform.localRotation = _albumLocalRotationToItemHook;
         }
 
+        protected void PreviousPage() {
+            int jumpInterval = albumSlots.Count;
+            CurrentStartIndex -= jumpInterval;
+            if (CurrentStartIndex < 0) {
+                CurrentStartIndex = 0;
+            }
+            
+            RenderImages();
+        }
+        
+        protected void NextPage() {
+            int jumpInterval = albumSlots.Count;
+            if (CurrentStartIndex + jumpInterval >= Photos.Count) return;
+            CurrentStartIndex += jumpInterval;
+            RenderImages();
+        }
+
         protected override void Awake() {
             base.Awake();
             
             _albumViewAction = context => { EnterAlbumView(); };
             _exitAlbumViewAction = context => { ExitAlbumView(); };
+            _prevPage = context => { PreviousPage(); };
+            _nextPage = context => { NextPage(); };
         }
     }
 }

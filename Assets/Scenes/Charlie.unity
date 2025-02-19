@@ -1091,6 +1091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Behaviour: {fileID: 556523306}
   Navigator: {fileID: 556523307}
+  walkProportion: 0.7
   livingArea: {fileID: 697985114}
   catName: Snowball
 --- !u!114 &618472579 stripped
@@ -1580,6 +1581,22 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+    - m_Name: Next
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 2f45cd8f-9e0a-4e08-8e80-6f734ccc1e1f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Prev
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: dab5f5c6-c323-4325-ac27-46d10fb77e4d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
     m_Bindings:
     - m_Name: 
       m_Id: 9a0f700e-7c9a-460e-88bf-4b36300c7dc9
@@ -1684,6 +1701,22 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: 5
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 719cf3e0-d607-4ba2-8fe2-0a31b8404b6c
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Next
+      m_Flags: 0
+    - m_Name: 
+      m_Id: fa41ddf0-63f0-4b0c-a8c3-ea78f5ab847c
+      m_Path: <Keyboard>/q
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Prev
       m_Flags: 0
   canvas: {fileID: 1695870417}
   zoomScroll: {fileID: 273747734}
@@ -2203,6 +2236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Behaviour: {fileID: 0}
   Navigator: {fileID: 0}
+  walkProportion: 0.7
   livingArea: {fileID: 0}
   catName: 
 --- !u!54 &1687051389
@@ -2683,7 +2717,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: ff6e9fb60b0efcf46a92adb12aa69811, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: 437dedf4fcb29d54e979e8d87e29f3b1, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
