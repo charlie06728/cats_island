@@ -1,4 +1,5 @@
 using System;
+using Player;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -18,6 +19,10 @@ namespace Cat {
 
         public string catName;
         public string catBreed;
+
+        public void RegisterTreat(TreatInstance treat) {
+            
+        }
 
         protected virtual void Awake() {
             /* Make sure the components are set */
