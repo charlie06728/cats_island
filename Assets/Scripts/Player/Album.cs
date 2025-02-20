@@ -101,6 +101,7 @@ namespace Player {
         }
 
         protected void EnterAlbumView() {
+            gameObject.SetActive(true);
             StartCoroutine(EnterAlbumViewCoroutine(0.2f));
         }
 

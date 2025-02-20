@@ -6,6 +6,7 @@ using UnityEngine.Serialization;
 
 namespace Player {
     public class Treat : Item {
+        public GameObject treatPrefab;
         public float treat_distance; // Distance at which we should be able to give a treat
 
         // Camera mainCamera;
@@ -14,6 +15,8 @@ namespace Player {
 
         public override void TakeOut() {
             base.TakeOut();
+            
+            FixItemOnHook();
             
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _giveTreatAction;
@@ -28,6 +31,7 @@ namespace Player {
 
         public bool GiveTreat() {
             RaycastHit hit;
+            
             // Send out a ray in the direction the camera is facing
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
             if (Physics.Raycast(ray, out hit, treat_distance)) {   
