@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Player;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,8 @@ namespace Cat {
         public string catPreferredSnack;
         public string catHabitat;
         public float walkProportion = 0.7f;
+
+        public List<GameObject> castPoints;
         
         /* The pointer around which cat moves */
         public GameObject livingArea;

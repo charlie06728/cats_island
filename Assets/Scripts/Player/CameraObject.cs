@@ -156,30 +156,46 @@ namespace Player {
             /* Find the cats with view */
             List<Cat.Cat> catsInView = new List<Cat.Cat>();
             
-            // Calculate camera frustum
-            Camera camera = Camera.main;
-            Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes(camera);
-            
-            /* Get all cat game objects */
-            List<GameObject> cats = new List<GameObject>();
-            foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
-
-            /* Iterate through the cats and see if within the frustum */
-            foreach (GameObject obj in cats) {
-                if (((1 << obj.layer) & catLayerMask) == 0) continue;
-                
-                // Get all renderers in this object and its children
-                Renderer[] childRenderers = obj.GetComponentsInChildren<Renderer>();
-
-                foreach (Renderer renderer in childRenderers) {
-                    if (GeometryUtility.TestPlanesAABB(frustumPlanes, renderer.bounds))
-                    {
-                        Debug.Log($"{renderer.gameObject.name} is visible.");
-                        catsInView.Add(obj.gameObject.GetComponent<Cat.Cat>());
+            foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
+                /* Raycast from main camera to cat, can be blocked */
+                RaycastHit hit;
+                /* layer mask for Cat, Terrain, and Env */
+                int layerMask = LayerMask.GetMask("Terrain", "Env");
+                foreach (GameObject obj in cat.castPoints) {
+                    if (!Physics.Raycast(Camera.main.transform.position,
+                            obj.transform.position - Camera.main.transform.position, out hit,
+                            Mathf.Infinity, layerMask)) {
+                        /* No terrain or environment blocking the ray cast */
+                        catsInView.Add(cat);
                         break;
                     }
                 }
             }
+            
+            // // Calculate camera frustum
+            // Camera camera = Camera.main;
+            // Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes(camera);
+            //
+            // /* Get all cat game objects */
+            // List<GameObject> cats = new List<GameObject>();
+            // foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
+            //
+            // /* Iterate through the cats and see if within the frustum */
+            // foreach (GameObject obj in cats) {
+            //     if (((1 << obj.layer) & catLayerMask) == 0) continue;
+            //     
+            //     // Get all renderers in this object and its children
+            //     Renderer[] childRenderers = obj.GetComponentsInChildren<Renderer>();
+            //
+            //     foreach (Renderer renderer in childRenderers) {
+            //         if (GeometryUtility.TestPlanesAABB(frustumPlanes, renderer.bounds))
+            //         {
+            //             Debug.Log($"{renderer.gameObject.name} is visible.");
+            //             catsInView.Add(obj.gameObject.GetComponent<Cat.Cat>());
+            //             break;
+            //         }
+            //     }
+            // }
             
             /* Set the cats in view */
             CurrentPhoto.Cats.AddRange(catsInView);

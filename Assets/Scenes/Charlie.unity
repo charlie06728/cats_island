@@ -2712,6 +2712,7 @@ MonoBehaviour:
   catPreferredSnack: 
   catHabitat: 
   walkProportion: 0.7
+  castPoints: []
   livingArea: {fileID: 0}
   catName: 
   catBreed: 
@@ -3736,7 +3737,7 @@ GameObject:
   - component: {fileID: 2134049792}
   - component: {fileID: 2134049796}
   - component: {fileID: 2134049797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
