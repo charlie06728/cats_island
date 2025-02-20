@@ -55,6 +55,8 @@ namespace Server {
             InputActionMap.Enable();
             
             cameraMode.gameObject.SetActive(false);
+            
+            Cursor.visible = false;
         }
 
         protected void Update() {

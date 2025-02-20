@@ -159,15 +159,12 @@ namespace Player {
             foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
                 /* Raycast from main camera to cat, can be blocked */
                 RaycastHit hit;
-                /* layer mask for Cat, Terrain, and Env */
-                int layerMask = LayerMask.GetMask("Terrain", "Env");
-                foreach (GameObject obj in cat.castPoints) {
-                    if (!Physics.Raycast(Camera.main.transform.position,
-                            obj.transform.position - Camera.main.transform.position, out hit,
-                            Mathf.Infinity, layerMask)) {
-                        /* No terrain or environment blocking the ray cast */
+                // catLayerMask = LayerMask.GetMask("Cat");
+                Vector3 direction = cat.transform.position - Camera.main.transform.position;
+                float distance = direction.magnitude; // Limit ray to cat's distance
+                if (Physics.Raycast(Camera.main.transform.position, direction, out hit, distance)) {
+                    if ((1 << hit.transform.gameObject.layer & this.catLayerMask) != 0) {
                         catsInView.Add(cat);
-                        break;
                     }
                 }
             }
