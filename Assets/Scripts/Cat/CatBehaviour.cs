@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Cat.Behaviours;
+using Player;
 using UnityEngine;
 
 namespace Cat {
@@ -8,13 +9,15 @@ namespace Cat {
     public enum CatState {
         Idle,
         Treat,
-        Pose
+        Pose,
+        FollowTreat,
     }
     
     public class CatBehaviour : MonoBehaviour {
         public Animator Animator;
         public Cat Cat;
         [NonSerialized] public CatState State = CatState.Idle;
+        [NonSerialized] public TreatInstance TargetTreat;
         
         /* Audios */
         public AudioSource meowAudio;
@@ -36,6 +39,7 @@ namespace Cat {
             //TODO: change to other behaviours
             StateToBehaviour[CatState.Treat] = new CatIdleBehaviour(Cat);
             StateToBehaviour[CatState.Pose] = new CatPoseBehaviour(Cat);
+            StateToBehaviour[CatState.FollowTreat] = new CatFollowTreatBehaviour(Cat);
             
             SwitchState(CatState.Idle);
         }

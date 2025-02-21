@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
+using UIs;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace Server {
     public class Server : MonoBehaviour {
@@ -24,6 +27,23 @@ namespace Server {
         /* Singleton pattern */
         public static Server Instance { get; private set; }
         
+        /* UI */
+        public Canvas canvas;
+        public Scrollbar zoomScroll;
+        public GameObject cameraMode;
+        
+        /* Cats */
+        [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
+        [NonSerialized] public Dictionary<string, Cat.Cat> CatDictionary = new Dictionary<string, Cat.Cat>();
+        
+        /* Film */
+        [NonSerialized] public int FilmCount = 18;
+        [NonSerialized] public int FilmUsed = 0;
+        public FilmUsage filmUsage;
+        
+        /* Star Count */
+        [NonSerialized] public int StarCount = 0;
+        
         protected void Awake() {
             if (Instance == null) {
                 Instance = this;
@@ -33,6 +53,10 @@ namespace Server {
             
             /* Enable inputAction */
             InputActionMap.Enable();
+            
+            cameraMode.gameObject.SetActive(false);
+            
+            Cursor.visible = false;
         }
 
         protected void Update() {

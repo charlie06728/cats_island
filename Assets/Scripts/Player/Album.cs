@@ -1,67 +1,189 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace Player {
     public class Album : Item {
+        public List<AlbumSlot> albumSlots;
         public List<Photo> Photos = new List<Photo>();
+        public List<RawImage> rawImages;
+        public Vector3 albumScale = new Vector3(0.5f, 0.5f, 0.5f);
         
-        /* four slots for photos */
-        public GameObject Slot1;
-        public GameObject Slot2;
-        public GameObject Slot3;
-        public GameObject Slot4;
-        protected GameObject[] Slots;
+        /* Album view related */
+        private Action<InputAction.CallbackContext> _albumViewAction;
+        private Action<InputAction.CallbackContext> _exitAlbumViewAction;
+        private Action<InputAction.CallbackContext> _nextPage;
+        private Action<InputAction.CallbackContext> _prevPage;
+        
+        /* record alum local positions */
+        private Vector3 _albumLocalPositionToItemHook;
+        private Quaternion _albumLocalRotationToItemHook;
+
+        public GameObject nextPrompt;
+        public GameObject prevPrompt;
+
+        [NonSerialized] public int CurrentStartIndex = 0;
         
         public override void TakeOut() {
             base.TakeOut();
             
-            int currentSlot = 0;
-            foreach (var photo in Photos) {
-                if (currentSlot >= Slots.Length) break;
-                Slots[currentSlot].SetActive(true);
-                photo.gameObject.SetActive(true);
-                photo.transform.SetParent(Slots[currentSlot].transform);
-                photo.transform.rotation = Slots[currentSlot].transform.rotation;
-                
-                /* Make photo fits within the plane */
-                photo.transform.localScale = new Vector3(1f, 1f, 1f);
-                photo.transform.localPosition = new Vector3(0f, 0f, 0f);
-                
-                /* Set parent and rotate 180 degrees */
-                photo.transform.SetParent(Slots[currentSlot].transform.parent);
-                photo.transform.Rotate(0f, 180f, 0f);
-                /* Disable the slot */
-                Slots[currentSlot].SetActive(false);
-                
-                currentSlot++;
+            RenderImages();
+            
+            // int currentSlot = 0;
+            // foreach (var photo in Photos) {
+            //     if (currentSlot >= rawImages.Count) break;
+            //     rawImages[currentSlot].texture = photo.PhotoTexture;
+            //     currentSlot++;
+            // }
+            
+            /* Define the album view behaviour */
+            Server.Server.Instance.InputActionMap["LeftMouse"].performed += _albumViewAction;
+            Server.Server.Instance.InputActionMap["RightMouse"].performed += _exitAlbumViewAction;
+            Server.Server.Instance.InputActionMap["Next"].canceled += _nextPage;
+            Server.Server.Instance.InputActionMap["Prev"].canceled += _prevPage;
+            
+            /* Record local position */
+            _albumLocalPositionToItemHook = transform.localPosition;
+            _albumLocalRotationToItemHook = transform.localRotation;
+            
+            transform.localScale = albumScale;
+            
+            /* Enter album view immediately */
+            EnterAlbumView();
+        }
+
+        protected void RenderImages() {
+            HideAll();
+            
+            int endIndex = CurrentStartIndex + albumSlots.Count;
+            if (endIndex > Photos.Count) {
+                endIndex = Photos.Count;
+            }
+
+            for (int i = CurrentStartIndex; i < endIndex; i++) {
+                int slotIndex = i % albumSlots.Count;
+                albumSlots[slotIndex].Show();
+                albumSlots[slotIndex].SetPhoto(Photos[i]);
+            }
+            
+            /* Check if the prompts needs to be displayed or hidden */
+            if (CurrentStartIndex - albumSlots.Count < 0) {
+                prevPrompt.SetActive(false);
+            } else {
+                prevPrompt.SetActive(true);
+            }
+            
+            if (CurrentStartIndex + albumSlots.Count >= Photos.Count) {
+                nextPrompt.SetActive(false);
+            } else {
+                nextPrompt.SetActive(true);
             }
         }
         
         public override void PutBack() {
             base.PutBack();
             
-            /* Hide all the photos */
-            foreach (var photo in Photos) {
-                photo.gameObject.SetActive(false);
+            foreach (var slot in albumSlots) {
+                slot.Hide();
             }
             
-            /* Enable all the slots */
-            foreach (var slot in Slots) {
-                slot.SetActive(true);
-                slot.transform.rotation = transform.rotation;
+            transform.SetParent(PlayerPocket.Player.ItemHook.transform);
+            
+            // /* Hide all the photos */
+            // foreach (var photo in Photos) {
+            //     photo.gameObject.SetActive(false);
+            // }
+            Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _albumViewAction;
+            Server.Server.Instance.InputActionMap["RightMouse"].performed -= _exitAlbumViewAction;
+        }
+
+        protected void EnterAlbumView() {
+            gameObject.SetActive(true);
+            StartCoroutine(EnterAlbumViewCoroutine(0.2f));
+        }
+
+        protected IEnumerator EnterAlbumViewCoroutine(float moveTime = 0.2f) {
+            /* Set parent to eye view */
+            transform.SetParent(PlayerPocket.Player.EyeView.transform);
+
+            transform.localScale = albumScale;
+
+            Vector3 destinationLocalPosition = PlayerPocket.albumVirtualPosition.transform.localPosition;
+            Vector3 positionDelta = destinationLocalPosition - transform.localPosition;
+            Quaternion destinationLocalRotation = PlayerPocket.albumVirtualPosition.transform.localRotation;
+            
+            float elapsedTime = 0;
+            while (elapsedTime <= moveTime) {
+                transform.localPosition += positionDelta * Time.deltaTime / moveTime;
+                transform.localRotation = Quaternion.Slerp(transform.localRotation, destinationLocalRotation, elapsedTime / moveTime);
+                elapsedTime += Time.deltaTime;
+                yield return null;
             }
+        }
+
+        protected void ExitAlbumView() {
+            StartCoroutine(ExitAlbumViewCoroutine(0.2f));
+        }
+
+        protected IEnumerator ExitAlbumViewCoroutine(float moveTime = 0.2f) {
+            transform.SetParent(PlayerPocket.Player.ItemHook.transform);
+            
+            transform.localScale = albumScale;
+            
+            /* Need to smoothly move the album to player hand hook */
+            Vector3 positionDelta = _albumLocalPositionToItemHook - transform.localPosition;
+            
+            /* Calculate the rotation delta */ 
+            Quaternion startRotation = transform.localRotation;
+            Quaternion rotationDelta = _albumLocalRotationToItemHook * Quaternion.Inverse(startRotation);
+            Quaternion destinationLocalRotation = rotationDelta * transform.localRotation;
+            
+            /* In move time, move the album to destination */
+            float elapsedTime = 0;
+            while (elapsedTime <= moveTime) {
+                transform.localPosition += positionDelta * Time.deltaTime / moveTime;
+                transform.localRotation = Quaternion.Slerp(startRotation, destinationLocalRotation, elapsedTime / moveTime);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+
+            // transform.localPosition = _albumLocalPositionToItemHook;
+            // transform.localRotation = _albumLocalRotationToItemHook;
+        }
+        
+        protected void HideAll() {
+            foreach (var slot in albumSlots) {
+                slot.Hide();
+            }
+        }
+
+        protected void PreviousPage() {
+            int jumpInterval = albumSlots.Count;
+            CurrentStartIndex -= jumpInterval;
+            if (CurrentStartIndex < 0) {
+                CurrentStartIndex = 0;
+            }
+            
+            RenderImages();
+        }
+        
+        protected void NextPage() {
+            int jumpInterval = albumSlots.Count;
+            if (CurrentStartIndex + jumpInterval >= Photos.Count) return;
+            CurrentStartIndex += jumpInterval;
+            RenderImages();
         }
 
         protected override void Awake() {
             base.Awake();
-            Slots = new[] {Slot1, Slot2, Slot3, Slot4};
             
+            _albumViewAction = context => { EnterAlbumView(); };
+            _exitAlbumViewAction = context => { ExitAlbumView(); };
+            _prevPage = context => { PreviousPage(); };
+            _nextPage = context => { NextPage(); };
         }
     }
-
-    // public class PhotoSlot : MonoBehaviour {
-    //     
-    //     
-    // }
 }
