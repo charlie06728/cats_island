@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Player {
@@ -26,6 +27,10 @@ namespace Player {
         public GameObject nextPrompt;
 
         [NonSerialized] public int CurrentStartIndex = 0;
+        private Action<InputAction.CallbackContext> _nextPage;
+        private Action<InputAction.CallbackContext> _prevPage;
+
+        private List<Cat.Cat> _allCats;
         
         // [NonSerialized] public Photo Photo1;
         // [NonSerialized] public Photo Photo2;
@@ -44,6 +49,10 @@ namespace Player {
             
             HideAll();
             DisplayPhotos();
+            
+            /* Define the switch page behaviour */
+            Server.Server.Instance.InputActionMap["Next"].performed += _nextPage;
+            Server.Server.Instance.InputActionMap["Prev"].performed += _prevPage;
         }
         
         public override void PutBack() {
@@ -53,9 +62,28 @@ namespace Player {
             gameObject.SetActive(false);
         }
 
+        protected override void Awake() {
+            base.Awake();
+            
+            _allCats = Server.Server.Instance.CatDictionary.Values.ToList();
+
+            _nextPage = ctx => {
+                if (CurrentStartIndex + 2 < _allCats.Count) {
+                    CurrentStartIndex += 2;
+                    DisplayPhotos();
+                }
+            };
+            _prevPage = ctx => {
+                if (CurrentStartIndex - 2 >= 0) {
+                    CurrentStartIndex -= 2;
+                    DisplayPhotos();
+                }
+            };
+        }
+
         protected void DisplayPhotos() {
-            List<Cat.Cat> cats = Server.Server.Instance.CatDictionary.Values.ToList();
-            // cats.Sort();
+            HideAll();
+            List<Cat.Cat> cats = _allCats;
             
             for (int i = 0; i < 2; i++) {
                 if (CurrentStartIndex + i >= cats.Count) break;
