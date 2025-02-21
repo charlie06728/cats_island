@@ -7763,6 +7763,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6028084414873799497, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.587
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028084414873799497, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028084414873799497, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.023
+      objectReference: {fileID: 0}
     - target: {fileID: 6752396979572187379, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: footStepSound
       value: 
