@@ -21,7 +21,7 @@ namespace Cat {
         
         /* Audios */
         public AudioSource meowAudio;
-        protected float meowCooldown = 3;
+        protected float meowCooldown = 10f;
         
         /* Behaviours script */
         public Dictionary<CatState, Behaviour> StateToBehaviour = new Dictionary<CatState, Behaviour>();
@@ -54,7 +54,7 @@ namespace Cat {
             if (meowCooldown <= 0) {
                 meowAudio.Play();
                 /* Generate random number for cooldown between 2 and 8 */
-                meowCooldown = UnityEngine.Random.Range(5, 9);
+                meowCooldown = UnityEngine.Random.Range(15, 25);
             }
         }
     }
