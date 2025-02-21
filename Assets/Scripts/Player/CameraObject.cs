@@ -1,12 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Plane = UnityEngine.Plane;
+using Quaternion = UnityEngine.Quaternion;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Player {
     /* The camera objet */
@@ -78,6 +83,7 @@ namespace Player {
             // photoCamera.fieldOfView = Camera.main.fieldOfView;
             if (_isCameraMode) {
                 zoomScroll.value += Input.GetAxis("Mouse ScrollWheel") * zoom_speed; // I
+                
                 // Clamp scroll value
                 if (zoomScroll.value > 1) {
                     zoomScroll.value = 1;

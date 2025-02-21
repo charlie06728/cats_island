@@ -53,6 +53,8 @@ namespace Player {
             Server.Server.Instance.InputActionMap["A"].canceled += context => { _keyDown["A"] = false; };
             Server.Server.Instance.InputActionMap["D"].performed += context => { _keyDown["D"] = true; };
             Server.Server.Instance.InputActionMap["D"].canceled += context => { _keyDown["D"] = false; };
+            Server.Server.Instance.InputActionMap["GamePadLeft"].performed += context => { _keyDown["GamePadLeft"] = true; };
+            Server.Server.Instance.InputActionMap["GamePadLeft"].canceled += context => { _keyDown["GamePadLeft"] = false; };
             Server.Server.Instance.InputActionMap["Space"].performed += context => {
                 /* Check if body is very close to the terrain */
                 if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
@@ -65,6 +67,8 @@ namespace Player {
         }
 
         private void Update() {
+            if (_keyDown.ContainsKey("GamePadLeft") && _keyDown["GamePadLeft"]) MoveByGamePad();
+            
             Rigidbody.angularVelocity = new Vector3();
             bool keyDown = false;
             foreach (string k in _keyDown.Keys) {
@@ -169,6 +173,17 @@ namespace Player {
             
             /* Reset the velocity except vertical */
             // _velocity = new Vector3(0, _velocity.y, 0);
+        }
+
+        protected void MoveByGamePad() {
+            Vector2 gamePad = Server.Server.Instance.InputActionMap["GamePadLeft"].ReadValue<Vector2>();
+            if (gamePad.x != 0) {
+                Debug.Log("Gamepad x: " + gamePad.x);;
+            }
+            
+            /* Move the player by gamePad */
+            Vector3 move = new Vector3() + gamePad.x * transform.right + gamePad.y * transform.forward;
+            transform.position += move * Time.deltaTime * Server.Server.Instance.MoveSpeed / 3;
         }
         
         protected bool IsOnSlope()
