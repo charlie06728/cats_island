@@ -29,6 +29,7 @@ namespace Player {
         
         public override void TakeOut() {
             base.TakeOut();
+            if (!gameObject.activeInHierarchy) return;
             
             RenderImages();
             
@@ -40,8 +41,8 @@ namespace Player {
             // }
             
             /* Define the album view behaviour */
-            Server.Server.Instance.InputActionMap["LeftMouse"].performed += _albumViewAction;
-            Server.Server.Instance.InputActionMap["RightMouse"].performed += _exitAlbumViewAction;
+            // Server.Server.Instance.InputActionMap["LeftMouse"].performed += _albumViewAction;
+            // Server.Server.Instance.InputActionMap["RightMouse"].performed += _exitAlbumViewAction;
             Server.Server.Instance.InputActionMap["Next"].canceled += _nextPage;
             Server.Server.Instance.InputActionMap["Prev"].canceled += _prevPage;
             
@@ -50,6 +51,8 @@ namespace Player {
             _albumLocalRotationToItemHook = transform.localRotation;
             
             transform.localScale = albumScale;
+            
+            FixItemOnHook();
             
             /* Enter album view immediately */
             EnterAlbumView();
@@ -96,8 +99,9 @@ namespace Player {
             // foreach (var photo in Photos) {
             //     photo.gameObject.SetActive(false);
             // }
-            Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _albumViewAction;
-            Server.Server.Instance.InputActionMap["RightMouse"].performed -= _exitAlbumViewAction;
+            
+            // Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _albumViewAction;
+            // Server.Server.Instance.InputActionMap["RightMouse"].performed -= _exitAlbumViewAction;
         }
 
         protected void EnterAlbumView() {
