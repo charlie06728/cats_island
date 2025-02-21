@@ -44,7 +44,6 @@ namespace Cat {
             SwitchState(CatState.Idle);
         }
 
-
         protected void Update() {
             if (!StateToBehaviour[State].Enabled) return;
             StateToBehaviour[State].Update();
@@ -54,7 +53,7 @@ namespace Cat {
             if (meowCooldown <= 0) {
                 meowAudio.Play();
                 /* Generate random number for cooldown between 2 and 8 */
-                meowCooldown = UnityEngine.Random.Range(15, 25);
+                meowCooldown = UnityEngine.Random.Range(25, 60);
             }
         }
     }
