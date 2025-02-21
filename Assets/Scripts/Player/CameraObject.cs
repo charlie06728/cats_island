@@ -1,12 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Plane = UnityEngine.Plane;
+using Quaternion = UnityEngine.Quaternion;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Player {
     /* The camera objet */
@@ -78,6 +83,7 @@ namespace Player {
             // photoCamera.fieldOfView = Camera.main.fieldOfView;
             if (_isCameraMode) {
                 zoomScroll.value += Input.GetAxis("Mouse ScrollWheel") * zoom_speed; // I
+                
                 // Clamp scroll value
                 if (zoomScroll.value > 1) {
                     zoomScroll.value = 1;
@@ -232,7 +238,7 @@ namespace Player {
                         if (casthit > 0) {
                             // catsInView.Add(cat);
                             finalCat = cat;
-                            CurrentPhoto.Stars += casthit;
+                            // CurrentPhoto.Stars += casthit;
                             Debug.Log($"Cat star: {casthit}");
                         }
                         
@@ -247,8 +253,9 @@ namespace Player {
             
             /* Set the cats in view */
             CurrentPhoto.Cats.AddRange(catsInView);
+            CurrentPhoto.Stars = 0;
             CurrentPhoto.Stars += CalculateStar(CurrentPhoto);
-            if (CurrentPhoto.Stars > 5) CurrentPhoto.Stars = 5;
+            if (CurrentPhoto.Stars > 1) CurrentPhoto.Stars = 1;
             Server.Server.Instance.StarCount += CurrentPhoto.Stars;
             
             yield return new WaitForEndOfFrame(); // Ensures rendering is completed
@@ -330,7 +337,7 @@ namespace Player {
 
         protected int CalculateStar(Photo photo) {
             int star = 0;
-            star += photo.Cats.Count;
+            // star += photo.Cats.Count;
 
             foreach (Cat.Cat cat in photo.Cats) {
                 if (cat.Behaviour.Animator.GetBool("IsWondering")) {
