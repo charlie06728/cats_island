@@ -3570,18 +3570,18 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+    - m_Name: GamePadLeft
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 2790f2d5-f5e6-4e7c-8b92-5fd202cef2a3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
     m_Bindings:
     - m_Name: 
       m_Id: 9a0f700e-7c9a-460e-88bf-4b36300c7dc9
       m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: A
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 15f18dbd-5a8a-457a-981b-74c6f8d7e3b3
-      m_Path: <Gamepad>/leftStick/left
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3596,14 +3596,6 @@ MonoBehaviour:
       m_Action: W
       m_Flags: 0
     - m_Name: 
-      m_Id: c7c2f776-15c5-4868-a574-31210412f37c
-      m_Path: <Gamepad>/leftStick/up
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: W
-      m_Flags: 0
-    - m_Name: 
       m_Id: 6e8ba361-ab66-4ffc-9320-5c3a7642904a
       m_Path: <Keyboard>/s
       m_Interactions: 
@@ -3612,24 +3604,8 @@ MonoBehaviour:
       m_Action: S
       m_Flags: 0
     - m_Name: 
-      m_Id: f8d44f76-da24-40fd-9224-52f29b788f4b
-      m_Path: <Gamepad>/leftStick/down
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: S
-      m_Flags: 0
-    - m_Name: 
       m_Id: 396d1177-ffe3-465d-8146-a0afeb582d71
       m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: D
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 4d3ae9d7-cb87-42a1-94f8-04ac881a13d0
-      m_Path: <Gamepad>/leftStick/right
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3676,6 +3652,14 @@ MonoBehaviour:
       m_Action: 1
       m_Flags: 0
     - m_Name: 
+      m_Id: 7b4f6eaf-7716-45b1-a87f-4cafcaefa063
+      m_Path: <Gamepad>/dpad/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 1
+      m_Flags: 0
+    - m_Name: 
       m_Id: fb588732-8a3e-40f3-9680-fc7c4e865637
       m_Path: <Keyboard>/2
       m_Interactions: 
@@ -3684,8 +3668,24 @@ MonoBehaviour:
       m_Action: 2
       m_Flags: 0
     - m_Name: 
+      m_Id: 4768bd62-6557-456e-95fe-a671b3232576
+      m_Path: <Gamepad>/dpad/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 2
+      m_Flags: 0
+    - m_Name: 
       m_Id: 9c03c1a4-ae74-43d1-b526-765fb201c82f
       m_Path: <Keyboard>/3
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 3
+      m_Flags: 0
+    - m_Name: 
+      m_Id: f752b219-0232-438c-8a67-df1a277b4b5f
+      m_Path: <Gamepad>/dpad/up
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -3732,6 +3732,14 @@ MonoBehaviour:
       m_Action: 4
       m_Flags: 0
     - m_Name: 
+      m_Id: 4326d25e-2d45-47aa-b1df-d0988e2233d7
+      m_Path: <Gamepad>/dpad/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 4
+      m_Flags: 0
+    - m_Name: 
       m_Id: c7717fc6-2528-4a03-b76f-54e135f5cd26
       m_Path: <Keyboard>/5
       m_Interactions: 
@@ -3748,12 +3756,36 @@ MonoBehaviour:
       m_Action: Next
       m_Flags: 0
     - m_Name: 
+      m_Id: 27543c8a-86bd-4403-ae9c-5b4fe4513dca
+      m_Path: <Gamepad>/rightShoulder
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Next
+      m_Flags: 0
+    - m_Name: 
       m_Id: fa41ddf0-63f0-4b0c-a8c3-ea78f5ab847c
       m_Path: <Keyboard>/q
       m_Interactions: 
       m_Processors: 
       m_Groups: 
       m_Action: Prev
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 5f626910-6420-4899-9472-ba718cf95964
+      m_Path: <Gamepad>/leftShoulder
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Prev
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 1694e003-b1ee-4dc6-8844-c9b438f9169a
+      m_Path: <Gamepad>/leftStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: GamePadLeft
       m_Flags: 0
   canvas: {fileID: 1695870417}
   zoomScroll: {fileID: 273747734}

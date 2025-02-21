@@ -183,7 +183,7 @@ namespace Player {
             
             /* Move the player by gamePad */
             Vector3 move = new Vector3() + gamePad.x * transform.right + gamePad.y * transform.forward;
-            transform.position += move * Time.deltaTime * Server.Server.Instance.MoveSpeed / 3;
+            transform.position += move * Time.deltaTime * Server.Server.Instance.MoveSpeed;
         }
         
         protected bool IsOnSlope()

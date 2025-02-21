@@ -21,11 +21,13 @@ namespace Cat.Behaviours {
         public override void Enable() {
             base.Enable();
             Cat.Navigator.Agent.isStopped = true;
+            Cat.Behaviour.Animator.SetBool("IsWondering", true);
             prevUpdateTime = Time.time;
         }
 
         public override void Disable() {
             Cat.Navigator.Agent.isStopped = false;
+            Cat.Behaviour.Animator.SetBool("IsWondering", false);
             base.Disable();
         }
     }

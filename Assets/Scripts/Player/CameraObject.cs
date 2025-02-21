@@ -238,7 +238,7 @@ namespace Player {
                         if (casthit > 0) {
                             // catsInView.Add(cat);
                             finalCat = cat;
-                            CurrentPhoto.Stars += casthit;
+                            // CurrentPhoto.Stars += casthit;
                             Debug.Log($"Cat star: {casthit}");
                         }
                         
@@ -253,8 +253,9 @@ namespace Player {
             
             /* Set the cats in view */
             CurrentPhoto.Cats.AddRange(catsInView);
+            CurrentPhoto.Stars = 0;
             CurrentPhoto.Stars += CalculateStar(CurrentPhoto);
-            if (CurrentPhoto.Stars > 5) CurrentPhoto.Stars = 5;
+            if (CurrentPhoto.Stars > 1) CurrentPhoto.Stars = 1;
             Server.Server.Instance.StarCount += CurrentPhoto.Stars;
             
             yield return new WaitForEndOfFrame(); // Ensures rendering is completed
@@ -336,7 +337,7 @@ namespace Player {
 
         protected int CalculateStar(Photo photo) {
             int star = 0;
-            star += photo.Cats.Count;
+            // star += photo.Cats.Count;
 
             foreach (Cat.Cat cat in photo.Cats) {
                 if (cat.Behaviour.Animator.GetBool("IsWondering")) {
