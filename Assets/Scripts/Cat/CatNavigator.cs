@@ -36,7 +36,7 @@ namespace Cat {
             
             /* Move agent to given location */
             Agent.SetDestination(position);
-            Debug.Log("Moving to " + position);
+            // Debug.Log("Moving to " + position);
             
             /* Trigger cat animation */
             Cat.Behaviour.Animator.SetBool("IsWalking", true);
