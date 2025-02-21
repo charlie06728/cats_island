@@ -40,6 +40,14 @@ namespace Cat {
             /* Register to server */
             Server.Server.Instance.Cats.Add(this);
             Server.Server.Instance.CatDictionary[catBreed] = this;
+            
+            /* If living area is null, create a empty object at current location, set parent to null and use it
+               as living area */
+            if (livingArea == null) {
+                livingArea = new GameObject("Living Area");
+                livingArea.transform.position = transform.position;
+                livingArea.transform.SetParent(null);
+            }
         }
     }
 }

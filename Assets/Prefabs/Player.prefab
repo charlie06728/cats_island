@@ -458,6 +458,7 @@ MonoBehaviour:
   cameraPrefab: {fileID: 6055135116152946376, guid: 771f43b9f7bfb19499db0058436b7454, type: 3}
   cameraVirtualPosition: {fileID: 0}
   treatPrefab: {fileID: 7874631266701535451, guid: b3fefe5dfb13642dcbfa29cba4097c92, type: 3}
+  brochure: {fileID: 0}
 --- !u!114 &2479285886131196786
 MonoBehaviour:
   m_ObjectHideFlags: 0

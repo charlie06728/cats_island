@@ -55,7 +55,7 @@ namespace Player {
 
         protected void DisplayPhotos() {
             List<Cat.Cat> cats = Server.Server.Instance.CatDictionary.Values.ToList();
-            cats.Sort();
+            // cats.Sort();
             
             for (int i = 0; i < 2; i++) {
                 if (CurrentStartIndex + i >= cats.Count) break;
