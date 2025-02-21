@@ -8,11 +8,13 @@ using Vector3 = UnityEngine.Vector3;
 namespace Player {
     /* Define player movement, player should be able to move abound and jump */
     public class PlayerMovement : MonoBehaviour {
+        /* foots step sound */
+        public AudioSource footStepSound;
+        
         /* Player camera */
         [NonSerialized] public UnityEngine.Camera PlayerCamera;
         public Rigidbody Rigidbody;
         public GameObject Head;
-        
         
         /* camera rotation related */
         private Vector2 _look;
@@ -77,6 +79,12 @@ namespace Player {
                     Rigidbody.isKinematic = false;
                     break;
                 }
+            }
+
+            if (keyDown) {
+                if (!footStepSound.isPlaying) footStepSound.Play();
+            } else {
+                footStepSound.Stop();
             }
             
             /* Make sure the body is not tilted */
@@ -179,6 +187,12 @@ namespace Player {
             Vector2 gamePad = Server.Server.Instance.InputActionMap["GamePadLeft"].ReadValue<Vector2>();
             if (gamePad.x != 0) {
                 Debug.Log("Gamepad x: " + gamePad.x);;
+            }
+
+            if (gamePad.x != 0 || gamePad.y != 0) {
+                if (!footStepSound.isPlaying) footStepSound.Play();
+            } else {
+                footStepSound.Stop();
             }
             
             /* Move the player by gamePad */

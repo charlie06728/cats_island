@@ -21,7 +21,7 @@ namespace Cat {
         
         /* Audios */
         public AudioSource meowAudio;
-        protected float meowCooldown = 10f;
+        protected float meowCooldown = 15f;
         
         /* Behaviours script */
         public Dictionary<CatState, Behaviour> StateToBehaviour = new Dictionary<CatState, Behaviour>();
