@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -12,6 +13,13 @@ namespace Player {
         [NonSerialized] public UnityEngine.Camera PlayerCamera;
         public Rigidbody Rigidbody;
         public GameObject Head;
+
+        /* Sprinting and crouching */
+        public float sprintMultiplier = 2f; // How much faster should sprinting make you?
+        public float crouchMultiplier = 0.5f; // How much slower should sprinting make you?
+        public float crouchDist = 1f; // How far down should we crouch?
+        bool isSprinting;
+        bool isCrouching;
         
         
         /* camera rotation related */
@@ -23,8 +31,33 @@ namespace Player {
         private Vector3 MoveDirection = new Vector3();
         private Dictionary<string, bool> _keyDown = new Dictionary<string, bool>();
 
+
+        /* Recieves messages from the PlayerInput component on the player when the player presses/releases shift/ctrl */
+        public void OnSprint(InputValue val){
+            if(val.isPressed){
+                // Debug.Log("now sprinting!");
+                isSprinting = true;
+            } else {
+                // Debug.Log("no longer sprinting!");
+                isSprinting = false;
+            }
+        }
+
+        public void OnCrouch(InputValue val){
+            if(val.isPressed){
+                // Debug.Log("now crouching!");
+                Head.transform.position -= new Vector3(0, crouchDist, 0);
+                isCrouching = true;
+            } else {
+                // Debug.Log("no longer crouching!");
+                Head.transform.position += new Vector3(0, crouchDist, 0);
+                isCrouching = false;
+            }
+        }
+
         public void Awake() {
             /* Make head in the same direction as camera */
+
             PlayerCamera = UnityEngine.Camera.main;
             PlayerCamera.transform.parent = Head.transform;
             
@@ -93,7 +126,16 @@ namespace Player {
                         break;
                 }
             }
-            transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+
+            Vector3 MoveValue = MoveDirection * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+
+            if (isSprinting) {
+                MoveValue *= sprintMultiplier;
+            } else if (isCrouching) { // Holding sprint overrides the effects of holding crouch
+                MoveValue *= crouchMultiplier;
+            }
+
+            transform.position += MoveValue;
         }
     }
 }
