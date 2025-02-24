@@ -3681,6 +3681,22 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+    - m_Name: ZoomIn
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 880f6a5f-bf8d-40ad-bbb8-8b6061145574
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: ZoomOut
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 05247505-f4f3-4e46-b115-a61c75218450
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
     m_Bindings:
     - m_Name: 
       m_Id: 9a0f700e-7c9a-460e-88bf-4b36300c7dc9
@@ -3889,6 +3905,22 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: GamePadLeft
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 177f515b-1abb-4a1b-8452-e8b76158097b
+      m_Path: <Gamepad>/leftShoulder
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: ZoomIn
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 66f6ec3c-99dd-4138-ad72-622736d71718
+      m_Path: <Gamepad>/rightShoulder
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: ZoomOut
       m_Flags: 0
   canvas: {fileID: 1695870417}
   zoomScroll: {fileID: 273747734}
