@@ -3540,7 +3540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameSpeed: 1
-  MouseSensitivity: 200
+  MouseSensitivity: 5
+  ControllerSensitivity: 200
   MoveSpeed: 10
   JumpForce: 10
   CatRandomMoveInterval: 4

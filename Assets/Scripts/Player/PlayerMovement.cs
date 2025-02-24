@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -40,7 +41,12 @@ namespace Player {
             
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
-                _look = context.ReadValue<Vector2>();
+                if (context.control.device is Gamepad) {
+                    _look = context.ReadValue<Vector2>() * Server.Server.Instance.ControllerSensitivity;
+                } else {
+                    _look = context.ReadValue<Vector2>() * Server.Server.Instance.MouseSensitivity;
+                }
+                // _look = context.ReadValue<Vector2>();
             };
             Server.Server.Instance.InputActionMap["MouseMove"].canceled += context => {
                 _look = Vector2.zero;
@@ -107,7 +113,7 @@ namespace Player {
             // }
             
             /* Rotate camera */
-            Vector2 delta = _look * Time.deltaTime * Server.Server.Instance.MouseSensitivity;
+            Vector2 delta = _look * Time.deltaTime;
             Vector2 targetRotation = new Vector2(-delta.y, delta.x);
             
             /* Limit and angles of rotation */

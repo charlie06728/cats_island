@@ -10,6 +10,7 @@ namespace Server {
         /* Game speed, set int editor */
         public float GameSpeed = 1f;
         public float MouseSensitivity = 1f;
+        public float ControllerSensitivity = 1f;
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
         

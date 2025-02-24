@@ -59,7 +59,6 @@ namespace Player {
         }
         
         public override void PutBack() {
-            base.PutBack();
             
 
             if (_isCameraMode) {
@@ -68,6 +67,8 @@ namespace Player {
                 // Camera.main.fieldOfView = 60;
                 ExitCameraMode();
             }
+            
+            base.PutBack();
             
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _takePhotoAction;
