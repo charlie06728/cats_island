@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Cat.Behaviours;
+using Player;
 using UnityEngine;
 
 namespace Cat {
@@ -8,13 +9,19 @@ namespace Cat {
     public enum CatState {
         Idle,
         Treat,
-        Pose
+        Pose,
+        FollowTreat,
     }
     
     public class CatBehaviour : MonoBehaviour {
         public Animator Animator;
         public Cat Cat;
         [NonSerialized] public CatState State = CatState.Idle;
+        [NonSerialized] public TreatInstance TargetTreat;
+        
+        /* Audios */
+        public AudioSource meowAudio;
+        protected float meowCooldown = 15f;
         
         /* Behaviours script */
         public Dictionary<CatState, Behaviour> StateToBehaviour = new Dictionary<CatState, Behaviour>();
@@ -32,14 +39,22 @@ namespace Cat {
             //TODO: change to other behaviours
             StateToBehaviour[CatState.Treat] = new CatTreatBehaviour(Cat);
             StateToBehaviour[CatState.Pose] = new CatPoseBehaviour(Cat);
+            StateToBehaviour[CatState.FollowTreat] = new CatFollowTreatBehaviour(Cat);
             
             SwitchState(CatState.Idle);
         }
 
-
         protected void Update() {
             if (!StateToBehaviour[State].Enabled) return;
             StateToBehaviour[State].Update();
+            
+            /* Meow cooldown */
+            meowCooldown -= Time.deltaTime;
+            if (meowCooldown <= 0) {
+                meowAudio.Play();
+                /* Generate random number for cooldown between 2 and 8 */
+                meowCooldown = UnityEngine.Random.Range(25, 60);
+            }
         }
     }
 }

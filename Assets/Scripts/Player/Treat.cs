@@ -19,6 +19,8 @@ namespace Player {
 
             cats = FindObjectsByType<CatBehaviour>(FindObjectsSortMode.None);
             
+            FixItemOnHook();
+            
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _giveTreatAction;
         }
@@ -47,6 +49,15 @@ namespace Player {
 
 
             RaycastHit hit;
+            
+            /* Instantiate the treat prefab and drop to the ground */
+            GameObject treat = Instantiate(treatPrefab, transform.position, Quaternion.identity);
+            /* Get the rigidbody of spawned */
+            Rigidbody rb = treat.GetComponent<Rigidbody>();
+            
+            /* Add a force to the forward direction of player */
+            rb.AddForce(PlayerPocket.Player.Head.transform.forward * 5, ForceMode.Impulse);
+            
             // Send out a ray in the direction the camera is facing
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
             if (Physics.Raycast(ray, out hit, treat_distance)) {   
@@ -65,8 +76,6 @@ namespace Player {
                     }
                 }
             }
-
-            
         }
 
         protected override void Awake() {

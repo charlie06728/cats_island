@@ -1,49 +1,78 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Numerics;
+using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Plane = UnityEngine.Plane;
+using Quaternion = UnityEngine.Quaternion;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Player {
     /* The camera objet */
     public class CameraObject : Item {
         public Camera photoCamera;
+        public Vector3 cameraScale;
         public GameObject photoPrefab;
+        public AudioSource cameraSoundTakePicture;
+        public LayerMask catLayerMask;
         [NonSerialized] public Photo CurrentPhoto;
         public float zoom_max = 30f; // Max amount of zoom
-        public float zoom_speed = 0.1f; // Speed at which scrolling zooms in/out
-        GameObject canvas;
+        public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
         MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
         MeshRenderer screen_renderer;
-        Scrollbar zoomScroll;
+        public Scrollbar zoomScroll;
         bool is_zoomed = false;
         private RenderTexture _renderTexture;
         private Action<InputAction.CallbackContext> _takePhotoAction;
         private Action<InputAction.CallbackContext> _toggleZoomAction;
+        private Action<InputAction.CallbackContext> _enterCameraModeAction;
+        private Action<InputAction.CallbackContext> _exitCameraModeAction;
+        
+        private bool _isCameraMode = false;
+
+        private Vector3 _cameraLocalPositionToItemHook;
+        private Quaternion _cameraLocalRotationToItemHook;
+        
+        /* child mesh renderers */
+        private MeshRenderer[] meshRenderers;
 
         public override void TakeOut() {
             base.TakeOut();
             
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _takePhotoAction;
-            Server.Server.Instance.InputActionMap["RightMouse"].performed += _toggleZoomAction;
+            Server.Server.Instance.InputActionMap["RightMouse"].performed += _enterCameraModeAction;
+            Server.Server.Instance.InputActionMap["RightMouse"].canceled += _exitCameraModeAction;
+            
+            /* Record local position */
+            _cameraLocalPositionToItemHook = transform.localPosition;
+            _cameraLocalRotationToItemHook = transform.localRotation;
+            
+            SetMeshRendering(true);
         }
         
         public override void PutBack() {
             base.PutBack();
+            
 
-            canvas.SetActive(false);
-
-            if (is_zoomed) {
-                // Reset the field of view, in case the camera is put away while zoomed
-                ToggleZoom();
-                Camera.main.fieldOfView = 60;
+            if (_isCameraMode) {
+                // // Reset the field of view, in case the camera is put away while zoomed
+                // ToggleZoom();
+                // Camera.main.fieldOfView = 60;
+                ExitCameraMode();
             }
             
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _takePhotoAction;
-            Server.Server.Instance.InputActionMap["RightMouse"].performed -= _toggleZoomAction;
+            Server.Server.Instance.InputActionMap["RightMouse"].performed -= _enterCameraModeAction;
+            Server.Server.Instance.InputActionMap["RightMouse"].canceled -= _exitCameraModeAction;
         }
 
         public void Update() {
@@ -52,8 +81,9 @@ namespace Player {
             // Camera.main.fieldOfView = 60 - zoom_amount * isheld;
             // is_zoomed = Input.GetMouseButton(1);
             // photoCamera.fieldOfView = Camera.main.fieldOfView;
-            if (is_zoomed) {
+            if (_isCameraMode) {
                 zoomScroll.value += Input.GetAxis("Mouse ScrollWheel") * zoom_speed; // I
+                
                 // Clamp scroll value
                 if (zoomScroll.value > 1) {
                     zoomScroll.value = 1;
@@ -62,8 +92,6 @@ namespace Player {
                 }
                 Camera.main.fieldOfView = 60 - zoom_max * zoomScroll.value;
                 photoCamera.fieldOfView = 60 - zoom_max * zoomScroll.value;
-            } else {
-                Camera.main.fieldOfView = 60;
             }
         }
 
@@ -71,7 +99,6 @@ namespace Player {
             // Activate the scroll bar and enable zooming
             Debug.Log("Toggle Zoom");
             is_zoomed = !is_zoomed;
-            canvas.SetActive(is_zoomed);
             // hand.SetActive(!is_zoomed);
             hand_renderer.enabled = !is_zoomed;
             camera_renderer.enabled = !is_zoomed;
@@ -79,72 +106,347 @@ namespace Player {
         }
 
         public void TakePhoto() {
+            if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount) return;
+            Server.Server.Instance.FilmUsed++;
+            
+            /* Record the camera position */
+            Vector3 cameraLocalPosition = photoCamera.transform.localPosition;
+            Quaternion cameraLocalRotation = photoCamera.transform.localRotation;
+            
+            /* Set photo camera to have the same rect as main camera if zoomed in */
+            if (_isCameraMode) {
+                photoCamera.transform.position = Camera.main.transform.position;
+                photoCamera.transform.rotation = Camera.main.transform.rotation;
+            }
+            
+            /* Play sound */
+            cameraSoundTakePicture.Play();
+            
             /* Enable the current photo */
-            CurrentPhoto.gameObject.SetActive(true);
+            // CurrentPhoto.gameObject.SetActive(true);
             
             // Render the photo camera
             // photoCamera.CopyFrom(Camera.main);
             photoCamera.fieldOfView = Camera.main.fieldOfView;
             photoCamera.Render();
 
-            // Changed to take pictures via the main camera
-            // Camera.main.Render();
-
             // Copy the RenderTexture to the Texture2D
-            RenderTexture.active = _renderTexture;
-            CurrentPhoto.PhotoTexture.ReadPixels(
-                new Rect(0, 0, Server.Server.Instance.photoHeight, Server.Server.Instance.photoWidth), 0, 0);
-            CurrentPhoto.PhotoTexture.Apply();
-            RenderTexture.active = null;
+            // RenderTexture.active = _renderTexture;
+            // CurrentPhoto.PhotoTexture.ReadPixels(
+            //     new Rect(0, 0, Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight), 0, 0);
+            // CurrentPhoto.PhotoTexture.Apply();
+            // RenderTexture.active = null;
+            StartCoroutine(CapturePhoto());
 
             // Apply the captured texture to the plane-like object
-            if (CurrentPhoto.PhotoRenderer != null) {
-                CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
+            // if (CurrentPhoto.PhotoRenderer != null) {
+            //     CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
+            // }
+            
+            // PlayerPocket.Album.Photos.Add(CurrentPhoto);
+            // CurrentPhoto.gameObject.SetActive(false);
+            //
+            // LoadFilm();
+            
+            /* Set back the photo camera location */
+            if (_isCameraMode) {
+                photoCamera.transform.localPosition = cameraLocalPosition;
+                photoCamera.transform.localRotation = cameraLocalRotation;
             }
-            
-            PlayerPocket.Album.Photos.Add(CurrentPhoto);
-            CurrentPhoto.gameObject.SetActive(false);
-            
-            LoadFilm();
 
             Debug.Log("Photo captured and displayed!");
         }
         
+        IEnumerator CapturePhoto()
+        {
+            CurrentPhoto.Stars = 0;
+            
+            /* Find the cats with view */
+            List<Cat.Cat> catsInView = new List<Cat.Cat>();
+            
+            // foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
+            //
+            //     bool isCatInView = false;
+            //     int casthit = 0;
+            //     foreach (GameObject obj in cat.castPoints) {
+            //         /* Raycast from main camera to cat, can be blocked */
+            //         RaycastHit hit;
+            //         // catLayerMask = LayerMask.GetMask("Cat");
+            //         Vector3 direction = obj.transform.position - Camera.main.transform.position;
+            //         float distance = direction.magnitude; // Limit ray to cat's distance
+            //         if (Physics.Raycast(Camera.main.transform.position, direction, out hit, distance)) {
+            //             if ((1 << hit.transform.gameObject.layer & this.catLayerMask) != 0) {
+            //                 isCatInView = true;
+            //                 casthit++;
+            //                 // catsInView.Add(cat);
+            //             }
+            //         }
+            //     }
+            //     
+            //     if (isCatInView) {
+            //         catsInView.Add(cat);
+            //         Debug.Log($"Cat star: {casthit}");
+            //         CurrentPhoto.Stars += casthit;
+            //         if (CurrentPhoto.Stars > 5) CurrentPhoto.Stars = 5;
+            //     }
+            // }
+            
+            // Calculate camera frustum
+            Camera camera = Camera.main;
+            Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes(camera);
+            
+            // /* Get all cat game objects */
+            // List<GameObject> cats = new List<GameObject>();
+            // foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
+            
+            Cat.Cat finalCat = null;
+            float finalDistance = float.MaxValue;
+            
+            /* Iterate through the cats and see if within the frustum */
+            foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
+                GameObject obj = cat.gameObject;
+                
+                /* Calculate the distance between main camera and cat */
+                float d = Vector3.Distance(camera.transform.position, obj.transform.position);
+                if (d < finalDistance) {
+                    finalDistance = d;
+                    finalCat = cat;
+                } else continue;
+
+                CurrentPhoto.Stars = 0;
+                
+                if (((1 << obj.layer) & catLayerMask) == 0) continue;
+                
+                // Get all renderers in this object and its children
+                Renderer[] childRenderers = obj.GetComponentsInChildren<Renderer>();
+            
+                foreach (Renderer renderer in childRenderers) {
+                    if (GeometryUtility.TestPlanesAABB(frustumPlanes, renderer.bounds)) {
+                        int casthit = 0;
+                        foreach (GameObject castPoint in cat.castPoints) {
+                            RaycastHit hit;
+                            Vector3 direction = castPoint.transform.position - camera.transform.position;
+                            float distance = direction.magnitude; // Limit ray to cat's distance
+                            if (Physics.Raycast(camera.transform.position, direction, out hit, distance)) {
+                                /* If the hit object has cat layer, means hit */
+                                if ((1 << hit.transform.gameObject.layer & catLayerMask) != 0) {
+                                    casthit++;
+                                }
+                            }
+                        }
+
+                        if (casthit > 0) {
+                            // catsInView.Add(cat);
+                            finalCat = cat;
+                            // CurrentPhoto.Stars += casthit;
+                            Debug.Log($"Cat star: {casthit}");
+                        }
+                        
+                        // Debug.Log($"{renderer.gameObject.name} is visible.");
+                        // catsInView.Add(obj.gameObject.GetComponent<Cat.Cat>());
+                        break;
+                    }
+                }
+            }
+            
+            catsInView.Add(finalCat);
+            
+            /* Set the cats in view */
+            CurrentPhoto.Cats.AddRange(catsInView);
+            CurrentPhoto.Stars = 0;
+            CurrentPhoto.Stars += CalculateStar(CurrentPhoto);
+            if (CurrentPhoto.Stars > 1) CurrentPhoto.Stars = 1;
+            Server.Server.Instance.StarCount += CurrentPhoto.Stars;
+            
+            yield return new WaitForEndOfFrame(); // Ensures rendering is completed
+
+            RenderTexture.active = _renderTexture;
+            CurrentPhoto.PhotoTexture.ReadPixels(
+                new Rect(0, 0, Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight), 0, 0);
+            CurrentPhoto.PhotoTexture.Apply();
+            RenderTexture.active = null;
+            
+            // if (CurrentPhoto.PhotoRenderer != null) {
+            //     CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
+            // }
+            
+            PlayerPocket.Album.Photos.Add(CurrentPhoto);
+            // CurrentPhoto.gameObject.SetActive(false);
+            
+            LoadFilm();
+        }
+        
         protected void LoadFilm() {
             /* Instantiate the photo prefab */
-            GameObject photoObject = Instantiate(photoPrefab, transform.position, transform.rotation);
-            CurrentPhoto = photoObject.GetComponent<Photo>();
-            if (CurrentPhoto == null) CurrentPhoto = photoObject.AddComponent<Photo>();
+            // GameObject photoObject = Instantiate(photoPrefab, transform.position, transform.rotation);
+            // CurrentPhoto = photoObject.GetComponent<Photo>();
+            // if (CurrentPhoto == null) CurrentPhoto = photoObject.AddComponent<Photo>();
+            //
+            // /* disable the current photo so cannot be seen */
+            // CurrentPhoto.gameObject.SetActive(false);
+            CurrentPhoto = new Photo();
+        }
+
+        protected void EnterCameraMode() {
+            _isCameraMode = true;
+            StartCoroutine(EnterCameraModeCoroutine(0.25f));
+        }
+
+        protected IEnumerator EnterCameraModeCoroutine(float moveTime = 0.25f) {
+            /* Set parent to eye view */
+            transform.SetParent(PlayerPocket.Player.EyeView.transform);
+
+            transform.localScale = cameraScale;
+
+            Vector3 destinationLocalPosition = PlayerPocket.cameraVirtualPosition.transform.localPosition;
+            Vector3 positionDelta = destinationLocalPosition - transform.localPosition;
+            Quaternion destinationLocalRotation = PlayerPocket.cameraVirtualPosition.transform.localRotation;
             
-            /* disable the current photo so cannot be seen */
-            CurrentPhoto.gameObject.SetActive(false);            
+            float elapsedTime = 0;
+            while (elapsedTime <= moveTime) {
+                if (!_isCameraMode) break;
+                transform.localPosition += positionDelta * Time.deltaTime / moveTime;
+                transform.localRotation = Quaternion.Slerp(transform.localRotation, destinationLocalRotation, elapsedTime / moveTime);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            
+            if (!_isCameraMode) yield break;
+            
+            /* Hand invisible */
+            PlayerPocket.Player.Hand.SetActive(false);
+            
+            /* Disable camera object rendering */
+            SetMeshRendering(false);
+            hand_renderer.enabled = false;
+            zoomScroll.gameObject.SetActive(true);
+            Server.Server.Instance.cameraMode.SetActive(true);
+        }
+
+        protected void ExitCameraMode() {
+            _isCameraMode = false;
+            hand_renderer.enabled = true;
+            
+            /* Hand visible */
+            PlayerPocket.Player.Hand.SetActive(true);
+            
+            /* enable mesh rendering */
+            SetMeshRendering(true);
+            StartCoroutine(ExitCameraCoroutine(0.25f));
+        }
+
+        protected int CalculateStar(Photo photo) {
+            int star = 0;
+            // star += photo.Cats.Count;
+
+            foreach (Cat.Cat cat in photo.Cats) {
+                if (cat.Behaviour.Animator.GetBool("IsWondering")) {
+                    star++;
+                }
+            }
+
+            return star;
+        }
+
+        protected IEnumerator ExitCameraCoroutine(float moveTime = 0.25f) {
+
+            /* Disable the camera mode ui */
+            DisableCameraModeUI();
+            
+            /* Clear Camera object parent and set back the position & rotation to item hook */
+            transform.SetParent(PlayerPocket.Player.ItemHook.transform);
+            // Vector3 positionDelta = PlayerPocket.Player.ItemHook.transform.position - hook.transform.position;
+            // photoCamera.transform.position += positionDelta;
+            // photoCamera.transform.rotation = PlayerPocket.Player.ItemHook.transform.rotation;
+            
+            /* enable mesh rendering */
+            SetMeshRendering(true);
+            hand_renderer.enabled = true;
+            zoomScroll.gameObject.SetActive(false);
+            Server.Server.Instance.cameraMode.SetActive(false);
+            
+            /* Reset the scroll and fov */
+            zoomScroll.value = 0;
+            Camera.main.fieldOfView = 60;
+            photoCamera.fieldOfView = 60;
+            
+            transform.SetParent(PlayerPocket.Player.ItemHook.transform);
+            
+            transform.localScale = cameraScale;
+            
+            /* Need to smoothly move the camera to player hand hook */
+            Vector3 positionDelta = _cameraLocalPositionToItemHook - transform.localPosition;
+            
+            /* Calculate the rotation delta */ 
+            Quaternion startRotation = transform.localRotation;
+            Quaternion rotationDelta = _cameraLocalRotationToItemHook * Quaternion.Inverse(startRotation);
+            Quaternion destinationLocalRotation = rotationDelta * transform.localRotation;
+            
+            /* In move time, move the camera to destination */
+            float elapsedTime = 0;
+            while (elapsedTime <= moveTime) {
+                if (_isCameraMode) yield break;
+                transform.localPosition += positionDelta * Time.deltaTime / moveTime;
+                transform.localRotation = Quaternion.Slerp(startRotation, destinationLocalRotation, elapsedTime / moveTime);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+        }
+
+        protected void EnableCameraModeUI() {
+            
+        }
+        
+        protected void DisableCameraModeUI() {
+            
         }
 
         protected override void Awake() {
             base.Awake();
             _takePhotoAction = ctx => TakePhoto();
             _toggleZoomAction = ctx => ToggleZoom();
+            _enterCameraModeAction = ctx => EnterCameraMode();
+            _exitCameraModeAction = ctx => ExitCameraMode();
+
+            if (photoCamera == null) {
+                Debug.Log("Photo camera is null!");
+                throw new Exception("Photo camera is not set for camera object!");
+            }
+            // /* photo camera same rotation as camera object */
+            // photoCamera.transform.rotation = transform.rotation;
             
-            photoCamera = GetComponent<Camera>();
-            if (photoCamera == null) photoCamera = gameObject.AddComponent<Camera>();
-            /* photo camera same rotation as camera object */
-            photoCamera.transform.rotation = transform.rotation;
-            
-            /* Set up the camera */
-            _renderTexture =
-                new RenderTexture(Server.Server.Instance.photoHeight, Server.Server.Instance.photoWidth, 24);
-            photoCamera.targetTexture = _renderTexture;
+            // /* Set up the camera */
+            // _renderTexture =
+            //     new RenderTexture(Server.Server.Instance.photoWidth, Server.Server.Instance.photoHeight, 24);
+            // photoCamera.targetTexture = _renderTexture;
+            _renderTexture = photoCamera.targetTexture;
 
             // Get the UI scrollbar for the camera zoom
-            canvas = GameObject.Find("Canvas");
-            zoomScroll = GameObject.FindWithTag("CameraScroll").GetComponent<Scrollbar>();
-            hand_renderer = GameObject.Find("Hand").GetComponent<MeshRenderer>();
-            camera_renderer = gameObject.GetComponent<MeshRenderer>();
-            screen_renderer = this.gameObject.transform.GetChild(0).GetComponent<MeshRenderer>();
-            canvas.SetActive(false);
+            if (zoomScroll == null) zoomScroll = GameObject.FindWithTag("CameraScroll").GetComponent<Scrollbar>();
+            if (hand_renderer == null) hand_renderer = GameObject.Find("Hand").GetComponent<MeshRenderer>();
+            if (camera_renderer == null) camera_renderer = gameObject.GetComponent<MeshRenderer>();
+            if (screen_renderer == null) screen_renderer = this.gameObject.transform.GetChild(0).GetComponent<MeshRenderer>();
+            zoomScroll.gameObject.SetActive(false);
             
             /* Load the film */
             LoadFilm();
+            
+            // Get all MeshRenderer components under this GameObject (including children)
+            meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        }
+        
+        void SetMeshRendering(bool state)
+        {
+            foreach (MeshRenderer renderer in meshRenderers)
+            {
+                renderer.enabled = state;
+            }
+        }
+
+        IEnumerator ReRenderAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            SetMeshRendering(true);
         }
     }
 }

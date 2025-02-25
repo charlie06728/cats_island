@@ -1,5 +1,4 @@
 using System;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,15 +8,20 @@ namespace Player {
         
         /* Album prefab and component after it being initialized */
         public GameObject albumPrefab;
+        public GameObject albumVirtualPosition;
         [NonSerialized] public Album Album;
         
         /* Camera prefab and component after init */
         public GameObject cameraPrefab;
+        public GameObject cameraVirtualPosition;
         [NonSerialized] public CameraObject CameraObject;
         
         /* treat prefab and component after it being initialized */
         public GameObject treatPrefab;
         [NonSerialized] public Treat Treat;
+        
+        /* Brochure prefab and component after it being initialized */
+        public Brochure brochure;
 
         protected void Awake() {
             /* Initialize the album */
@@ -34,17 +38,25 @@ namespace Player {
             CameraObject.PlayerPocket = this;
             CameraObject.gameObject.SetActive(false);
 
-
+            /* Initialize the treat */
             GameObject treatObj = Instantiate(treatPrefab, transform);
             Treat = treatObj.GetComponent<Treat>();
             if (Treat == null) throw new Exception("Treat prefab does not have an Treat component!");
             Treat.PlayerPocket = this;
             Treat.gameObject.SetActive(false);
             
+            /* Initialize the brochure */
+            if (brochure == null) throw new Exception("Brochure prefab does not have an Brochure component!");
+            brochure.PlayerPocket = this;
+            brochure.gameObject.SetActive(false);
+            
             /* Define the item switch behaviour */
             Server.Server.Instance.InputActionMap["1"].performed += context => { CameraObject.TakeOut(); };
             Server.Server.Instance.InputActionMap["2"].performed += context => { Album.TakeOut(); };
             Server.Server.Instance.InputActionMap["3"].performed += context => { Treat.TakeOut(); };
+            Server.Server.Instance.InputActionMap["4"].performed += context => { brochure.TakeOut(); };
+            Server.Server.Instance.InputActionMap["5"].performed += context => {
+                Player.Pocket.CameraObject.PutBackAll(); };
         }
     }
 }

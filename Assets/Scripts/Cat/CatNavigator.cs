@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -7,6 +8,8 @@ namespace Cat {
         public NavMeshAgent Agent;
         public Rigidbody Rigidbody;
         public BoxCollider Collider;
+
+        public Cat Cat;
 
         protected void Awake() {
             /* setup rigid body */
@@ -33,7 +36,21 @@ namespace Cat {
             
             /* Move agent to given location */
             Agent.SetDestination(position);
-            Debug.Log("Moving to " + position);
+            // Debug.Log("Moving to " + position);
+            
+            /* Trigger cat animation */
+            Cat.Behaviour.Animator.SetBool("IsWalking", true);
+        }
+        
+        protected void Update() {
+            if (Cat == null || Cat.Behaviour.Animator == null) return;
+            
+            /* check if the cat is moving, and set the animation correspondingly */
+            if (Agent.velocity.magnitude < 0.1f) {
+                Cat.Behaviour.Animator.SetBool("IsWalking", false);
+            } else {
+                Cat.Behaviour.Animator.SetBool("IsWalking", true);
+            }
         }
     }
 }

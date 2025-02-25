@@ -9,6 +9,11 @@ namespace Player {
 
         /* taking this item out of pocket, trigger animation */
         public virtual void TakeOut() {
+            if (gameObject.activeInHierarchy) {
+                PutBack();
+                return;
+            }
+            
             /* put all back first */
             PutBackAll();
             
@@ -28,10 +33,11 @@ namespace Player {
             gameObject.SetActive(false);
         }
 
-        protected void PutBackAll() {
+        public void PutBackAll() {
             PlayerPocket.Album.PutBack();
             PlayerPocket.CameraObject.PutBack();
-            // Player.Treat.PutBack();
+            PlayerPocket.Treat.PutBack();
+            PlayerPocket.brochure.PutBack();
         }
 
         protected void FixItemOnHook() {

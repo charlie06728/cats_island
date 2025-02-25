@@ -9,6 +9,9 @@ using Vector3 = UnityEngine.Vector3;
 namespace Player {
     /* Define player movement, player should be able to move abound and jump */
     public class PlayerMovement : MonoBehaviour {
+        /* foots step sound */
+        public AudioSource footStepSound;
+        
         /* Player camera */
         [NonSerialized] public UnityEngine.Camera PlayerCamera;
         public Rigidbody Rigidbody;
@@ -21,11 +24,14 @@ namespace Player {
         bool isSprinting;
         bool isCrouching;
         
-        
         /* camera rotation related */
         private Vector2 _look;
         private Vector2 _currentRotation;
         private Vector2 _rotationVelocity;
+        private bool _isGrounded = true;
+        private float _upVelocity;
+        private float _upAcceleration;
+        private float _playerHeight = 2.5f;
         
         /*  */
         private Vector3 MoveDirection = new Vector3();
@@ -64,7 +70,6 @@ namespace Player {
             /* Get rigidbody */
             Rigidbody = GetComponent<Rigidbody>();
             if (Rigidbody == null) Rigidbody = gameObject.AddComponent<Rigidbody>();
-            Rigidbody.useGravity = true;
             
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
@@ -83,18 +88,56 @@ namespace Player {
             Server.Server.Instance.InputActionMap["A"].canceled += context => { _keyDown["A"] = false; };
             Server.Server.Instance.InputActionMap["D"].performed += context => { _keyDown["D"] = true; };
             Server.Server.Instance.InputActionMap["D"].canceled += context => { _keyDown["D"] = false; };
+            Server.Server.Instance.InputActionMap["GamePadLeft"].performed += context => { _keyDown["GamePadLeft"] = true; };
+            Server.Server.Instance.InputActionMap["GamePadLeft"].canceled += context => { _keyDown["GamePadLeft"] = false; };
             Server.Server.Instance.InputActionMap["Space"].performed += context => {
                 /* Check if body is very close to the terrain */
                 if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
                     Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce * Rigidbody.mass, ForceMode.Impulse);
+                    // _upAcceleration = Physics.gravity.y;
+                    // Rigidbody.useGravity = true;
                     Debug.Log("Jumping");
                 }
             };
         }
 
         private void Update() {
+            if (_keyDown.ContainsKey("GamePadLeft") && _keyDown["GamePadLeft"]) MoveByGamePad();
+            
+            Rigidbody.angularVelocity = new Vector3();
+            bool keyDown = false;
+            foreach (string k in _keyDown.Keys) {
+                if (_keyDown[k]) {
+                    keyDown = true;
+                    Rigidbody.isKinematic = false;
+                    break;
+                }
+            }
+
+            if (keyDown) {
+                if (!footStepSound.isPlaying) footStepSound.Play();
+            } else {
+                footStepSound.Stop();
+            }
+            
             /* Make sure the body is not tilted */
             transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
+            
+            // /* Check if body is very close to the terrain */
+            // if (IsOnGround()) {
+            //     if (Rigidbody.linearVelocity.y < 0) Rigidbody.useGravity = false;
+            //     _isGrounded = true;
+            //     _upAcceleration = 0;
+            //     _upVelocity = 0;
+            //     Rigidbody.linearVelocity = new Vector3();
+            //     
+            //     /* Set player height to terrain sample height + player physical height */
+            //     transform.position = new Vector3(transform.position.x,
+            //         Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position) + _playerHeight,
+            //         transform.position.z);
+            // } else {
+            //     _isGrounded = false;
+            // }
             
             /* Rotate camera */
             Vector2 delta = _look * Time.deltaTime * Server.Server.Instance.MouseSensitivity;
@@ -126,8 +169,7 @@ namespace Player {
                         break;
                 }
             }
-
-            Vector3 MoveValue = MoveDirection * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+          Vector3 MoveValue = MoveDirection * Time.deltaTime * Server.Server.Instance.MoveSpeed;
 
             if (isSprinting) {
                 MoveValue *= sprintMultiplier;
@@ -136,6 +178,45 @@ namespace Player {
             }
 
             transform.position += MoveValue;
+
         }
+
+        protected void MoveByGamePad() {
+            Vector2 gamePad = Server.Server.Instance.InputActionMap["GamePadLeft"].ReadValue<Vector2>();
+            if (gamePad.x != 0) {
+                Debug.Log("Gamepad x: " + gamePad.x);;
+            }
+
+            if (gamePad.x != 0 || gamePad.y != 0) {
+                if (!footStepSound.isPlaying) footStepSound.Play();
+            } else {
+                footStepSound.Stop();
+            }
+            
+            /* Move the player by gamePad */
+            Vector3 move = new Vector3() + gamePad.x * transform.right + gamePad.y * transform.forward;
+            transform.position += move * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+        }
+        
+        protected bool IsOnSlope()
+        {
+            if (Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.2f))
+            {
+                float angle = Vector3.Angle(hit.normal, Vector3.up);
+                return angle > 0 && angle < 70; // Check if within slope range
+            }
+            return false;
+        }
+
+        protected bool IsOnGround() {
+            /* Check if body is very close to the terrain */
+            if (Physics.Raycast(transform.position, Vector3.down, _playerHeight)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
     }
 }
