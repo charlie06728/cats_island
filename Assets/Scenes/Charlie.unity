@@ -2086,6 +2086,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &824760385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824760369}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,6 +3727,30 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+    - m_Name: Sprint
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 4c904133-9500-4e3a-ab9e-fda755819fa8
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: Crouch
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7032e45a-0c5f-4453-835c-e7338d3164a3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    - m_Name: CrouchToggle
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7d6c0eaa-57b2-426c-96db-1639c2c50ef9
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
     m_Bindings:
     - m_Name: 
       m_Id: 9a0f700e-7c9a-460e-88bf-4b36300c7dc9
@@ -3921,6 +3975,46 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: ZoomOut
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 44e88d0a-5f60-4c01-b3a0-7e28c4bffb2a
+      m_Path: <Keyboard>/shift
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Sprint
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 5e4ffca0-a9b3-4f10-927e-9dd7537190e5
+      m_Path: <Gamepad>/buttonEast
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Sprint
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 3b67b3fc-63b4-4fce-825b-d1ed0c934549
+      m_Path: <Keyboard>/ctrl
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Crouch
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 094140de-5395-4673-b5b3-27d279b09120
+      m_Path: <Gamepad>/buttonWest
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Crouch
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 98002fc6-b148-4eca-a274-a4453ba776e9
+      m_Path: <Gamepad>/leftStickPress
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: CrouchToggle
       m_Flags: 0
   canvas: {fileID: 1695870417}
   zoomScroll: {fileID: 273747734}
@@ -7824,6 +7918,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1787783464381194674, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 824760377}
+    - targetCorrespondingSourceObject: {fileID: 1787783464381194674, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 824760385}
   m_SourcePrefab: {fileID: 100100000, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
 --- !u!1 &1396723200690938696 stripped
 GameObject:
