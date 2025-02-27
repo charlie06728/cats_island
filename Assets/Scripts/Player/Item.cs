@@ -40,8 +40,11 @@ namespace Player {
             PlayerPocket.CameraObject.PutBack();
             PlayerPocket.Treat.PutBack();
             PlayerPocket.brochure.PutBack();
+            PlayerPocket.Cookie.PutBack();
+            PlayerPocket.Fish.PutBack();
+            PlayerPocket.Heart.PutBack();
             
-            Server.Server.Instance.itemBar.DeSelectAll();
+            // Server.Server.Instance.itemBar.DeSelectAll();
         }
 
         protected void FixItemOnHook() {
