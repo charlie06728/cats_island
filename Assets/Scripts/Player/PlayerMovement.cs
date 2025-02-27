@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -15,6 +16,14 @@ namespace Player {
         [NonSerialized] public UnityEngine.Camera PlayerCamera;
         public Rigidbody Rigidbody;
         public GameObject Head;
+
+        /* Sprinting and crouching */
+        public float sprintMultiplier = 2f; // How much faster should sprinting make you?
+        public float crouchMultiplier = 0.5f; // How much slower should sprinting make you?
+        public float crouchDist = 1f; // How far down should we crouch?
+        bool isSprinting;
+        bool isCrouching;
+        
         
         /* camera rotation related */
         private Vector2 _look;
@@ -29,18 +38,49 @@ namespace Player {
         private Vector3 MoveDirection = new Vector3();
         private Dictionary<string, bool> _keyDown = new Dictionary<string, bool>();
 
+
+        /* Recieves messages from the PlayerInput component on the player when the player presses/releases shift/ctrl */
+        public void OnSprint(InputValue val){
+            if(val.isPressed){
+                // Debug.Log("now sprinting!");
+                isSprinting = true;
+            } else {
+                // Debug.Log("no longer sprinting!");
+                isSprinting = false;
+            }
+        }
+
+        public void OnCrouch(InputValue val){
+            if(val.isPressed){
+                // Debug.Log("now crouching!");
+                Head.transform.position -= new Vector3(0, crouchDist, 0);
+                isCrouching = true;
+            } else {
+                // Debug.Log("no longer crouching!");
+                Head.transform.position += new Vector3(0, crouchDist, 0);
+                isCrouching = false;
+            }
+        }
+
         public void Awake() {
             /* Make head in the same direction as camera */
+
             PlayerCamera = UnityEngine.Camera.main;
             PlayerCamera.transform.parent = Head.transform;
             
             /* Get rigidbody */
             Rigidbody = GetComponent<Rigidbody>();
             if (Rigidbody == null) Rigidbody = gameObject.AddComponent<Rigidbody>();
+            Rigidbody.useGravity = true;
             
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
-                _look = context.ReadValue<Vector2>();
+                if (context.control.device is Gamepad) {
+                    _look = context.ReadValue<Vector2>() * Server.Server.Instance.ControllerSensitivity;
+                } else {
+                    _look = context.ReadValue<Vector2>() * Server.Server.Instance.MouseSensitivity;
+                }
+                // _look = context.ReadValue<Vector2>();
             };
             Server.Server.Instance.InputActionMap["MouseMove"].canceled += context => {
                 _look = Vector2.zero;
@@ -55,6 +95,25 @@ namespace Player {
             Server.Server.Instance.InputActionMap["A"].canceled += context => { _keyDown["A"] = false; };
             Server.Server.Instance.InputActionMap["D"].performed += context => { _keyDown["D"] = true; };
             Server.Server.Instance.InputActionMap["D"].canceled += context => { _keyDown["D"] = false; };
+            Server.Server.Instance.InputActionMap["Sprint"].performed += context => { isSprinting = true; };
+            Server.Server.Instance.InputActionMap["Sprint"].canceled += context => { isSprinting = false; };
+            Server.Server.Instance.InputActionMap["Crouch"].performed += context => {
+                Head.transform.position -= new Vector3(0, crouchDist, 0);
+                isCrouching = true; 
+            };
+            Server.Server.Instance.InputActionMap["Crouch"].canceled += context => {
+                Head.transform.position += new Vector3(0, crouchDist, 0);
+                isCrouching = false; 
+            };
+            Server.Server.Instance.InputActionMap["CrouchToggle"].performed += context => {
+                if (isCrouching) {
+                    Head.transform.position += new Vector3(0, crouchDist, 0);
+                    isCrouching = false;
+                } else {
+                    Head.transform.position -= new Vector3(0, crouchDist, 0);
+                    isCrouching = true;
+                }
+            };
             Server.Server.Instance.InputActionMap["GamePadLeft"].performed += context => { _keyDown["GamePadLeft"] = true; };
             Server.Server.Instance.InputActionMap["GamePadLeft"].canceled += context => { _keyDown["GamePadLeft"] = false; };
             Server.Server.Instance.InputActionMap["Space"].performed += context => {
@@ -69,7 +128,8 @@ namespace Player {
         }
 
         private void Update() {
-            if (_keyDown.ContainsKey("GamePadLeft") && _keyDown["GamePadLeft"]) MoveByGamePad();
+            Vector3 MoveValue = new Vector3();
+            if (_keyDown.ContainsKey("GamePadLeft") && _keyDown["GamePadLeft"]) MoveValue += MoveByGamePad();
             
             Rigidbody.angularVelocity = new Vector3();
             bool keyDown = false;
@@ -107,7 +167,7 @@ namespace Player {
             // }
             
             /* Rotate camera */
-            Vector2 delta = _look * Time.deltaTime * Server.Server.Instance.MouseSensitivity;
+            Vector2 delta = _look * Time.deltaTime;
             Vector2 targetRotation = new Vector2(-delta.y, delta.x);
             
             /* Limit and angles of rotation */
@@ -137,53 +197,17 @@ namespace Player {
                 }
             }
             
-            transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            MoveValue += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            if (isSprinting) {
+                MoveValue *= sprintMultiplier;
+            } else if (isCrouching) { // Holding sprint overrides the effects of holding crouch
+                MoveValue *= crouchMultiplier;
+            }
             
-            // if (!_isGrounded) {
-            //     _upVelocity += _upAcceleration * Time.deltaTime;
-            //     transform.position += new Vector3(0, _upVelocity * Time.deltaTime, 0);
-            //     _upAcceleration += Physics.gravity.y * Time.deltaTime * 2;
-            //     
-            //     transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
-            // } else {
-            //     /* Precalculate the destination coordinate */
-            //     Vector3 destination = transform.position +
-            //                           MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
-            //     
-            //     /* Calculate the changes in terrain height */
-            //     float heightDelta = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) -
-            //                         Terrain.TerrainManager.Instance.Terrain.SampleHeight(transform.position);
-            //     /* Adjust the destination height */
-            //     destination.y += heightDelta;
-            //     
-            //     /* ray cast again  */
-            //     if (!IsOnGround())
-            //         destination.y = Terrain.TerrainManager.Instance.Terrain.SampleHeight(destination) + _playerHeight;
-            //     
-            //     /* Move the player */
-            //     transform.position = destination;
-            // }
-            
-
-            // if (_isGrounded) {
-            //     if (IsOnSlope()) {
-            //         Rigidbody.velocity = new Vector3(Rigidbody.velocity.x,
-            //             (Physics.gravity * 0.0f * (float)Time.deltaTime).y, Rigidbody.velocity.z);
-            //     }
-            // }
-            
-            // _velocity += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
-            
-            // transform.position += _velocity;
-            // Rigidbody.linearVelocity += MoveDirection.normalized * Server.Server.Instance.MoveSpeed;
-            
-            // transform.position += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
-            
-            /* Reset the velocity except vertical */
-            // _velocity = new Vector3(0, _velocity.y, 0);
+            transform.position += MoveValue;
         }
 
-        protected void MoveByGamePad() {
+        protected Vector3 MoveByGamePad() {
             Vector2 gamePad = Server.Server.Instance.InputActionMap["GamePadLeft"].ReadValue<Vector2>();
             if (gamePad.x != 0) {
                 Debug.Log("Gamepad x: " + gamePad.x);;
@@ -197,7 +221,8 @@ namespace Player {
             
             /* Move the player by gamePad */
             Vector3 move = new Vector3() + gamePad.x * transform.right + gamePad.y * transform.forward;
-            transform.position += move * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            return move * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            // transform.position += move * Time.deltaTime * Server.Server.Instance.MoveSpeed;
         }
         
         protected bool IsOnSlope()

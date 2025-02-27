@@ -24,6 +24,7 @@ namespace Player {
         [NonSerialized] public Photo CurrentPhoto;
         public float zoom_max = 30f; // Max amount of zoom
         public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
+        public float zoom_speed_controller = 1000f;
         MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
         MeshRenderer screen_renderer;
@@ -59,7 +60,6 @@ namespace Player {
         }
         
         public override void PutBack() {
-            base.PutBack();
             
 
             if (_isCameraMode) {
@@ -68,6 +68,8 @@ namespace Player {
                 // Camera.main.fieldOfView = 60;
                 ExitCameraMode();
             }
+            
+            base.PutBack();
             
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _takePhotoAction;
@@ -83,6 +85,14 @@ namespace Player {
             // photoCamera.fieldOfView = Camera.main.fieldOfView;
             if (_isCameraMode) {
                 zoomScroll.value += Input.GetAxis("Mouse ScrollWheel") * zoom_speed; // I
+                
+                /* Read input ZoomIn and ZoomOut */
+                if (Server.Server.Instance.InputActionMap["ZoomIn"].IsPressed()) {
+                    zoomScroll.value -= zoom_speed_controller * Time.deltaTime;
+                }
+                if (Server.Server.Instance.InputActionMap["ZoomOut"].IsPressed()) {
+                    zoomScroll.value += zoom_speed_controller * Time.deltaTime;
+                }
                 
                 // Clamp scroll value
                 if (zoomScroll.value > 1) {
