@@ -51,12 +51,26 @@ namespace Player {
             brochure.gameObject.SetActive(false);
             
             /* Define the item switch behaviour */
-            Server.Server.Instance.InputActionMap["1"].performed += context => { CameraObject.TakeOut(); };
-            Server.Server.Instance.InputActionMap["2"].performed += context => { Album.TakeOut(); };
-            Server.Server.Instance.InputActionMap["3"].performed += context => { Treat.TakeOut(); };
-            Server.Server.Instance.InputActionMap["4"].performed += context => { brochure.TakeOut(); };
+            Server.Server.Instance.InputActionMap["1"].performed += context => {
+                CameraObject.TakeOut(); 
+                Server.Server.Instance.itemBar.SetCurrentItem(Items.Camera);
+            };
+            Server.Server.Instance.InputActionMap["2"].performed += context => {
+                Album.TakeOut(); 
+                Server.Server.Instance.itemBar.SetCurrentItem(Items.Album);
+            };
+            Server.Server.Instance.InputActionMap["3"].performed += context => {
+                Treat.TakeOut(); 
+                Server.Server.Instance.itemBar.SetCurrentItem(Items.Cookie);
+            };
+            Server.Server.Instance.InputActionMap["4"].performed += context => {
+                brochure.TakeOut(); 
+                Server.Server.Instance.itemBar.SetCurrentItem(Items.Brochure);
+            };
             Server.Server.Instance.InputActionMap["5"].performed += context => {
-                Player.Pocket.CameraObject.PutBackAll(); };
+                Player.Pocket.CameraObject.PutBackAll(); 
+                Server.Server.Instance.itemBar.DeSelectAll();
+            };
         }
     }
 }

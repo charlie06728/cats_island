@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Player;
 using UIs;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -32,6 +33,7 @@ namespace Server {
         public Canvas canvas;
         public Scrollbar zoomScroll;
         public GameObject cameraMode;
+        public ItemBar itemBar;
         
         /* Cats */
         [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
