@@ -57,6 +57,8 @@ namespace Player {
             _cameraLocalRotationToItemHook = transform.localRotation;
             
             SetMeshRendering(true);
+            
+            Server.Server.Instance.itemBar.SetCurrentItem(Items.Camera);
         }
         
         public override void PutBack() {
