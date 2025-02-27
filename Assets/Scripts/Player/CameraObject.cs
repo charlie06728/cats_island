@@ -350,7 +350,7 @@ namespace Player {
             // star += photo.Cats.Count;
 
             foreach (Cat.Cat cat in photo.Cats) {
-                if (cat.Behaviour.Animator.GetBool("IsWondering")) {
+                if (cat.Behaviour.State == Cat.CatState.Pose) {
                     star++;
                 }
             }

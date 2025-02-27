@@ -76,7 +76,7 @@ namespace Player {
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
                 if (context.control.device is Gamepad) {
-                    _look = context.ReadValue<Vector2>() * Server.Server.Instance.ControllerSensitivity;
+                    _look = context.ReadValue<Vector2>() * Server.Server.Instance.ControllerSenstivity;
                 } else {
                     _look = context.ReadValue<Vector2>() * Server.Server.Instance.MouseSensitivity;
                 }
