@@ -29,6 +29,7 @@ namespace Player {
         
         public override void TakeOut() {
             base.TakeOut();
+            Server.Server.Instance.itemBar.SetCurrentItem(Items.Album);
             if (!gameObject.activeInHierarchy) return;
             
             RenderImages();

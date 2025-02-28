@@ -41,6 +41,8 @@ namespace Player {
                 return;
             }
             
+            Server.Server.Instance.itemBar.SetCurrentItem(Items.Brochure);
+            
             /* put all back first */
             PutBackAll();
 
