@@ -11,8 +11,8 @@ namespace Player {
         public RawImage rawImage1;
         public RawImage rawImage2;
 
-        public TextMeshProUGUI catName1;
-        public TextMeshProUGUI catName2;
+        // public TextMeshProUGUI catName1;
+        // public TextMeshProUGUI catName2;
         
         public TextMeshProUGUI catBreed1;
         public TextMeshProUGUI catBreed2;
@@ -41,11 +41,11 @@ namespace Player {
                 return;
             }
             
-            Server.Server.Instance.itemBar.SetCurrentItem(Items.Brochure);
-            
             /* put all back first */
             PutBackAll();
 
+            Server.Server.Instance.itemBar.SetCurrentItem(Items.Brochure);
+            
             /* Set item visible */
             gameObject.SetActive(true);
             
@@ -125,26 +125,26 @@ namespace Player {
         protected void DisplayCat(Cat.Cat cat, int displayIndex) {
             if (displayIndex == 0) {
                 rawImage1.gameObject.SetActive(true);
-                catName1.gameObject.SetActive(true);
+                // catName1.gameObject.SetActive(true);
                 catBreed1.gameObject.SetActive(true);
                 preferSnack1.gameObject.SetActive(true);
                 habitat1.gameObject.SetActive(true);
 
                 rawImage1.texture = cat.catImage.mainTexture;
-                catName1.text = cat.catName;
+                // catName1.text = cat.catName;
                 catBreed1.text = cat.catBreed;
                 
                 preferSnack1.text = cat.catPreferredSnack;
                 habitat1.text = cat.catHabitat;
             } else {
                 rawImage2.gameObject.SetActive(true);
-                catName2.gameObject.SetActive(true);
+                // catName2.gameObject.SetActive(true);
                 catBreed2.gameObject.SetActive(true);
                 preferSnack2.gameObject.SetActive(true);
                 habitat2.gameObject.SetActive(true);
 
                 rawImage2.texture = cat.catImage.mainTexture;
-                catName2.text = cat.catName;
+                // catName2.text = cat.catName;
                 catBreed2.text = cat.catBreed;
                 
                 preferSnack2.text = cat.catPreferredSnack;
@@ -155,8 +155,8 @@ namespace Player {
         protected void HideAll() {
             rawImage1.gameObject.SetActive(false);
             rawImage2.gameObject.SetActive(false);
-            catName1.gameObject.SetActive(false);
-            catName2.gameObject.SetActive(false);
+            // catName1.gameObject.SetActive(false);
+            // catName2.gameObject.SetActive(false);
             catBreed1.gameObject.SetActive(false);
             catBreed2.gameObject.SetActive(false);
             preferSnack1.gameObject.SetActive(false);
@@ -168,8 +168,8 @@ namespace Player {
         protected void ShowAll() {
             rawImage1.gameObject.SetActive(true);
             rawImage2.gameObject.SetActive(true);
-            catName1.gameObject.SetActive(true);
-            catName2.gameObject.SetActive(true);
+            // catName1.gameObject.SetActive(true);
+            // catName2.gameObject.SetActive(true);
             catBreed1.gameObject.SetActive(true);
             catBreed2.gameObject.SetActive(true);
             preferSnack1.gameObject.SetActive(true);
