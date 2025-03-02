@@ -369,6 +369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 5278079214887541090}
   Head: {fileID: 5310774893441710153}
+  sprintMultiplier: 2
+  crouchMultiplier: 0.5
+  crouchDist: 1
 --- !u!54 &5278079214887541090
 Rigidbody:
   m_ObjectHideFlags: 0

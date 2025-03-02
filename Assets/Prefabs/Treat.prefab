@@ -79,8 +79,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 0}
   hook: {fileID: 5130405280807645016}
-  treatPrefab: {fileID: 7874631266701535451, guid: f0b5246cbb046b04ab56485f8c37ebd9, type: 3}
-  treat_distance: 20
+  treat_distance: 10
+  cat_trigger_distance: 20
+  treatPrefab: {fileID: 7766209165530473390, guid: ba3e90c79e4d34b3ca91cc7cb6985ddb, type: 3}
 --- !u!1001 &563665616811217930
 PrefabInstance:
   m_ObjectHideFlags: 0

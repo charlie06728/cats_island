@@ -24,7 +24,6 @@ namespace Player {
         bool isSprinting;
         bool isCrouching;
         
-        
         /* camera rotation related */
         private Vector2 _look;
         private Vector2 _currentRotation;
@@ -196,14 +195,14 @@ namespace Player {
                         break;
                 }
             }
-            
-            MoveValue += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            Vector3 MoveValue = MoveDirection * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+
             if (isSprinting) {
                 MoveValue *= sprintMultiplier;
             } else if (isCrouching) { // Holding sprint overrides the effects of holding crouch
                 MoveValue *= crouchMultiplier;
             }
-            
+          
             transform.position += MoveValue;
         }
 
