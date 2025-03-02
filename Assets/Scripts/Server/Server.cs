@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Player;
 using UIs;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,6 +11,7 @@ namespace Server {
         /* Game speed, set int editor */
         public float GameSpeed = 1f;
         public float MouseSensitivity = 1f;
+        public float ControllerSenstivity = 1f;
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
         
@@ -31,6 +33,7 @@ namespace Server {
         public Canvas canvas;
         public Scrollbar zoomScroll;
         public GameObject cameraMode;
+        public ItemBar itemBar;
         
         /* Cats */
         [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();

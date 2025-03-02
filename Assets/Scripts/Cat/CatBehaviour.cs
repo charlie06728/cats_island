@@ -11,6 +11,7 @@ namespace Cat {
         Treat,
         Pose,
         FollowTreat,
+        Sit,
     }
     
     public class CatBehaviour : MonoBehaviour {

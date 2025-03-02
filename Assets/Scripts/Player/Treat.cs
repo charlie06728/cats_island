@@ -16,8 +16,10 @@ namespace Player {
 
         public override void TakeOut() {
             base.TakeOut();
+            Server.Server.Instance.itemBar.SetCurrentItem(Items.Cookie);
 
             cats = FindObjectsByType<CatBehaviour>(FindObjectsSortMode.None);
+
             
             FixItemOnHook();
             

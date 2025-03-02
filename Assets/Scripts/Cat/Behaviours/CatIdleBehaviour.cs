@@ -25,7 +25,7 @@ namespace Cat.Behaviours {
                     Vector3 position = Cat.livingArea.transform.position;
                     /* Convert position to terrain local coordinates */
                     position = TerrainManager.Instance.Terrain.transform.InverseTransformPoint(position);
-                    float radius = 45;
+                    float radius = 20;
                 
                     Vector3 terrainSize = TerrainManager.Instance.Terrain.terrainData.size;
                     /* Generate a random position with fixed radius in the terrain */
@@ -42,9 +42,10 @@ namespace Cat.Behaviours {
                 
                     /* convert this local position to world position */
                     randomPosition = TerrainManager.Instance.Terrain.transform.TransformPoint(randomPosition);
-                
+                    
                     /* Move to the random position */
                     Cat.Navigator.MoveTo(randomPosition);
+                    
                 } else {
                     if (Cat.Behaviour.Animator.GetBool("IsWondering")) {
                         WonderStopTime += WonderTime;
@@ -56,7 +57,17 @@ namespace Cat.Behaviours {
                 }
             }
         }
-        
+
+        public override void Enable() {
+            base.Enable();
+            PreviousEvaluateTime = Time.time;
+        }
+
+        public override void Disable() {
+            base.Disable();
+            Cat.Behaviour.Animator.SetBool("IsWondering", false);
+        }
+
         protected IEnumerator WonderingStopCoroutine(float wonderTime) {
             WonderStopTime = Time.time + wonderTime;
             while (Time.time < WonderStopTime && Cat.Behaviour.State == CatState.Idle) {

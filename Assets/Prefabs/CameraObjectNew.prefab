@@ -437,6 +437,7 @@ MonoBehaviour:
     m_Bits: 64
   zoom_max: 30
   zoom_speed: 0.5
+  zoom_speed_controller: 1.5
   zoomScroll: {fileID: 0}
 --- !u!82 &8555878005223502510
 AudioSource:
