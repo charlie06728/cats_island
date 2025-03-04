@@ -35,34 +35,12 @@ namespace Player {
         }
 
         public void GiveTreat() {
-            // RaycastHit hit;
-            // // Send out a ray in the direction the camera is facing
-            // Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
-            // if (Physics.Raycast(ray, out hit, treat_distance)) {   
-            //     if (hit.transform.gameObject.GetComponent<CatBehaviour>() != null) {
-            //         CatBehaviour behaviour = hit.transform.gameObject.GetComponent<CatBehaviour>(); 
-            //         behaviour.SwitchState(CatState.Pose);
-            //         Debug.Log("Given Treat!");
-            //         return true;
-            //     }
-            // }
-            // return false;
-
-
-
             RaycastHit hit;
-            
-            /* Instantiate the treat prefab and drop to the ground */
-            GameObject treat = Instantiate(treatPrefab, transform.position, Quaternion.identity);
-            /* Get the rigidbody of spawned */
-            Rigidbody rb = treat.GetComponent<Rigidbody>();
-            
-            /* Add a force to the forward direction of player */
-            rb.AddForce(PlayerPocket.Player.Head.transform.forward * 5, ForceMode.Impulse);
             
             // Send out a ray in the direction the camera is facing
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
             if (Physics.Raycast(ray, out hit, treat_distance)) {   
+                // Create a treat on that surface
                 Instantiate(treatPrefab, hit.point, new Quaternion(0,0,0,0));
 
                 Vector3 currentPos = gameObject.transform.position;
@@ -80,10 +58,13 @@ namespace Player {
             }
         }
 
+        void Start() {
+            cats = FindObjectsOfType<CatBehaviour>();
+        }
+
         protected override void Awake() {
             base.Awake();
             _giveTreatAction = ctx => GiveTreat();
-            // mainCamera = mainCamera.main();
         }
     }
 }

@@ -104,15 +104,15 @@ namespace Player {
                 Head.transform.position += new Vector3(0, crouchDist, 0);
                 isCrouching = false; 
             };
-            Server.Server.Instance.InputActionMap["CrouchToggle"].performed += context => {
-                if (isCrouching) {
-                    Head.transform.position += new Vector3(0, crouchDist, 0);
-                    isCrouching = false;
-                } else {
-                    Head.transform.position -= new Vector3(0, crouchDist, 0);
-                    isCrouching = true;
-                }
-            };
+            // Server.Server.Instance.InputActionMap["CrouchToggle"].performed += context => {
+            //     if (isCrouching) {
+            //         Head.transform.position += new Vector3(0, crouchDist, 0);
+            //         isCrouching = false;
+            //     } else {
+            //         Head.transform.position -= new Vector3(0, crouchDist, 0);
+            //         isCrouching = true;
+            //     }
+            // };
             Server.Server.Instance.InputActionMap["GamePadLeft"].performed += context => { _keyDown["GamePadLeft"] = true; };
             Server.Server.Instance.InputActionMap["GamePadLeft"].canceled += context => { _keyDown["GamePadLeft"] = false; };
             Server.Server.Instance.InputActionMap["Space"].performed += context => {
@@ -195,7 +195,7 @@ namespace Player {
                         break;
                 }
             }
-            Vector3 MoveValue = MoveDirection * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            MoveValue += MoveDirection * Time.deltaTime * Server.Server.Instance.MoveSpeed;
 
             if (isSprinting) {
                 MoveValue *= sprintMultiplier;
