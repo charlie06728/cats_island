@@ -13,7 +13,8 @@ namespace Cat {
         public Image catImage;
         public string catPreferredSnack;
         public string catHabitat;
-        public float walkProportion = 0.7f;
+        public float walkProportion = 0.5f;
+        public float sitProportion = 0.3f;
 
         public List<GameObject> castPoints;
         
