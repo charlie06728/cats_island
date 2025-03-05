@@ -47,6 +47,8 @@ namespace Player {
         public override void TakeOut() {
             base.TakeOut();
             
+            FixItemOnHook();
+            
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _takePhotoAction;
             Server.Server.Instance.InputActionMap["RightMouse"].performed += _enterCameraModeAction;
@@ -301,6 +303,7 @@ namespace Player {
 
         protected void EnterCameraMode() {
             _isCameraMode = true;
+            Server.Server.Instance.itemBar.gameObject.SetActive(false);
             StartCoroutine(EnterCameraModeCoroutine(0.25f));
         }
 
@@ -341,6 +344,9 @@ namespace Player {
             
             /* Hand visible */
             PlayerPocket.Player.Hand.SetActive(true);
+            
+            /* item bar visible */
+            Server.Server.Instance.itemBar.gameObject.SetActive(true);
             
             /* enable mesh rendering */
             SetMeshRendering(true);

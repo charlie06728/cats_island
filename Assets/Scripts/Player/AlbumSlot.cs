@@ -28,12 +28,11 @@ namespace Player {
             }
         }
         
-        
         public void SetPhoto(Photo photo) {
             Show();
             rawImage.texture = photo.PhotoTexture;
-            catName.text = photo.Cats.Count > 0 ? photo.Cats.First().catName : "Unknown";
-            catBreed.text = photo.Cats.Count > 0 ? photo.Cats.First().catBreed : "Unknown";
+            catName.text = photo.Cats.Count > 0 ? "Name: " + photo.Cats.First().catName : "Unknown";
+            catBreed.text = photo.Cats.Count > 0 ? "Breed: " + photo.Cats.First().catBreed : "Unknown";
             for (int i = 0; i < stars.Length; i++) {
                 stars[i].enabled = i < photo.Stars;
             }
