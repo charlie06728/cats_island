@@ -14,7 +14,6 @@ namespace Player {
                 return;
             }
             
-            /* put all back first */
             PutBackAll();
             
             /* Set item visible */

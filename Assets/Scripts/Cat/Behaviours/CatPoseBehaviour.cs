@@ -5,7 +5,7 @@ namespace Cat.Behaviours {
     public class CatPoseBehaviour : Behaviour {
         public CatPoseBehaviour(Cat cat) : base(cat) { }
         
-        public float PoseTime = 5f;
+        public float PoseTime = 4f;
         protected float prevUpdateTime = 0f;
         
         public override void Update() {

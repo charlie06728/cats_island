@@ -25,7 +25,7 @@ namespace Player {
         public float zoom_max = 30f; // Max amount of zoom
         public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
         public float zoom_speed_controller = 1000f;
-        MeshRenderer hand_renderer;
+        // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
         MeshRenderer screen_renderer;
         public Scrollbar zoomScroll;
@@ -112,7 +112,7 @@ namespace Player {
             Debug.Log("Toggle Zoom");
             is_zoomed = !is_zoomed;
             // hand.SetActive(!is_zoomed);
-            hand_renderer.enabled = !is_zoomed;
+            // hand_renderer.enabled = !is_zoomed;
             camera_renderer.enabled = !is_zoomed;
             screen_renderer.enabled = !is_zoomed;
         }
@@ -330,14 +330,14 @@ namespace Player {
             
             /* Disable camera object rendering */
             SetMeshRendering(false);
-            hand_renderer.enabled = false;
+            // hand_renderer.enabled = false;
             zoomScroll.gameObject.SetActive(true);
             Server.Server.Instance.cameraMode.SetActive(true);
         }
 
         protected void ExitCameraMode() {
             _isCameraMode = false;
-            hand_renderer.enabled = true;
+            // hand_renderer.enabled = true;
             
             /* Hand visible */
             PlayerPocket.Player.Hand.SetActive(true);
@@ -373,7 +373,7 @@ namespace Player {
             
             /* enable mesh rendering */
             SetMeshRendering(true);
-            hand_renderer.enabled = true;
+            // hand_renderer.enabled = true;
             zoomScroll.gameObject.SetActive(false);
             Server.Server.Instance.cameraMode.SetActive(false);
             
@@ -435,7 +435,7 @@ namespace Player {
 
             // Get the UI scrollbar for the camera zoom
             if (zoomScroll == null) zoomScroll = GameObject.FindWithTag("CameraScroll").GetComponent<Scrollbar>();
-            if (hand_renderer == null) hand_renderer = GameObject.Find("Hand").GetComponent<MeshRenderer>();
+            // if (hand_renderer == null) hand_renderer = GameObject.Find("Hand").GetComponent<MeshRenderer>();
             if (camera_renderer == null) camera_renderer = gameObject.GetComponent<MeshRenderer>();
             if (screen_renderer == null) screen_renderer = this.gameObject.transform.GetChild(0).GetComponent<MeshRenderer>();
             zoomScroll.gameObject.SetActive(false);
