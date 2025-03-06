@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3BAF0F12-A723-47DB-A197-E4136AC3BC73}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Anthony" ID="{3BAF0F12-A723-47DB-A197-E4136AC3BC73}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="TimeOfDay" ID="{23B10F95-E181-414E-8017-0C8B16F60858}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

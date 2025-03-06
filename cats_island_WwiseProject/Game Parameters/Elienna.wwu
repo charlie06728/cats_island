@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5B2EF254-2B7D-497E-969E-B0C51A28897F}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Elienna" ID="{5B2EF254-2B7D-497E-969E-B0C51A28897F}" PersistMode="Standalone"/>
+	</GameParameters>
+</WwiseDocument>
