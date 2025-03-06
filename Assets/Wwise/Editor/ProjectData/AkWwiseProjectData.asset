@@ -69,6 +69,36 @@ MonoBehaviour:
     m_lastTime: -8584603750572814396
     List: []
   EventWwu:
+  - PhysicalPath: Events\Anthony.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Anthony
+      ObjectType: 12
+      guid: f80b5e88b94b7341b3e45714bf0cdb0f
+    ParentPath: Events\Anthony
+    guid: f80b5e88b94b7341b3e45714bf0cdb0f
+    GuidInternal: 
+    m_lastTime: -8584603733974469721
+    List:
+    - name: ForestMusic
+      guid: f3416a2cdcdd4f4f991bf1d345ebc76b
+      id: 2580311907
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: f80b5e88b94b7341b3e45714bf0cdb0f
+      - ElementName: ForestMusic
+        ObjectType: 3
+        guid: f3416a2cdcdd4f4f991bf1d345ebc76b
+      Path: Events\Anthony\ForestMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -82,6 +112,36 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584603750572464671
     List: []
+  - PhysicalPath: Events\Elienna.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Elienna
+      ObjectType: 12
+      guid: 399e9542371ec54ba857d08d107256c0
+    ParentPath: Events\Elienna
+    guid: 399e9542371ec54ba857d08d107256c0
+    GuidInternal: 
+    m_lastTime: -8584603738826967091
+    List:
+    - name: Ambience_Test
+      guid: 63d6823a77582640a2e815c60e08a93b
+      id: 2925175128
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: 399e9542371ec54ba857d08d107256c0
+      - ElementName: Ambience_Test
+        ObjectType: 3
+        guid: 63d6823a77582640a2e815c60e08a93b
+      Path: Events\Elienna\Ambience_Test
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Anthony.wwu
     PathAndIcons:

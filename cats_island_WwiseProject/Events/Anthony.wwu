@@ -3,7 +3,17 @@
 	<Events>
 		<WorkUnit Name="Anthony" ID="{885E0BF8-4BB9-4173-B3E4-5714BF0CDB0F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="ForestMusic" ID="{2C6A41F3-DDDC-4F4F-991B-F1D345EBC76B}"/>
+				<Event Name="ForestMusic" ID="{2C6A41F3-DDDC-4F4F-991B-F1D345EBC76B}">
+					<ChildrenList>
+						<Action Name="" ID="{7C662CF2-C314-4B9F-86B7-5C56E951A5DA}" ShortID="857591083">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ForestMusic" ID="{BD0EF433-A2E3-444A-BEA4-485B0B3990C0}" WorkUnitID="{83753BCD-6B26-4751-90BD-7B3BDCA63B94}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
