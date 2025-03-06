@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="Elienna" ID="{42959E39-1E37-4BC5-A857-D08D107256C0}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Ambience_Test" ID="{3A82D663-5877-4026-A2E8-15C60E08A93B}">
+				<Event Name="Footstep" ID="{3A82D663-5877-4026-A2E8-15C60E08A93B}">
 					<ChildrenList>
 						<Action Name="" ID="{F07112EB-1D5B-4252-819C-72CB22974B9A}" ShortID="214795961">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="beach_ambience_test" ID="{DED27EE0-FD13-4254-8984-A3F72D0DD3C6}" WorkUnitID="{76C35596-5624-4A20-97F1-729495012708}"/>
+									<ObjectRef Name="FS_Grass_01" ID="{4F32F4F5-5D52-4469-9601-967F74549C64}" WorkUnitID="{76C35596-5624-4A20-97F1-729495012708}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
