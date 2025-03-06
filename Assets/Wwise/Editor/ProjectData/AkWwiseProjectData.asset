@@ -83,6 +83,33 @@ MonoBehaviour:
     m_lastTime: -8584603750572464671
     List: []
   RtpcWwu:
+  - PhysicalPath: Game Parameters\Anthony.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Anthony
+      ObjectType: 12
+      guid: 120faf3b23a7db47a197e4136ac3bc73
+    ParentPath: Game Parameters\Anthony
+    guid: 120faf3b23a7db47a197e4136ac3bc73
+    GuidInternal: 
+    m_lastTime: -8584603745068207096
+    List:
+    - name: TimeOfDay
+      guid: 950fb12381e14e4180170c8b16f60858
+      id: 3729505769
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: 120faf3b23a7db47a197e4136ac3bc73
+      - ElementName: TimeOfDay
+        ObjectType: 13
+        guid: 950fb12381e14e4180170c8b16f60858
+      Path: Game Parameters\Anthony\TimeOfDay
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -94,7 +121,20 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 7136696e62967c49803e74da1109e56e
     GuidInternal: 
-    m_lastTime: -8584603750572661584
+    m_lastTime: -8584603745068164975
+    List: []
+  - PhysicalPath: Game Parameters\Elienna.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Elienna
+      ObjectType: 12
+      guid: 54f22e5b7d2b7e49969eb0c51a28897f
+    ParentPath: Game Parameters\Elienna
+    guid: 54f22e5b7d2b7e49969eb0c51a28897f
+    GuidInternal: 
+    m_lastTime: -8584603745023597149
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
