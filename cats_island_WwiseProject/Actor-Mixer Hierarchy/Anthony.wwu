@@ -131,7 +131,7 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
-				<RandomSequenceContainer Name="sfx_FOOTSTEP_Grass" ID="{B63ED6D8-63AB-4524-B6BF-0D360C585A7A}" ShortID="690750261">
+				<SwitchContainer Name="sfx_footsteps" ID="{8DD377B0-B0DE-48D9-907A-7CD48EDFD2A1}" ShortID="528788884">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
@@ -139,9 +139,12 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
 						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="groundmaterial" ID="{5AE44D89-92AE-4AD1-9DAB-1216B9E771DF}" WorkUnitID="{9F0A584E-CB7D-4C11-A995-187DC8EEE5BF}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="sfx_FOOTSTEP_Grass_01" ID="{E6D66914-A7C3-4AC5-8259-8316BDD49333}" ShortID="739901364">
+						<RandomSequenceContainer Name="sfx_FOOTSTEP_Grass" ID="{B63ED6D8-63AB-4524-B6BF-0D360C585A7A}" ShortID="690750261">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
@@ -151,115 +154,113 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="sfx_FOOTSTEP_Grass_01" ID="{502D37CD-A5F9-48B7-A436-1FF5CC37CDE0}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_FOOTSTEP_Grass_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="142100012"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="sfx_FOOTSTEP_Grass_01" ID="{E6D66914-A7C3-4AC5-8259-8316BDD49333}" ShortID="739901364">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Grass_01" ID="{502D37CD-A5F9-48B7-A436-1FF5CC37CDE0}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Grass_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="142100012"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Grass_01" ID="{502D37CD-A5F9-48B7-A436-1FF5CC37CDE0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_FOOTSTEP_Grass_02" ID="{FFE9586A-EA39-41E9-A1E5-814FA49AF10F}" ShortID="322054144">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Grass_02" ID="{0379DEE6-FB14-47E9-A070-A05053314500}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Grass_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="621107859"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Grass_02" ID="{0379DEE6-FB14-47E9-A070-A05053314500}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_FOOTSTEP_Grass_03" ID="{1C3B53A9-BDEE-49FB-9F7B-336F48756A58}" ShortID="345688024">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Grass_03" ID="{80816D84-EE36-43F2-9C33-3F58E348D676}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Grass_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="392232085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Grass_03" ID="{80816D84-EE36-43F2-9C33-3F58E348D676}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_FOOTSTEP_Grass_04" ID="{33B43E51-88CF-4A6C-BFBF-8F106D5E92D3}" ShortID="220590162">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Grass_04" ID="{553F89BC-9833-4B53-90FB-3768704C17AF}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Grass_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="183408089"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Grass_04" ID="{553F89BC-9833-4B53-90FB-3768704C17AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_FOOTSTEP_Grass_01" ID="{502D37CD-A5F9-48B7-A436-1FF5CC37CDE0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_FOOTSTEP_Grass_02" ID="{FFE9586A-EA39-41E9-A1E5-814FA49AF10F}" ShortID="322054144">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_FOOTSTEP_Grass_02" ID="{0379DEE6-FB14-47E9-A070-A05053314500}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_FOOTSTEP_Grass_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="621107859"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_FOOTSTEP_Grass_02" ID="{0379DEE6-FB14-47E9-A070-A05053314500}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_FOOTSTEP_Grass_03" ID="{1C3B53A9-BDEE-49FB-9F7B-336F48756A58}" ShortID="345688024">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_FOOTSTEP_Grass_03" ID="{80816D84-EE36-43F2-9C33-3F58E348D676}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_FOOTSTEP_Grass_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="392232085"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_FOOTSTEP_Grass_03" ID="{80816D84-EE36-43F2-9C33-3F58E348D676}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_FOOTSTEP_Grass_04" ID="{33B43E51-88CF-4A6C-BFBF-8F106D5E92D3}" ShortID="220590162">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_FOOTSTEP_Grass_04" ID="{553F89BC-9833-4B53-90FB-3768704C17AF}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_FOOTSTEP_Grass_04.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="183408089"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_FOOTSTEP_Grass_04" ID="{553F89BC-9833-4B53-90FB-3768704C17AF}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="groundmaterial" ID="{DF31207F-A468-4918-A1E1-80D63A2C15D2}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="sand" ID="{C91C3256-775B-4530-8562-E58792586BB9}"/>
-								<CustomState Name="" ID="{011A8157-2E33-40F3-AE8D-6E9F7A0F6119}" ShortID="303896077">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="grass" ID="{3B561968-6226-4B44-A25F-7E50868E2FD5}"/>
-								<CustomState Name="" ID="{6EB1EEA1-4568-4543-A0BA-FE6CC6F4F2DC}" ShortID="862262912"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="wood" ID="{03613866-2A8E-4BAE-AEDE-AF2AAD8FDA2D}"/>
-								<CustomState Name="" ID="{25B2C26B-EBB1-4B46-A203-86E015690E57}" ShortID="1032226435">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
-				</RandomSequenceContainer>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="sfx_FOOTSTEP_Grass" ID="{B63ED6D8-63AB-4524-B6BF-0D360C585A7A}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="grass" ID="{020694FE-B789-4A94-9B76-2EBF54AC8DAE}"/>
+								<ItemList>
+									<ItemRef Name="sfx_FOOTSTEP_Grass" ID="{B63ED6D8-63AB-4524-B6BF-0D360C585A7A}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

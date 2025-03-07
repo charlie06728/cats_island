@@ -19,7 +19,7 @@
 						<Action Name="" ID="{E7FFB5EE-0FB4-40D1-ACB3-C60B54D23A63}" ShortID="184599193">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="sfx_FOOTSTEP_Grass" ID="{B63ED6D8-63AB-4524-B6BF-0D360C585A7A}" WorkUnitID="{83753BCD-6B26-4751-90BD-7B3BDCA63B94}"/>
+									<ObjectRef Name="sfx_footsteps" ID="{8DD377B0-B0DE-48D9-907A-7CD48EDFD2A1}" WorkUnitID="{83753BCD-6B26-4751-90BD-7B3BDCA63B94}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
