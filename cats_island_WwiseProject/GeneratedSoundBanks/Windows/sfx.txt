@@ -10,10 +10,12 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	grass	groundmaterial			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	142100012	sfx_FOOTSTEP_Grass_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\74\{74387D4D-9370-0558-6BD9-9B57CA77520E}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_01		72096
-	183408089	sfx_FOOTSTEP_Grass_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\42\{4207CF1C-BF31-DD40-BC7A-7B78A902F56A}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_04		72096
-	392232085	sfx_FOOTSTEP_Grass_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\CC\{CCA60ABB-4080-4C52-17E8-8DFF20BE7340}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_03		72096
-	562166737	FS_Sand_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\C8\{C83215B8-2C75-2774-F7D2-2497FDED3805}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\FS_Sand_01		43874
-	621107859	sfx_FOOTSTEP_Grass_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\73\{73629889-3F5F-750B-183C-B2AEDCDA363B}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_02		72096
-	1048684280	FS_Sand_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B3\{B30AA363-95B1-4A3F-94FB-9D70BA8C523F}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\FS_Sand_02		75892
+	142100012	sfx_FOOTSTEP_Grass_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B8\{B8913FEC-DB02-88E0-1E2A-8CDD8E1FC992}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_01		72096
+	183408089	sfx_FOOTSTEP_Grass_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\13\{13EA5728-0500-D1AE-AA79-71023FE7EBB3}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_04		72096
+	272971924	sfx_FOOTSTEP_Sand_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B5\{B54587A5-D101-8A0C-89D1-29C18D9772BB}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\sfx_FOOTSTEP_Sand_01		72780
+	392232085	sfx_FOOTSTEP_Grass_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\12\{125265B8-13B0-37BE-EAF0-5AA3FFC224FD}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_03		72096
+	534557522	sfx_FOOTSTEP_Sand_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\2C\{2C38DB1A-6DD7-5028-E96B-2D8A78509078}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\sfx_FOOTSTEP_Sand_02		72780
+	566550062	sfx_FOOTSTEP_Sand_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\80\{8031E40D-78AB-9EA2-3264-361D021B9F00}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\sfx_FOOTSTEP_Sand_03		72780
+	621107859	sfx_FOOTSTEP_Grass_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\42\{42DC65BE-D2F4-254D-68F0-9601BF22A96A}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_02		72096
+	827611918	sfx_FOOTSTEP_Sand_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\64\{64B53429-4158-E01D-003B-BF82DA1082C5}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\sfx_FOOTSTEP_Sand_04		72780
 

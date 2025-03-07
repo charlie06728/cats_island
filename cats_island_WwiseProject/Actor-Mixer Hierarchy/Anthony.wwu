@@ -145,6 +145,21 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="sfx_FOOTSTEP_Grass" ID="{B63ED6D8-63AB-4524-B6BF-0D360C585A7A}" ShortID="690750261">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A3493FB7-9EA5-4785-B04B-5428BA360B69}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BEA95202-4184-4ECC-8E37-882A04F3B64C}",
     "Language": "SFX",
-    "Hash": "{1C3F2B76-8A34-1135-5D8A-37F031E0F487}",
+    "Hash": "{97A46186-C578-24EF-A48D-E16B727AD370}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_FOOTSTEP_Grass_01.wav",
-      "CachePath": "74/{74387D4D-9370-0558-6BD9-9B57CA77520E}.wem"
+      "CachePath": "B8/{B8913FEC-DB02-88E0-1E2A-8CDD8E1FC992}.wem"
      },
      {
       "Id": "183408089",
@@ -29,7 +29,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_FOOTSTEP_Grass_04.wav",
-      "CachePath": "42/{4207CF1C-BF31-DD40-BC7A-7B78A902F56A}.wem"
+      "CachePath": "13/{13EA5728-0500-D1AE-AA79-71023FE7EBB3}.wem"
+     },
+     {
+      "Id": "272971924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Sand_01.wav",
+      "CachePath": "B5/{B54587A5-D101-8A0C-89D1-29C18D9772BB}.wem"
      },
      {
       "Id": "392232085",
@@ -37,15 +45,23 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_FOOTSTEP_Grass_03.wav",
-      "CachePath": "CC/{CCA60ABB-4080-4C52-17E8-8DFF20BE7340}.wem"
+      "CachePath": "12/{125265B8-13B0-37BE-EAF0-5AA3FFC224FD}.wem"
      },
      {
-      "Id": "562166737",
+      "Id": "534557522",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "FS_Sand\\FS_Sand_01.wav",
-      "CachePath": "C8/{C83215B8-2C75-2774-F7D2-2497FDED3805}.wem"
+      "ShortName": "sfx_FOOTSTEP_Sand_02.wav",
+      "CachePath": "2C/{2C38DB1A-6DD7-5028-E96B-2D8A78509078}.wem"
+     },
+     {
+      "Id": "566550062",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Sand_03.wav",
+      "CachePath": "80/{8031E40D-78AB-9EA2-3264-361D021B9F00}.wem"
      },
      {
       "Id": "621107859",
@@ -53,15 +69,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_FOOTSTEP_Grass_02.wav",
-      "CachePath": "73/{73629889-3F5F-750B-183C-B2AEDCDA363B}.wem"
+      "CachePath": "42/{42DC65BE-D2F4-254D-68F0-9601BF22A96A}.wem"
      },
      {
-      "Id": "1048684280",
+      "Id": "827611918",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "FS_Sand\\FS_Sand_02.wav",
-      "CachePath": "B3/{B30AA363-95B1-4A3F-94FB-9D70BA8C523F}.wem"
+      "ShortName": "sfx_FOOTSTEP_Sand_04.wav",
+      "CachePath": "64/{64B53429-4158-E01D-003B-BF82DA1082C5}.wem"
      }
     ],
     "Events": [
@@ -72,7 +88,7 @@
       "GUID": "{3AAC06AD-81D3-4E7D-A27B-542955D449B3}",
       "DurationType": "OneShot",
       "DurationMin": "0.375",
-      "DurationMax": "0.8593651",
+      "DurationMax": "0.3785625",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -83,10 +99,16 @@
         },
         "MediaRefs": [
          {
-          "Id": "562166737"
+          "Id": "272971924"
          },
          {
-          "Id": "1048684280"
+          "Id": "534557522"
+         },
+         {
+          "Id": "566550062"
+         },
+         {
+          "Id": "827611918"
          }
         ]
        },
@@ -145,6 +167,6 @@
     ]
    }
   ],
-  "FileHash": "{4E061BAE-BAD5-56DF-98F5-0507DF91F1A7}"
+  "FileHash": "{3492046C-D4B3-07A6-F79B-3CDA24E3A00C}"
  }
 }

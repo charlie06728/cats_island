@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2181728358	music_forest			\Anthony\music_forest	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3729505769	TimeOfDay			\Anthony\TimeOfDay	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	228703653	mus_4-4_80bpm_ForestAfternoon_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\2F\{2F228061-5807-0E50-A308-E4D1D55B42D0}.wem		\Actor-Mixer Hierarchy\Anthony\mus_FOREST\mus_4-4_80bpm_ForestAfternoon_lp		6912096
+	427068801	mus_4-4_80bpm_ForestMorning_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\9C\{9C653EB4-B067-D53E-EC9A-307C6AFB0B89}.wem		\Actor-Mixer Hierarchy\Anthony\mus_FOREST\mus_4-4_80bpm_ForestMorning_lp		8352096
+	662075199	mus_4-4_80bpm_ForestNoon_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\77\{7791CD06-402A-B111-7E82-87EB587D1531}.wem		\Actor-Mixer Hierarchy\Anthony\mus_FOREST\mus_4-4_80bpm_ForestNoon_lp		8064096
+
