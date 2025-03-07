@@ -80,35 +80,6 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="groundmaterial" ID="{DF31207F-A468-4918-A1E1-80D63A2C15D2}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="sand" ID="{C91C3256-775B-4530-8562-E58792586BB9}"/>
-								<CustomState Name="" ID="{4007B32F-19D8-48A4-8EFE-AFC2347631BF}" ShortID="386415468"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="grass" ID="{3B561968-6226-4B44-A25F-7E50868E2FD5}"/>
-								<CustomState Name="" ID="{728F9EAB-A894-46A5-A1BE-DAB72396BA43}" ShortID="337394062">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="wood" ID="{03613866-2A8E-4BAE-AEDE-AF2AAD8FDA2D}"/>
-								<CustomState Name="" ID="{8B240E41-5C6E-45F5-B770-D1F98D316FE2}" ShortID="17276876">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
