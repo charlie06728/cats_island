@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1EE8CE7D-49E9-4020-B957-2F2A36F01AF8}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{1EE8CE7D-49E9-4020-B957-2F2A36F01AF8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1EE8CE7D-49E9-4020-B957-2F2A36F01AF8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Soundcaster Session" ID="{9BA60548-84CA-47A7-AB6B-94419204D6B9}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="music_forest" ID="{2C6A41F3-DDDC-4F4F-991B-F1D345EBC76B}" WorkUnitID="{885E0BF8-4BB9-4173-B3E4-5714BF0CDB0F}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_footsteps" ID="{3AAC06AD-81D3-4E7D-A27B-542955D449B3}" WorkUnitID="{885E0BF8-4BB9-4173-B3E4-5714BF0CDB0F}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="TimeOfDay" ID="{23B10F95-E181-414E-8017-0C8B16F60858}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

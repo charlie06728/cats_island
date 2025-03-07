@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AA53441E-4B33-47A5-812B-9C77338FF35D}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{AA53441E-4B33-47A5-812B-9C77338FF35D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AA53441E-4B33-47A5-812B-9C77338FF35D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="groundmaterial" ID="{DF31207F-A468-4918-A1E1-80D63A2C15D2}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{046DFC4F-7F93-489E-B2AD-53E495CED383}"/>
+						<State Name="grass" ID="{3B561968-6226-4B44-A25F-7E50868E2FD5}"/>
+						<State Name="sand" ID="{C91C3256-775B-4530-8562-E58792586BB9}"/>
+						<State Name="wood" ID="{03613866-2A8E-4BAE-AEDE-AF2AAD8FDA2D}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
