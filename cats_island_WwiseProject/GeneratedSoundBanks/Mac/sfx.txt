@@ -13,5 +13,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	142100012	sfx_FOOTSTEP_Grass_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\74\{74387D4D-9370-0558-6BD9-9B57CA77520E}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_01		72096
 	183408089	sfx_FOOTSTEP_Grass_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\42\{4207CF1C-BF31-DD40-BC7A-7B78A902F56A}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_04		72096
 	392232085	sfx_FOOTSTEP_Grass_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\CC\{CCA60ABB-4080-4C52-17E8-8DFF20BE7340}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_03		72096
+	562166737	FS_Sand_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\C8\{C83215B8-2C75-2774-F7D2-2497FDED3805}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\FS_Sand_01		43874
 	621107859	sfx_FOOTSTEP_Grass_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\73\{73629889-3F5F-750B-183C-B2AEDCDA363B}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_02		72096
+	1048684280	FS_Sand_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B3\{B30AA363-95B1-4A3F-94FB-9D70BA8C523F}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\FS_Sand_02		75892
 

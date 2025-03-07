@@ -244,14 +244,79 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sfx_FOOTSTEP_Sand" ID="{91211C04-9583-432F-A99D-5FF2481A8BCC}" ShortID="743028195">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FS_Sand_01" ID="{68429EB7-1531-4AAD-81BC-056845CD2F03}" ShortID="513041459">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Sand_01" ID="{3633EBC9-B218-44EE-84D7-2D2208774368}">
+											<Language>SFX</Language>
+											<AudioFile>FS_Sand\FS_Sand_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="562166737"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Sand_01" ID="{3633EBC9-B218-44EE-84D7-2D2208774368}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FS_Sand_02" ID="{A86FF9DE-3127-4CF0-A305-3B7AA3D37527}" ShortID="969178068">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FS_Sand_02" ID="{012251ED-D358-4940-8D93-6475B85D89D0}">
+											<Language>SFX</Language>
+											<AudioFile>FS_Sand\FS_Sand_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1048684280"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FS_Sand_02" ID="{012251ED-D358-4940-8D93-6475B85D89D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="sfx_FOOTSTEP_Sand" ID="{91211C04-9583-432F-A99D-5FF2481A8BCC}"/>
+							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="sfx_FOOTSTEP_Grass" ID="{B63ED6D8-63AB-4524-B6BF-0D360C585A7A}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="sand" ID="{F3A73495-4876-4A02-9462-FC20705F54CB}"/>
+								<ItemList>
+									<ItemRef Name="sfx_FOOTSTEP_Sand" ID="{91211C04-9583-432F-A99D-5FF2481A8BCC}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="grass" ID="{020694FE-B789-4A94-9B76-2EBF54AC8DAE}"/>
 								<ItemList>

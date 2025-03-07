@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BEA95202-4184-4ECC-8E37-882A04F3B64C}",
     "Language": "SFX",
-    "Hash": "{FAE5476B-668E-B613-2CCA-AD720F785EBD}",
+    "Hash": "{1C3F2B76-8A34-1135-5D8A-37F031E0F487}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -40,12 +40,28 @@
       "CachePath": "CC/{CCA60ABB-4080-4C52-17E8-8DFF20BE7340}.wem"
      },
      {
+      "Id": "562166737",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FS_Sand\\FS_Sand_01.wav",
+      "CachePath": "C8/{C83215B8-2C75-2774-F7D2-2497FDED3805}.wem"
+     },
+     {
       "Id": "621107859",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_FOOTSTEP_Grass_02.wav",
       "CachePath": "73/{73629889-3F5F-750B-183C-B2AEDCDA363B}.wem"
+     },
+     {
+      "Id": "1048684280",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "FS_Sand\\FS_Sand_02.wav",
+      "CachePath": "B3/{B30AA363-95B1-4A3F-94FB-9D70BA8C523F}.wem"
      }
     ],
     "Events": [
@@ -56,8 +72,24 @@
       "GUID": "{3AAC06AD-81D3-4E7D-A27B-542955D449B3}",
       "DurationType": "OneShot",
       "DurationMin": "0.375",
-      "DurationMax": "0.375",
+      "DurationMax": "0.8593651",
       "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3072116243",
+         "Id": "803837735",
+         "GUID": "{F3A73495-4876-4A02-9462-FC20705F54CB}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "562166737"
+         },
+         {
+          "Id": "1048684280"
+         }
+        ]
+       },
        {
         "SwitchValue": {
          "GroupType": "Switch",
@@ -113,6 +145,6 @@
     ]
    }
   ],
-  "FileHash": "{2AB9F7F5-C41E-1BEB-7A2B-9E23BA303BB7}"
+  "FileHash": "{4E061BAE-BAD5-56DF-98F5-0507DF91F1A7}"
  }
 }
