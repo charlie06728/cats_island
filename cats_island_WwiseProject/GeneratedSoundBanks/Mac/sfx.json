@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{BEA95202-4184-4ECC-8E37-882A04F3B64C}",
     "Language": "SFX",
-    "Hash": "{97A46186-C578-24EF-A48D-E16B727AD370}",
+    "Hash": "{B51BC1CD-7D69-4CBE-20EF-D303DD06C303}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -64,6 +64,14 @@
       "CachePath": "80/{8031E40D-78AB-9EA2-3264-361D021B9F00}.wem"
      },
      {
+      "Id": "618942594",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_ALBUMBROCHURE_PageFlip_nl.wav",
+      "CachePath": "B7/{B775FF49-99EE-A4C8-6216-47D1184B5CDD}.wem"
+     },
+     {
       "Id": "621107859",
       "Language": "SFX",
       "Streaming": "false",
@@ -81,6 +89,20 @@
      }
     ],
     "Events": [
+     {
+      "Id": "601098146",
+      "Name": "sfx_album",
+      "ObjectPath": "\\Events\\Anthony\\sfx_album",
+      "GUID": "{B90F7CA0-1017-4857-9D07-3FED8CF5FA5B}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2254367",
+      "DurationMax": "1.8360804",
+      "MediaRefs": [
+       {
+        "Id": "618942594"
+       }
+      ]
+     },
      {
       "Id": "3364658470",
       "Name": "sfx_footsteps",
@@ -167,6 +189,6 @@
     ]
    }
   ],
-  "FileHash": "{F6ACF9EE-9655-AC37-AD44-657C3D55BAC4}"
+  "FileHash": "{FE54A038-3B5B-B03A-6429-4BE29318E927}"
  }
 }

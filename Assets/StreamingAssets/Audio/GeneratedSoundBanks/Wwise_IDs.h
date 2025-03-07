@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID MUSIC_FOREST = 2181728358U;
+        static const AkUniqueID SFX_ALBUM = 601098146U;
         static const AkUniqueID SFX_FOOTSTEPS = 3364658470U;
     } // namespace EVENTS
 

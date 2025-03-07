@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	601098146	sfx_album			\Anthony\sfx_album	
 	3364658470	sfx_footsteps			\Anthony\sfx_footsteps	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -16,6 +17,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	392232085	sfx_FOOTSTEP_Grass_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\12\{125265B8-13B0-37BE-EAF0-5AA3FFC224FD}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_03		72096
 	534557522	sfx_FOOTSTEP_Sand_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\2C\{2C38DB1A-6DD7-5028-E96B-2D8A78509078}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\sfx_FOOTSTEP_Sand_02		72780
 	566550062	sfx_FOOTSTEP_Sand_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\80\{8031E40D-78AB-9EA2-3264-361D021B9F00}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\sfx_FOOTSTEP_Sand_03		72780
+	618942594	sfx_ALBUM_PageFlip_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B7\{B775FF49-99EE-A4C8-6216-47D1184B5CDD}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_ALBUM_PageFlip_nl		288096
 	621107859	sfx_FOOTSTEP_Grass_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\42\{42DC65BE-D2F4-254D-68F0-9601BF22A96A}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_02		72096
 	827611918	sfx_FOOTSTEP_Sand_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\64\{64B53429-4158-E01D-003B-BF82DA1082C5}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Sand\sfx_FOOTSTEP_Sand_04		72780
 
