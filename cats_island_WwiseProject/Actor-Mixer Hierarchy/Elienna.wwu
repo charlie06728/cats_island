@@ -25,6 +25,91 @@
 						<ActiveSource Name="FS_Grass_01" ID="{AC1FECC7-0283-496C-8507-87EB79CB6547}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="FS_Sand" ID="{0DA8559B-3552-49DE-B171-908D40DBBCD8}" ShortID="638915202">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="FS_Sand_01" ID="{7E1C59B6-95D2-4975-AA59-16859725FC06}" ShortID="747053648">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FS_Sand_01" ID="{1733BE57-FF09-432F-936B-1235929795B7}">
+									<Language>SFX</Language>
+									<AudioFile>FS_Sand\FS_Sand_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="562166737"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FS_Sand_01" ID="{1733BE57-FF09-432F-936B-1235929795B7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FS_Sand_02" ID="{86136796-60BB-4CE6-BF6F-ACF4C985BEC9}" ShortID="411889697">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{594C4A4B-CF7B-4CEC-BD07-5F5A7F9C5CD7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7916A688-0E1B-4D80-99DD-DBEA4668B87B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FS_Sand_02" ID="{4CDD35FC-7F34-4F22-9A97-B02749B4D73E}">
+									<Language>SFX</Language>
+									<AudioFile>FS_Sand\FS_Sand_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1048684280"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FS_Sand_02" ID="{4CDD35FC-7F34-4F22-9A97-B02749B4D73E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="groundmaterial" ID="{DF31207F-A468-4918-A1E1-80D63A2C15D2}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="sand" ID="{C91C3256-775B-4530-8562-E58792586BB9}"/>
+								<CustomState Name="" ID="{4007B32F-19D8-48A4-8EFE-AFC2347631BF}" ShortID="386415468"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="grass" ID="{3B561968-6226-4B44-A25F-7E50868E2FD5}"/>
+								<CustomState Name="" ID="{728F9EAB-A894-46A5-A1BE-DAB72396BA43}" ShortID="337394062">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="wood" ID="{03613866-2A8E-4BAE-AEDE-AF2AAD8FDA2D}"/>
+								<CustomState Name="" ID="{8B240E41-5C6E-45F5-B770-D1F98D316FE2}" ShortID="17276876">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
