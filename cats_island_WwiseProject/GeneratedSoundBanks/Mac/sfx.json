@@ -1,0 +1,118 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "393239870",
+    "Type": "User",
+    "GUID": "{BEA95202-4184-4ECC-8E37-882A04F3B64C}",
+    "Language": "SFX",
+    "Hash": "{FAE5476B-668E-B613-2CCA-AD720F785EBD}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
+    "ShortName": "sfx",
+    "Path": "sfx.bnk",
+    "Media": [
+     {
+      "Id": "142100012",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Grass_01.wav",
+      "CachePath": "74/{74387D4D-9370-0558-6BD9-9B57CA77520E}.wem"
+     },
+     {
+      "Id": "183408089",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Grass_04.wav",
+      "CachePath": "42/{4207CF1C-BF31-DD40-BC7A-7B78A902F56A}.wem"
+     },
+     {
+      "Id": "392232085",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Grass_03.wav",
+      "CachePath": "CC/{CCA60ABB-4080-4C52-17E8-8DFF20BE7340}.wem"
+     },
+     {
+      "Id": "621107859",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Grass_02.wav",
+      "CachePath": "73/{73629889-3F5F-750B-183C-B2AEDCDA363B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3364658470",
+      "Name": "sfx_footsteps",
+      "ObjectPath": "\\Events\\Anthony\\sfx_footsteps",
+      "GUID": "{3AAC06AD-81D3-4E7D-A27B-542955D449B3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.375",
+      "DurationMax": "0.375",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3072116243",
+         "Id": "4248645337",
+         "GUID": "{020694FE-B789-4A94-9B76-2EBF54AC8DAE}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "142100012"
+         },
+         {
+          "Id": "183408089"
+         },
+         {
+          "Id": "392232085"
+         },
+         {
+          "Id": "621107859"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3072116243",
+      "Name": "groundmaterial",
+      "ObjectPath": "\\Switches\\Default Work Unit\\groundmaterial",
+      "GUID": "{5AE44D89-92AE-4AD1-9DAB-1216B9E771DF}",
+      "Switches": [
+       {
+        "Id": "803837735",
+        "Name": "sand",
+        "ObjectPath": "\\Switches\\Default Work Unit\\groundmaterial\\sand",
+        "GUID": "{F3A73495-4876-4A02-9462-FC20705F54CB}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\groundmaterial\\wood",
+        "GUID": "{034E157F-440F-4BA2-B085-D8F790215ABD}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\groundmaterial\\grass",
+        "GUID": "{020694FE-B789-4A94-9B76-2EBF54AC8DAE}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3706E8B6-A77B-3F41-CE13-CB9CD46FE5A4}"
+ }
+}

@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3364658470	sfx_footsteps			\Anthony\sfx_footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3072116243	groundmaterial			\Default Work Unit\groundmaterial	
+
+Switch	ID	Name	Switch Group			Notes
+	803837735	sand	groundmaterial			
+	2058049674	wood	groundmaterial			
+	4248645337	grass	groundmaterial			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	142100012	sfx_FOOTSTEP_Grass_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\74\{74387D4D-9370-0558-6BD9-9B57CA77520E}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_01		72096
+	183408089	sfx_FOOTSTEP_Grass_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\42\{4207CF1C-BF31-DD40-BC7A-7B78A902F56A}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_04		72096
+	392232085	sfx_FOOTSTEP_Grass_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\CC\{CCA60ABB-4080-4C52-17E8-8DFF20BE7340}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_03		72096
+	621107859	sfx_FOOTSTEP_Grass_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\73\{73629889-3F5F-750B-183C-B2AEDCDA363B}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\sfx_FOOTSTEP_Grass\sfx_FOOTSTEP_Grass_02		72096
+
