@@ -3,28 +3,18 @@ using System;
 
 public class TimeManager : MonoBehaviour
 {
-    public int day_length; // How many real-world seconds is an in-game day?
-
-    // public Color day_tint;
-    // public Color night_tint;
+    public float day_length; // How many real-world seconds is an in-game day?
+    private float hour_length; // How long is an hour?
 
     private float curr_time;
-    // public int CurrTime {get {return curr_time;} set {curr_time = value; OnTimeChange(value);}}
-
-    // private int minutes;
-    // public int Minutes {get {return minutes;} set {minutes = value; OnMinuteChange(value);}}
-    // private int hours;
-    // public int Hours {get {return hours;} set {hours = value; OnHoursChange(value);}}
-    // private int days;
-    // public int Days {get {return days;} set {days = value; OnDaysChange(value);}}
-
-    // public Transform light_t;
+    
+    public int hours;
+    public int minutes;
     
 
-
-    // void Start() {
-    //     light_t = this.gameObject.transform.GetChild(0);
-    // }
+    void Start() {
+        hour_length = day_length / 15f;
+    }
 
     void Update()
     {
@@ -33,25 +23,12 @@ public class TimeManager : MonoBehaviour
         if (curr_time >= day_length) {
             curr_time = 0;
         }
+        // Sun rises at 6 am and sets at 9 pm
+        // 15 total hours
+        hours = 6 + Mathf.FloorToInt(curr_time / hour_length);
+        minutes = Mathf.FloorToInt(60 * (curr_time % hour_length) / hour_length);
     }
 
-    // void OnTimeChange(int value) {
-    //     light.transform.ro
-    // }
-
-    // private void OnMinuteChange(int value) {
-    //     if (value >= 60) {
-    //         Hours += 1;
-    //         minutes = 0;
-    //     }
-    // }
-
-    // private void OnHoursChange(int value) {
-    //     if (value > 24) {
-    //         Days += 1;
-    //         hours = 0;
-    //     }
-    // } 
 
     private void OnDaysChange(int value) {
         // OnDaysChanged not implemented yet, this can be for displaying results screen when the day ends
