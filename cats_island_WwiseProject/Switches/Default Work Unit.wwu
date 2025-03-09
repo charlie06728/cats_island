@@ -3,13 +3,7 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{9F0A584E-CB7D-4C11-A995-187DC8EEE5BF}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="groundmaterial" ID="{5AE44D89-92AE-4AD1-9DAB-1216B9E771DF}">
-					<ChildrenList>
-						<Switch Name="grass" ID="{020694FE-B789-4A94-9B76-2EBF54AC8DAE}"/>
-						<Switch Name="sand" ID="{F3A73495-4876-4A02-9462-FC20705F54CB}"/>
-						<Switch Name="wood" ID="{034E157F-440F-4BA2-B085-D8F790215ABD}"/>
-					</ChildrenList>
-				</SwitchGroup>
+				<WorkUnit Name="Anthony" ID="{4869F77D-B887-4001-9DD5-B0AEADEC251B}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

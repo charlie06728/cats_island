@@ -11,7 +11,11 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="sfx_footsteps" ID="{3AAC06AD-81D3-4E7D-A27B-542955D449B3}" WorkUnitID="{885E0BF8-4BB9-4173-B3E4-5714BF0CDB0F}"/>
-							<Position X="2" Y="2"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_album" ID="{B90F7CA0-1017-4857-9D07-3FED8CF5FA5B}" WorkUnitID="{885E0BF8-4BB9-4173-B3E4-5714BF0CDB0F}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -22,7 +26,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="grass" ID="{020694FE-B789-4A94-9B76-2EBF54AC8DAE}"/>
+						<CurrentSwitchRef Name="sand" ID="{F3A73495-4876-4A02-9462-FC20705F54CB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
