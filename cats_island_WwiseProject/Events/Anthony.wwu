@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="sfx_album" ID="{B90F7CA0-1017-4857-9D07-3FED8CF5FA5B}">
+					<ChildrenList>
+						<Action Name="" ID="{75175EB6-26BC-4E57-B8BA-F2B9610036FB}" ShortID="246473689">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ALBUM_PageFlip_nl" ID="{2008B00C-AE3D-414C-B326-149FECDDF080}" WorkUnitID="{83753BCD-6B26-4751-90BD-7B3BDCA63B94}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
