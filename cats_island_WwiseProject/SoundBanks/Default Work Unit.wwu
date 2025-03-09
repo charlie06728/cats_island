@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<SoundBank Name="sfx" ID="{BEA95202-4184-4ECC-8E37-882A04F3B64C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Ragdoll_Hungry_Meow" ID="{3BD502BE-8166-441C-88A9-8C3D47EAA293}" WorkUnitID="{42959E39-1E37-4BC5-A857-D08D107256C0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{774A68BC-FA52-4A1E-A3A4-7F4A16AC372C}" WorkUnitID="{42959E39-1E37-4BC5-A857-D08D107256C0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Tabby_Hungry_Meow" ID="{2B41F61F-1138-4C67-B8FB-522F9E9E3A26}" WorkUnitID="{42959E39-1E37-4BC5-A857-D08D107256C0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Bengal_Hungry_Meow" ID="{F4E5EE56-B828-4C93-96DF-E3FE974C3C09}" WorkUnitID="{42959E39-1E37-4BC5-A857-D08D107256C0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GreyCat_Hungry_Meow" ID="{2AFC13D1-1025-4DFD-92B5-6901595E480A}" WorkUnitID="{42959E39-1E37-4BC5-A857-D08D107256C0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_footsteps" ID="{3AAC06AD-81D3-4E7D-A27B-542955D449B3}" WorkUnitID="{885E0BF8-4BB9-4173-B3E4-5714BF0CDB0F}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
