@@ -8,6 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 988585305282250059, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8f29faa707c36734d8b0e7eb1fcbfde4, type: 2}
+    - target: {fileID: 5676312482289313859, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+      propertyPath: Animator
+      value: 
+      objectReference: {fileID: 4875421530665873164}
+    - target: {fileID: 6318525976924567728, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d6f0e65094f4dd141a41e35da6377c21, type: 2}
     - target: {fileID: 7258851268381406803, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
       propertyPath: m_Name
       value: Tuxedo
@@ -52,7 +64,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8035951674700421725, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -60,6 +73,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2397756389554987059}
   m_SourcePrefab: {fileID: 100100000, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+--- !u!95 &4875421530665873164 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6318525976924567728, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+  m_PrefabInstance: {fileID: 1443144106557298620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4936367085445343724 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5802444324787306064, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
@@ -105,6 +123,7 @@ MonoBehaviour:
   catPreferredSnack: Cookie
   catHabitat: Lighthouse
   walkProportion: 0.7
+  sitProportion: 0.3
   castPoints: []
   livingArea: {fileID: 0}
   catName: 

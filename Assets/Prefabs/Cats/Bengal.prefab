@@ -209,6 +209,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 709406456283706941, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
     - {fileID: 9010174019739110180, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+    - {fileID: 5881122005724128493, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8068003472952536297, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
       insertIndex: -1
@@ -268,6 +269,7 @@ MonoBehaviour:
   catPreferredSnack: Fish
   catHabitat: cat tree, forest
   walkProportion: 0.7
+  sitProportion: 0.3
   castPoints: []
   livingArea: {fileID: 0}
   catName: 
