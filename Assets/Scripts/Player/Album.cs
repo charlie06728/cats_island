@@ -23,6 +23,8 @@ namespace Player {
         private Action<InputAction.CallbackContext> _right;
         private Action<InputAction.CallbackContext> _delete;
         
+        private Action<InputAction.CallbackContext> _gamePad;
+        
         /* record alum local positions */
         private Vector3 _albumLocalPositionToItemHook;
         private Quaternion _albumLocalRotationToItemHook;
@@ -58,6 +60,7 @@ namespace Player {
             Server.Server.Instance.InputActionMap["A"].performed += _left;
             Server.Server.Instance.InputActionMap["D"].performed += _right;
             Server.Server.Instance.InputActionMap["Delete"].performed += _delete;
+            Server.Server.Instance.InputActionMap["GamePadLeft"].performed += _gamePad;
             
             /* Suspend the player movement */
             Server.Server.Instance.SuspendPlayerMove = true;
@@ -143,6 +146,7 @@ namespace Player {
             Server.Server.Instance.InputActionMap["A"].performed -= _left;
             Server.Server.Instance.InputActionMap["D"].performed -= _right;
             Server.Server.Instance.InputActionMap["Delete"].performed -= _delete;
+            Server.Server.Instance.InputActionMap["GamePadLeft"].performed -= _gamePad;
         }
 
         protected void EnterAlbumView() {
@@ -249,6 +253,18 @@ namespace Player {
                 Photos.RemoveAt(photoIndex);
                 Debug.Log("Delete photo at index " + photoIndex);
                 RenderImages();
+            };
+            _gamePad = context => {
+                Vector2 gamePad = Server.Server.Instance.InputActionMap["GamePadLeft"].ReadValue<Vector2>();
+                if (gamePad.x < -0.9) {
+                    if (CurrentSelect == 2 || CurrentSelect == 3) CurrentSelect -= 2;
+                } else if (gamePad.x > 0.9) {
+                    if (CurrentSelect == 0 || CurrentSelect == 1) CurrentSelect += 2;
+                } else if (gamePad.y < -0.9) {
+                    if (CurrentSelect == 1 || CurrentSelect == 3) CurrentSelect -= 1;
+                } else if (gamePad.y > 0.9) {
+                    if (CurrentSelect == 0 || CurrentSelect == 2) CurrentSelect += 1;
+                }
             };
         }
     }
