@@ -73980,6 +73980,14 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+    - m_Name: Delete
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 41c90b3a-c6fb-4279-b9c1-189fe903511e
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
     m_Bindings:
     - m_Name: 
       m_Id: 9a0f700e-7c9a-460e-88bf-4b36300c7dc9
@@ -74292,6 +74300,22 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: NextItem
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 65d3e57c-7740-43eb-98e0-df9888ba353e
+      m_Path: <Keyboard>/delete
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Delete
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 1c8bbfdc-331f-49c3-a60b-8ec8a7010b01
+      m_Path: <Keyboard>/backspace
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Delete
       m_Flags: 0
   canvas: {fileID: 1881234974}
   zoomScroll: {fileID: 801064152}

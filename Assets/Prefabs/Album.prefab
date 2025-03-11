@@ -58,6 +58,7 @@ MonoBehaviour:
   - {fileID: 5369157442783841389}
   catName: {fileID: 6213287103266478248}
   catBreed: {fileID: 5677297552087492303}
+  select: {fileID: 8494727970149502876}
 --- !u!1 &933366373957068733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1479,7 @@ MonoBehaviour:
   - {fileID: 7579362291330351132}
   catName: {fileID: 8860504396543022812}
   catBreed: {fileID: 5325988327600795248}
+  select: {fileID: 7229936605104468613}
 --- !u!1 &2844478513897082427
 GameObject:
   m_ObjectHideFlags: 0
@@ -4235,6 +4237,7 @@ MonoBehaviour:
   - {fileID: 8609238559622288497}
   catName: {fileID: 4646079354541347421}
   catBreed: {fileID: 2526490478777147489}
+  select: {fileID: 6162235546079436709}
 --- !u!1 &8338372047445181150
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +4336,7 @@ MonoBehaviour:
   - {fileID: 2140393967854161625}
   catName: {fileID: 4320996224862709315}
   catBreed: {fileID: 2677570392881185805}
+  select: {fileID: 5447390150404466614}
 --- !u!1 &8494727970149502876
 GameObject:
   m_ObjectHideFlags: 0

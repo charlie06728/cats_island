@@ -9,11 +9,13 @@ namespace Player {
         public Image[] stars;
         public TextMeshProUGUI catName;
         public TextMeshProUGUI catBreed;
+        public GameObject select;
 
         public void Hide() {
             rawImage.gameObject.SetActive(false);
             catName.gameObject.SetActive(false);
             catBreed.gameObject.SetActive(false);
+            select.SetActive(false);
             foreach (var star in stars) {
                 star.enabled = false;
             }

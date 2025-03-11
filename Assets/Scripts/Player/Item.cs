@@ -68,7 +68,7 @@ namespace Player {
             // transform.rotation = PlayerPocket.Player.Head.transform.rotation;
         }
 
-        protected void Update() {
+        protected virtual void Update() {
             // FixItemOnHook();
         }
 

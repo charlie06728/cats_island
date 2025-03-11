@@ -204,7 +204,7 @@ namespace Player {
                 MoveValue *= crouchMultiplier;
             }
             
-            transform.position += MoveValue;
+            if (!Server.Server.Instance.SuspendPlayerMove) transform.position += MoveValue;
         }
 
         protected Vector3 MoveByGamePad() {
