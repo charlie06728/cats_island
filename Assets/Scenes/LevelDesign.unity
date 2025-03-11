@@ -86361,6 +86361,10 @@ PrefabInstance:
       propertyPath: cameraVirtualPosition
       value: 
       objectReference: {fileID: 1214473687}
+    - target: {fileID: 1238753969655648698, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1787783464381194674, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -86473,6 +86477,10 @@ PrefabInstance:
       propertyPath: footStepSound
       value: 
       objectReference: {fileID: 824760377}
+    - target: {fileID: 8012816237433524855, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5265647512655100225, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}

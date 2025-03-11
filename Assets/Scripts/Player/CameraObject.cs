@@ -280,6 +280,14 @@ namespace Player {
             CurrentPhoto.PhotoTexture.Apply();
             RenderTexture.active = null;
             
+            // 🔹 Apply gamma correction (Convert Linear to sRGB)
+            Color[] pixels = CurrentPhoto.PhotoTexture.GetPixels();
+            for (int i = 0; i < pixels.Length; i++) {
+                pixels[i] = pixels[i].gamma; // Converts from Linear space to sRGB
+            }
+            CurrentPhoto.PhotoTexture.SetPixels(pixels);
+            CurrentPhoto.PhotoTexture.Apply();
+            
             // if (CurrentPhoto.PhotoRenderer != null) {
             //     CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
             // }
