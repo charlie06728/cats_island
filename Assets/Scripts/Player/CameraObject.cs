@@ -40,6 +40,8 @@ namespace Player {
 
         private Vector3 _cameraLocalPositionToItemHook;
         private Quaternion _cameraLocalRotationToItemHook;
+
+        private float _prevTakeTime = 0f;
         
         /* child mesh renderers */
         private MeshRenderer[] meshRenderers;
@@ -120,8 +122,13 @@ namespace Player {
         }
 
         public void TakePhoto() {
-            if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount) return;
+            if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount 
+                || Time.time - _prevTakeTime < Server.Server.Instance.cameraCoolDown) return;
             Server.Server.Instance.FilmUsed++;
+
+            if (_isCameraMode) {
+                PlayerPocket.cameraAnimator.SetTrigger("TakePhoto");
+            }
             
             /* Record the camera position */
             Vector3 cameraLocalPosition = photoCamera.transform.localPosition;
@@ -349,6 +356,8 @@ namespace Player {
         protected void ExitCameraMode() {
             _isCameraMode = false;
             // hand_renderer.enabled = true;
+            
+            PlayerPocket.cameraAnimator.SetTrigger("ExitCameraMode");
             
             /* Hand visible */
             PlayerPocket.Player.Hand.SetActive(true);

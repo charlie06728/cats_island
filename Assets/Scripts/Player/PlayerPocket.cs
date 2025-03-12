@@ -15,6 +15,7 @@ namespace Player {
         /* Camera prefab and component after init */
         public GameObject cameraPrefab;
         public GameObject cameraVirtualPosition;
+        public Animator cameraAnimator;
         [NonSerialized] public CameraObject CameraObject;
         
         /* treat prefab and component after it being initialized */
