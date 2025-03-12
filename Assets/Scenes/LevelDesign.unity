@@ -77461,7 +77461,7 @@ MonoBehaviour:
       m_Flags: 0
     - m_Name: 
       m_Id: 5e4ffca0-a9b3-4f10-927e-9dd7537190e5
-      m_Path: <Gamepad>/buttonEast
+      m_Path: <Gamepad>/buttonWest
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -77477,7 +77477,7 @@ MonoBehaviour:
       m_Flags: 0
     - m_Name: 
       m_Id: 094140de-5395-4673-b5b3-27d279b09120
-      m_Path: <Gamepad>/buttonWest
+      m_Path: <Gamepad>/buttonEast
       m_Interactions: 
       m_Processors: 
       m_Groups: 
