@@ -125,6 +125,7 @@ namespace Player {
             if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount 
                 || Time.time - _prevTakeTime < Server.Server.Instance.cameraCoolDown) return;
             Server.Server.Instance.FilmUsed++;
+            _prevTakeTime = Time.time;
 
             if (_isCameraMode) {
                 PlayerPocket.cameraAnimator.SetTrigger("TakePhoto");
