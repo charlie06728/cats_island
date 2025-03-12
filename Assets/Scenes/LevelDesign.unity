@@ -14214,7 +14214,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 91755cf743637e242a67efef99b9dca3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a366dd7e32d43734892d4ebb1ebf9472, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -83709,6 +83709,10 @@ PrefabInstance:
     - target: {fileID: 5462535732111784877, guid: 58aa82df0a127ae408630c2b343d9993, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6642986768396414866, guid: 58aa82df0a127ae408630c2b343d9993, type: 3}
+      propertyPath: catName
+      value: Snowball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
