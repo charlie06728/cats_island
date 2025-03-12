@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
@@ -16,9 +17,10 @@ namespace Player {
         [NonSerialized] public UnityEngine.Camera PlayerCamera;
         public Rigidbody Rigidbody;
         public GameObject Head;
+        public LayerMask groundLayer;
 
         /* Sprinting and crouching */
-        public float sprintMultiplier = 2f; // How much faster should sprinting make you?
+        public float sprintMultiplier = 1.35f; // How much faster should sprinting make you?
         public float crouchMultiplier = 0.5f; // How much slower should sprinting make you?
         public float crouchDist = 1f; // How far down should we crouch?
         bool isSprinting;
@@ -69,9 +71,9 @@ namespace Player {
             PlayerCamera.transform.parent = Head.transform;
             
             /* Get rigidbody */
-            Rigidbody = GetComponent<Rigidbody>();
-            if (Rigidbody == null) Rigidbody = gameObject.AddComponent<Rigidbody>();
-            Rigidbody.useGravity = true;
+            // Rigidbody = GetComponent<Rigidbody>();
+            // if (Rigidbody == null) Rigidbody = gameObject.AddComponent<Rigidbody>();
+            // Rigidbody.useGravity = true;
             
             /* Camera rotation behaviour */
             Server.Server.Instance.InputActionMap["MouseMove"].performed += context => {
@@ -118,7 +120,7 @@ namespace Player {
             Server.Server.Instance.InputActionMap["GamePadLeft"].canceled += context => { _keyDown["GamePadLeft"] = false; };
             Server.Server.Instance.InputActionMap["Space"].performed += context => {
                 /* Check if body is very close to the terrain */
-                if (Physics.Raycast(transform.position, Vector3.down, 5f)) {
+                if (_isGrounded) {
                     Rigidbody.AddForce(Vector3.up * Server.Server.Instance.JumpForce * Rigidbody.mass, ForceMode.Impulse);
                     // _upAcceleration = Physics.gravity.y;
                     // Rigidbody.useGravity = true;
@@ -126,12 +128,35 @@ namespace Player {
                 }
             };
         }
+        
+        private void OnCollisionStay(Collision collision)
+        {
+            if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) {
+                _isGrounded = true;
+            }
+        }
+        
+        private void OnCollisionExit(Collision collision)
+        {
+            if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0)
+            {
+                _isGrounded = false;
+            }
+        }
+        
+        private void OnCollisionEnter(Collision collision)
+        {
+            if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) // Check if touching terrain
+            {
+                _isGrounded = true;
+            }
+        }
 
-        private void Update() {
+        private void FixedUpdate() {
             Vector3 MoveValue = new Vector3();
             if (_keyDown.ContainsKey("GamePadLeft") && _keyDown["GamePadLeft"]) MoveValue += MoveByGamePad();
             
-            Rigidbody.angularVelocity = new Vector3();
+            // Rigidbody.angularVelocity = new Vector3();
             bool keyDown = false;
             foreach (string k in _keyDown.Keys) {
                 if (_keyDown[k]) {
@@ -204,8 +229,25 @@ namespace Player {
                 MoveValue *= crouchMultiplier;
             }
             
-            if (!Server.Server.Instance.SuspendPlayerMove) transform.position += MoveValue;
+            // if (!Server.Server.Instance.SuspendPlayerMove) transform.position += MoveValue;
+            if (!Server.Server.Instance.SuspendPlayerMove) Rigidbody.linearVelocity = new Vector3(MoveValue.x, Rigidbody.linearVelocity.y, MoveValue.z);
+
+            // Vector3 movementInput = MoveValue;
+            // if (movementInput.magnitude > 0)
+            // {
+            //     // Target velocity without affecting gravity
+            //     Vector3 targetVelocity = new Vector3(movementInput.x, Rigidbody.linearVelocity.y, movementInput.z);
+            //
+            //     // Apply velocity gradually (smooth acceleration)
+            //     Rigidbody.linearVelocity = Vector3.Lerp(Rigidbody.linearVelocity, targetVelocity, Time.fixedDeltaTime);
+            // }
+            // else
+            // {
+            //     // Gradually reduce velocity when no input (smooth deceleration)
+            //     Rigidbody.linearVelocity = Vector3.Lerp(Rigidbody.linearVelocity, new Vector3(0, Rigidbody.linearVelocity.y, 0), 0);
+            // }
         }
+        
 
         protected Vector3 MoveByGamePad() {
             Vector2 gamePad = Server.Server.Instance.InputActionMap["GamePadLeft"].ReadValue<Vector2>();
