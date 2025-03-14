@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/3D models/CatModels/RegularCat.fbx.meta
 guid: b9f3bb7af8662734fb10017263e3b1f1
-========
-guid: 3014fad360dae41958646d452f4a6f74
->>>>>>>> bb54323 (implemented day/night cycle with TimeManager object):Assets/3D models/CatModels/WildCatFinal.fbx.meta
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
