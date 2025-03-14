@@ -15,6 +15,7 @@ namespace Player {
         /* Camera prefab and component after init */
         public GameObject cameraPrefab;
         public GameObject cameraVirtualPosition;
+        public Animator cameraAnimator;
         [NonSerialized] public CameraObject CameraObject;
         
         /* treat prefab and component after it being initialized */
@@ -93,7 +94,13 @@ namespace Player {
                 Album.TakeOut(); 
             };
             Server.Server.Instance.InputActionMap["3"].performed += context => {
-                Treat.TakeOut(); 
+                /* Put back all other items */
+                CameraObject.PutBackAll();
+                
+                CurrentTreat++;
+                if (CurrentTreat >= Treats.Count) CurrentTreat = 0;
+                SwitchTreat(Treats[CurrentTreat]);
+                Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
             };
             Server.Server.Instance.InputActionMap["4"].performed += context => {
                 brochure.TakeOut(); 
@@ -102,42 +109,42 @@ namespace Player {
                 Player.Pocket.CameraObject.PutBackAll(); 
                 Server.Server.Instance.itemBar.DeSelectAll();
             };
-            Server.Server.Instance.InputActionMap["PrevTreat"].performed += context => {
-                if (CurrentItem != 3) return;
-                CurrentTreat--;
-                if (CurrentTreat < 0) CurrentTreat = Treats.Count - 1;
-                SwitchTreat(Treats[CurrentTreat]);
-                Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
-            };
-            Server.Server.Instance.InputActionMap["NextTreat"].performed += context => {
-                if (CurrentItem != 3) return;
-                CurrentTreat++;
-                if (CurrentTreat >= Treats.Count) CurrentTreat = 0;
-                SwitchTreat(Treats[CurrentTreat]);
-                Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
-            };
-            Server.Server.Instance.InputActionMap["PrevItem"].performed += context => {
-                CurrentItem--;
-                if (CurrentItem < 0) CurrentItem = ItemList.Count - 1;
-                ItemList[CurrentItem].TakeOut();
-                
-                /* Hale switch to treat */
-                if (CurrentItem == 3) {
-                    SwitchTreat(Treats[CurrentTreat]);
-                    Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
-                }
-            };
-            Server.Server.Instance.InputActionMap["NextItem"].performed += context => {
-                CurrentItem++;
-                if (CurrentItem >= ItemList.Count) CurrentItem = 0;
-                ItemList[CurrentItem].TakeOut();
-                
-                /* Hale switch to treat */
-                if (CurrentItem == 3) {
-                    SwitchTreat(Treats[CurrentTreat]);
-                    Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
-                }
-            };
+            // Server.Server.Instance.InputActionMap["PrevTreat"].performed += context => {
+            //     if (CurrentItem != 3) return;
+            //     CurrentTreat--;
+            //     if (CurrentTreat < 0) CurrentTreat = Treats.Count - 1;
+            //     SwitchTreat(Treats[CurrentTreat]);
+            //     Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
+            // };
+            // Server.Server.Instance.InputActionMap["NextTreat"].performed += context => {
+            //     if (CurrentItem != 3) return;
+            //     CurrentTreat++;
+            //     if (CurrentTreat >= Treats.Count) CurrentTreat = 0;
+            //     SwitchTreat(Treats[CurrentTreat]);
+            //     Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
+            // };
+            // Server.Server.Instance.InputActionMap["PrevItem"].performed += context => {
+            //     CurrentItem--;
+            //     if (CurrentItem < 0) CurrentItem = ItemList.Count - 1;
+            //     ItemList[CurrentItem].TakeOut();
+            //     
+            //     /* Hale switch to treat */
+            //     if (CurrentItem == 3) {
+            //         SwitchTreat(Treats[CurrentTreat]);
+            //         Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
+            //     }
+            // };
+            // Server.Server.Instance.InputActionMap["NextItem"].performed += context => {
+            //     CurrentItem++;
+            //     if (CurrentItem >= ItemList.Count) CurrentItem = 0;
+            //     ItemList[CurrentItem].TakeOut();
+            //     
+            //     /* Hale switch to treat */
+            //     if (CurrentItem == 3) {
+            //         SwitchTreat(Treats[CurrentTreat]);
+            //         Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
+            //     }
+            // };
         }
 
         protected void SwitchTreat(Items treat) {

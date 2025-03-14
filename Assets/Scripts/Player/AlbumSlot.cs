@@ -9,11 +9,13 @@ namespace Player {
         public Image[] stars;
         public TextMeshProUGUI catName;
         public TextMeshProUGUI catBreed;
+        public GameObject select;
 
         public void Hide() {
             rawImage.gameObject.SetActive(false);
             catName.gameObject.SetActive(false);
             catBreed.gameObject.SetActive(false);
+            select.SetActive(false);
             foreach (var star in stars) {
                 star.enabled = false;
             }
@@ -28,12 +30,11 @@ namespace Player {
             }
         }
         
-        
         public void SetPhoto(Photo photo) {
             Show();
             rawImage.texture = photo.PhotoTexture;
-            catName.text = photo.Cats.Count > 0 ? photo.Cats.First().catName : "Unknown";
-            catBreed.text = photo.Cats.Count > 0 ? photo.Cats.First().catBreed : "Unknown";
+            catName.text = photo.Cats.Count > 0 ? "Name: " + photo.Cats.First().catName : "Unknown";
+            catBreed.text = photo.Cats.Count > 0 ? "Breed: " + photo.Cats.First().catBreed : "Unknown";
             for (int i = 0; i < stars.Length; i++) {
                 stars[i].enabled = i < photo.Stars;
             }

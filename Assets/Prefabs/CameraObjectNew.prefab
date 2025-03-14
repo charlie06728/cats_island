@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3885563675445351222}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.21, y: 5.95, z: -0.79}
+  m_LocalPosition: {x: -5.74, y: 5.95, z: -0.79}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52,7 +52,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -67,7 +67,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -105,9 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
+  m_RenderShadows: 0
+  m_RequiresDepthTextureOption: 0
+  m_RequiresOpaqueTextureOption: 0
   m_CameraType: 0
   m_Cameras: []
   m_RendererIndex: -1
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -314,13 +314,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7827883251493949082}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7895147, z: -0, w: 0.6137317}
-  m_LocalPosition: {x: 3.6, y: 3.1, z: 6.4}
+  m_LocalRotation: {x: -0, y: -0.87538016, z: -0, w: 0.48343506}
+  m_LocalPosition: {x: 3.6, y: 4.04, z: 6.4}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9141431250781600422}
-  m_LocalEulerAnglesHint: {x: 0, y: -104.28, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -122.18, z: 0}
 --- !u!1001 &8743274920865209677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -331,15 +331,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.03
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.03
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -429,7 +429,7 @@ MonoBehaviour:
   Animator: {fileID: 0}
   hook: {fileID: 7827883251493949082}
   photoCamera: {fileID: 8946509900950308749}
-  cameraScale: {x: 0.03, y: 0.03, z: 0.03}
+  cameraScale: {x: 0.02, y: 0.02, z: 0.02}
   photoPrefab: {fileID: 5142363858012916415, guid: ed97be82d7a671643936d0a729222f74, type: 3}
   cameraSoundTakePicture: {fileID: 8555878005223502510}
   catLayerMask:

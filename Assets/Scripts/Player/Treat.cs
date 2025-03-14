@@ -15,12 +15,20 @@ namespace Player {
         private Action<InputAction.CallbackContext> _giveTreatAction;
 
         public override void TakeOut() {
-            base.TakeOut();
-            Server.Server.Instance.itemBar.SetCurrentItem(Items.Cookie);
+//             base.TakeOut();
+//             Server.Server.Instance.itemBar.SetCurrentItem(Items.Cookie);
 
+           
+            /* Set item visible */
             cats = FindObjectsByType<CatBehaviour>(FindObjectsSortMode.None);
+            gameObject.SetActive(true);
 
             
+            /* Make sure the parent is hand */
+            transform.SetParent(PlayerPocket.Player.ItemHook.transform);
+            
+            /* Put it into proper position */
+            FixItemOnHook();
             FixItemOnHook();
             
             /* define the input action behaviours */

@@ -17,6 +17,13 @@ namespace Player {
         private Action<InputAction.CallbackContext> _exitAlbumViewAction;
         private Action<InputAction.CallbackContext> _nextPage;
         private Action<InputAction.CallbackContext> _prevPage;
+        private Action<InputAction.CallbackContext> _up;
+        private Action<InputAction.CallbackContext> _down;
+        private Action<InputAction.CallbackContext> _left;
+        private Action<InputAction.CallbackContext> _right;
+        private Action<InputAction.CallbackContext> _delete;
+        
+        private Action<InputAction.CallbackContext> _gamePad;
         
         /* record alum local positions */
         private Vector3 _albumLocalPositionToItemHook;
@@ -24,6 +31,8 @@ namespace Player {
 
         public GameObject nextPrompt;
         public GameObject prevPrompt;
+
+        [NonSerialized] public int CurrentSelect;
 
         [NonSerialized] public int CurrentStartIndex = 0;
         
@@ -46,6 +55,15 @@ namespace Player {
             // Server.Server.Instance.InputActionMap["RightMouse"].performed += _exitAlbumViewAction;
             Server.Server.Instance.InputActionMap["Next"].canceled += _nextPage;
             Server.Server.Instance.InputActionMap["Prev"].canceled += _prevPage;
+            Server.Server.Instance.InputActionMap["W"].performed += _up;
+            Server.Server.Instance.InputActionMap["S"].performed += _down;
+            Server.Server.Instance.InputActionMap["A"].performed += _left;
+            Server.Server.Instance.InputActionMap["D"].performed += _right;
+            Server.Server.Instance.InputActionMap["Delete"].performed += _delete;
+            Server.Server.Instance.InputActionMap["GamePadLeft"].performed += _gamePad;
+            
+            /* Suspend the player movement */
+            Server.Server.Instance.SuspendPlayerMove = true;
             
             /* Record local position */
             _albumLocalPositionToItemHook = transform.localPosition;
@@ -66,9 +84,14 @@ namespace Player {
             if (endIndex > Photos.Count) {
                 endIndex = Photos.Count;
             }
-
+            
             for (int i = CurrentStartIndex; i < endIndex; i++) {
                 int slotIndex = i % albumSlots.Count;
+                if (slotIndex == CurrentSelect) {
+                    albumSlots[slotIndex].select.SetActive(true);
+                } else {
+                    albumSlots[slotIndex].select.SetActive(false);
+                }
                 albumSlots[slotIndex].Show();
                 albumSlots[slotIndex].SetPhoto(Photos[i]);
             }
@@ -86,6 +109,16 @@ namespace Player {
                 nextPrompt.SetActive(true);
             }
         }
+
+        protected override void Update() {
+            for (int i = 0; i < albumSlots.Count; i++) {
+                if (i == CurrentSelect) {
+                    if (albumSlots[i].rawImage.gameObject.activeInHierarchy) albumSlots[i].select.SetActive(true);
+                } else {
+                    albumSlots[i].select.SetActive(false);
+                }
+            }
+        }
         
         public override void PutBack() {
             base.PutBack();
@@ -96,6 +129,9 @@ namespace Player {
             
             transform.SetParent(PlayerPocket.Player.ItemHook.transform);
             
+            /* Allow player move */
+            Server.Server.Instance.SuspendPlayerMove = false;
+            
             // /* Hide all the photos */
             // foreach (var photo in Photos) {
             //     photo.gameObject.SetActive(false);
@@ -103,6 +139,14 @@ namespace Player {
             
             // Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _albumViewAction;
             // Server.Server.Instance.InputActionMap["RightMouse"].performed -= _exitAlbumViewAction;
+            Server.Server.Instance.InputActionMap["Next"].canceled -= _nextPage;
+            Server.Server.Instance.InputActionMap["Prev"].canceled -= _prevPage;
+            Server.Server.Instance.InputActionMap["W"].performed -= _up;
+            Server.Server.Instance.InputActionMap["S"].performed -= _down;
+            Server.Server.Instance.InputActionMap["A"].performed -= _left;
+            Server.Server.Instance.InputActionMap["D"].performed -= _right;
+            Server.Server.Instance.InputActionMap["Delete"].performed -= _delete;
+            Server.Server.Instance.InputActionMap["GamePadLeft"].performed -= _gamePad;
         }
 
         protected void EnterAlbumView() {
@@ -189,6 +233,39 @@ namespace Player {
             _exitAlbumViewAction = context => { ExitAlbumView(); };
             _prevPage = context => { PreviousPage(); };
             _nextPage = context => { NextPage(); };
+            _up = context => {
+                if (CurrentSelect == 1 || CurrentSelect == 3) CurrentSelect -= 1;
+            };
+            _down = context => {
+                if (CurrentSelect == 0 || CurrentSelect == 2) CurrentSelect += 1;
+            };
+            _left = context => {
+                if (CurrentSelect == 2 || CurrentSelect == 3) CurrentSelect -= 2;
+            };
+            _right = context => {
+                if (CurrentSelect == 0 || CurrentSelect == 1) CurrentSelect += 2;
+            };
+            _delete = context => {
+                if (Photos.Count == 0) return;
+                /* calculate the current selected photo index */
+                int photoIndex = CurrentStartIndex + CurrentSelect;
+                if (photoIndex >= Photos.Count) return;
+                Photos.RemoveAt(photoIndex);
+                Debug.Log("Delete photo at index " + photoIndex);
+                RenderImages();
+            };
+            _gamePad = context => {
+                Vector2 gamePad = Server.Server.Instance.InputActionMap["GamePadLeft"].ReadValue<Vector2>();
+                if (gamePad.x < -0.9) {
+                    if (CurrentSelect == 2 || CurrentSelect == 3) CurrentSelect -= 2;
+                } else if (gamePad.x > 0.9) {
+                    if (CurrentSelect == 0 || CurrentSelect == 1) CurrentSelect += 2;
+                } else if (gamePad.y < -0.9) {
+                    if (CurrentSelect == 1 || CurrentSelect == 3) CurrentSelect -= 1;
+                } else if (gamePad.y > 0.9) {
+                    if (CurrentSelect == 0 || CurrentSelect == 2) CurrentSelect += 1;
+                }
+            };
         }
     }
 }

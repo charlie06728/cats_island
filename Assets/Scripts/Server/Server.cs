@@ -14,6 +14,10 @@ namespace Server {
         public float ControllerSenstivity = 1f;
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
+
+        public float cameraCoolDown;
+
+        [NonSerialized] public bool SuspendPlayerMove = false;
         
         /* cat related fields */
         public float CatRandomMoveInterval = 1.5f;

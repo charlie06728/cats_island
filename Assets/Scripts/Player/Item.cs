@@ -14,7 +14,6 @@ namespace Player {
                 return;
             }
             
-            /* put all back first */
             PutBackAll();
             
             /* Set item visible */
@@ -69,7 +68,7 @@ namespace Player {
             // transform.rotation = PlayerPocket.Player.Head.transform.rotation;
         }
 
-        protected void Update() {
+        protected virtual void Update() {
             // FixItemOnHook();
         }
 

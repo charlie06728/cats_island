@@ -10,8 +10,8 @@ namespace Cat {
         Idle,
         Treat,
         Pose,
-        FollowTreat,
         Sit,
+        FollowTreat,
     }
     
     public class CatBehaviour : MonoBehaviour {
@@ -40,7 +40,9 @@ namespace Cat {
             //TODO: change to other behaviours
             StateToBehaviour[CatState.Treat] = new CatTreatBehaviour(Cat);
             StateToBehaviour[CatState.Pose] = new CatPoseBehaviour(Cat);
+            StateToBehaviour[CatState.Sit] = new CatSitBehaviour(Cat);
             StateToBehaviour[CatState.FollowTreat] = new CatFollowTreatBehaviour(Cat);
+            StateToBehaviour[CatState.Pose] = new CatPoseBehaviour(Cat);
             
             SwitchState(CatState.Idle);
         }

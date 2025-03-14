@@ -20,8 +20,8 @@ namespace Cat.Behaviours {
                 PreviousEvaluateTime = Time.time;
                 
                 /* Generate a random boolean */
-                bool randomBool = UnityEngine.Random.value < Cat.walkProportion;
-                if (randomBool) {
+                float rand1 = UnityEngine.Random.value;
+                if (rand1 < Cat.walkProportion) {
                     Vector3 position = Cat.livingArea.transform.position;
                     /* Convert position to terrain local coordinates */
                     position = TerrainManager.Instance.Terrain.transform.InverseTransformPoint(position);
@@ -46,7 +46,7 @@ namespace Cat.Behaviours {
                     /* Move to the random position */
                     Cat.Navigator.MoveTo(randomPosition);
                     
-                } else {
+                } else if (rand1 > Cat.sitProportion + Cat.walkProportion){
                     if (Cat.Behaviour.Animator.GetBool("IsWondering")) {
                         WonderStopTime += WonderTime;
                         return;
@@ -54,6 +54,8 @@ namespace Cat.Behaviours {
                     
                     Cat.Behaviour.Animator.SetBool("IsWondering", true);
                     Cat.StartCoroutine(WonderingStopCoroutine(WonderTime));
+                } else {
+                    Cat.Behaviour.SwitchState(CatState.Sit);
                 }
             }
         }

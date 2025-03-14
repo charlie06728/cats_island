@@ -25,7 +25,7 @@ namespace Player {
         public float zoom_max = 30f; // Max amount of zoom
         public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
         public float zoom_speed_controller = 1000f;
-        MeshRenderer hand_renderer;
+        // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
         MeshRenderer screen_renderer;
         public Scrollbar zoomScroll;
@@ -40,12 +40,16 @@ namespace Player {
 
         private Vector3 _cameraLocalPositionToItemHook;
         private Quaternion _cameraLocalRotationToItemHook;
+
+        private float _prevTakeTime = 0f;
         
         /* child mesh renderers */
         private MeshRenderer[] meshRenderers;
 
         public override void TakeOut() {
             base.TakeOut();
+            
+            FixItemOnHook();
             
             /* define the input action behaviours */
             Server.Server.Instance.InputActionMap["LeftMouse"].performed += _takePhotoAction;
@@ -112,14 +116,20 @@ namespace Player {
             Debug.Log("Toggle Zoom");
             is_zoomed = !is_zoomed;
             // hand.SetActive(!is_zoomed);
-            hand_renderer.enabled = !is_zoomed;
+            // hand_renderer.enabled = !is_zoomed;
             camera_renderer.enabled = !is_zoomed;
             screen_renderer.enabled = !is_zoomed;
         }
 
         public void TakePhoto() {
-            if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount) return;
+            if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount 
+                || Time.time - _prevTakeTime < Server.Server.Instance.cameraCoolDown) return;
             Server.Server.Instance.FilmUsed++;
+            _prevTakeTime = Time.time;
+
+            if (_isCameraMode) {
+                PlayerPocket.cameraAnimator.SetTrigger("TakePhoto");
+            }
             
             /* Record the camera position */
             Vector3 cameraLocalPosition = photoCamera.transform.localPosition;
@@ -278,6 +288,14 @@ namespace Player {
             CurrentPhoto.PhotoTexture.Apply();
             RenderTexture.active = null;
             
+            // 🔹 Apply gamma correction (Convert Linear to sRGB)
+            Color[] pixels = CurrentPhoto.PhotoTexture.GetPixels();
+            for (int i = 0; i < pixels.Length; i++) {
+                pixels[i] = pixels[i].gamma; // Converts from Linear space to sRGB
+            }
+            CurrentPhoto.PhotoTexture.SetPixels(pixels);
+            CurrentPhoto.PhotoTexture.Apply();
+            
             // if (CurrentPhoto.PhotoRenderer != null) {
             //     CurrentPhoto.PhotoRenderer.material.mainTexture = CurrentPhoto.PhotoTexture;
             // }
@@ -301,6 +319,7 @@ namespace Player {
 
         protected void EnterCameraMode() {
             _isCameraMode = true;
+            Server.Server.Instance.itemBar.gameObject.SetActive(false);
             StartCoroutine(EnterCameraModeCoroutine(0.25f));
         }
 
@@ -330,17 +349,22 @@ namespace Player {
             
             /* Disable camera object rendering */
             SetMeshRendering(false);
-            hand_renderer.enabled = false;
+            // hand_renderer.enabled = false;
             zoomScroll.gameObject.SetActive(true);
             Server.Server.Instance.cameraMode.SetActive(true);
         }
 
         protected void ExitCameraMode() {
             _isCameraMode = false;
-            hand_renderer.enabled = true;
+            // hand_renderer.enabled = true;
+            
+            PlayerPocket.cameraAnimator.SetTrigger("ExitCameraMode");
             
             /* Hand visible */
             PlayerPocket.Player.Hand.SetActive(true);
+            
+            /* item bar visible */
+            Server.Server.Instance.itemBar.gameObject.SetActive(true);
             
             /* enable mesh rendering */
             SetMeshRendering(true);
@@ -373,7 +397,7 @@ namespace Player {
             
             /* enable mesh rendering */
             SetMeshRendering(true);
-            hand_renderer.enabled = true;
+            // hand_renderer.enabled = true;
             zoomScroll.gameObject.SetActive(false);
             Server.Server.Instance.cameraMode.SetActive(false);
             
@@ -435,7 +459,7 @@ namespace Player {
 
             // Get the UI scrollbar for the camera zoom
             if (zoomScroll == null) zoomScroll = GameObject.FindWithTag("CameraScroll").GetComponent<Scrollbar>();
-            if (hand_renderer == null) hand_renderer = GameObject.Find("Hand").GetComponent<MeshRenderer>();
+            // if (hand_renderer == null) hand_renderer = GameObject.Find("Hand").GetComponent<MeshRenderer>();
             if (camera_renderer == null) camera_renderer = gameObject.GetComponent<MeshRenderer>();
             if (screen_renderer == null) screen_renderer = this.gameObject.transform.GetChild(0).GetComponent<MeshRenderer>();
             zoomScroll.gameObject.SetActive(false);
