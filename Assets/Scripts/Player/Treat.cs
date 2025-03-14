@@ -41,7 +41,7 @@ namespace Player {
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
             if (Physics.Raycast(ray, out hit, treat_distance)) {   
                 // Create a treat on that surface
-                Instantiate(treatPrefab, hit.point, new Quaternion(0,0,0,0));
+                Instantiate(treatPrefab, new Vector3(hit.point.x, hit.point.y + 0.5f, hit.point.z), new Quaternion(0,0,0,0));
 
                 Vector3 currentPos = gameObject.transform.position;
 

@@ -10,6 +10,7 @@ public class TimeManager : MonoBehaviour
     
     public int hours;
     public int minutes;
+    public int days;
     
 
     void Start() {
@@ -21,7 +22,7 @@ public class TimeManager : MonoBehaviour
         curr_time += Time.deltaTime;
         gameObject.transform.rotation = Quaternion.Euler(180 * (curr_time / day_length), 0f, 0f);
         if (curr_time >= day_length) {
-            curr_time = 0;
+            DayChange();
         }
         // Sun rises at 6 am and sets at 9 pm
         // 15 total hours
@@ -30,8 +31,9 @@ public class TimeManager : MonoBehaviour
     }
 
 
-    private void OnDaysChange(int value) {
+    private void DayChange() {
         // OnDaysChanged not implemented yet, this can be for displaying results screen when the day ends
+        days++;
         curr_time = 0;
     }
 }

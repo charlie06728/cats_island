@@ -21,6 +21,7 @@ namespace Player {
         public float sprintMultiplier = 2f; // How much faster should sprinting make you?
         public float crouchMultiplier = 0.5f; // How much slower should sprinting make you?
         public float crouchDist = 1f; // How far down should we crouch?
+        public float crouchSpeed = 1f; // How fast should the smooth crouching be?
         bool isSprinting;
         bool isCrouching;
         
@@ -37,32 +38,35 @@ namespace Player {
         private Vector3 MoveDirection = new Vector3();
         private Dictionary<string, bool> _keyDown = new Dictionary<string, bool>();
 
+        private Vector3 headTargetPosition;
+
 
         /* Recieves messages from the PlayerInput component on the player when the player presses/releases shift/ctrl */
-        public void OnSprint(InputValue val){
-            if(val.isPressed){
-                // Debug.Log("now sprinting!");
-                isSprinting = true;
-            } else {
-                // Debug.Log("no longer sprinting!");
-                isSprinting = false;
-            }
-        }
+        // public void OnSprint(InputValue val){
+        //     if(val.isPressed){
+        //         // Debug.Log("now sprinting!");
+        //         isSprinting = true;
+        //     } else {
+        //         // Debug.Log("no longer sprinting!");
+        //         isSprinting = false;
+        //     }
+        // }
 
-        public void OnCrouch(InputValue val){
-            if(val.isPressed){
-                // Debug.Log("now crouching!");
-                Head.transform.position -= new Vector3(0, crouchDist, 0);
-                isCrouching = true;
-            } else {
-                // Debug.Log("no longer crouching!");
-                Head.transform.position += new Vector3(0, crouchDist, 0);
-                isCrouching = false;
-            }
-        }
+        // public void OnCrouch(InputValue val){
+        //     if(val.isPressed){
+        //         // Debug.Log("now crouching!");
+        //         Head.transform.position -= new Vector3(0, crouchDist, 0);
+        //         isCrouching = true;
+        //     } else {
+        //         // Debug.Log("no longer crouching!");
+        //         Head.transform.position += new Vector3(0, crouchDist, 0);
+        //         isCrouching = false;
+        //     }
+        // }
 
         public void Awake() {
             /* Make head in the same direction as camera */
+            headTargetPosition = new Vector3(0, 0, 0);
 
             PlayerCamera = UnityEngine.Camera.main;
             PlayerCamera.transform.parent = Head.transform;
@@ -97,11 +101,13 @@ namespace Player {
             Server.Server.Instance.InputActionMap["Sprint"].performed += context => { isSprinting = true; };
             Server.Server.Instance.InputActionMap["Sprint"].canceled += context => { isSprinting = false; };
             Server.Server.Instance.InputActionMap["Crouch"].performed += context => {
-                Head.transform.position -= new Vector3(0, crouchDist, 0);
+                // Head.transform.position -= new Vector3(0, crouchDist, 0);
+                headTargetPosition = new Vector3(0, 0, 0);
                 isCrouching = true; 
             };
             Server.Server.Instance.InputActionMap["Crouch"].canceled += context => {
-                Head.transform.position += new Vector3(0, crouchDist, 0);
+                // Head.transform.position += new Vector3(0, crouchDist, 0);
+                headTargetPosition = new Vector3(0, crouchDist, 0);
                 isCrouching = false; 
             };
             // Server.Server.Instance.InputActionMap["CrouchToggle"].performed += context => {
@@ -127,6 +133,9 @@ namespace Player {
         }
 
         private void Update() {
+            // smooth crouching 
+            Head.transform.localPosition = Vector3.Lerp(Head.transform.localPosition, headTargetPosition, crouchSpeed * Time.deltaTime);
+
             Vector3 MoveValue = new Vector3();
             if (_keyDown.ContainsKey("GamePadLeft") && _keyDown["GamePadLeft"]) MoveValue += MoveByGamePad();
             
