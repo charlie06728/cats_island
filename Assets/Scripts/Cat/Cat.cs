@@ -30,7 +30,10 @@ namespace Cat {
 
         protected virtual void Awake() {
             /* Make sure the components are set */
-            if (Behaviour == null) Behaviour = gameObject.AddComponent<CatBehaviour>();
+            if (Behaviour == null) {
+                Behaviour = gameObject.AddComponent<CatBehaviour>();
+                Behaviour.Animator = gameObject.GetComponent<Animator>();
+            }
             if (Navigator == null) Navigator = gameObject.AddComponent<CatNavigator>();
             Navigator.Cat = this;
             Behaviour.Cat = this;
