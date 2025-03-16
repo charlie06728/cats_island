@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{06106121-F3DF-496C-9E84-1738153E7461}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="Anthony" ID="{06106121-F3DF-496C-9E84-1738153E7461}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Location" ID="{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{894A8BA2-79B4-40B0-8702-018614CB10FF}"/>
+						<State Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
+						<State Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
+						<State Name="forest_beach" ID="{5BAC62B9-569A-4297-A5E6-D84B36089AE6}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
