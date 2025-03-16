@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	85412153	ambience			\Anthony\ambience	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1176052424	Location			\Anthony\Location	
+
+State	ID	Name	State Group			Notes
+	491961918	forest	Location			
+	748895195	None	Location			
+	2281727986	cat_tree	Location			
+	2822410613	lighthouse	Location			
+	4075332698	beach	Location			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	145094420	amb_forestambience_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\92\{9246FA8C-8A05-D7BE-CCBF-B9E219C5416C}.wem		\Actor-Mixer Hierarchy\Anthony\ambience\amb_forestambience_lp		21635684
+	313505498	amb_beachambience_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\0F\{0F239DC3-85C7-4813-68FD-CE349A6E00C3}.wem		\Actor-Mixer Hierarchy\Anthony\ambience\amb_beachambience_lp		14592176
+

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
         static const AkUniqueID GREYCAT_HUNGRY_MEOW = 1995037903U;
         static const AkUniqueID MUS_SOUNDTRACK = 1283697787U;
