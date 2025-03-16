@@ -1,6 +1,681 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Elienna" ID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Elienna" ID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Cat_Hungry_Meow" ID="{792EDA47-7E54-43BC-AD12-4C7C327F49A7}" ShortID="546577873">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Bengal_Hungry_Meow" ID="{E2083ADD-E9CE-4932-A2A4-DA24905DF8E6}" ShortID="840037245">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FDB293EC-44CF-4BA5-A67C-9BD7B4B5DDD0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Bengal_Hungry_Meow_01" ID="{C1560D7D-4B1F-4270-A2A0-422DF5EBD697}" ShortID="144965015">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bengal_Hungry_Meow_01" ID="{3F6E2C6D-BCEF-4EEF-8BAE-202696E5BC3A}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Bengal_Hungry_Meow\Bengal_Hungry_Meow_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="10260743"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Bengal_Hungry_Meow_01" ID="{3F6E2C6D-BCEF-4EEF-8BAE-202696E5BC3A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Bengal_Hungry_Meow_02" ID="{AFE7750C-5966-4EA9-9DDB-7B0AD083CDE3}" ShortID="170696486">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bengal_Hungry_Meow_02" ID="{02928AE1-AAD7-4B62-9BD7-DAA8D663A989}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Bengal_Hungry_Meow\Bengal_Hungry_Meow_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="507633159"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Bengal_Hungry_Meow_02" ID="{02928AE1-AAD7-4B62-9BD7-DAA8D663A989}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Bengal_Hungry_Meow_03" ID="{334552CD-B89E-42D2-A353-2B38D6D27DE3}" ShortID="424299063">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bengal_Hungry_Meow_03" ID="{CE6925B0-CD26-4ABB-9E08-39D6A0B1E06E}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Bengal_Hungry_Meow\Bengal_Hungry_Meow_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="309568486"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Bengal_Hungry_Meow_03" ID="{CE6925B0-CD26-4ABB-9E08-39D6A0B1E06E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="GreyCat_Hungry_Meow" ID="{C10A9564-7FE0-437F-B9AC-E3136D05F18C}" ShortID="154520955">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{21D9479E-204E-4189-9306-70BBA34A6571}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GreyCat_Hungry_Meow_01" ID="{D6514E9D-6FF3-42FC-92B4-66E98279D512}" ShortID="65203148">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GreyCat_Hungry_Meow_01" ID="{3461D20F-387D-4067-8096-21DA55413899}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\GreyCat_Hungry_Meow\GreyCat_Hungry_Meow_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="825910613"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GreyCat_Hungry_Meow_01" ID="{3461D20F-387D-4067-8096-21DA55413899}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GreyCat_Hungry_Meow_02" ID="{91DB4E20-61F8-4790-A638-FFDAB1080CC0}" ShortID="1071926384">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GreyCat_Hungry_Meow_02" ID="{E9C3B982-39BA-43B1-993F-62A7BD617455}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\GreyCat_Hungry_Meow\GreyCat_Hungry_Meow_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="534366144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GreyCat_Hungry_Meow_02" ID="{E9C3B982-39BA-43B1-993F-62A7BD617455}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GreyCat_Hungry_Meow_03" ID="{27E07F8F-4EFD-4417-954B-38E6CA92CA82}" ShortID="205758081">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GreyCat_Hungry_Meow_03" ID="{3972973D-232E-4E3F-9995-7DBC0B2824A2}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\GreyCat_Hungry_Meow\GreyCat_Hungry_Meow_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="198520259"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GreyCat_Hungry_Meow_03" ID="{3972973D-232E-4E3F-9995-7DBC0B2824A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GreyCat_Hungry_Meow_04" ID="{624205B7-5A50-4337-8FFE-EB190383D670}" ShortID="333365654">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GreyCat_Hungry_Meow_04" ID="{B6F14012-8554-4171-B4EC-FC02CC7499BA}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\GreyCat_Hungry_Meow\GreyCat_Hungry_Meow_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="41394996"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GreyCat_Hungry_Meow_04" ID="{B6F14012-8554-4171-B4EC-FC02CC7499BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GreyCat_Hungry_Meow_05" ID="{326B03FE-4BD9-4908-A235-E6216665BFD6}" ShortID="690446232">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GreyCat_Hungry_Meow_05" ID="{1DE4CADE-6789-4778-98A8-F4D4C2FB0A30}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\GreyCat_Hungry_Meow\GreyCat_Hungry_Meow_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="899042103"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GreyCat_Hungry_Meow_05" ID="{1DE4CADE-6789-4778-98A8-F4D4C2FB0A30}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Ragdoll_Hungry_Meow" ID="{D6B64EB1-12C6-47C9-A403-D13670FED01C}" ShortID="831111335">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E45E552D-2418-4AA7-A2AB-D451483489E7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ragdoll_Hungry_Meow_01" ID="{AB092F56-A162-4D33-B86A-C19C65C4ED52}" ShortID="334683639">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ragdoll_Hungry_Meow_01" ID="{44B7514D-79BB-4650-A333-00C62E53DCFB}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Ragdoll_Hungry_Meow\Ragdoll_Hungry_Meow_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="91613842"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ragdoll_Hungry_Meow_01" ID="{44B7514D-79BB-4650-A333-00C62E53DCFB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ragdoll_Hungry_Meow_02" ID="{0314843A-BE18-492D-9EF7-D5050959E33A}" ShortID="168029216">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ragdoll_Hungry_Meow_02" ID="{7D4BFA01-6C51-46CE-B22D-117CBAFF60B2}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Ragdoll_Hungry_Meow\Ragdoll_Hungry_Meow_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="668219671"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ragdoll_Hungry_Meow_02" ID="{7D4BFA01-6C51-46CE-B22D-117CBAFF60B2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ragdoll_Hungry_Meow_03" ID="{07A52A9D-789D-4EBA-BF17-E573FDFE6011}" ShortID="893194134">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ragdoll_Hungry_Meow_03" ID="{0BEBA1D0-BDF8-4815-BE7A-4B1A4425A5FD}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Ragdoll_Hungry_Meow\Ragdoll_Hungry_Meow_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="455538704"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ragdoll_Hungry_Meow_03" ID="{0BEBA1D0-BDF8-4815-BE7A-4B1A4425A5FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ragdoll_Hungry_Meow_04" ID="{F84FEBC1-9131-424E-ABB2-FC1E17BEA225}" ShortID="215038110">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ragdoll_Hungry_Meow_04" ID="{A620625D-CC75-42D6-B91D-BBF1DC6707DC}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Ragdoll_Hungry_Meow\Ragdoll_Hungry_Meow_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="794342622"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ragdoll_Hungry_Meow_04" ID="{A620625D-CC75-42D6-B91D-BBF1DC6707DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Tabby_Hungry_Meow" ID="{04B4B24C-D662-45C2-AAB3-A9BBF798D554}" ShortID="1045488023">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C52753E1-463A-4326-ACDB-A6B2E7051A65}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Tabby_Hungry_Meow_01" ID="{DBB870B5-2875-4888-834C-D7A06EDF8702}" ShortID="68082160">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_01" ID="{112E24A1-430C-4513-AA24-844512CCAEE7}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906797407"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_01" ID="{112E24A1-430C-4513-AA24-844512CCAEE7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_02" ID="{F04FFC3B-4409-4E10-B640-DB0BBF3FF052}" ShortID="397294668">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_02" ID="{2C4917AB-2E1B-4D92-9482-2B996377C1FD}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1067639338"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_02" ID="{2C4917AB-2E1B-4D92-9482-2B996377C1FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_03" ID="{B21B0250-40D3-4964-A5C9-C9A8F2D89167}" ShortID="152365329">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_03" ID="{1E1B7830-217C-415D-8F82-C9441D8E2AC9}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="213715934"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_03" ID="{1E1B7830-217C-415D-8F82-C9441D8E2AC9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_04" ID="{339E3011-893E-4773-93C6-358AE51CBB5B}" ShortID="1048999389">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_04" ID="{69C4CDCB-DD87-4C31-8B50-7EBEEC7A9D20}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="393128051"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_04" ID="{69C4CDCB-DD87-4C31-8B50-7EBEEC7A9D20}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_05" ID="{14D4DDEA-1803-4992-9882-EAFD2B2F2510}" ShortID="330749044">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_05" ID="{E4E01386-0C4B-49D2-9370-F3D58C6A2CEB}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="773060117"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_05" ID="{E4E01386-0C4B-49D2-9370-F3D58C6A2CEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_06" ID="{9D218815-528D-4442-87F0-B18B760547A8}" ShortID="426718066">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_06" ID="{2BDF8EF6-117D-4000-B07D-7E31FC8A72CB}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="472472076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_06" ID="{2BDF8EF6-117D-4000-B07D-7E31FC8A72CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_07" ID="{518A3F0B-8C20-4DCE-956E-F286A4C27776}" ShortID="535675742">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_07" ID="{A4BC77A0-10AA-4E59-8C1B-E2F402206171}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="115932909"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_07" ID="{A4BC77A0-10AA-4E59-8C1B-E2F402206171}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_08" ID="{BAE9054A-6CD1-4F94-81C9-9F5FC34DBF7B}" ShortID="51442458">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_08" ID="{A40EBE54-6487-4364-BF27-703B78C206CC}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="972004018"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_08" ID="{A40EBE54-6487-4364-BF27-703B78C206CC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tabby_Hungry_Meow_09" ID="{BE4AD2DE-FDCA-4CE3-A320-A2AE91430564}" ShortID="65920167">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tabby_Hungry_Meow_09" ID="{59EF2A24-BD24-4E15-97D8-6D75687AA6AA}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="496080080"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tabby_Hungry_Meow_09" ID="{59EF2A24-BD24-4E15-97D8-6D75687AA6AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Tuxedo_Hungry_Meow" ID="{62BF9E46-26A5-40B6-B5C0-9133D6334407}" ShortID="333926846">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{654AF768-B671-4205-9E9D-76394F68FEB1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Tuxedo_Hungry_Meow_01" ID="{DECEE0CB-5022-4CEE-9CCD-334CB949FBDC}" ShortID="975430092">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tuxedo_Hungry_Meow_01" ID="{1CB0BBFB-34D0-480E-A589-CE268CE559E8}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tuxedo_Hungry_Meow\Tuxedo_Hungry_Meow_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="383202644"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tuxedo_Hungry_Meow_01" ID="{1CB0BBFB-34D0-480E-A589-CE268CE559E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tuxedo_Hungry_Meow_02" ID="{09A6A4D6-BC4D-48DA-9A22-C5F0BD7A21CC}" ShortID="961541718">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tuxedo_Hungry_Meow_02" ID="{DA7447D7-8933-4FC4-9F28-A32D5FF86358}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tuxedo_Hungry_Meow\Tuxedo_Hungry_Meow_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381922046"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tuxedo_Hungry_Meow_02" ID="{DA7447D7-8933-4FC4-9F28-A32D5FF86358}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Tuxedo_Hungry_Meow_03" ID="{64496108-6105-4643-9D95-DD51A45F47CF}" ShortID="3011234">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tuxedo_Hungry_Meow_03" ID="{8964C603-1C42-4476-9D0F-293376087807}">
+											<Language>SFX</Language>
+											<AudioFile>Cat_Hungry_Meow\Tuxedo_Hungry_Meow\Tuxedo_Hungry_Meow_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="612842426"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tuxedo_Hungry_Meow_03" ID="{8964C603-1C42-4476-9D0F-293376087807}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
