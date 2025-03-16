@@ -13,16 +13,65 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALL_CATS_FOUND = 716553183U;
+        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
+        static const AkUniqueID BENGAL_POSE = 2279263372U;
         static const AkUniqueID GREYCAT_HUNGRY_MEOW = 1995037903U;
+        static const AkUniqueID GREYCAT_POSE = 2564842408U;
+        static const AkUniqueID MUS_SOUNDTRACK = 1283697787U;
         static const AkUniqueID RAGDOLL_HUNGRY_MEOW = 2846976621U;
+        static const AkUniqueID RAGDOLL_POSE = 4117893050U;
+        static const AkUniqueID SFX_FOOTSTEPS = 3364658470U;
         static const AkUniqueID TABBY_HUNGRY_MEOW = 2553855402U;
+        static const AkUniqueID TABBY_POSE = 2207021759U;
         static const AkUniqueID TUXEDO_HUNGRY_MEOW = 4111794441U;
+        static const AkUniqueID TUXEDO_POSE = 597782734U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace LOCATION
+        {
+            static const AkUniqueID GROUP = 1176052424U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BEACH = 4075332698U;
+                static const AkUniqueID CAT_TREE = 2281727986U;
+                static const AkUniqueID FOREST = 491961918U;
+                static const AkUniqueID LIGHTHOUSE = 2822410613U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace LOCATION
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace GROUND_MATERIAL
+        {
+            static const AkUniqueID GROUP = 3539622648U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID SAND = 803837735U;
+            } // namespace SWITCH
+        } // namespace GROUND_MATERIAL
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID TIME_OF_DAY = 207908541U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 

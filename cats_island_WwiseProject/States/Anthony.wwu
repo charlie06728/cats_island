@@ -11,7 +11,8 @@
 						<State Name="None" ID="{894A8BA2-79B4-40B0-8702-018614CB10FF}"/>
 						<State Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
 						<State Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
-						<State Name="forest_beach" ID="{5BAC62B9-569A-4297-A5E6-D84B36089AE6}"/>
+						<State Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
+						<State Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

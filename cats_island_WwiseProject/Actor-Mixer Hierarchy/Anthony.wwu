@@ -277,6 +277,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="mus_LEITMOTIF_Bengal_nl" ID="{3B094DC7-6325-4710-9294-957BC3E20421}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.688534613259494"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.688534613259494"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>LEITMOTIF\mus_LEITMOTIF_Bengal_nl.wav</AudioFile>
 									<MediaIDList>
@@ -321,6 +326,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="mus_LEITMOTIF_GreyCat_nl" ID="{ECC06ABB-6F83-4E68-8438-BED8FCF313CC}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.365593599960794"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>LEITMOTIF\mus_LEITMOTIF_GreyCat_nl.wav</AudioFile>
 									<MediaIDList>
@@ -458,8 +467,16 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="forest_beach" ID="{5BAC62B9-569A-4297-A5E6-D84B36089AE6}"/>
-										<CustomState Name="" ID="{440A6DBC-F930-447F-8E46-AE105A98F005}" ShortID="115317559">
+										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
+										<CustomState Name="" ID="{B96A6BFD-96B3-4A50-96AB-1575DA989E7F}" ShortID="904802093">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
+										<CustomState Name="" ID="{C2B2238B-633A-49F9-BE8C-34C8876BB18B}" ShortID="403227970">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
@@ -673,8 +690,16 @@
 										<CustomState Name="" ID="{D5EECADB-92EA-4D4B-9CA8-55EBE6686F4B}" ShortID="707143029"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="forest_beach" ID="{5BAC62B9-569A-4297-A5E6-D84B36089AE6}"/>
-										<CustomState Name="" ID="{0B13B28E-768D-46ED-AC45-083D238133B7}" ShortID="270774422">
+										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
+										<CustomState Name="" ID="{1955AF59-9451-492E-9A43-D0AACF0976BF}" ShortID="903517603">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
+										<CustomState Name="" ID="{D2D078FA-3E47-4A45-BD12-5C227942D4AD}" ShortID="986301606">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
@@ -692,6 +717,127 @@
 							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="mus_4-4_86bpm_STEMviolin_lp" ID="{FB277EDD-2244-473D-9FD2-D595858FFABA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ambience" ID="{229427EC-B921-44F4-B40E-3909764A1F19}" ShortID="628291795">
+					<ChildrenList>
+						<Sound Name="amb_beachambience_lp" ID="{C38259C3-BC1B-4579-BEFE-EF9BBE95EAEE}" ShortID="600064051">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_beachambience_lp" ID="{0E23C690-83CB-4310-9965-383F4B5CEC87}">
+									<Language>SFX</Language>
+									<AudioFile>amb_beachambience_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="313505498"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Location" ID="{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
+										<CustomState Name="" ID="{7002A8C1-3CFE-4B74-885A-D9C020000747}" ShortID="179679988">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
+										<CustomState Name="" ID="{A9CBAFFF-0BB8-4A39-8300-0EDD477308FA}" ShortID="880442863">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
+										<CustomState Name="" ID="{612874A9-CA51-49D5-9E29-1BFE90E97C0D}" ShortID="256330629"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
+										<CustomState Name="" ID="{DD4E1674-186D-4DAB-8426-C81928C6B89A}" ShortID="410833310"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_beachambience_lp" ID="{0E23C690-83CB-4310-9965-383F4B5CEC87}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="amb_forestambience_lp" ID="{1653B7CA-FD7F-482A-93E9-236DE90297DD}" ShortID="591546680">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="amb_forestambience_lp" ID="{F005532B-CC02-4B22-8451-67144E1C6A43}">
+									<Language>SFX</Language>
+									<AudioFile>amb_forestambience_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="145094420"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Location" ID="{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
+										<CustomState Name="" ID="{0E1A8EAA-C657-46A0-A77F-8A9645CE1D3B}" ShortID="30417504"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
+										<CustomState Name="" ID="{8E47B06B-F8E4-43F1-A437-06616B9C5024}" ShortID="62723357"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
+										<CustomState Name="" ID="{4EAB7B67-2E56-4AE5-BCBF-4B56AE951AF8}" ShortID="1024881118">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
+										<CustomState Name="" ID="{8E0D9DD1-B762-40CD-8320-CD0C8664562E}" ShortID="884196598">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="amb_forestambience_lp" ID="{F005532B-CC02-4B22-8451-67144E1C6A43}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

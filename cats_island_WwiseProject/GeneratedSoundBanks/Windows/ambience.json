@@ -1,0 +1,58 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "85412153",
+    "Type": "User",
+    "GUID": "{003D9512-4444-4975-BDE3-88EB62DEBAE8}",
+    "Language": "SFX",
+    "Hash": "{A77E7C02-83BE-DA44-D80D-CD64685D1609}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\ambience",
+    "ShortName": "ambience",
+    "Path": "ambience.bnk",
+    "Media": [
+     {
+      "Id": "145094420",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_forestambience_lp.wav",
+      "CachePath": "92/{9246FA8C-8A05-D7BE-CCBF-B9E219C5416C}.wem"
+     },
+     {
+      "Id": "313505498",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_beachambience_lp.wav",
+      "CachePath": "0F/{0F239DC3-85C7-4813-68FD-CE349A6E00C3}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "85412153",
+      "Name": "ambience",
+      "ObjectPath": "\\Events\\Anthony\\ambience",
+      "GUID": "{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}",
+      "DurationType": "OneShot",
+      "DurationMin": "112.685356",
+      "DurationMax": "112.685356",
+      "MediaRefs": [
+       {
+        "Id": "145094420"
+       },
+       {
+        "Id": "313505498"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A80C6A1A-F908-8D69-548F-D09AAA9B1ED2}"
+ }
+}
