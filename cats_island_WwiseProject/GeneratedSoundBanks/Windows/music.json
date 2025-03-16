@@ -10,12 +10,101 @@
     "Type": "User",
     "GUID": "{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}",
     "Language": "SFX",
-    "Hash": "{EDD1DFDA-55BA-D200-5FF4-1C7BCA977C20}",
+    "Hash": "{1CD36C75-D246-FC24-B2D8-D3A4B8FD519D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
-    "Path": "music.bnk"
+    "Path": "music.bnk",
+    "Media": [
+     {
+      "Id": "275975639",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMguitar_lp.wav",
+      "CachePath": "2A/{2ADD0718-C0AB-0BA4-E68D-318D7BE2F046}.wem"
+     },
+     {
+      "Id": "288617981",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMflute_lp.wav",
+      "CachePath": "EF/{EFF9A579-2D26-F13E-5DE9-A8C1FBA57F15}.wem"
+     },
+     {
+      "Id": "605225841",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMpiano_lp.wav",
+      "CachePath": "74/{749019D7-B9B7-040E-A995-9695095AD75F}.wem"
+     },
+     {
+      "Id": "782902619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMviolin_lp.wav",
+      "CachePath": "73/{73BED931-47AA-DE0E-A410-09A59F1F1F1B}.wem"
+     },
+     {
+      "Id": "866056481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMmarimba_lp.wav",
+      "CachePath": "19/{19E41D74-936E-5F82-3D3D-7A671121BB61}.wem"
+     },
+     {
+      "Id": "979688819",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMvibraphone_lp.wav",
+      "CachePath": "66/{660C5053-1C85-DD9B-8672-83A404EEB101}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1283697787",
+      "Name": "mus_soundtrack",
+      "ObjectPath": "\\Events\\Anthony\\mus_stems\\mus_soundtrack",
+      "GUID": "{227D352D-707C-48E5-8DB5-F2320A44CA1B}",
+      "DurationType": "OneShot",
+      "DurationMin": "64.186066",
+      "DurationMax": "64.186066",
+      "MediaRefs": [
+       {
+        "Id": "275975639"
+       },
+       {
+        "Id": "288617981"
+       },
+       {
+        "Id": "605225841"
+       },
+       {
+        "Id": "782902619"
+       },
+       {
+        "Id": "866056481"
+       },
+       {
+        "Id": "979688819"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "207908541",
+      "Name": "Time_Of_Day",
+      "ObjectPath": "\\Game Parameters\\Anthony\\Time_Of_Day",
+      "GUID": "{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"
+     }
+    ]
    }
   ],
-  "FileHash": "{96543103-6F11-85DC-2AEA-3756FBDFC856}"
+  "FileHash": "{4D80D59E-6415-A83D-4ACA-0BC577EAF6F7}"
  }
 }

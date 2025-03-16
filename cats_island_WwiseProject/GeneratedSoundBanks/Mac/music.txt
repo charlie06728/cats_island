@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1283697787	mus_soundtrack			\Anthony\mus_stems\mus_soundtrack	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1176052424	Location			\Anthony\Location	
+
+State	ID	Name	State Group			Notes
+	491961918	forest	Location			
+	748895195	None	Location			
+	2281727986	cat_tree	Location			
+	2822410613	lighthouse	Location			
+	4075332698	beach	Location			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	207908541	Time_Of_Day			\Anthony\Time_Of_Day	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	275975639	mus_4-4_86bpm_STEMguitar_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\2A\{2ADD0718-C0AB-0BA4-E68D-318D7BE2F046}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMguitar_lp		12323820
+	288617981	mus_4-4_86bpm_STEMflute_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\EF\{EFF9A579-2D26-F13E-5DE9-A8C1FBA57F15}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMflute_lp		12323820
+	605225841	mus_4-4_86bpm_STEMpiano_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\74\{749019D7-B9B7-040E-A995-9695095AD75F}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMpiano_lp		12323820
+	782902619	mus_4-4_86bpm_STEMviolin_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\73\{73BED931-47AA-DE0E-A410-09A59F1F1F1B}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMviolin_lp		12323820
+	866056481	mus_4-4_86bpm_STEMmarimba_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\19\{19E41D74-936E-5F82-3D3D-7A671121BB61}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMmarimba_lp		12323820
+	979688819	mus_4-4_86bpm_STEMvibraphone_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\66\{660C5053-1C85-DD9B-8672-83A404EEB101}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMvibraphone_lp		12323820
+
