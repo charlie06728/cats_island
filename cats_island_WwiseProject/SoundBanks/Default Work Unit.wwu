@@ -8,6 +8,7 @@
 						<ObjectRef Name="Tabby_Hungry_Meow" ID="{1EA2EA2C-4C22-419B-A2DC-568A07D026A4}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GreyCat_Hungry_Meow" ID="{578A7CDB-1325-468F-837E-E6EF60C3AB38}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_footsteps" ID="{887753D5-D896-48F6-A930-9858F96C2DF9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ragdoll_Hungry_Meow" ID="{05100864-19CE-4EBD-A9A0-320999D44D78}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Bengal_Hungry_Meow" ID="{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
