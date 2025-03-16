@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}",
     "Language": "SFX",
-    "Hash": "{1CD36C75-D246-FC24-B2D8-D3A4B8FD519D}",
+    "Hash": "{01F2A49A-7E6B-C063-E90C-E3DD738E1FEE}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -30,6 +30,30 @@
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMflute_lp.wav",
       "CachePath": "EF/{EFF9A579-2D26-F13E-5DE9-A8C1FBA57F15}.wem"
+     },
+     {
+      "Id": "366123906",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Ragdoll_nl.wav",
+      "CachePath": "6F/{6F6C9845-A6CB-7F48-44D3-4CDF71AD7508}.wem"
+     },
+     {
+      "Id": "392363006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Bengal_nl.wav",
+      "CachePath": "BE/{BEC3B69F-8D22-F328-7CB0-0215471B6ECD}.wem"
+     },
+     {
+      "Id": "537448878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_GreyCat_nl.wav",
+      "CachePath": "C6/{C6573BE2-E666-ED9F-A1F5-FA7F58810C36}.wem"
      },
      {
       "Id": "605225841",
@@ -62,9 +86,53 @@
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMvibraphone_lp.wav",
       "CachePath": "66/{660C5053-1C85-DD9B-8672-83A404EEB101}.wem"
+     },
+     {
+      "Id": "984969033",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Tuxedo_nl.wav",
+      "CachePath": "65/{65D2003A-2E19-A957-550B-E6263CD137B5}.wem"
+     },
+     {
+      "Id": "1059229272",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Tabby_nl.wav",
+      "CachePath": "C3/{C314D803-FC19-2F1B-E21B-B96891C44A6E}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "2279263372",
+      "Name": "Bengal_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Bengal_Pose",
+      "GUID": "{9EB09BD4-906B-40E3-A2FD-58CB74414C74}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.8928614",
+      "DurationMax": "4.8928614",
+      "MediaRefs": [
+       {
+        "Id": "392363006"
+       }
+      ]
+     },
+     {
+      "Id": "2564842408",
+      "Name": "GreyCat_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\GreyCat_Pose",
+      "GUID": "{5BCC366C-AB8D-4958-8EB0-A1099C7B5747}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.215802",
+      "DurationMax": "5.215802",
+      "MediaRefs": [
+       {
+        "Id": "537448878"
+       }
+      ]
+     },
      {
       "Id": "1283697787",
       "Name": "mus_soundtrack",
@@ -93,6 +161,48 @@
         "Id": "979688819"
        }
       ]
+     },
+     {
+      "Id": "4117893050",
+      "Name": "Ragdoll_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Ragdoll_Pose",
+      "GUID": "{987521C7-E351-4B46-B357-1E5918725A5B}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5813956",
+      "DurationMax": "5.5813956",
+      "MediaRefs": [
+       {
+        "Id": "366123906"
+       }
+      ]
+     },
+     {
+      "Id": "2207021759",
+      "Name": "Tabby_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Tabby_Pose",
+      "GUID": "{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5813956",
+      "DurationMax": "5.5813956",
+      "MediaRefs": [
+       {
+        "Id": "1059229272"
+       }
+      ]
+     },
+     {
+      "Id": "597782734",
+      "Name": "Tuxedo_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Tuxedo_Pose",
+      "GUID": "{F0CBD46F-7FDA-424C-839A-0732A938101C}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5813956",
+      "DurationMax": "5.5813956",
+      "MediaRefs": [
+       {
+        "Id": "984969033"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -105,6 +215,6 @@
     ]
    }
   ],
-  "FileHash": "{4D80D59E-6415-A83D-4ACA-0BC577EAF6F7}"
+  "FileHash": "{7494C97A-79BD-DCCE-8C6E-4D2696681635}"
  }
 }

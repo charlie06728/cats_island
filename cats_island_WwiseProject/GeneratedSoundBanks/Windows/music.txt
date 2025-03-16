@@ -1,5 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
+	597782734	Tuxedo_Pose			\Anthony\mus_leitmotif\Tuxedo_Pose	
 	1283697787	mus_soundtrack			\Anthony\mus_stems\mus_soundtrack	
+	2207021759	Tabby_Pose			\Anthony\mus_leitmotif\Tabby_Pose	
+	2279263372	Bengal_Pose			\Anthony\mus_leitmotif\Bengal_Pose	
+	2564842408	GreyCat_Pose			\Anthony\mus_leitmotif\GreyCat_Pose	
+	4117893050	Ragdoll_Pose			\Anthony\mus_leitmotif\Ragdoll_Pose	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1176052424	Location			\Anthony\Location	
@@ -17,8 +22,13 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	275975639	mus_4-4_86bpm_STEMguitar_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\2A\{2ADD0718-C0AB-0BA4-E68D-318D7BE2F046}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMguitar_lp		12323820
 	288617981	mus_4-4_86bpm_STEMflute_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\EF\{EFF9A579-2D26-F13E-5DE9-A8C1FBA57F15}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMflute_lp		12323820
+	366123906	mus_LEITMOTIF_Ragdoll_nl	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\6F\{6F6C9845-A6CB-7F48-44D3-4CDF71AD7508}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Ragdoll_nl		1071724
+	392363006	mus_LEITMOTIF_Bengal_nl	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\BE\{BEC3B69F-8D22-F328-7CB0-0215471B6ECD}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Bengal_nl		939524
+	537448878	mus_LEITMOTIF_GreyCat_nl	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\C6\{C6573BE2-E666-ED9F-A1F5-FA7F58810C36}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_GreyCat_nl		1001532
 	605225841	mus_4-4_86bpm_STEMpiano_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\74\{749019D7-B9B7-040E-A995-9695095AD75F}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMpiano_lp		12323820
 	782902619	mus_4-4_86bpm_STEMviolin_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\73\{73BED931-47AA-DE0E-A410-09A59F1F1F1B}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMviolin_lp		12323820
 	866056481	mus_4-4_86bpm_STEMmarimba_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\19\{19E41D74-936E-5F82-3D3D-7A671121BB61}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMmarimba_lp		12323820
 	979688819	mus_4-4_86bpm_STEMvibraphone_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\66\{660C5053-1C85-DD9B-8672-83A404EEB101}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMvibraphone_lp		12323820
+	984969033	mus_LEITMOTIF_Tuxedo_nl	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\65\{65D2003A-2E19-A957-550B-E6263CD137B5}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Tuxedo_nl		1071724
+	1059229272	mus_LEITMOTIF_Tabby_nl	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\C3\{C314D803-FC19-2F1B-E21B-B96891C44A6E}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Tabby_nl		1071724
 
