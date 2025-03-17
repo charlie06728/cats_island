@@ -5,7 +5,23 @@
 			<ChildrenList>
 				<SwitchContainer Name="sfx_footsteps" ID="{B47B1E80-9A45-4108-BA23-F98339A8527B}" ShortID="489545419">
 					<PropertyList>
-						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4435D95C-DF1A-4F67-87C5-7BF2B42C10EC}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9C6B6B55-8584-432A-9B91-B9AEA266404C}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -21,9 +37,28 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="FOOTSTEPS_Grass" ID="{A7D76DE9-526F-4066-B05E-C64CAE81097E}" ShortID="782161401">
 							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D3C7EFD5-0687-4A3E-B097-A496064FED54}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{83D4A85A-F72A-4B52-9C6F-7666AA76B88A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -126,8 +161,33 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="FOOTSTEPS_Sand" ID="{5AD3B9C1-5ABB-47C5-8A97-D1702191F688}" ShortID="108124461">
 							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DE4DB7AC-A8B9-40DB-BB4A-D650A6CA39A1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A41A1E9A-7122-4B36-A84C-E12A4DC88AB2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -228,9 +288,116 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="FOOTSTEPS_Wood" ID="{1429BD28-8BAD-4623-A936-2AF169171512}" ShortID="287531004">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{61790813-B47A-4DDD-9F2F-4B5A106127F4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F1AFFA31-2D00-4BE5-B4CC-9189283F4D04}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_FOOTSTEP_Wood_01" ID="{36A0EC35-3164-4E5A-99D9-E7E03220E33F}" ShortID="346052848">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Wood_01" ID="{CBED67EF-67E1-4BD7-A2D7-759864920A68}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Wood_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="606005953"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Wood_01" ID="{CBED67EF-67E1-4BD7-A2D7-759864920A68}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_FOOTSTEP_Wood_02" ID="{1DA7D1BF-7DF2-491C-8256-54287FAD4840}" ShortID="506792700">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Wood_02" ID="{A35A0D23-190B-4E06-8AD5-884DA8720A99}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Wood_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="53369863"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Wood_02" ID="{A35A0D23-190B-4E06-8AD5-884DA8720A99}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_FOOTSTEP_Wood_03" ID="{8828A0F5-57A1-46BE-9D36-80FC28D53A5D}" ShortID="77819255">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Wood_03" ID="{A381B0E4-855B-4FF8-B699-04A7E0D09AB8}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Wood_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="267849265"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Wood_03" ID="{A381B0E4-855B-4FF8-B699-04A7E0D09AB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="FOOTSTEPS_Wood" ID="{1429BD28-8BAD-4623-A936-2AF169171512}"/>
+							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="FOOTSTEPS_Sand" ID="{5AD3B9C1-5ABB-47C5-8A97-D1702191F688}"/>
 							</GroupingBehavior>
@@ -239,6 +406,12 @@
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="wood" ID="{E393EB9F-0EF2-467E-9F5B-539980493798}"/>
+								<ItemList>
+									<ItemRef Name="FOOTSTEPS_Wood" ID="{1429BD28-8BAD-4623-A936-2AF169171512}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="sand" ID="{684A14D2-5C94-4D5E-A362-DF59FEBA08FD}"/>
 								<ItemList>
@@ -279,6 +452,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_LEITMOTIF_Bengal_nl" ID="{5F1B7F66-14A7-45B3-9A86-D30FE6C3E401}" ShortID="334804915">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -306,6 +486,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_LEITMOTIF_CymbalSwellAsset_nl" ID="{B974D602-60CB-4C89-AE8D-E141CE97D5C3}" ShortID="649676798">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -328,6 +515,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_LEITMOTIF_GreyCat_nl" ID="{95C2A5B2-4AB5-4AC5-A6EA-2A13BDD62AF8}" ShortID="363592507">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -354,6 +548,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_LEITMOTIF_Ragdoll_nl" ID="{B311EA54-FEA2-4A84-BB16-12DA169D9B18}" ShortID="622775918">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -376,6 +577,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_LEITMOTIF_Tabby_nl" ID="{07C5C98E-A657-4E27-A99C-80DD08611EBF}" ShortID="777690844">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -398,6 +606,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_LEITMOTIF_Tuxedo_nl" ID="{44313905-32A2-4CF3-A0DD-B59F9D082529}" ShortID="21733021">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -424,6 +639,9 @@
 				<Folder Name="mus_stems" ID="{141E6D1E-EB49-4142-88BF-5D68B1CB213F}" ShortID="397198249">
 					<ChildrenList>
 						<Sound Name="mus_4-4_86bpm_STEMmarimba_lp" ID="{ED0F3EE0-5CA8-44D2-8872-1B861A216A04}" ShortID="1003600948">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -446,6 +664,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_4-4_86bpm_STEMflute_lp" ID="{F594E1A8-6F12-48BE-987D-3C5199033E67}" ShortID="495981123">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -505,6 +726,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_4-4_86bpm_STEMguitar_lp" ID="{A0D4A08A-56C2-4B61-9DA8-EEB8F082BD47}" ShortID="549319179">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -578,6 +802,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_4-4_86bpm_STEMpiano_lp" ID="{004A5595-6C8B-4B28-963F-1346C73F6210}" ShortID="988159175">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -651,6 +878,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_4-4_86bpm_STEMvibraphone_lp" ID="{66DB089D-DECB-4BE8-BBC1-AA99624BFCFA}" ShortID="496417416">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -673,6 +903,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_4-4_86bpm_STEMviolin_lp" ID="{C0930C3D-D9D1-43FD-AC0F-70CD046167E5}" ShortID="445852642">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -733,14 +966,14 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="ambience" ID="{229427EC-B921-44F4-B40E-3909764A1F19}" ShortID="628291795">
+				<Folder Name="amb_ambience" ID="{229427EC-B921-44F4-B40E-3909764A1F19}" ShortID="628291795">
 					<ChildrenList>
 						<Sound Name="amb_beachambience_lp" ID="{C38259C3-BC1B-4579-BEFE-EF9BBE95EAEE}" ShortID="600064051">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -794,14 +1027,65 @@
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{2D64BF86-CFD2-4AF5-A8A5-8312EE1C2557}" ShortID="571175708">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{493216C3-AE71-4B4E-AC3D-FFD7856B20BA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-3.52183</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.919</XPos>
+																		<YPos>-1.57640321256706</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.92</XPos>
+																		<YPos>-1.57640321256706</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.99556</XPos>
+																		<YPos>-0.134</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>-8.22885</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="amb_beachambience_lp" ID="{0E23C690-83CB-4310-9965-383F4B5CEC87}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="amb_forestambience_lp" ID="{1653B7CA-FD7F-482A-93E9-236DE90297DD}" ShortID="591546680">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
+						<BlendContainer Name="amb_forest_lp" ID="{66DA2698-C2B1-459B-A4C4-57E7C9BE5042}" ShortID="338839006">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -811,13 +1095,81 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="amb_forestambience_lp" ID="{F005532B-CC02-4B22-8451-67144E1C6A43}">
-									<Language>SFX</Language>
-									<AudioFile>amb_forestambience_lp.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="145094420"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="amb_forestafternoon_lp" ID="{8FCB02DD-F906-4A09-8BE2-959849C1F2BE}" ShortID="410106832">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_forestafternoon_lp" ID="{81E12E70-62FA-4CF5-81D2-541754A02EF2}">
+											<Language>SFX</Language>
+											<AudioFile>amb_forestafternoon_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="559378820"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_forestafternoon_lp" ID="{81E12E70-62FA-4CF5-81D2-541754A02EF2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_forestmorning_lp" ID="{E5CBF227-82C5-44C4-9519-AF90B966BFBC}" ShortID="350486877">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_forestmorning_lp" ID="{8FE0851F-D785-44EC-A8F5-E7487D030A28}">
+											<Language>SFX</Language>
+											<AudioFile>amb_forestmorning_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="562578964"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_forestmorning_lp" ID="{8FE0851F-D785-44EC-A8F5-E7487D030A28}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_forestnoon_lp" ID="{AEC22F38-32AE-48F2-A037-16E9BC041CA3}" ShortID="545497952">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_forestnoon_lp" ID="{61B9B77D-9049-4F05-B056-2492E6D53CAB}">
+											<Language>SFX</Language>
+											<AudioFile>amb_forestnoon_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="194792555"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_forestnoon_lp" ID="{61B9B77D-9049-4F05-B056-2492E6D53CAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -828,15 +1180,15 @@
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
-										<CustomState Name="" ID="{0E1A8EAA-C657-46A0-A77F-8A9645CE1D3B}" ShortID="30417504"/>
+										<CustomState Name="" ID="{E8388413-E60E-4B2C-BEAF-595FAB50D14A}" ShortID="122455388"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
-										<CustomState Name="" ID="{8E47B06B-F8E4-43F1-A437-06616B9C5024}" ShortID="62723357"/>
+										<CustomState Name="" ID="{7CBFBF08-510C-43A6-B217-CC8B483EC6CD}" ShortID="526918333"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
-										<CustomState Name="" ID="{4EAB7B67-2E56-4AE5-BCBF-4B56AE951AF8}" ShortID="1024881118">
+										<CustomState Name="" ID="{56F4B254-2902-4CAC-BFF7-8D471F1D5C8A}" ShortID="249229161">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
@@ -844,7 +1196,7 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
-										<CustomState Name="" ID="{8E0D9DD1-B762-40CD-8320-CD0C8664562E}" ShortID="884196598">
+										<CustomState Name="" ID="{B4D80C06-8F88-4A3C-8138-EF3D63EC4E7C}" ShortID="56712495">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
@@ -852,8 +1204,1110 @@
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{88FE5B8A-9452-496C-85F2-D6035F3BD319}" ShortID="405760626">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{1B733026-2BD7-4725-9920-442E75D6CBC3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>2</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.06569</XPos>
+																		<YPos>15</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7.9708</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.3708</XPos>
+																		<YPos>22</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>11.6846715328467</XPos>
+																		<YPos>24</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>24</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{1E59A74F-E1A2-43F5-B5C2-5EA678B2F4F5}" ShortID="713185594">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{FE84B0AA-29C8-40BD-BBB9-787CFCC7C6D2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-3.00568</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.82667</XPos>
+																		<YPos>-2.15323</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8.53139</XPos>
+																		<YPos>-1.23878</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.77765</XPos>
+																		<YPos>-5.33608</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>-11.9823</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<BlendTrackList>
+								<BlendTrack Name="forest" ID="{E5CEB331-859D-4C11-A844-9827A5C27C32}" ShortID="133195170">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="amb_forestmorning_lp" ID="{E5CBF227-82C5-44C4-9519-AF90B966BFBC}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>3.75892857142857</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="amb_forestnoon_lp" ID="{AEC22F38-32AE-48F2-A037-16E9BC041CA3}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>1.99107142857143</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>7.8125</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="amb_forestafternoon_lp" ID="{8FCB02DD-F906-4A09-8BE2-959849C1F2BE}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>6.74107142857143</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>12</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
+				<RandomSequenceContainer Name="sfx_pageflip" ID="{617F3D68-792E-4D5C-9CCF-D42C127A0B2D}" ShortID="745345833">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{8361ABB5-38E5-462D-9E80-EEAFDBE15E20}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_FasterPageFlip_nl_01" ID="{51F39376-6340-4E64-963F-58D61C44BB8A}" ShortID="193686840">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>75</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_FasterPageFlip_nl_01" ID="{9A2D71FD-EED5-43B4-B13E-AD1D9680239A}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_FasterPageFlip_nl_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="391269093"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="amb_forestambience_lp" ID="{F005532B-CC02-4B22-8451-67144E1C6A43}" Platform="Linked"/>
+								<ActiveSource Name="sfx_FasterPageFlip_nl_01" ID="{9A2D71FD-EED5-43B4-B13E-AD1D9680239A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_PageFlip_nl_01" ID="{A98EF6E5-9D90-463F-B57F-5E6C3B9B240C}" ShortID="851157331">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_PageFlip_nl_01" ID="{292621A9-FE42-4BB7-B734-C6D223BB7BAD}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_PageFlip_nl_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="166098753"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_PageFlip_nl_01" ID="{292621A9-FE42-4BB7-B734-C6D223BB7BAD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<SwitchContainer Name="sfx_jump" ID="{CAC4276D-304E-4435-B462-AAC3DB2EB06E}" ShortID="661320943">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DE8DE98F-F9EA-4A43-BF81-DD1E27A25FFE}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{177E9190-79B6-444D-AFB7-B49CF4A7CDF0}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Ground_Material" ID="{0408E240-FE94-47A6-82F3-10D790D4C05F}" WorkUnitID="{23806327-65A5-41D7-8BFA-B37636CD15B1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="JUMP_Sand" ID="{239AE284-61AD-4666-BC43-D2767F779145}" ShortID="848216529">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{429000AF-047B-4063-BAF2-47C7E2B1E3CD}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_JUMP_Sand_nl_01" ID="{3886A0F5-2A88-4F94-A578-B400B41623CA}" ShortID="736252163">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Sand_nl_01" ID="{F014A8BA-D03B-44C2-A8AC-0D2732FBA25E}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Sand_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="892275074"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Sand_nl_01" ID="{F014A8BA-D03B-44C2-A8AC-0D2732FBA25E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Sand_nl_02" ID="{FC61CAB3-E39F-4FC6-93AA-A2D356B9163F}" ShortID="254820174">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Sand_nl_02" ID="{3F6B10F4-D86F-4C5A-87A2-9659843A096E}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Sand_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="675383936"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Sand_nl_02" ID="{3F6B10F4-D86F-4C5A-87A2-9659843A096E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Sand_nl_03" ID="{1F4E9C85-4E0C-4E11-869D-6895810C6FBB}" ShortID="110592970">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Sand_nl_03" ID="{A72932E7-40EC-4507-A01F-DB1594B0F6F3}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Sand_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="505438552"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Sand_nl_03" ID="{A72932E7-40EC-4507-A01F-DB1594B0F6F3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Sand_nl_04" ID="{01C319A0-1DA7-48BA-A4EB-587F06203DCE}" ShortID="677563744">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Sand_nl_04" ID="{1B1822D1-4BEB-47EE-B61B-416EC47AE762}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Sand_nl_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1008554466"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Sand_nl_04" ID="{1B1822D1-4BEB-47EE-B61B-416EC47AE762}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="JUMP_Grass" ID="{F0978DEF-E4DC-438F-9F5C-337784F52C30}" ShortID="807388510">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{77C09E11-B2E5-4CFF-B336-D38B006EF561}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{45120821-D819-41AC-B5AC-87F96EE03C50}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_JUMP_Grass_nl_01" ID="{435C68E8-C04D-4CF1-BBFE-B7BBD215CE10}" ShortID="821949243">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Grass_nl_01" ID="{CD8F358C-4102-4355-9B2E-257330BFC3CB}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Grass_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="432585928"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Grass_nl_01" ID="{CD8F358C-4102-4355-9B2E-257330BFC3CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Grass_nl_02" ID="{2FB2B447-1F13-415E-B519-73691BC03B31}" ShortID="390226253">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Grass_nl_02" ID="{0C00C56C-6569-4DA8-93D0-1CEFC2572247}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Grass_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1036404000"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Grass_nl_02" ID="{0C00C56C-6569-4DA8-93D0-1CEFC2572247}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Grass_nl_03" ID="{72794800-1924-45A9-A978-472B6579EB53}" ShortID="467252017">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Grass_nl_03" ID="{239F333C-4946-4F5E-B6AF-1AADDD35B915}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Grass_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="195661107"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Grass_nl_03" ID="{239F333C-4946-4F5E-B6AF-1AADDD35B915}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Grass_nl_04" ID="{22E7FA60-364F-43BD-A46D-777CD0167863}" ShortID="566247899">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Grass_nl_04" ID="{6FCD2E8C-DAAC-4B78-A246-D40FB4E190A0}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Grass_nl_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="279185900"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Grass_nl_04" ID="{6FCD2E8C-DAAC-4B78-A246-D40FB4E190A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="JUMP_Wood" ID="{29540F45-6FA9-4502-8CFC-087D6039DA0B}" ShortID="887301292">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E6A5EACE-91F5-411F-A577-0B05ED06244A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9B7194C0-BDA5-40C7-B253-5FE2C777C95F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_JUMP_Wood_nl_01" ID="{DD9B07D3-F4A2-4FA5-BE1B-293A1CBEF8A1}" ShortID="259578375">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Wood_nl_01" ID="{B54C1982-DA03-41F9-92BC-01FCAFEBE76C}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Wood_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="946407374"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Wood_nl_01" ID="{B54C1982-DA03-41F9-92BC-01FCAFEBE76C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Wood_nl_02" ID="{0D766E4F-5673-4FC6-8688-4E76DDF85EDB}" ShortID="575501503">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Wood_nl_02" ID="{E8A8FA1C-0A41-4A30-A37B-81D55AC636F1}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Wood_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="587042106"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Wood_nl_02" ID="{E8A8FA1C-0A41-4A30-A37B-81D55AC636F1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Wood_nl_03" ID="{B1DF63D5-5E19-4B21-847E-96FFEB40943F}" ShortID="533243129">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Wood_nl_03" ID="{21721284-40C7-4DCD-92A7-B983F515005A}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Wood_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="551919837"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Wood_nl_03" ID="{21721284-40C7-4DCD-92A7-B983F515005A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="JUMP_Wood" ID="{29540F45-6FA9-4502-8CFC-087D6039DA0B}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="JUMP_Sand" ID="{239AE284-61AD-4666-BC43-D2767F779145}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="JUMP_Grass" ID="{F0978DEF-E4DC-438F-9F5C-337784F52C30}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="wood" ID="{E393EB9F-0EF2-467E-9F5B-539980493798}"/>
+								<ItemList>
+									<ItemRef Name="JUMP_Wood" ID="{29540F45-6FA9-4502-8CFC-087D6039DA0B}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="sand" ID="{684A14D2-5C94-4D5E-A362-DF59FEBA08FD}"/>
+								<ItemList>
+									<ItemRef Name="JUMP_Sand" ID="{239AE284-61AD-4666-BC43-D2767F779145}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="grass" ID="{B445EED9-A9BE-4427-B99D-6F450AE17B24}"/>
+								<ItemList>
+									<ItemRef Name="JUMP_Grass" ID="{F0978DEF-E4DC-438F-9F5C-337784F52C30}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<SwitchContainer Name="sfx_landing" ID="{3F963853-892C-4109-A8D4-B893B525096A}" ShortID="198288908">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C9EB6002-FE39-462E-8D4C-85AA17EE9904}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{392AB6A6-6BB6-46EC-ABCF-4293583DDE01}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Ground_Material" ID="{0408E240-FE94-47A6-82F3-10D790D4C05F}" WorkUnitID="{23806327-65A5-41D7-8BFA-B37636CD15B1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="LANDJUMP_Grass" ID="{FE030111-9A66-4514-B300-1281DFD4D6DD}" ShortID="533897021">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A5F24463-6AF5-4C9D-BF4F-BBDC746B155C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F7D6698D-A22B-438D-8ED2-876BC681363A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_LANDJUMP_Grass_nl_01" ID="{CDA8C0DA-4E26-4AF1-B7EF-1EA345DDD426}" ShortID="65054315">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Grass_nl_01" ID="{8B6CAE46-B4EA-4704-AE00-C609EFD63E03}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Grass_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="766991488"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Grass_nl_01" ID="{8B6CAE46-B4EA-4704-AE00-C609EFD63E03}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_LANDJUMP_Grass_nl_02" ID="{DCE4C088-102F-40A3-8FF0-F228D64342D3}" ShortID="36460512">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Grass_nl_02" ID="{F2654E59-952A-4300-A9CE-04D86826CDC7}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Grass_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1056697856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Grass_nl_02" ID="{F2654E59-952A-4300-A9CE-04D86826CDC7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="LANDJUMP_Sand" ID="{5CE85819-A1F1-4750-8BF8-B275B3FF90E9}" ShortID="837079494">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1CCB9523-DAEF-4792-8AD1-165EA05A9451}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A1423A60-F19D-4054-BA2C-D4564D7CB9C7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_LANDJUMP_Sand_nl_01" ID="{610DA4AA-E3D7-4C96-8F87-A88CC5DAD3C2}" ShortID="450562326">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Sand_nl_01" ID="{48FBD623-346F-4B2F-8C54-903C598A0A95}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Sand_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="423416930"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Sand_nl_01" ID="{48FBD623-346F-4B2F-8C54-903C598A0A95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_LANDJUMP_Sand_nl_02" ID="{0DE7E26F-C014-443C-B241-29341EC53CA7}" ShortID="1031977762">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Sand_nl_02" ID="{966FFF04-814B-4BF0-A2C6-89E01A86A144}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Sand_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="124381210"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Sand_nl_02" ID="{966FFF04-814B-4BF0-A2C6-89E01A86A144}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="LANDJUMP_Wood" ID="{7C0F5E52-2F28-49EA-A38F-2858EABFE046}" ShortID="454643653">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4B90AB2A-F4E2-4C0B-A090-026EE6ADC91B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{455D6CFD-1141-48B9-84C9-776FA1B3D467}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_LANDJUMP_Wood_nl_01" ID="{408DC7D1-FF57-4E33-A749-7B04A4DE43FE}" ShortID="585118178">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Wood_nl_01" ID="{AFAD3CFC-A25C-48C8-98E8-1D6381F587C8}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Wood_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="244655587"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Wood_nl_01" ID="{AFAD3CFC-A25C-48C8-98E8-1D6381F587C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_LANDJUMP_Wood_nl_02" ID="{FE324F82-1835-4394-85D0-2834EA5230EB}" ShortID="585333362">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Wood_nl_02" ID="{20974DD8-15D8-4223-BC27-06F7A80B0C11}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Wood_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="681975818"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Wood_nl_02" ID="{20974DD8-15D8-4223-BC27-06F7A80B0C11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="LANDJUMP_Grass" ID="{FE030111-9A66-4514-B300-1281DFD4D6DD}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="LANDJUMP_Sand" ID="{5CE85819-A1F1-4750-8BF8-B275B3FF90E9}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="LANDJUMP_Wood" ID="{7C0F5E52-2F28-49EA-A38F-2858EABFE046}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="wood" ID="{E393EB9F-0EF2-467E-9F5B-539980493798}"/>
+								<ItemList>
+									<ItemRef Name="LANDJUMP_Wood" ID="{7C0F5E52-2F28-49EA-A38F-2858EABFE046}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="sand" ID="{684A14D2-5C94-4D5E-A362-DF59FEBA08FD}"/>
+								<ItemList>
+									<ItemRef Name="LANDJUMP_Sand" ID="{5CE85819-A1F1-4750-8BF8-B275B3FF90E9}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="grass" ID="{B445EED9-A9BE-4427-B99D-6F450AE17B24}"/>
+								<ItemList>
+									<ItemRef Name="LANDJUMP_Grass" ID="{FE030111-9A66-4514-B300-1281DFD4D6DD}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<Folder Name="sfx_camera" ID="{07BF7F02-51F7-4D3E-92F1-B25586FE7F9D}" ShortID="450084396">
+					<ChildrenList>
+						<Sound Name="sfx_CAMERA_OnNoise_lp" ID="{2E648989-0BDA-425B-971D-C077690FB508}" ShortID="677077817">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_CAMERA_OnNoise_lp" ID="{3A95435D-1D9E-4AEE-B7C3-0522294BAA96}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_CAMERA_OnNoise_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="580223228"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_CAMERA_OnNoise_lp" ID="{3A95435D-1D9E-4AEE-B7C3-0522294BAA96}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_CAMERA_TakePicture_nl" ID="{BAF02179-A1CD-4116-B663-45C70B35B7A7}" ShortID="637346517">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_CAMERA_TakePicture_nl" ID="{B57CF4B2-3FDB-4D0C-ACB7-23F57B9B33B1}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_CAMERA_TakePicture_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="940898413"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_CAMERA_TakePicture_nl" ID="{B57CF4B2-3FDB-4D0C-ACB7-23F57B9B33B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_CAMERA_TurnOff_nl" ID="{4948DFBB-9BC6-42B0-8910-70D0DD352AA0}" ShortID="775016213">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_CAMERA_TurnOff_nl" ID="{869F1569-BEA5-45EC-B9F3-6F9D4C100DD6}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_CAMERA_TurnOff_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="864064925"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_CAMERA_TurnOff_nl" ID="{869F1569-BEA5-45EC-B9F3-6F9D4C100DD6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_CAMERA_TurnOn_nl" ID="{AD61C6E6-4267-4921-8307-A43DF0270B57}" ShortID="1066757962">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_CAMERA_TurnOn_nl" ID="{E34F34E3-4DC2-4E1B-A831-B6ADCC121964}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_CAMERA_TurnOn_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="412921084"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_CAMERA_TurnOn_nl" ID="{E34F34E3-4DC2-4E1B-A831-B6ADCC121964}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

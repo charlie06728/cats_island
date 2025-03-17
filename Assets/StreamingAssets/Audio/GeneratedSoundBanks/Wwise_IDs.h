@@ -13,20 +13,26 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID ALL_CATS_FOUND = 716553183U;
-        static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID AMB_AMBIENCE = 3855008934U;
         static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
-        static const AkUniqueID BENGAL_POSE = 2279263372U;
         static const AkUniqueID GREYCAT_HUNGRY_MEOW = 1995037903U;
-        static const AkUniqueID GREYCAT_POSE = 2564842408U;
+        static const AkUniqueID MUS_ALLCATSFOUND = 3891823391U;
+        static const AkUniqueID MUS_BENGAL_POSE = 3509682696U;
+        static const AkUniqueID MUS_GREYCAT_POSE = 3109386516U;
+        static const AkUniqueID MUS_RAGDOLL_POSE = 2889622102U;
         static const AkUniqueID MUS_SOUNDTRACK = 1283697787U;
+        static const AkUniqueID MUS_TABBY_POSE = 4016717323U;
+        static const AkUniqueID MUS_TUXEDO_POSE = 1461319202U;
         static const AkUniqueID RAGDOLL_HUNGRY_MEOW = 2846976621U;
-        static const AkUniqueID RAGDOLL_POSE = 4117893050U;
+        static const AkUniqueID SFX_CAMERAOFF = 192727511U;
+        static const AkUniqueID SFX_CAMERAON = 2801607203U;
+        static const AkUniqueID SFX_CAMERAPICTURE = 1570034758U;
         static const AkUniqueID SFX_FOOTSTEPS = 3364658470U;
+        static const AkUniqueID SFX_JUMP = 3695098761U;
+        static const AkUniqueID SFX_LANDING = 2929962202U;
+        static const AkUniqueID SFX_PAGEFLIP = 2084073701U;
         static const AkUniqueID TABBY_HUNGRY_MEOW = 2553855402U;
-        static const AkUniqueID TABBY_POSE = 2207021759U;
         static const AkUniqueID TUXEDO_HUNGRY_MEOW = 4111794441U;
-        static const AkUniqueID TUXEDO_POSE = 597782734U;
     } // namespace EVENTS
 
     namespace STATES
@@ -57,6 +63,7 @@ namespace AK
             {
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID SAND = 803837735U;
+                static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace GROUND_MATERIAL
 

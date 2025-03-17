@@ -621,10 +621,51 @@
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="3329"/>
 										<Property Name="OnOffBand1" Type="bool" Value="False"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{22F49C7D-1271-4AA9-A084-CF44E2DA46ED}" ShortID="464623604">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="FrequencyBand3"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorLfo Name="Modulator LFO (Custom)" ID="{3D76F04F-D896-4B5A-98FB-7E3B94DAE137}" ShortID="1039710637"/>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{84086EFE-B9F7-42BE-A857-7DE855AFF9A2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>11091.21929</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>11091.21928</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Effect>
 							</ChildrenList>
 						</Folder>
@@ -1510,7 +1551,7 @@
 										<Property Name="DecayTime" Type="Real32" Value="1"/>
 										<Property Name="Density" Type="Real32" Value="50"/>
 										<Property Name="ERLevel" Type="Real32" Value="-18"/>
-										<Property Name="ERPattern" Type="int32" Value="29"/>
+										<Property Name="ERPattern" Type="int32" Value="0"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="210"/>
 										<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
 										<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
@@ -1519,11 +1560,12 @@
 										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
 										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
-										<Property Name="PreDelay" Type="Real32" Value="145"/>
+										<Property Name="PreDelay" Type="Real32" Value="67"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-37"/>
-										<Property Name="RoomSize" Type="Real32" Value="73"/>
-										<Property Name="StereoWidth" Type="Real32" Value="28"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-16"/>
+										<Property Name="RoomShape" Type="Real32" Value="39"/>
+										<Property Name="RoomSize" Type="Real32" Value="24"/>
+										<Property Name="StereoWidth" Type="Real32" Value="159"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1537,11 +1579,12 @@
 								<Effect Name="Standard" ID="{1A2EAB31-6283-4C0D-89B2-F050DF89D421}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
 										<Property Name="DelayTime" Type="Real32" Value="1"/>
-										<Property Name="FeedBackLevel" Type="Real32" Value="0.7"/>
-										<Property Name="FeedForwardLevel" Type="Real32" Value="0.7"/>
-										<Property Name="ModDepth" Type="Real32" Value="65"/>
+										<Property Name="FeedBackLevel" Type="Real32" Value="0.2"/>
+										<Property Name="FeedForwardLevel" Type="Real32" Value="0.6"/>
+										<Property Name="ModDepth" Type="Real32" Value="20.9"/>
+										<Property Name="ModFrequency" Type="Real32" Value="0.8"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
-										<Property Name="ModWaveform" Type="int32" Value="1"/>
+										<Property Name="WetDryMix" Type="Real32" Value="27"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Deep" ID="{76753DA8-3DCF-4812-A726-2745812F6C1B}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
@@ -1588,9 +1631,11 @@
 								<Effect Name="Chorus_Like" ID="{EEE0CC86-8CA5-4DBC-A6B7-568FCB26F290}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
 										<Property Name="DelayTime" Type="Real32" Value="10"/>
+										<Property Name="DryLevel" Type="Real32" Value="0.87"/>
 										<Property Name="ModDepth" Type="Real32" Value="60"/>
 										<Property Name="ModFrequency" Type="Real32" Value="0.85"/>
 										<Property Name="ModPWM" Type="Real32" Value="0"/>
+										<Property Name="WetDryMix" Type="Real32" Value="31"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1603,6 +1648,7 @@
 								<Property Name="ModDepth" Type="Real32" Value="10"/>
 								<Property Name="ModFrequency" Type="Real32" Value="5.5"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="WetDryMix" Type="Real32" Value="22"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
@@ -1610,7 +1656,7 @@
 								<Property Name="DelayTime" Type="Real32" Value="10"/>
 								<Property Name="DryLevel" Type="Real32" Value="0"/>
 								<Property Name="ModDepth" Type="Real32" Value="80"/>
-								<Property Name="ModFrequency" Type="Real32" Value="2"/>
+								<Property Name="ModFrequency" Type="Real32" Value="0.5"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 							</PropertyList>
 						</Effect>
@@ -1659,8 +1705,12 @@
 								<Effect Name="Many_Even_Harm_Notches" ID="{A7113535-F7D6-4B83-9DCB-01DD88295F76}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 									<PropertyList>
 										<Property Name="DelayTime" Type="Real32" Value="2.5"/>
-										<Property Name="EnableLFO" Type="bool" Value="False"/>
+										<Property Name="DryLevel" Type="Real32" Value="0.74"/>
 										<Property Name="FeedForwardLevel" Type="Real32" Value="-1"/>
+										<Property Name="ModDepth" Type="Real32" Value="38"/>
+										<Property Name="ModFrequency" Type="Real32" Value="0.78"/>
+										<Property Name="ProcessLFE" Type="bool" Value="True"/>
+										<Property Name="WetDryMix" Type="Real32" Value="22"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Many_Even_Harm_Peaks" ID="{5DDE88E2-CBAD-4CE9-93B0-7FC59F32CBEE}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">

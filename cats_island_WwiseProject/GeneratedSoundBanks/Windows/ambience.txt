@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	85412153	ambience			\Anthony\ambience	
+	3855008934	amb_Ambience			\Anthony\amb_Ambience	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1176052424	Location			\Anthony\Location	
@@ -11,7 +11,12 @@ State	ID	Name	State Group			Notes
 	2822410613	lighthouse	Location			
 	4075332698	beach	Location			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	207908541	Time_Of_Day			\Anthony\Time_Of_Day	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	145094420	amb_forestambience_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\92\{9246FA8C-8A05-D7BE-CCBF-B9E219C5416C}.wem		\Actor-Mixer Hierarchy\Anthony\ambience\amb_forestambience_lp		21635684
-	313505498	amb_beachambience_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\0F\{0F239DC3-85C7-4813-68FD-CE349A6E00C3}.wem		\Actor-Mixer Hierarchy\Anthony\ambience\amb_beachambience_lp		14592176
+	194792555	amb_forestnoon_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\BD\{BDB84EFB-5899-FE4B-DF5C-2C33208920AC}.wem		\Actor-Mixer Hierarchy\Anthony\amb_ambience\amb_forest_lp\amb_forestnoon_lp		6624096
+	313505498	amb_beachambience_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\EC\{EC59F6B0-C3A1-648E-75B1-E7A05EF0612D}.wem		\Actor-Mixer Hierarchy\Anthony\amb_ambience\amb_beachambience_lp		14592176
+	559378820	amb_forestafternoon_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\58\{58FFF58F-F516-DD00-1F37-3797C7738377}.wem		\Actor-Mixer Hierarchy\Anthony\amb_ambience\amb_forest_lp\amb_forestafternoon_lp		13248096
+	562578964	amb_forestmorning_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\0B\{0B928BEC-317B-FF7D-4252-94334708565F}.wem		\Actor-Mixer Hierarchy\Anthony\amb_ambience\amb_forest_lp\amb_forestmorning_lp		8640096
 

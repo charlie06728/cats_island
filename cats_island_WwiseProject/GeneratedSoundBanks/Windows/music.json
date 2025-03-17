@@ -8,9 +8,9 @@
    {
     "Id": "3991942870",
     "Type": "User",
-    "GUID": "{537C334F-407D-47FD-9FA1-290651404E6F}",
+    "GUID": "{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}",
     "Language": "SFX",
-    "Hash": "{29C7604D-FBBF-443B-56DE-FAD9804038FC}",
+    "Hash": "{052B01F5-5725-C039-B12C-648AB1A09A29}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMguitar_lp.wav",
-      "CachePath": "2A/{2ADD0718-C0AB-0BA4-E68D-318D7BE2F046}.wem"
+      "CachePath": "BE/{BEF5E886-A4DD-911D-802C-B7C3822AE645}.wem"
      },
      {
       "Id": "288617981",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMflute_lp.wav",
-      "CachePath": "EF/{EFF9A579-2D26-F13E-5DE9-A8C1FBA57F15}.wem"
+      "CachePath": "A0/{A06C663F-726A-A00E-9C34-4DE6741778C2}.wem"
      },
      {
       "Id": "366123906",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMpiano_lp.wav",
-      "CachePath": "74/{749019D7-B9B7-040E-A995-9695095AD75F}.wem"
+      "CachePath": "D4/{D4FBE919-8C7B-A904-8909-76C18ACF96BF}.wem"
      },
      {
       "Id": "633190278",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMviolin_lp.wav",
-      "CachePath": "73/{73BED931-47AA-DE0E-A410-09A59F1F1F1B}.wem"
+      "CachePath": "4B/{4B824650-FB82-C23E-DBE1-3D911ACFE09B}.wem"
      },
      {
       "Id": "866056481",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMmarimba_lp.wav",
-      "CachePath": "19/{19E41D74-936E-5F82-3D3D-7A671121BB61}.wem"
+      "CachePath": "02/{02C439F9-28F1-F025-D827-21757FE6E66B}.wem"
      },
      {
       "Id": "979688819",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMvibraphone_lp.wav",
-      "CachePath": "66/{660C5053-1C85-DD9B-8672-83A404EEB101}.wem"
+      "CachePath": "4F/{4FD33BAB-5D31-165E-C7D3-039419CFB0D7}.wem"
      },
      {
       "Id": "984969033",
@@ -114,9 +114,9 @@
     ],
     "Events": [
      {
-      "Id": "716553183",
-      "Name": "All_Cats_Found",
-      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\All_Cats_Found",
+      "Id": "3891823391",
+      "Name": "mus_AllCatsFound",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_AllCatsFound",
       "GUID": "{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}",
       "DurationType": "OneShot",
       "DurationMin": "5.755833",
@@ -128,9 +128,9 @@
       ]
      },
      {
-      "Id": "2279263372",
-      "Name": "Bengal_Pose",
-      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Bengal_Pose",
+      "Id": "3509682696",
+      "Name": "mus_Bengal_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Bengal_Pose",
       "GUID": "{9EB09BD4-906B-40E3-A2FD-58CB74414C74}",
       "DurationType": "OneShot",
       "DurationMin": "4.8928614",
@@ -142,9 +142,9 @@
       ]
      },
      {
-      "Id": "2564842408",
-      "Name": "GreyCat_Pose",
-      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\GreyCat_Pose",
+      "Id": "3109386516",
+      "Name": "mus_GreyCat_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_GreyCat_Pose",
       "GUID": "{5BCC366C-AB8D-4958-8EB0-A1099C7B5747}",
       "DurationType": "OneShot",
       "DurationMin": "5.215802",
@@ -156,13 +156,25 @@
       ]
      },
      {
-      "Id": "1283697787",
-      "Name": "mus_soundtrack",
-      "ObjectPath": "\\Events\\Anthony\\mus_soundtrack",
-      "GUID": "{227D352D-707C-48E5-8DB5-F2320A44CA1B}",
+      "Id": "2889622102",
+      "Name": "mus_Ragdoll_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Ragdoll_Pose",
+      "GUID": "{987521C7-E351-4B46-B357-1E5918725A5B}",
       "DurationType": "OneShot",
-      "DurationMin": "64.186066",
-      "DurationMax": "64.186066",
+      "DurationMin": "5.5813956",
+      "DurationMax": "5.5813956",
+      "MediaRefs": [
+       {
+        "Id": "366123906"
+       }
+      ]
+     },
+     {
+      "Id": "1283697787",
+      "Name": "mus_Soundtrack",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack",
+      "GUID": "{227D352D-707C-48E5-8DB5-F2320A44CA1B}",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "275975639"
@@ -185,23 +197,9 @@
       ]
      },
      {
-      "Id": "4117893050",
-      "Name": "Ragdoll_Pose",
-      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Ragdoll_Pose",
-      "GUID": "{987521C7-E351-4B46-B357-1E5918725A5B}",
-      "DurationType": "OneShot",
-      "DurationMin": "5.5813956",
-      "DurationMax": "5.5813956",
-      "MediaRefs": [
-       {
-        "Id": "366123906"
-       }
-      ]
-     },
-     {
-      "Id": "2207021759",
-      "Name": "Tabby_Pose",
-      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Tabby_Pose",
+      "Id": "4016717323",
+      "Name": "mus_Tabby_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Tabby_Pose",
       "GUID": "{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}",
       "DurationType": "OneShot",
       "DurationMin": "5.5813956",
@@ -213,9 +211,9 @@
       ]
      },
      {
-      "Id": "597782734",
-      "Name": "Tuxedo_Pose",
-      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Tuxedo_Pose",
+      "Id": "1461319202",
+      "Name": "mus_Tuxedo_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Tuxedo_Pose",
       "GUID": "{F0CBD46F-7FDA-424C-839A-0732A938101C}",
       "DurationType": "OneShot",
       "DurationMin": "5.5813956",
@@ -237,6 +235,6 @@
     ]
    }
   ],
-  "FileHash": "{D7314371-133E-C956-DF63-2C6649544D9E}"
+  "FileHash": "{777FB19D-3275-655E-19C6-7F29ECE38F49}"
  }
 }
