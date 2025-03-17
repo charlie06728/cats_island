@@ -21,7 +21,7 @@ namespace Player {
         public LayerMask groundLayer;
 
         /* Sprinting and crouching */
-        public float sprintMultiplier = 1.35f; // How much faster should sprinting make you?
+        public float sprintMultiplier = 1.5f; // How much faster should sprinting make you?
         public float crouchMultiplier = 0.5f; // How much slower should sprinting make you?
         public float crouchDist = 1f; // How far down should we crouch?
         bool isSprinting;

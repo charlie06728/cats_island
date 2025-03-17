@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UIs;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -15,7 +16,9 @@ namespace Player {
         /* Camera prefab and component after init */
         public GameObject cameraPrefab;
         public GameObject cameraVirtualPosition;
-        public Animator cameraAnimator;
+        // public Animator cameraAnimator;
+        // public CameraAnimation cameraAnimation;
+        public GameObject cameraAnimationPrefab;
         [NonSerialized] public CameraObject CameraObject;
         
         /* treat prefab and component after it being initialized */

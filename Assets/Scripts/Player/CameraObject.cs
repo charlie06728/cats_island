@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using NUnit.Framework;
+using UIs;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -42,6 +43,8 @@ namespace Player {
         private Quaternion _cameraLocalRotationToItemHook;
 
         private float _prevTakeTime = 0f;
+        private Animator _snapAnimator;
+        private CameraAnimation _cameraAnimation;
         
         /* child mesh renderers */
         private MeshRenderer[] meshRenderers;
@@ -126,9 +129,13 @@ namespace Player {
                 || Time.time - _prevTakeTime < Server.Server.Instance.cameraCoolDown) return;
             Server.Server.Instance.FilmUsed++;
             _prevTakeTime = Time.time;
-
+            
             if (_isCameraMode) {
-                PlayerPocket.cameraAnimator.SetTrigger("TakePhoto");
+                // PlayerPocket.cameraAnimator.speed = 1;
+                // PlayerPocket.cameraAnimator.Play("CameraAnimation", 0, 0);
+                _cameraAnimation.ShowImage();
+                // _snapAnimator.SetTrigger("TakePhoto");
+                _snapAnimator.Play("CameraAnimation", 0, 0f);
             }
             
             /* Record the camera position */
@@ -320,6 +327,14 @@ namespace Player {
         protected void EnterCameraMode() {
             _isCameraMode = true;
             Server.Server.Instance.itemBar.gameObject.SetActive(false);
+
+            /* Instantiate and set active all components */
+            _snapAnimator = GameObject.Instantiate(PlayerPocket.cameraAnimationPrefab, Server.Server.Instance.canvas.transform).GetComponent<Animator>();
+            _cameraAnimation = _snapAnimator.gameObject.GetComponent<CameraAnimation>();
+            _cameraAnimation.HideImage();
+            _snapAnimator.gameObject.SetActive(true);
+            _snapAnimator.Play("Idle", 0, 0);
+            
             StartCoroutine(EnterCameraModeCoroutine(0.25f));
         }
 
@@ -358,7 +373,10 @@ namespace Player {
             _isCameraMode = false;
             // hand_renderer.enabled = true;
             
-            PlayerPocket.cameraAnimator.SetTrigger("ExitCameraMode");
+            _cameraAnimation.HideImage();
+            _snapAnimator.SetTrigger("Exit");
+            Destroy(_snapAnimator.gameObject);
+            _snapAnimator = null;
             
             /* Hand visible */
             PlayerPocket.Player.Hand.SetActive(true);
