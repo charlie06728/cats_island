@@ -3,9 +3,9 @@
 	<Events>
 		<WorkUnit Name="Anthony" ID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="mus_leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" ShortID="677620164">
+				<Folder Name="mus_Leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" ShortID="677620164">
 					<ChildrenList>
-						<Event Name="All_Cats_Found" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}">
+						<Event Name="mus_AllCatsFound" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}">
 							<ChildrenList>
 								<Action Name="" ID="{C9C08B65-2358-4700-90E2-CB58A117D793}" ShortID="1030431226">
 									<ReferenceList>
@@ -16,7 +16,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Ragdoll_Pose" ID="{987521C7-E351-4B46-B357-1E5918725A5B}">
+						<Event Name="mus_Ragdoll_Pose" ID="{987521C7-E351-4B46-B357-1E5918725A5B}">
 							<ChildrenList>
 								<Action Name="" ID="{9ACC2925-3ADA-45D4-9EDA-46751E4E4B06}" ShortID="406450022">
 									<ReferenceList>
@@ -27,7 +27,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Tabby_Pose" ID="{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}">
+						<Event Name="mus_Tabby_Pose" ID="{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}">
 							<ChildrenList>
 								<Action Name="" ID="{B657D9B4-FEFA-4E40-BFBB-F50A22FF3BAE}" ShortID="712969538">
 									<ReferenceList>
@@ -38,7 +38,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Tuxedo_Pose" ID="{F0CBD46F-7FDA-424C-839A-0732A938101C}">
+						<Event Name="mus_Tuxedo_Pose" ID="{F0CBD46F-7FDA-424C-839A-0732A938101C}">
 							<ChildrenList>
 								<Action Name="" ID="{42DE493C-57E5-4987-8D37-8D438C4169B3}" ShortID="706993753">
 									<ReferenceList>
@@ -49,7 +49,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="GreyCat_Pose" ID="{5BCC366C-AB8D-4958-8EB0-A1099C7B5747}">
+						<Event Name="mus_GreyCat_Pose" ID="{5BCC366C-AB8D-4958-8EB0-A1099C7B5747}">
 							<ChildrenList>
 								<Action Name="" ID="{C0A930C3-848E-4033-9EFB-4D23EF1CD400}" ShortID="705920194">
 									<ReferenceList>
@@ -60,7 +60,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Bengal_Pose" ID="{9EB09BD4-906B-40E3-A2FD-58CB74414C74}">
+						<Event Name="mus_Bengal_Pose" ID="{9EB09BD4-906B-40E3-A2FD-58CB74414C74}">
 							<ChildrenList>
 								<Action Name="" ID="{CFA3614F-DC62-4537-80E2-7D2F651766DF}" ShortID="511429713">
 									<ReferenceList>
@@ -73,9 +73,9 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="mus_stems" ID="{96C6895B-9AEE-4273-80FD-73F0BF0450B5}" ShortID="1034437115">
+				<Folder Name="mus_Stems" ID="{96C6895B-9AEE-4273-80FD-73F0BF0450B5}" ShortID="1034437115">
 					<ChildrenList>
-						<Event Name="mus_soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}">
+						<Event Name="mus_Soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}">
 							<ChildrenList>
 								<Action Name="" ID="{9E8A72BB-9B9A-4F02-BB0F-965E3D7DCB91}" ShortID="78647486">
 									<ReferenceList>
@@ -123,7 +123,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="amb_ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}">
+				<Event Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}">
 					<ChildrenList>
 						<Action Name="" ID="{94ECA73B-AFAE-48C8-8871-3C70BEBDA7D3}" ShortID="867983570">
 							<ReferenceList>
@@ -141,9 +141,9 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Folder Name="sfx_movement" ID="{09C77F85-0185-4F4C-9925-F2112FAB4041}" ShortID="583753657">
+				<Folder Name="sfx_Movement" ID="{09C77F85-0185-4F4C-9925-F2112FAB4041}" ShortID="583753657">
 					<ChildrenList>
-						<Event Name="sfx_footsteps" ID="{887753D5-D896-48F6-A930-9858F96C2DF9}">
+						<Event Name="sfx_Footsteps" ID="{887753D5-D896-48F6-A930-9858F96C2DF9}">
 							<ChildrenList>
 								<Action Name="" ID="{36EDCF93-C85C-4653-BEA2-C7DB8FD6D032}" ShortID="428839913">
 									<ReferenceList>
@@ -154,7 +154,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="sfx_jump" ID="{5E376275-EC84-4840-B5B8-14B496E03F88}">
+						<Event Name="sfx_Jump" ID="{5E376275-EC84-4840-B5B8-14B496E03F88}">
 							<ChildrenList>
 								<Action Name="" ID="{1BB5B032-F046-4515-ABEF-6A1E7E88F524}" ShortID="165178507">
 									<ReferenceList>
@@ -165,7 +165,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="sfx_landing" ID="{2F994791-D8E7-4AB8-B710-338F2428E8EF}">
+						<Event Name="sfx_Landing" ID="{2F994791-D8E7-4AB8-B710-338F2428E8EF}">
 							<ChildrenList>
 								<Action Name="" ID="{99D7FDF8-3A98-4CC7-9ADD-B1BA3E2590B9}" ShortID="998436468">
 									<ReferenceList>
@@ -178,7 +178,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="sfx_Page_Flip" ID="{B54CB49C-30F3-47E4-BA15-FCAF4465D387}">
+				<Event Name="sfx_PageFlip" ID="{B54CB49C-30F3-47E4-BA15-FCAF4465D387}">
 					<ChildrenList>
 						<Action Name="" ID="{DF0CB583-32C0-49F9-8B94-4DAD4E95806F}" ShortID="124444093">
 							<ReferenceList>
@@ -189,6 +189,60 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="sfx_Camera" ID="{CF50C1FD-65BD-4617-935A-BAD228646E4B}" ShortID="527691060">
+					<ChildrenList>
+						<Event Name="sfx_CameraOn" ID="{DA27556A-B40C-4CBC-9AEC-93C6EA636251}">
+							<ChildrenList>
+								<Action Name="" ID="{55289408-9262-480A-B73B-CB6A0343745B}" ShortID="485201183">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_CAMERA_OnNoise_lp" ID="{2E648989-0BDA-425B-971D-C077690FB508}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8CB662E7-8257-4E59-B833-AB36B1E49F0A}" ShortID="465159572">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_CAMERA_TurnOn_nl" ID="{AD61C6E6-4267-4921-8307-A43DF0270B57}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_CameraOff" ID="{40ECE379-A5B1-4D8A-9AAE-8B08B3122CC2}">
+							<ChildrenList>
+								<Action Name="" ID="{D29C77DA-6C23-4B47-A7CB-13BB94AA05DA}" ShortID="369473261">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_CAMERA_TurnOff_nl" ID="{4948DFBB-9BC6-42B0-8910-70D0DD352AA0}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D1E57585-DF12-4A3C-884F-E3F54132FC03}" ShortID="254014309">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_CAMERA_OnNoise_lp" ID="{2E648989-0BDA-425B-971D-C077690FB508}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_CameraPicture" ID="{1162A07A-212F-4536-955C-6CD4ECE48AD7}">
+							<ChildrenList>
+								<Action Name="" ID="{EEA54C4A-4607-416E-8E39-2A4B642FB3DB}" ShortID="477892910">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_CAMERA_TakePicture_nl" ID="{BAF02179-A1CD-4116-B663-45C70B35B7A7}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
