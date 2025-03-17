@@ -103885,6 +103885,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1038955524}
     - target: {fileID: 1047616094570437615, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: cameraAnimationPrefab
+      value: 
+      objectReference: {fileID: 2604893726180112105, guid: e98c2aef6fe6a6445b685cacd045b3aa, type: 3}
+    - target: {fileID: 1047616094570437615, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: cameraVirtualPosition
       value: 
       objectReference: {fileID: 1214473687}
