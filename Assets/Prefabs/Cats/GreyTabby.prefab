@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: Animator
       value: 
       objectReference: {fileID: 1040441939897816553}
+    - target: {fileID: 5676312482289313859, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+      propertyPath: meow.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 702b7472e080af946ada40deff21bc2f, type: 2}
     - target: {fileID: 7258851268381406803, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
       propertyPath: m_Name
       value: GreyTabby

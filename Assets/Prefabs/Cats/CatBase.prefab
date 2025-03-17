@@ -106,6 +106,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 986dc1ff8391f554db5ba4865885deed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4391844845226975291}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 986dc1ff8391f554db5ba4865885deed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6040943434620808647}
   m_SourcePrefab: {fileID: 100100000, guid: 986dc1ff8391f554db5ba4865885deed, type: 3}
 --- !u!1 &7258851268381406803 stripped
 GameObject:
@@ -234,7 +237,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 8035951674700421725}
   Cat: {fileID: 0}
-  meowAudio: {fileID: 4391844845226975291}
+  meow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  meowEventName: Bengal_Hungry_Meow
 --- !u!82 &4391844845226975291
 AudioSource:
   m_ObjectHideFlags: 0
@@ -332,6 +339,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6040943434620808647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258851268381406803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515c8c9ee8d91ac4bb252f3dc97ec532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 1
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!4 &8068003472952536297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 986dc1ff8391f554db5ba4865885deed, type: 3}

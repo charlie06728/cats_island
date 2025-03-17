@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1982ad8b8a1e3c641bec9fd9cc236647, type: 3}
+  m_Name: 8DD76D6C-5971-4274-91C1-C222B1C44210
+  m_EditorClassIdentifier: 
+  objectName: Tuxedo_Hungry_Meow
+  id: 4111794441
+  guid: 8DD76D6C-5971-4274-91C1-C222B1C44210
+  IsInUserDefinedSoundBank: 1
+  IsAutoBankLoaded: 0

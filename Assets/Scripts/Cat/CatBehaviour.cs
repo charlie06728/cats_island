@@ -21,7 +21,9 @@ namespace Cat {
         [NonSerialized] public TreatInstance TargetTreat;
         
         /* Audios */
-        public AudioSource meowAudio;
+        // public AudioSource meowAudio;
+        // public AK.Wwise.Event meow;
+        public string meowEventName;
         protected float meowCooldown = 15f;
         
         /* Behaviours script */
@@ -46,6 +48,10 @@ namespace Cat {
             SwitchState(CatState.Idle);
         }
 
+        protected void Start() {
+            AkUnitySoundEngine.RegisterGameObj(gameObject);
+        }
+
         protected void Update() {
             if (!StateToBehaviour[State].Enabled) return;
             StateToBehaviour[State].Update();
@@ -53,7 +59,12 @@ namespace Cat {
             /* Meow cooldown */
             meowCooldown -= Time.deltaTime;
             if (meowCooldown <= 0) {
-                meowAudio.Play();
+                /* Calculate the distance between player */
+                float distance = Vector3.Distance(Server.Server.Instance.player.transform.position, transform.position);
+                if (distance > 25) return;
+                
+                // meowAudio.Play();
+                AkUnitySoundEngine.PostEvent(meowEventName, gameObject);
                 /* Generate random number for cooldown between 2 and 8 */
                 meowCooldown = UnityEngine.Random.Range(25, 60);
             }

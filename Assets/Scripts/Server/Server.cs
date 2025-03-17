@@ -51,6 +51,9 @@ namespace Server {
         /* Star Count */
         [NonSerialized] public int StarCount = 0;
         
+        /* Player obj */
+        public GameObject player;
+        
         protected void Awake() {
             if (Instance == null) {
                 Instance = this;

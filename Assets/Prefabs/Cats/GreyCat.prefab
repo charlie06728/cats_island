@@ -28,6 +28,10 @@ PrefabInstance:
       propertyPath: Animator
       value: 
       objectReference: {fileID: 817859263633359766}
+    - target: {fileID: 5676312482289313859, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+      propertyPath: meow.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cdb6e4b2c69c8174d800f316c7b6baa5, type: 2}
     - target: {fileID: 6318525976924567728, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
       propertyPath: m_Controller
       value: 

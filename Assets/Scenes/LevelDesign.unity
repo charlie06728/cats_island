@@ -55765,6 +55765,7 @@ MonoBehaviour:
   cameraMode: {fileID: 1121759782}
   itemBar: {fileID: 0}
   filmUsage: {fileID: 512052282}
+  player: {fileID: 0}
 --- !u!114 &1178618261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89027,6 +89028,7 @@ MonoBehaviour:
   cameraMode: {fileID: 1038955520}
   itemBar: {fileID: 1309094314}
   filmUsage: {fileID: 447864966}
+  player: {fileID: 824760369}
 --- !u!4 &1863594073
 Transform:
   m_ObjectHideFlags: 0
