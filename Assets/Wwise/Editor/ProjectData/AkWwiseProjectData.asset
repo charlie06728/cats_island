@@ -66,9 +66,272 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584594681444929954
-    List: []
+    m_lastTime: -8584594350581112778
+    List:
+    - name: ambience
+      guid: 12953d0044447549bde388eb62debae8
+      id: 85412153
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: ambience
+        ObjectType: 7
+        guid: 12953d0044447549bde388eb62debae8
+      Path: SoundBanks\Default Work Unit\ambience
+    - name: music
+      guid: 8fba9da7dc1f9c4c85bf788b3db56c29
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: music
+        ObjectType: 7
+        guid: 8fba9da7dc1f9c4c85bf788b3db56c29
+      Path: SoundBanks\Default Work Unit\music
+    - name: sfx
+      guid: 0fee29492631a34a8aa6a53f09a5babc
+      id: 393239870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: sfx
+        ObjectType: 7
+        guid: 0fee29492631a34a8aa6a53f09a5babc
+      Path: SoundBanks\Default Work Unit\sfx
   EventWwu:
+  - PhysicalPath: Events\Anthony.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Anthony
+      ObjectType: 12
+      guid: bcce342bf7a25d469d9a1d28b8579891
+    ParentPath: Events\Anthony
+    guid: bcce342bf7a25d469d9a1d28b8579891
+    GuidInternal: 
+    m_lastTime: -8584594350494246884
+    List:
+    - name: All_Cats_Found
+      guid: 9ed4d49ee6655e4fafbbd7e1535ad178
+      id: 716553183
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_leitmotif
+        ObjectType: 4
+        guid: 1840a09551c46547b875cdca2a474610
+      - ElementName: All_Cats_Found
+        ObjectType: 3
+        guid: 9ed4d49ee6655e4fafbbd7e1535ad178
+      Path: Events\Anthony\mus_leitmotif\All_Cats_Found
+      maxAttenuation: 0
+      maxDuration: 5.755833
+      minDuration: 5.755833
+    - name: ambience
+      guid: 53a4f75f8bae2c4a9a65689f2a7ce253
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: ambience
+        ObjectType: 3
+        guid: 53a4f75f8bae2c4a9a65689f2a7ce253
+      Path: Events\Anthony\ambience
+      maxAttenuation: 0
+      maxDuration: 112.685356
+      minDuration: 112.685356
+    - name: Bengal_Pose
+      guid: d49bb09e6b90e340a2fd58cb74414c74
+      id: 2279263372
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_leitmotif
+        ObjectType: 4
+        guid: 1840a09551c46547b875cdca2a474610
+      - ElementName: Bengal_Pose
+        ObjectType: 3
+        guid: d49bb09e6b90e340a2fd58cb74414c74
+      Path: Events\Anthony\mus_leitmotif\Bengal_Pose
+      maxAttenuation: 0
+      maxDuration: 4.8928614
+      minDuration: 4.8928614
+    - name: GreyCat_Pose
+      guid: 6c36cc5b8dab58498eb0a1099c7b5747
+      id: 2564842408
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_leitmotif
+        ObjectType: 4
+        guid: 1840a09551c46547b875cdca2a474610
+      - ElementName: GreyCat_Pose
+        ObjectType: 3
+        guid: 6c36cc5b8dab58498eb0a1099c7b5747
+      Path: Events\Anthony\mus_leitmotif\GreyCat_Pose
+      maxAttenuation: 0
+      maxDuration: 5.215802
+      minDuration: 5.215802
+    - name: mus_leitmotif
+      guid: 1840a09551c46547b875cdca2a474610
+      id: 1773569240
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_leitmotif
+        ObjectType: 4
+        guid: 1840a09551c46547b875cdca2a474610
+      Path: Events\Anthony\mus_leitmotif
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: mus_soundtrack
+      guid: 2d357d227c70e5488db5f2320a44ca1b
+      id: 1283697787
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_stems
+        ObjectType: 4
+        guid: 5b89c696ee9a734280fd73f0bf0450b5
+      - ElementName: mus_soundtrack
+        ObjectType: 3
+        guid: 2d357d227c70e5488db5f2320a44ca1b
+      Path: Events\Anthony\mus_stems\mus_soundtrack
+      maxAttenuation: 0
+      maxDuration: 64.186066
+      minDuration: 64.186066
+    - name: mus_stems
+      guid: 5b89c696ee9a734280fd73f0bf0450b5
+      id: 2325593425
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_stems
+        ObjectType: 4
+        guid: 5b89c696ee9a734280fd73f0bf0450b5
+      Path: Events\Anthony\mus_stems
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ragdoll_Pose
+      guid: c721759851e3464bb3571e5918725a5b
+      id: 4117893050
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_leitmotif
+        ObjectType: 4
+        guid: 1840a09551c46547b875cdca2a474610
+      - ElementName: Ragdoll_Pose
+        ObjectType: 3
+        guid: c721759851e3464bb3571e5918725a5b
+      Path: Events\Anthony\mus_leitmotif\Ragdoll_Pose
+      maxAttenuation: 0
+      maxDuration: 5.5813956
+      minDuration: 5.5813956
+    - name: sfx_footsteps
+      guid: d553778896d8f648a9309858f96c2df9
+      id: 3364658470
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: sfx_footsteps
+        ObjectType: 3
+        guid: d553778896d8f648a9309858f96c2df9
+      Path: Events\Anthony\sfx_footsteps
+      maxAttenuation: 0
+      maxDuration: 0.3785625
+      minDuration: 0.375
+    - name: Tabby_Pose
+      guid: d4c44207f36dde4e801c84a1c52029c4
+      id: 2207021759
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_leitmotif
+        ObjectType: 4
+        guid: 1840a09551c46547b875cdca2a474610
+      - ElementName: Tabby_Pose
+        ObjectType: 3
+        guid: d4c44207f36dde4e801c84a1c52029c4
+      Path: Events\Anthony\mus_leitmotif\Tabby_Pose
+      maxAttenuation: 0
+      maxDuration: 5.5813956
+      minDuration: 5.5813956
+    - name: Tuxedo_Pose
+      guid: 6fd4cbf0da7f4c42839a0732a938101c
+      id: 597782734
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_leitmotif
+        ObjectType: 4
+        guid: 1840a09551c46547b875cdca2a474610
+      - ElementName: Tuxedo_Pose
+        ObjectType: 3
+        guid: 6fd4cbf0da7f4c42839a0732a938101c
+      Path: Events\Anthony\mus_leitmotif\Tuxedo_Pose
+      maxAttenuation: 0
+      maxDuration: 5.5813956
+      minDuration: 5.5813956
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -82,7 +345,164 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584594681445135342
     List: []
+  - PhysicalPath: Events\Elienna.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Elienna
+      ObjectType: 12
+      guid: adf8905879c15d4d8e28ad1f6376b94c
+    ParentPath: Events\Elienna
+    guid: adf8905879c15d4d8e28ad1f6376b94c
+    GuidInternal: 
+    m_lastTime: -8584594449074177873
+    List:
+    - name: Bengal_Hungry_Meow
+      guid: bf85011b5a4da14f93c89b985d79da33
+      id: 1968854379
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat_Hungry_Meow
+        ObjectType: 4
+        guid: 3be5b44b5896184fade4bf23276ed6a5
+      - ElementName: Bengal_Hungry_Meow
+        ObjectType: 3
+        guid: bf85011b5a4da14f93c89b985d79da33
+      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Bengal_Hungry_Meow
+      maxAttenuation: 0
+      maxDuration: 1.4465203
+      minDuration: 0.6443515
+    - name: GreyCat_Hungry_Meow
+      guid: db7c8a5725138f46837ee6ef60c3ab38
+      id: 1995037903
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat_Hungry_Meow
+        ObjectType: 4
+        guid: 3be5b44b5896184fade4bf23276ed6a5
+      - ElementName: GreyCat_Hungry_Meow
+        ObjectType: 3
+        guid: db7c8a5725138f46837ee6ef60c3ab38
+      Path: Events\Elienna\sfx_Cat_Hungry_Meow\GreyCat_Hungry_Meow
+      maxAttenuation: 0
+      maxDuration: 1.4465203
+      minDuration: 1.288703
+    - name: Ragdoll_Hungry_Meow
+      guid: 64081005ce19bd4ea9a0320999d44d78
+      id: 2846976621
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat_Hungry_Meow
+        ObjectType: 4
+        guid: 3be5b44b5896184fade4bf23276ed6a5
+      - ElementName: Ragdoll_Hungry_Meow
+        ObjectType: 3
+        guid: 64081005ce19bd4ea9a0320999d44d78
+      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Ragdoll_Hungry_Meow
+      maxAttenuation: 0
+      maxDuration: 1.4465203
+      minDuration: 1.288703
+    - name: sfx_Cat_Hungry_Meow
+      guid: 3be5b44b5896184fade4bf23276ed6a5
+      id: 633889308
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat_Hungry_Meow
+        ObjectType: 4
+        guid: 3be5b44b5896184fade4bf23276ed6a5
+      Path: Events\Elienna\sfx_Cat_Hungry_Meow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tabby_Hungry_Meow
+      guid: 2ceaa21e224c9b41a2dc568a07d026a4
+      id: 2553855402
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat_Hungry_Meow
+        ObjectType: 4
+        guid: 3be5b44b5896184fade4bf23276ed6a5
+      - ElementName: Tabby_Hungry_Meow
+        ObjectType: 3
+        guid: 2ceaa21e224c9b41a2dc568a07d026a4
+      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Tabby_Hungry_Meow
+      maxAttenuation: 0
+      maxDuration: 1.4465203
+      minDuration: 0.6443515
+    - name: Tuxedo_Hungry_Meow
+      guid: 6c6dd78d7159744291c1c222b1c44210
+      id: 4111794441
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat_Hungry_Meow
+        ObjectType: 4
+        guid: 3be5b44b5896184fade4bf23276ed6a5
+      - ElementName: Tuxedo_Hungry_Meow
+        ObjectType: 3
+        guid: 6c6dd78d7159744291c1c222b1c44210
+      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Tuxedo_Hungry_Meow
+      maxAttenuation: 0
+      maxDuration: 1.4465203
+      minDuration: 1.288703
   RtpcWwu:
+  - PhysicalPath: Game Parameters\Anthony.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Anthony
+      ObjectType: 12
+      guid: 747ed4c5d250174d9c25eb13858cdf27
+    ParentPath: Game Parameters\Anthony
+    guid: 747ed4c5d250174d9c25eb13858cdf27
+    GuidInternal: 
+    m_lastTime: -8584594430388080764
+    List:
+    - name: Time_Of_Day
+      guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
+      id: 207908541
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: 747ed4c5d250174d9c25eb13858cdf27
+      - ElementName: Time_Of_Day
+        ObjectType: 13
+        guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
+      Path: Game Parameters\Anthony\Time_Of_Day
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -96,7 +516,131 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584594681444897246
     List: []
+  - PhysicalPath: Game Parameters\Elienna.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Elienna
+      ObjectType: 12
+      guid: e9fcf40ce1fb60438256a5203cf5a15a
+    ParentPath: Game Parameters\Elienna
+    guid: e9fcf40ce1fb60438256a5203cf5a15a
+    GuidInternal: 
+    m_lastTime: -8584594669589299753
+    List: []
   StateWwu:
+  - PhysicalPath: States\Anthony.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Anthony
+      ObjectType: 12
+      guid: 21611006dff36c499e841738153e7461
+    ParentPath: States\Anthony
+    guid: 21611006dff36c499e841738153e7461
+    GuidInternal: 
+    m_lastTime: -8584594421031811382
+    List:
+    - name: Location
+      guid: 97fecb8cb61cb44f9455af3c9e336327
+      id: 1176052424
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: 21611006dff36c499e841738153e7461
+      - ElementName: Location
+        ObjectType: 9
+        guid: 97fecb8cb61cb44f9455af3c9e336327
+      Path: States\Anthony\Location
+      values:
+      - name: beach
+        guid: d3058cbc0602074991fab5ad469eff7f
+        id: 4075332698
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 21611006dff36c499e841738153e7461
+        - ElementName: Location
+          ObjectType: 9
+          guid: 97fecb8cb61cb44f9455af3c9e336327
+        - ElementName: beach
+          ObjectType: 8
+          guid: d3058cbc0602074991fab5ad469eff7f
+      - name: cat_tree
+        guid: daca2d337f5bfd408e6088d7c98f2381
+        id: 2281727986
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 21611006dff36c499e841738153e7461
+        - ElementName: Location
+          ObjectType: 9
+          guid: 97fecb8cb61cb44f9455af3c9e336327
+        - ElementName: cat_tree
+          ObjectType: 8
+          guid: daca2d337f5bfd408e6088d7c98f2381
+      - name: forest
+        guid: c4ac60fc067d4544924152cc6047eb06
+        id: 491961918
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 21611006dff36c499e841738153e7461
+        - ElementName: Location
+          ObjectType: 9
+          guid: 97fecb8cb61cb44f9455af3c9e336327
+        - ElementName: forest
+          ObjectType: 8
+          guid: c4ac60fc067d4544924152cc6047eb06
+      - name: lighthouse
+        guid: ef3fd145143c4d4db24b850b1f64626f
+        id: 2822410613
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 21611006dff36c499e841738153e7461
+        - ElementName: Location
+          ObjectType: 9
+          guid: 97fecb8cb61cb44f9455af3c9e336327
+        - ElementName: lighthouse
+          ObjectType: 8
+          guid: ef3fd145143c4d4db24b850b1f64626f
+      - name: None
+        guid: a28b4a89b479b0408702018614cb10ff
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 21611006dff36c499e841738153e7461
+        - ElementName: Location
+          ObjectType: 9
+          guid: 97fecb8cb61cb44f9455af3c9e336327
+        - ElementName: None
+          ObjectType: 8
+          guid: a28b4a89b479b0408702018614cb10ff
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: States
@@ -108,9 +652,72 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b874c196a1cfcc48b790c06e60758510
     GuidInternal: 
-    m_lastTime: -8584594681444960553
+    m_lastTime: -8584594430388103588
     List: []
   SwitchWwu:
+  - PhysicalPath: Switches\Anthony.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Anthony
+      ObjectType: 12
+      guid: 27638023a565d7418bfab37636cd15b1
+    ParentPath: Switches\Anthony
+    guid: 27638023a565d7418bfab37636cd15b1
+    GuidInternal: 
+    m_lastTime: -8584594430388045610
+    List:
+    - name: Ground_Material
+      guid: 40e2080494fea64782f310d790d4c05f
+      id: 3539622648
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: 27638023a565d7418bfab37636cd15b1
+      - ElementName: Ground_Material
+        ObjectType: 11
+        guid: 40e2080494fea64782f310d790d4c05f
+      Path: Switches\Anthony\Ground_Material
+      values:
+      - name: grass
+        guid: d9ee45b4bea92744b99d6f450ae17b24
+        id: 4248645337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 27638023a565d7418bfab37636cd15b1
+        - ElementName: Ground_Material
+          ObjectType: 11
+          guid: 40e2080494fea64782f310d790d4c05f
+        - ElementName: grass
+          ObjectType: 10
+          guid: d9ee45b4bea92744b99d6f450ae17b24
+      - name: sand
+        guid: d2144a68945c5e4da362df59feba08fd
+        id: 803837735
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 27638023a565d7418bfab37636cd15b1
+        - ElementName: Ground_Material
+          ObjectType: 11
+          guid: 40e2080494fea64782f310d790d4c05f
+        - ElementName: sand
+          ObjectType: 10
+          guid: d2144a68945c5e4da362df59feba08fd
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Switches
@@ -139,7 +746,7 @@ MonoBehaviour:
     m_lastTime: -8584594681445619479
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 10000000190000002000000021000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
