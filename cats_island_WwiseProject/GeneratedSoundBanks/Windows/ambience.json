@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{003D9512-4444-4975-BDE3-88EB62DEBAE8}",
     "Language": "SFX",
-    "Hash": "{8161B876-3EAE-2DC5-E206-29D01D35D035}",
+    "Hash": "{4ECB79C3-9F72-9039-2DA0-FA75FC15B8AD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ambience",
     "ShortName": "ambience",
     "Path": "ambience.bnk",
@@ -81,6 +81,6 @@
     ]
    }
   ],
-  "FileHash": "{06B60B24-E255-1902-88BC-C1B0A2F5F032}"
+  "FileHash": "{4934AB3F-32E3-A2E6-D3C5-4D54950BBBC0}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}",
     "Language": "SFX",
-    "Hash": "{052B01F5-5725-C039-B12C-648AB1A09A29}",
+    "Hash": "{F1D73079-0EC6-7D47-A585-7BD1E5E3D95A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -70,6 +70,14 @@
       "Location": "Memory",
       "ShortName": "LEITMOTIF\\mus_LEITMOTIF_AllCatsFound_nl.wav",
       "CachePath": "0F/{0F3E6D77-56DA-6DCD-1FA1-6BDB62CBDDCD}.wem"
+     },
+     {
+      "Id": "645487081",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMbongos_lp.wav",
+      "CachePath": "D9/{D9F11BD3-077B-C215-B5D4-1D99E1D0692D}.wem"
      },
      {
       "Id": "782902619",
@@ -186,6 +194,9 @@
         "Id": "605225841"
        },
        {
+        "Id": "645487081"
+       },
+       {
         "Id": "782902619"
        },
        {
@@ -235,6 +246,6 @@
     ]
    }
   ],
-  "FileHash": "{DDC7C800-C6DF-4291-9ABC-4B5593C9D2BB}"
+  "FileHash": "{85A6E7E2-0662-5BFF-1221-F2B1BB77B531}"
  }
 }

@@ -119,6 +119,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{69CE63CF-F368-4F63-B6F2-5D39AC13FA71}" ShortID="998783273">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMbongos_lp" ID="{4189450C-E5DD-415C-8BD0-13A1EC2045AB}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

@@ -772,14 +772,14 @@
 																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>4.99556</XPos>
+																		<XPos>2.91556</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>7.98222</XPos>
-																		<YPos>0.05268</YPos>
+																		<XPos>6.91555</XPos>
+																		<YPos>-0.0659</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -826,7 +826,7 @@
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
-											<RTPC Name="" ID="{401A9DBF-0A20-4AE0-AB42-A821D9EE9A71}" ShortID="95698413">
+											<RTPC Name="" ID="{851B201E-E205-4D54-AE1C-006E8E07D077}" ShortID="212548231">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
@@ -836,7 +836,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{F47DCF14-8B07-484B-BD41-395C9FE1041A}">
+															<Curve Name="" ID="{F2DBE313-C1B4-468F-9582-CACE8C88B952}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -848,14 +848,14 @@
 																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>4.99556</XPos>
+																		<XPos>2.91556</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>7.98222</XPos>
-																		<YPos>0.0526800000000378</YPos>
+																		<XPos>6.91555</XPos>
+																		<YPos>-0.0658999999999992</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -962,6 +962,86 @@
 							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="mus_4-4_86bpm_STEMviolin_lp" ID="{FB277EDD-2244-473D-9FD2-D595858FFABA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="mus_4-4_86bpm_STEMbongos_lp" ID="{4189450C-E5DD-415C-8BD0-13A1EC2045AB}" ShortID="380362462">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mus_4-4_86bpm_STEMbongos_lp" ID="{7E576079-9BE5-46F1-BEA2-DD3FD7B770E7}">
+									<Language>SFX</Language>
+									<AudioFile>mus_4-4_86bpm_STEMbongos_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="645487081"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{1B36A9C8-7C3D-4975-A537-73C87D710D48}" ShortID="934262180">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{B48AFAED-C75B-46BB-84A9-52156D9CBC91}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>8</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10.38222</XPos>
+																		<YPos>-0.02551</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="mus_4-4_86bpm_STEMbongos_lp" ID="{7E576079-9BE5-46F1-BEA2-DD3FD7B770E7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1086,6 +1166,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<BlendContainer Name="amb_forest_lp" ID="{66DA2698-C2B1-459B-A4C4-57E7C9BE5042}" ShortID="338839006">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -1280,12 +1367,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-3.00568</YPos>
+																		<YPos>-4.65638</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>6.82667</XPos>
-																		<YPos>-2.15323</YPos>
+																		<XPos>6.84445</XPos>
+																		<YPos>-4.78618</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
