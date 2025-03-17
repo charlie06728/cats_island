@@ -125,6 +125,8 @@ namespace Player {
                     // _upAcceleration = Physics.gravity.y;
                     // Rigidbody.useGravity = true;
                     Debug.Log("Jumping");
+                    // AkUnitySoundEngine.SetSwitch("sfx_Jump", "grass", gameObject);
+                    // AkUnitySoundEngine.PostEvent("sfx_Jump", gameObject);
                 }
             };
         }

@@ -78,6 +78,9 @@ namespace Player {
         }
 
         protected void RenderImages() {
+            /* Audio */
+            AkUnitySoundEngine.PostEvent("sfx_pageflip", gameObject);
+            
             HideAll();
             
             int endIndex = CurrentStartIndex + albumSlots.Count;

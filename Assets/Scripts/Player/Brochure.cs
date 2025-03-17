@@ -84,6 +84,9 @@ namespace Player {
         }
 
         protected void DisplayPhotos() {
+            /* Play flip page audio */
+            AkUnitySoundEngine.PostEvent("sfx_pageflip", gameObject);
+            
             HideAll();
             List<Cat.Cat> cats = _allCats;
             

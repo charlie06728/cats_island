@@ -150,6 +150,7 @@ namespace Player {
             
             /* Play sound */
             cameraSoundTakePicture.Play();
+            AkUnitySoundEngine.PostEvent("sfx_CameraPicture", gameObject);
             
             /* Enable the current photo */
             // CurrentPhoto.gameObject.SetActive(true);

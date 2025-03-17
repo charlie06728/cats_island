@@ -1482,6 +1482,9 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="grass" ID="{B445EED9-A9BE-4427-B99D-6F450AE17B24}" WorkUnitID="{23806327-65A5-41D7-8BFA-B37636CD15B1}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
 						</Reference>
