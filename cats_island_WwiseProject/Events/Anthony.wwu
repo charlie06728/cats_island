@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Anthony" ID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="sfx_footsteps" ID="{887753D5-D896-48F6-A930-9858F96C2DF9}">
-					<ChildrenList>
-						<Action Name="" ID="{36EDCF93-C85C-4653-BEA2-C7DB8FD6D032}" ShortID="428839913">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_footsteps" ID="{B47B1E80-9A45-4108-BA23-F98339A8527B}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="mus_leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" ShortID="677620164">
 					<ChildrenList>
 						<Event Name="All_Cats_Found" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}">
@@ -134,7 +123,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}">
+				<Event Name="amb_ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}">
 					<ChildrenList>
 						<Action Name="" ID="{94ECA73B-AFAE-48C8-8871-3C70BEBDA7D3}" ShortID="867983570">
 							<ReferenceList>
@@ -146,7 +135,55 @@
 						<Action Name="" ID="{B812EBF0-5577-4B47-A6C9-CE9175FFC0A9}" ShortID="897670990">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="amb_forestambience_lp" ID="{1653B7CA-FD7F-482A-93E9-236DE90297DD}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+									<ObjectRef Name="amb_forest_lp" ID="{66DA2698-C2B1-459B-A4C4-57E7C9BE5042}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="sfx_movement" ID="{09C77F85-0185-4F4C-9925-F2112FAB4041}" ShortID="583753657">
+					<ChildrenList>
+						<Event Name="sfx_footsteps" ID="{887753D5-D896-48F6-A930-9858F96C2DF9}">
+							<ChildrenList>
+								<Action Name="" ID="{36EDCF93-C85C-4653-BEA2-C7DB8FD6D032}" ShortID="428839913">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_footsteps" ID="{B47B1E80-9A45-4108-BA23-F98339A8527B}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_jump" ID="{5E376275-EC84-4840-B5B8-14B496E03F88}">
+							<ChildrenList>
+								<Action Name="" ID="{1BB5B032-F046-4515-ABEF-6A1E7E88F524}" ShortID="165178507">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_jump" ID="{CAC4276D-304E-4435-B462-AAC3DB2EB06E}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_landing" ID="{2F994791-D8E7-4AB8-B710-338F2428E8EF}">
+							<ChildrenList>
+								<Action Name="" ID="{99D7FDF8-3A98-4CC7-9ADD-B1BA3E2590B9}" ShortID="998436468">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_landing" ID="{3F963853-892C-4109-A8D4-B893B525096A}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="sfx_Page_Flip" ID="{B54CB49C-30F3-47E4-BA15-FCAF4465D387}">
+					<ChildrenList>
+						<Action Name="" ID="{DF0CB583-32C0-49F9-8B94-4DAD4E95806F}" ShortID="124444093">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_pageflip" ID="{617F3D68-792E-4D5C-9CCF-D42C127A0B2D}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
