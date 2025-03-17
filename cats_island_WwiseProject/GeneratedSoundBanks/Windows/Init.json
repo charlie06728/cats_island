@@ -104,6 +104,12 @@
         "GUID": "{684A14D2-5C94-4D5E-A362-DF59FEBA08FD}"
        },
        {
+        "Id": "2058049674",
+        "Name": "wood",
+        "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\wood",
+        "GUID": "{E393EB9F-0EF2-467E-9F5B-539980493798}"
+       },
+       {
         "Id": "4248645337",
         "Name": "grass",
         "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\grass",
@@ -114,6 +120,6 @@
     ]
    }
   ],
-  "FileHash": "{550D5F8E-5D5A-3DB2-06D3-3EE981DAAE57}"
+  "FileHash": "{1573276E-5BA7-0D7F-3248-0EA5511539D9}"
  }
 }
