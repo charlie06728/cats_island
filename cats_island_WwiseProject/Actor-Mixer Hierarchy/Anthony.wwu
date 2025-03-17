@@ -4,6 +4,9 @@
 		<WorkUnit Name="Anthony" ID="{953095C9-DECC-4DBA-8283-A1AC735132AD}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchContainer Name="sfx_footsteps" ID="{B47B1E80-9A45-4108-BA23-F98339A8527B}" ShortID="489545419">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -17,6 +20,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="FOOTSTEPS_Grass" ID="{A7D76DE9-526F-4066-B05E-C64CAE81097E}" ShortID="782161401">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -117,6 +125,10 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="FOOTSTEPS_Sand" ID="{5AD3B9C1-5ABB-47C5-8A97-D1702191F688}" ShortID="108124461">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -725,6 +737,7 @@
 					<ChildrenList>
 						<Sound Name="amb_beachambience_lp" ID="{C38259C3-BC1B-4579-BEFE-EF9BBE95EAEE}" ShortID="600064051">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-15</Value>
@@ -786,6 +799,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="amb_forestambience_lp" ID="{1653B7CA-FD7F-482A-93E9-236DE90297DD}" ShortID="591546680">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using DefaultNamespace.Sound;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
@@ -25,7 +26,6 @@ namespace Player {
         public float crouchDist = 1f; // How far down should we crouch?
         bool isSprinting;
         bool isCrouching;
-        
         
         /* camera rotation related */
         private Vector2 _look;
@@ -167,9 +167,11 @@ namespace Player {
             }
 
             if (keyDown) {
-                if (!footStepSound.isPlaying) footStepSound.Play();
+                // if (!footStepSound.isPlaying) footStepSound.Play();
+                FootStepManager.Instance.PlayFootstep();
             } else {
-                footStepSound.Stop();
+                // footStepSound.Stop();
+                FootStepManager.Instance.StopFootstep();
             }
             
             /* Make sure the body is not tilted */

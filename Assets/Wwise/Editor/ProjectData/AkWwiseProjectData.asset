@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 7497760a65bb00459549f9069674c4d4
     GuidInternal: 
-    m_lastTime: -8584594681444996931
+    m_lastTime: -8584594671253914511
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 47dc6fec587c2446a7b9dbcf10e31f07
     GuidInternal: 
-    m_lastTime: -8584594681445368429
+    m_lastTime: -8584594671253934925
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584594350581112778
+    m_lastTime: -8584593821629359028
     List:
     - name: ambience
       guid: 12953d0044447549bde388eb62debae8
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events\Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584594350494246884
+    m_lastTime: -8584593822210608281
     List:
     - name: All_Cats_Found
       guid: 9ed4d49ee6655e4fafbbd7e1535ad178
@@ -343,7 +343,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6dbcaf644f31214ca23f64f63faf663a
     GuidInternal: 
-    m_lastTime: -8584594681445135342
+    m_lastTime: -8584594671253934925
     List: []
   - PhysicalPath: Events\Elienna.wwu
     PathAndIcons:
@@ -356,7 +356,7 @@ MonoBehaviour:
     ParentPath: Events\Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584594449074177873
+    m_lastTime: -8584593847788998431
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -487,7 +487,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Anthony
     guid: 747ed4c5d250174d9c25eb13858cdf27
     GuidInternal: 
-    m_lastTime: -8584594430388080764
+    m_lastTime: -8584593847788998431
     List:
     - name: Time_Of_Day
       guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
@@ -514,7 +514,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b00b9c776284c047af9d52e603c58215
     GuidInternal: 
-    m_lastTime: -8584594681444897246
+    m_lastTime: -8584594671253934925
     List: []
   - PhysicalPath: Game Parameters\Elienna.wwu
     PathAndIcons:
@@ -527,7 +527,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Elienna
     guid: e9fcf40ce1fb60438256a5203cf5a15a
     GuidInternal: 
-    m_lastTime: -8584594669589299753
+    m_lastTime: -8584593847788988139
     List: []
   StateWwu:
   - PhysicalPath: States\Anthony.wwu
@@ -541,7 +541,7 @@ MonoBehaviour:
     ParentPath: States\Anthony
     guid: 21611006dff36c499e841738153e7461
     GuidInternal: 
-    m_lastTime: -8584594421031811382
+    m_lastTime: -8584593847772717915
     List:
     - name: Location
       guid: 97fecb8cb61cb44f9455af3c9e336327
@@ -666,7 +666,7 @@ MonoBehaviour:
     ParentPath: Switches\Anthony
     guid: 27638023a565d7418bfab37636cd15b1
     GuidInternal: 
-    m_lastTime: -8584594430388045610
+    m_lastTime: -8584593847772717915
     List:
     - name: Ground_Material
       guid: 40e2080494fea64782f310d790d4c05f
@@ -729,7 +729,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6a38469adc0030469182708ec8541dbb
     GuidInternal: 
-    m_lastTime: -8584594681445330298
+    m_lastTime: -8584594671253924759
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -743,10 +743,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 47e94a7a22be964d82a63388717af54b
     GuidInternal: 
-    m_lastTime: -8584594681445619479
+    m_lastTime: -8584594671253914511
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 10000000190000002000000021000000
+  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000001000000012000000130000001700000018000000190000001a0000002000000021000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
