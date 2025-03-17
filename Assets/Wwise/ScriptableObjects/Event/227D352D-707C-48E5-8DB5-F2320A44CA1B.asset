@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982ad8b8a1e3c641bec9fd9cc236647, type: 3}
   m_Name: 227D352D-707C-48E5-8DB5-F2320A44CA1B
   m_EditorClassIdentifier: 
-  objectName: mus_soundtrack
+  objectName: mus_Soundtrack
   id: 1283697787
   guid: 227D352D-707C-48E5-8DB5-F2320A44CA1B
   IsInUserDefinedSoundBank: 1

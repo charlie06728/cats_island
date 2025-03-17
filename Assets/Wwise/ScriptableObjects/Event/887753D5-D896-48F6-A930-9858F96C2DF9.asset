@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982ad8b8a1e3c641bec9fd9cc236647, type: 3}
   m_Name: 887753D5-D896-48F6-A930-9858F96C2DF9
   m_EditorClassIdentifier: 
-  objectName: sfx_footsteps
+  objectName: sfx_Footsteps
   id: 3364658470
   guid: 887753D5-D896-48F6-A930-9858F96C2DF9
   IsInUserDefinedSoundBank: 1

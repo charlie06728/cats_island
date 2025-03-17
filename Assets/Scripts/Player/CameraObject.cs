@@ -281,6 +281,11 @@ namespace Player {
             
             catsInView.Add(finalCat);
             
+            /* Check if the cat is captured before */
+            if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
+                Brochure.CollectedCats.Add(finalCat.catBreed);
+            }
+            
             /* Set the cats in view */
             CurrentPhoto.Cats.AddRange(catsInView);
             CurrentPhoto.Stars = 0;

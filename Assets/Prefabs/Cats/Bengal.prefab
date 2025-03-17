@@ -409,7 +409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Behaviour: {fileID: 125664424620189977}
   Navigator: {fileID: 2305367328389742346}
-  catImage: {fileID: 5298497197951852074, guid: 9a495f2352e6cf84bb783fdaaf7f9a22, type: 3}
+  catImage: {fileID: 5298497197951852074, guid: 265f8725ff388ec4daca32759c80de47, type: 3}
   catPreferredSnack: Fish
   catHabitat: cat tree, forest
   walkProportion: 0.7

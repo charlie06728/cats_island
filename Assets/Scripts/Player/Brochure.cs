@@ -11,6 +11,9 @@ namespace Player {
         public RawImage rawImage1;
         public RawImage rawImage2;
 
+        public RawImage collect1;
+        public RawImage collect2;
+
         // public TextMeshProUGUI catName1;
         // public TextMeshProUGUI catName2;
         
@@ -30,7 +33,8 @@ namespace Player {
         private Action<InputAction.CallbackContext> _nextPage;
         private Action<InputAction.CallbackContext> _prevPage;
 
-        private List<Cat.Cat> _allCats;
+        [NonSerialized] public List<Cat.Cat> _allCats;
+        [NonSerialized] public static HashSet<string> CollectedCats = new HashSet<string>();
         
         // [NonSerialized] public Photo Photo1;
         // [NonSerialized] public Photo Photo2;
@@ -128,6 +132,11 @@ namespace Player {
         protected void DisplayCat(Cat.Cat cat, int displayIndex) {
             if (displayIndex == 0) {
                 rawImage1.gameObject.SetActive(true);
+                if (CollectedCats.Contains(cat.catBreed)) {
+                    collect1.gameObject.SetActive(true);
+                } else {
+                    collect1.gameObject.SetActive(false);
+                }
                 // catName1.gameObject.SetActive(true);
                 catBreed1.gameObject.SetActive(true);
                 preferSnack1.gameObject.SetActive(true);
@@ -141,6 +150,11 @@ namespace Player {
                 habitat1.text = cat.catHabitat;
             } else {
                 rawImage2.gameObject.SetActive(true);
+                if (CollectedCats.Contains(cat.catBreed)) {
+                    collect2.gameObject.SetActive(true);
+                } else {
+                    collect2.gameObject.SetActive(false);
+                }
                 // catName2.gameObject.SetActive(true);
                 catBreed2.gameObject.SetActive(true);
                 preferSnack2.gameObject.SetActive(true);

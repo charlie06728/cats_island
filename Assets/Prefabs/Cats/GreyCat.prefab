@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Behaviour: {fileID: 1310590837305103205}
   Navigator: {fileID: 896246090043884918}
-  catImage: {fileID: 5298497197951852074, guid: 9a495f2352e6cf84bb783fdaaf7f9a22, type: 3}
+  catImage: {fileID: 5298497197951852074, guid: 6552836158d150d458d80ae2d5524497, type: 3}
   catPreferredSnack: Cookie
   catHabitat: Cat tree, Pond, Catnip Garden
   walkProportion: 0.7

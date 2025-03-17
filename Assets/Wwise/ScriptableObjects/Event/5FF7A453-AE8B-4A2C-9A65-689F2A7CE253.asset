@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982ad8b8a1e3c641bec9fd9cc236647, type: 3}
   m_Name: 5FF7A453-AE8B-4A2C-9A65-689F2A7CE253
   m_EditorClassIdentifier: 
-  objectName: ambience
-  id: 85412153
+  objectName: amb_Ambience
+  id: 3855008934
   guid: 5FF7A453-AE8B-4A2C-9A65-689F2A7CE253
   IsInUserDefinedSoundBank: 1
   IsAutoBankLoaded: 0
