@@ -8,9 +8,9 @@
    {
     "Id": "3991942870",
     "Type": "User",
-    "GUID": "{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}",
+    "GUID": "{537C334F-407D-47FD-9FA1-290651404E6F}",
     "Language": "SFX",
-    "Hash": "{01F2A49A-7E6B-C063-E90C-E3DD738E1FEE}",
+    "Hash": "{29C7604D-FBBF-443B-56DE-FAD9804038FC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music",
     "ShortName": "music",
     "Path": "music.bnk",
@@ -64,6 +64,14 @@
       "CachePath": "74/{749019D7-B9B7-040E-A995-9695095AD75F}.wem"
      },
      {
+      "Id": "633190278",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_AllCatsFound_nl.wav",
+      "CachePath": "0F/{0F3E6D77-56DA-6DCD-1FA1-6BDB62CBDDCD}.wem"
+     },
+     {
       "Id": "782902619",
       "Language": "SFX",
       "Streaming": "false",
@@ -106,6 +114,20 @@
     ],
     "Events": [
      {
+      "Id": "716553183",
+      "Name": "All_Cats_Found",
+      "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\All_Cats_Found",
+      "GUID": "{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.755833",
+      "DurationMax": "5.755833",
+      "MediaRefs": [
+       {
+        "Id": "633190278"
+       }
+      ]
+     },
+     {
       "Id": "2279263372",
       "Name": "Bengal_Pose",
       "ObjectPath": "\\Events\\Anthony\\mus_leitmotif\\Bengal_Pose",
@@ -136,7 +158,7 @@
      {
       "Id": "1283697787",
       "Name": "mus_soundtrack",
-      "ObjectPath": "\\Events\\Anthony\\mus_stems\\mus_soundtrack",
+      "ObjectPath": "\\Events\\Anthony\\mus_soundtrack",
       "GUID": "{227D352D-707C-48E5-8DB5-F2320A44CA1B}",
       "DurationType": "OneShot",
       "DurationMin": "64.186066",
@@ -215,6 +237,6 @@
     ]
    }
   ],
-  "FileHash": "{795FDF94-15CA-9B2F-40AF-368E893B02A9}"
+  "FileHash": "{F62EBACE-70ED-76D0-DC61-76F111D870BC}"
  }
 }

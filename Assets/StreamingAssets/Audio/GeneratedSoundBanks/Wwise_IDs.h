@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ALL_CATS_FOUND = 716553183U;
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
         static const AkUniqueID BENGAL_POSE = 2279263372U;

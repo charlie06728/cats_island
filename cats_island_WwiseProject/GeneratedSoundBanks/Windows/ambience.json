@@ -8,7 +8,7 @@
    {
     "Id": "85412153",
     "Type": "User",
-    "GUID": "{003D9512-4444-4975-BDE3-88EB62DEBAE8}",
+    "GUID": "{3F6BE8B2-0240-49EE-B781-2534C9175251}",
     "Language": "SFX",
     "Hash": "{A77E7C02-83BE-DA44-D80D-CD64685D1609}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ambience",
@@ -53,6 +53,6 @@
     ]
    }
   ],
-  "FileHash": "{A80C6A1A-F908-8D69-548F-D09AAA9B1ED2}"
+  "FileHash": "{C7A1579D-B991-7746-FE3E-6E96F7B02297}"
  }
 }
