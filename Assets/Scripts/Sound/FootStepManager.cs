@@ -67,7 +67,8 @@ namespace DefaultNamespace.Sound {
         private string GetTerrainTexture() {
             // UnityEngine.Terrain terrain = TerrainManager.Instance.Terrain;
             TerrainData terrainData = TerrainManager.Instance.Terrain.terrainData;
-            Vector3 playerPos = transform.position;
+            Vector3 playerPos = Server.Server.Instance.player.transform.position;
+            
             float[,,] splatmapData = terrainData.GetAlphamaps(
                 (int)((playerPos.x - terrain.transform.position.x) / terrainData.size.x * terrainData.alphamapWidth),
                 (int)((playerPos.z - terrain.transform.position.z) / terrainData.size.z * terrainData.alphamapHeight),
@@ -86,6 +87,7 @@ namespace DefaultNamespace.Sound {
 
             // Define terrain textures manually (must match Unity terrain layers)
             string[] terrainTextures = { "Grass", "Sand", "Grass", "Sand" };
+            Debug.Log(terrainTextures[maxIndex]);
             return terrainTextures[maxIndex];
         }
     }
