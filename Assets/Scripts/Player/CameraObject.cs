@@ -190,6 +190,9 @@ namespace Player {
         
         IEnumerator CapturePhoto()
         {
+            /* Set album notification */
+            Server.Server.Instance.albumNotification.SetActive(true);
+            
             CurrentPhoto.Stars = 0;
             
             /* Find the cats with view */

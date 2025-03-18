@@ -43,6 +43,7 @@ namespace Server {
         [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();
         [NonSerialized] public Dictionary<string, Cat.Cat> CatDictionary = new Dictionary<string, Cat.Cat>();
         public GameObject newCatNotification;
+        public GameObject albumNotification;
         
         /* Film */
         [NonSerialized] public int FilmCount = 18;

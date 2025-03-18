@@ -41,6 +41,9 @@ namespace Player {
             Server.Server.Instance.itemBar.SetCurrentItem(Items.Album);
             if (!gameObject.activeInHierarchy) return;
             
+            /* Reset the notifications */
+            Server.Server.Instance.albumNotification.SetActive(false);
+            
             RenderImages();
             
             // int currentSlot = 0;
