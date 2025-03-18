@@ -68658,7 +68658,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f01069b360bb58f4baf2f34bd02a2b53, type: 2}
   decodeBank: 0
-  overrideLoadSetting: 1
+  overrideLoadSetting: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
