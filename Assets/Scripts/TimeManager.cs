@@ -1,5 +1,8 @@
 using UnityEngine;
 using System;
+using System.Collections.Generic;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class TimeManager : MonoBehaviour
 {
@@ -10,6 +13,8 @@ public class TimeManager : MonoBehaviour
     
     public int hours;
     public int minutes;
+    
+    public Image[] clock_images;
     
 
     void Start() {
@@ -27,6 +32,13 @@ public class TimeManager : MonoBehaviour
         // 15 total hours
         hours = 6 + Mathf.FloorToInt(curr_time / hour_length);
         minutes = Mathf.FloorToInt(60 * (curr_time % hour_length) / hour_length);
+        
+        /* Decide which image to display out of 9 images */
+        float progress = (hours - 6f) / 15f;
+        int imageIndex = (int)(progress * 100f / (100f / 8f) + 0.5f);
+        for (int i = 0; i < 9; i++) {
+            clock_images[i].gameObject.SetActive(i == imageIndex);
+        }
     }
 
 
