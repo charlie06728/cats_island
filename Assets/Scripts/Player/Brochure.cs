@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 namespace Player {
     public class Brochure : Item {
+        /* notification of new cats */
+        public GameObject notification;
+        
         public RawImage rawImage1;
         public RawImage rawImage2;
 
@@ -59,6 +62,9 @@ namespace Player {
             /* Define the switch page behaviour */
             Server.Server.Instance.InputActionMap["Next"].performed += _nextPage;
             Server.Server.Instance.InputActionMap["Prev"].performed += _prevPage;
+            
+            /* Clear the notification */
+            notification.SetActive(false);
         }
         
         public override void PutBack() {

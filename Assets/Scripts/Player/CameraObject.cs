@@ -48,6 +48,7 @@ namespace Player {
         
         /* child mesh renderers */
         private MeshRenderer[] meshRenderers;
+        
 
         public override void TakeOut() {
             base.TakeOut();
@@ -284,6 +285,33 @@ namespace Player {
             /* Check if the cat is captured before */
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
                 Brochure.CollectedCats.Add(finalCat.catBreed);
+                Server.Server.Instance.newCatNotification.SetActive(true);
+
+                if (Brochure.CollectedCats.Count == Server.Server.Instance.Cats.Count) {
+                    AkUnitySoundEngine.PostEvent("mus_AllCatsFound", gameObject);
+                } else {
+                    string catBreed = finalCat.catBreed.ToLower();
+                    switch (catBreed) {
+                        case "ragdoll":
+                            AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                            break;
+                        case "grey cat":
+                            AkUnitySoundEngine.PostEvent("mus_GreyCat_Pose", gameObject);
+                            break;
+                        case "grey tabby":
+                            AkUnitySoundEngine.PostEvent("mus_Tabby_Pose", gameObject);
+                            break;
+                        case "tuxedo":
+                            AkUnitySoundEngine.PostEvent("mus_Tuxedo_Pose", gameObject);
+                            break;
+                        case "bengal":
+                            AkUnitySoundEngine.PostEvent("mus_Bengal_Pose", gameObject);
+                            break;
+                        default:
+                            AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                            break;
+                    }
+                }
             }
             
             /* Set the cats in view */
@@ -493,6 +521,8 @@ namespace Player {
             
             // Get all MeshRenderer components under this GameObject (including children)
             meshRenderers = GetComponentsInChildren<MeshRenderer>();
+
+            AkUnitySoundEngine.RegisterGameObj(gameObject);
         }
         
         void SetMeshRendering(bool state)

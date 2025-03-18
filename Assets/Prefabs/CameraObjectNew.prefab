@@ -408,6 +408,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8555878005223502510}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8074690971174893702}
   m_SourcePrefab: {fileID: 100100000, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
 --- !u!1 &8473298289336098844 stripped
 GameObject:
@@ -536,6 +539,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8074690971174893702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8473298289336098844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280a61356edf39945997629f4e7ef7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 733e6b85985e98c4a9984bb77a68af11, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!4 &9141431250781600422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9c8afc97e27f9bc4aae869d8e2287d12, type: 3}
