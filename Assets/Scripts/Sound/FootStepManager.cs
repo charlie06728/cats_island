@@ -1,3 +1,4 @@
+using System;
 using Terrain;
 using UnityEngine;
 
@@ -6,8 +7,12 @@ namespace DefaultNamespace.Sound {
         /* Singleton */
         public static FootStepManager Instance { get; private set; }
         
-        public string switchGroup = "sfx_footsteps"; // Wwise Switch Group Name
-        public string footstepEvent = "Play_Footstep"; // Wwise Footstep Event Name
+        [NonSerialized] public string switchGroup = "sfx_footsteps"; // Wwise Switch Group Name
+        [NonSerialized] public string footstepEvent = "Play_sfx_Footsteps"; // Wwise Footstep Event Name
+        public AK.Wwise.Event fe;
+        public AK.Wwise.Switch fs_wood;
+        public AK.Wwise.Switch fs_sand;
+        public AK.Wwise.Switch fs_grass;
 
         public GameObject player;
 
@@ -35,7 +40,7 @@ namespace DefaultNamespace.Sound {
             if (terrainTypeNow == terrainType && playID != 0) return;
 
             terrainType = terrainTypeNow;
-            SetFootstepSwitch(terrainType);
+            SetFootstepSwitch();
 
             // playID = footstepEvent.Post(gameObject);
         }
@@ -45,23 +50,40 @@ namespace DefaultNamespace.Sound {
             if (playID != 0) {
                 playID = 0;
                 terrainType = null;
-                AkSoundEngine.StopAll(gameObject);
+                // AkUnitySoundEngine.StopAll(gameObject);
+                fe.Stop(gameObject);
             }
         }
         
-        private void SetFootstepSwitch(string surfaceType)
+        private void SetFootstepSwitch()
         {
             // Set the correct Wwise switch
-            AkSoundEngine.SetSwitch(switchGroup, surfaceType, gameObject);
+            switch (terrainType) {
+                case "wood":
+                    fs_wood.SetValue(gameObject);
+                    break;
+                case "sand":
+                    fs_sand.SetValue(gameObject);
+                    break;
+                case "grass":
+                    fs_grass.SetValue(gameObject);
+                    break;
+                default:
+                    fs_wood.SetValue(gameObject);
+                    break;
+            }
+            // AkUnitySoundEngine.SetSwitch(switchGroup, surfaceType, gameObject);
 
             // Play the footstep event
-            playID = AkSoundEngine.PostEvent(footstepEvent, gameObject, (uint)AkCallbackType.AK_EndOfEvent, OnSoundEnd, null);
+            // playID = AkUnitySoundEngine.PostEvent(footstepEvent, gameObject, (uint)AkCallbackType.AK_EndOfEvent, OnSoundEnd, null);
+            playID = fe.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, OnSoundEnd, null);
         }
         
         void OnSoundEnd(object in_cookie, AkCallbackType in_type, object in_info)
         {
+            if (playID == 0 || terrainType == null) return;
             terrainType = GetTerrainTexture();
-            SetFootstepSwitch(terrainType);
+            SetFootstepSwitch();
         }
         
         private string GetTerrainTexture() {
@@ -86,7 +108,7 @@ namespace DefaultNamespace.Sound {
             }
 
             // Define terrain textures manually (must match Unity terrain layers)
-            string[] terrainTextures = { "Grass", "Sand", "Grass", "Sand" };
+            string[] terrainTextures = { "grass", "sand", "grass", "wood" };
             Debug.Log(terrainTextures[maxIndex]);
             return terrainTextures[maxIndex];
         }
