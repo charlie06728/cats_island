@@ -1,0 +1,125 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{31BC28CE-D4D0-5A99-E42B-BFB2B8E0C67D}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{B73EA51D-441F-49AC-B9EB-CA52EEA28B72}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{BBE5F94C-97F3-4A2B-A1BE-570AC01E9C0F}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "207908541",
+      "Name": "Time_Of_Day",
+      "ObjectPath": "\\Game Parameters\\Anthony\\Time_Of_Day",
+      "GUID": "{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1176052424",
+      "Name": "Location",
+      "ObjectPath": "\\States\\Anthony\\Location",
+      "GUID": "{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}",
+      "States": [
+       {
+        "Id": "491961918",
+        "Name": "forest",
+        "ObjectPath": "\\States\\Anthony\\Location\\forest",
+        "GUID": "{FC60ACC4-7D06-4445-9241-52CC6047EB06}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Anthony\\Location\\None",
+        "GUID": "{894A8BA2-79B4-40B0-8702-018614CB10FF}"
+       },
+       {
+        "Id": "2281727986",
+        "Name": "cat_tree",
+        "ObjectPath": "\\States\\Anthony\\Location\\cat_tree",
+        "GUID": "{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"
+       },
+       {
+        "Id": "2822410613",
+        "Name": "lighthouse",
+        "ObjectPath": "\\States\\Anthony\\Location\\lighthouse",
+        "GUID": "{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"
+       },
+       {
+        "Id": "4075332698",
+        "Name": "beach",
+        "ObjectPath": "\\States\\Anthony\\Location\\beach",
+        "GUID": "{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "3539622648",
+      "Name": "Ground_Material",
+      "ObjectPath": "\\Switches\\Anthony\\Ground_Material",
+      "GUID": "{0408E240-FE94-47A6-82F3-10D790D4C05F}",
+      "Switches": [
+       {
+        "Id": "803837735",
+        "Name": "sand",
+        "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\sand",
+        "GUID": "{684A14D2-5C94-4D5E-A362-DF59FEBA08FD}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "wood",
+        "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\wood",
+        "GUID": "{E393EB9F-0EF2-467E-9F5B-539980493798}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "grass",
+        "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\grass",
+        "GUID": "{B445EED9-A9BE-4427-B99D-6F450AE17B24}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1573276E-5BA7-0D7F-3248-0EA5511539D9}"
+ }
+}

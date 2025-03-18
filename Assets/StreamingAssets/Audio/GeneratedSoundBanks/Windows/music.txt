@@ -1,0 +1,37 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1283697787	mus_Soundtrack			\Anthony\mus_Stems\mus_Soundtrack	
+	1461319202	mus_Tuxedo_Pose			\Anthony\mus_Leitmotif\mus_Tuxedo_Pose	
+	2889622102	mus_Ragdoll_Pose			\Anthony\mus_Leitmotif\mus_Ragdoll_Pose	
+	3109386516	mus_GreyCat_Pose			\Anthony\mus_Leitmotif\mus_GreyCat_Pose	
+	3509682696	mus_Bengal_Pose			\Anthony\mus_Leitmotif\mus_Bengal_Pose	
+	3891823391	mus_AllCatsFound			\Anthony\mus_Leitmotif\mus_AllCatsFound	
+	4016717323	mus_Tabby_Pose			\Anthony\mus_Leitmotif\mus_Tabby_Pose	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1176052424	Location			\Anthony\Location	
+
+State	ID	Name	State Group			Notes
+	491961918	forest	Location			
+	748895195	None	Location			
+	2281727986	cat_tree	Location			
+	2822410613	lighthouse	Location			
+	4075332698	beach	Location			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	207908541	Time_Of_Day			\Anthony\Time_Of_Day	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	275975639	mus_4-4_86bpm_STEMguitar_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\BE\{BEF5E886-A4DD-911D-802C-B7C3822AE645}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMguitar_lp		12323820
+	288617981	mus_4-4_86bpm_STEMflute_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\A0\{A06C663F-726A-A00E-9C34-4DE6741778C2}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMflute_lp		12323820
+	366123906	mus_LEITMOTIF_Ragdoll_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\6F\{6F6C9845-A6CB-7F48-44D3-4CDF71AD7508}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Ragdoll_nl		1071724
+	392363006	mus_LEITMOTIF_Bengal_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\BE\{BEC3B69F-8D22-F328-7CB0-0215471B6ECD}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Bengal_nl		939524
+	537448878	mus_LEITMOTIF_GreyCat_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\C6\{C6573BE2-E666-ED9F-A1F5-FA7F58810C36}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_GreyCat_nl		1001532
+	605225841	mus_4-4_86bpm_STEMpiano_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\D4\{D4FBE919-8C7B-A904-8909-76C18ACF96BF}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMpiano_lp		12323820
+	633190278	mus_LEITMOTIF_AllCatsFound_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\0F\{0F3E6D77-56DA-6DCD-1FA1-6BDB62CBDDCD}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_AllCatsFound_nl		1105216
+	645487081	mus_4-4_86bpm_STEMbongos_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\D9\{D9F11BD3-077B-C215-B5D4-1D99E1D0692D}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMbongos_lp		12323820
+	782902619	mus_4-4_86bpm_STEMviolin_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\4B\{4B824650-FB82-C23E-DBE1-3D911ACFE09B}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMviolin_lp		12323820
+	866056481	mus_4-4_86bpm_STEMmarimba_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\02\{02C439F9-28F1-F025-D827-21757FE6E66B}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMmarimba_lp		12323820
+	979688819	mus_4-4_86bpm_STEMvibraphone_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\4F\{4FD33BAB-5D31-165E-C7D3-039419CFB0D7}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMvibraphone_lp		12323820
+	984969033	mus_LEITMOTIF_Tuxedo_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\65\{65D2003A-2E19-A957-550B-E6263CD137B5}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Tuxedo_nl		1071724
+	1059229272	mus_LEITMOTIF_Tabby_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\C3\{C314D803-FC19-2F1B-E21B-B96891C44A6E}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Tabby_nl		1071724
+
