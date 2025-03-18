@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using Cat;
+using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
@@ -8,6 +9,7 @@ namespace Player {
     public class Treat : Item {
         public GameObject treatPrefab;
         public float treat_distance; // Distance at which we should be able to give a treat
+        [NonSerialized] public int Count = 10;
 
         // Camera mainCamera;
 
@@ -36,6 +38,8 @@ namespace Player {
         }
 
         public bool GiveTreat() {
+            if (Count <= 0) return false;
+            Count--;
             RaycastHit hit;
             
             /* Instantiate the treat prefab and drop to the ground */
@@ -65,6 +69,20 @@ namespace Player {
             base.Awake();
             _giveTreatAction = ctx => GiveTreat();
             // mainCamera = mainCamera.main();
+        }
+
+        protected override void Update() {
+            base.Update();
+            if (gameObject.activeInHierarchy) {
+                Server.Server.Instance.treatCountText.SetText(Count.ToString());
+                
+                /* Set it to red if < 3 */
+                if (Count < 3) {
+                    Server.Server.Instance.treatCountText.color = Color.red;
+                } else {
+                    Server.Server.Instance.treatCountText.color = Color.black;
+                }
+            }
         }
     }
 }

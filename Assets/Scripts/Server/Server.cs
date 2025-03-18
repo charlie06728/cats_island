@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Player;
+using TMPro;
 using UIs;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -22,6 +23,9 @@ namespace Server {
         /* cat related fields */
         public float CatRandomMoveInterval = 1.5f;
         public float CatMoveSpeed = 10f;
+        
+        /* Treat related */
+        public TextMeshProUGUI treatCountText;
         
         /* Photo related fields */
         public int photoWidth = 1920;

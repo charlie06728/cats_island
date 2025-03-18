@@ -290,7 +290,7 @@ namespace Player {
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);
 
-                if (Brochure.CollectedCats.Count == Server.Server.Instance.Cats.Count) {
+                if (Brochure.CollectedCats.Count == Server.Server.Instance.CatDictionary.Count) {
                     AkUnitySoundEngine.PostEvent("mus_AllCatsFound", gameObject);
                 } else {
                     string catBreed = finalCat.catBreed.ToLower();

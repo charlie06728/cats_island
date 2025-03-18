@@ -7,7 +7,13 @@ namespace UIs {
         public TextMeshProUGUI filmUsageText;
 
         protected void Update() {
-            filmUsageText.text = $"{Server.Server.Instance.FilmUsed} / {Server.Server.Instance.FilmCount}";
+            int filmRemaining = Server.Server.Instance.FilmCount - Server.Server.Instance.FilmUsed;
+            filmUsageText.SetText(filmRemaining.ToString());
+            if (filmRemaining < 3) {
+                filmUsageText.color = Color.red;
+            } else {
+                filmUsageText.color = Color.black;
+            }
         }
     }
 }
