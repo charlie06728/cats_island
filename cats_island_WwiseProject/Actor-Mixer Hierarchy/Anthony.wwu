@@ -430,6 +430,13 @@
 				<Folder Name="mus_leitmotif" ID="{A484B6CF-EF23-4B6B-B511-A4D0E060CFFC}" ShortID="947016587">
 					<ChildrenList>
 						<Sound Name="mus_LEITMOTIF_AllCatsFound_nl" ID="{98A3BFA3-752B-49A3-95BD-A2141D36A304}" ShortID="918351283">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -577,13 +584,6 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="mus_LEITMOTIF_Tabby_nl" ID="{07C5C98E-A657-4E27-A99C-80DD08611EBF}" ShortID="777690844">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -641,6 +641,11 @@
 						<Sound Name="mus_4-4_86bpm_STEMmarimba_lp" ID="{ED0F3EE0-5CA8-44D2-8872-1B861A216A04}" ShortID="1003600948">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -659,6 +664,55 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{BF5097C9-E856-42BD-9CA5-80DDC7349464}" ShortID="205615962">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{900A7CAC-4710-4A80-9105-EAAC8A53300F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.05929</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6</XPos>
+																		<YPos>-1.37406</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.00840336134454</XPos>
+																		<YPos>-1.32186461294141</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>-1.83541</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="mus_4-4_86bpm_STEMmarimba_lp" ID="{C763AEAB-1602-4CC6-AE8F-E66201A8033F}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -666,6 +720,11 @@
 						<Sound Name="mus_4-4_86bpm_STEMflute_lp" ID="{F594E1A8-6F12-48BE-987D-3C5199033E67}" ShortID="495981123">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -728,6 +787,11 @@
 						<Sound Name="mus_4-4_86bpm_STEMguitar_lp" ID="{A0D4A08A-56C2-4B61-9DA8-EEB8F082BD47}" ShortID="549319179">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -750,7 +814,7 @@
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
-											<RTPC Name="" ID="{33806053-533E-4FE1-8F76-ACC2A3E680E8}" ShortID="645361738">
+											<RTPC Name="" ID="{6EC62977-A629-4199-820C-E1D2D6FCA393}" ShortID="985360670">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="Volume"/>
 												</PropertyList>
@@ -760,7 +824,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{8DE21CB6-DC2E-469A-8E89-F260A9A28B28}">
+															<Curve Name="" ID="{550B9286-BEF8-455E-93DB-6CAF8EEC86B2}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
@@ -772,19 +836,19 @@
 																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>2.91556</XPos>
+																		<XPos>1.94077</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
+																		<SegmentShape>Exp1</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>6.91555</XPos>
-																		<YPos>-0.0659</YPos>
+																		<XPos>5.01639</XPos>
+																		<YPos>0.0526800000000378</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>12</XPos>
-																		<YPos>0.23963</YPos>
+																		<YPos>0.239630000000005</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -804,6 +868,11 @@
 						<Sound Name="mus_4-4_86bpm_STEMpiano_lp" ID="{004A5595-6C8B-4B28-963F-1346C73F6210}" ShortID="988159175">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -848,14 +917,14 @@
 																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>2.91556</XPos>
+																		<XPos>1.94077</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>0</Flags>
-																		<SegmentShape>Exp2</SegmentShape>
+																		<SegmentShape>Exp1</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>6.91555</XPos>
-																		<YPos>-0.0658999999999992</YPos>
+																		<XPos>5.01639</XPos>
+																		<YPos>0.05268</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -880,6 +949,11 @@
 						<Sound Name="mus_4-4_86bpm_STEMvibraphone_lp" ID="{66DB089D-DECB-4BE8-BBC1-AA99624BFCFA}" ShortID="496417416">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -898,6 +972,55 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{CC78D3C5-4DD6-44E0-9990-98B42EA15543}" ShortID="354049771">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{FE7E0AAF-4EF6-4FEB-ACB7-34AB06D2F61E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.0592900000000043</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6</XPos>
+																		<YPos>-1.37405999999999</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>9.00840336134454</XPos>
+																		<YPos>-1.3218646129414</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>12</XPos>
+																		<YPos>-1.83541</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="mus_4-4_86bpm_STEMvibraphone_lp" ID="{20306B6A-C2F0-4EE5-A58A-C4D868436B48}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -905,6 +1028,11 @@
 						<Sound Name="mus_4-4_86bpm_STEMviolin_lp" ID="{C0930C3D-D9D1-43FD-AC0F-70CD046167E5}" ShortID="445852642">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -969,7 +1097,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
