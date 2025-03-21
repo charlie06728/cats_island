@@ -775,6 +775,10 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
+										<CustomState Name="" ID="{541482AB-85E8-4692-9BE1-1E5FF6DE07FF}" ShortID="528134681"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
 										<CustomState Name="" ID="{45E8DFFE-7F48-4FA2-B691-CBA3D485FFD5}" ShortID="916813087"/>
 									</CustomState>
@@ -1079,6 +1083,10 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
+										<CustomState Name="" ID="{933E1AF2-6263-4C07-868F-7C30B108F9B9}" ShortID="733943855"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
 										<CustomState Name="" ID="{5292D44F-BF09-418D-8874-AF2899F1F8A7}" ShortID="942402761">
 											<PropertyList>
@@ -1228,6 +1236,10 @@
 									<CustomState>
 										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
 										<CustomState Name="" ID="{612874A9-CA51-49D5-9E29-1BFE90E97C0D}" ShortID="256330629"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
+										<CustomState Name="" ID="{7B709C5D-9B73-43F0-BB0C-CACD968E5DE9}" ShortID="1028170276"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
@@ -1408,6 +1420,10 @@
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
+										<CustomState Name="" ID="{0D0E1F3D-5BE8-4B1A-9A99-1C0DB3C3FEFB}" ShortID="398246752"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>

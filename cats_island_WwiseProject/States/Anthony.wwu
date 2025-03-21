@@ -13,6 +13,7 @@
 						<State Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
 						<State Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
 						<State Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
+						<State Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
