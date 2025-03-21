@@ -162,6 +162,38 @@
 					<ChildrenList>
 						<Event Name="mus_Soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}">
 							<ChildrenList>
+								<Action Name="" ID="{4C17DA26-1523-4A64-B947-DB342C4F1FAE}" ShortID="315175506">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D116C5E5-F4B1-43EF-8B0A-027EB0A7EABD}" ShortID="65852355">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="60"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E12EA737-1A7D-4D9F-828D-56D9259768BC}" ShortID="686594290">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}" WorkUnitID="{06106121-F3DF-496C-9E84-1738153E7461}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{9E8A72BB-9B9A-4F02-BB0F-965E3D7DCB91}" ShortID="78647486">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -208,6 +240,43 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="mus_4-4_86bpm_STEMbongos_lp" ID="{4189450C-E5DD-415C-8BD0-13A1EC2045AB}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{905A3E1F-E45D-4B56-980A-44C985C23748}" ShortID="757887326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="midday" ID="{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{66EA5B7E-0EE3-4661-8A92-68149C61B35B}" ShortID="101780002">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="midday" ID="{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}">
+							<ChildrenList>
+								<Action Name="" ID="{7AC67F26-0CD8-4943-AB6F-1CC325BA0C57}" ShortID="128906155">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="60"/>
+										<Property Name="FadeTime" Type="Real64" Value="60"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="12"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
