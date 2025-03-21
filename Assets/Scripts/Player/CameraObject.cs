@@ -26,6 +26,9 @@ namespace Player {
         public float zoom_max = 30f; // Max amount of zoom
         public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
         public float zoom_speed_controller = 1000f;
+        
+        public LayerMask cameraLayerMask;
+        
         // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
         MeshRenderer screen_renderer;
@@ -234,18 +237,18 @@ namespace Player {
             // foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
             
             Cat.Cat finalCat = null;
-            float finalDistance = float.MaxValue;
+            float finalDistance = 25;
             
             /* Iterate through the cats and see if within the frustum */
             foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
                 GameObject obj = cat.gameObject;
                 
-                /* Calculate the distance between main camera and cat */
-                float d = Vector3.Distance(camera.transform.position, obj.transform.position);
-                if (d < finalDistance) {
-                    finalDistance = d;
-                    finalCat = cat;
-                } else continue;
+                /* Cast a ray between main camera and cat to see if being blocked by terrains */
+                RaycastHit cameraHit;
+                Vector3 rayDirection = obj.transform.position - camera.transform.position;
+                if (Physics.Raycast(camera.transform.position, rayDirection, out cameraHit, rayDirection.magnitude, layerMask:cameraLayerMask)) {
+                    continue;
+                }
 
                 CurrentPhoto.Stars = 0;
                 
@@ -254,36 +257,44 @@ namespace Player {
                 // Get all renderers in this object and its children
                 Renderer[] childRenderers = obj.GetComponentsInChildren<Renderer>();
             
+                int casthit = 0;
                 foreach (Renderer renderer in childRenderers) {
                     if (GeometryUtility.TestPlanesAABB(frustumPlanes, renderer.bounds)) {
-                        int casthit = 0;
-                        foreach (GameObject castPoint in cat.castPoints) {
-                            RaycastHit hit;
-                            Vector3 direction = castPoint.transform.position - camera.transform.position;
-                            float distance = direction.magnitude; // Limit ray to cat's distance
-                            if (Physics.Raycast(camera.transform.position, direction, out hit, distance)) {
-                                /* If the hit object has cat layer, means hit */
-                                if ((1 << hit.transform.gameObject.layer & catLayerMask) != 0) {
-                                    casthit++;
-                                }
-                            }
-                        }
-
-                        if (casthit > 0) {
-                            // catsInView.Add(cat);
-                            finalCat = cat;
-                            // CurrentPhoto.Stars += casthit;
-                            Debug.Log($"Cat star: {casthit}");
-                        }
+                        casthit++;
+                        // foreach (GameObject castPoint in cat.castPoints) {
+                        //     RaycastHit hit;
+                        //     Vector3 direction = castPoint.transform.position - camera.transform.position;
+                        //     float distance = direction.magnitude; // Limit ray to cat's distance
+                            // if (Physics.Raycast(camera.transform.position, direction, out hit, distance)) {
+                            //     /* If the hit object has cat layer, means hit */
+                            //     if ((1 << hit.transform.gameObject.layer & catLayerMask) != 0) {
+                            //         casthit++;
+                            //     }
+                            // }
+                        // }
                         
                         // Debug.Log($"{renderer.gameObject.name} is visible.");
                         // catsInView.Add(obj.gameObject.GetComponent<Cat.Cat>());
-                        break;
+                        // break;
+                    }
+                    
+                    if (casthit >= childRenderers.Length / 2 && casthit > 0) {
+                        // catsInView.Add(cat);
+                        // finalCat = cat;
+                        // CurrentPhoto.Stars += casthit;
+                        Debug.Log($"Cat star: {casthit}");
+                            
+                        /* Calculate the distance between main camera and cat */
+                        float d = Vector3.Distance(camera.transform.position, obj.transform.position);
+                        if (d < finalDistance) {
+                            finalDistance = d;
+                            finalCat = cat;
+                        } else continue;
                     }
                 }
             }
             
-            catsInView.Add(finalCat);
+            if (finalCat != null) catsInView.Add(finalCat);
             
             /* Check if the cat is captured before */
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {

@@ -441,6 +441,9 @@ MonoBehaviour:
   zoom_max: 30
   zoom_speed: 0.5
   zoom_speed_controller: 1.5
+  cameraLayerMask:
+    serializedVersion: 2
+    m_Bits: 400
   zoomScroll: {fileID: 0}
 --- !u!82 &8555878005223502510
 AudioSource:
