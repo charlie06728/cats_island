@@ -47,6 +47,7 @@ namespace AK
             {
                 static const AkUniqueID BEACH = 4075332698U;
                 static const AkUniqueID CAT_TREE = 2281727986U;
+                static const AkUniqueID CATNIP = 3223325804U;
                 static const AkUniqueID FOREST = 491961918U;
                 static const AkUniqueID LIGHTHOUSE = 2822410613U;
                 static const AkUniqueID NONE = 748895195U;

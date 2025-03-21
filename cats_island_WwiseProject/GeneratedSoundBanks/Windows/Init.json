@@ -82,6 +82,12 @@
         "GUID": "{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"
        },
        {
+        "Id": "3223325804",
+        "Name": "catnip",
+        "ObjectPath": "\\States\\Anthony\\Location\\catnip",
+        "GUID": "{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"
+       },
+       {
         "Id": "4075332698",
         "Name": "beach",
         "ObjectPath": "\\States\\Anthony\\Location\\beach",
@@ -126,6 +132,6 @@
     ]
    }
   ],
-  "FileHash": "{EA139FDC-7905-13F7-8EE3-996A218036C3}"
+  "FileHash": "{4A41E5AA-72CE-0507-BD6C-6B2438E8779D}"
  }
 }
