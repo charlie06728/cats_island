@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{4929EE0F-3126-4AA3-8AA6-A53F09A5BABC}",
     "Language": "SFX",
-    "Hash": "{2FA55276-83DE-9FCF-9A44-D0A28ECB9F9E}",
+    "Hash": "{77912FF0-6193-9359-293D-0E50D4FE7F34}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -160,6 +160,14 @@
       "CachePath": "76/{76CD1C5B-837A-F35A-3091-4A7938FEF35F}.wem"
      },
      {
+      "Id": "366123906",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Ragdoll_nl.wav",
+      "CachePath": "6F/{6F6C9845-A6CB-7F48-44D3-4CDF71AD7508}.wem"
+     },
+     {
       "Id": "381922046",
       "Language": "SFX",
       "Streaming": "false",
@@ -182,6 +190,14 @@
       "Location": "Memory",
       "ShortName": "sfx_FasterPageFlip_nl_01.wav",
       "CachePath": "B7/{B775FF49-99EE-A4C8-6216-47D1184B5CDD}.wem"
+     },
+     {
+      "Id": "392363006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Bengal_nl.wav",
+      "CachePath": "BE/{BEC3B69F-8D22-F328-7CB0-0215471B6ECD}.wem"
      },
      {
       "Id": "393128051",
@@ -264,6 +280,14 @@
       "CachePath": "D2/{D2FDABF1-6013-B061-5FA4-E81FF261D6F4}.wem"
      },
      {
+      "Id": "537448878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_GreyCat_nl.wav",
+      "CachePath": "C6/{C6573BE2-E666-ED9F-A1F5-FA7F58810C36}.wem"
+     },
+     {
       "Id": "551919837",
       "Language": "SFX",
       "Streaming": "false",
@@ -310,6 +334,14 @@
       "Location": "Memory",
       "ShortName": "Cat_Hungry_Meow\\Tuxedo_Hungry_Meow\\Tuxedo_Hungry_Meow_03.wav",
       "CachePath": "B6/{B6720947-DBF7-30ED-45DF-81DD3D686B2E}.wem"
+     },
+     {
+      "Id": "633190278",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_AllCatsFound_nl.wav",
+      "CachePath": "0F/{0F3E6D77-56DA-6DCD-1FA1-6BDB62CBDDCD}.wem"
      },
      {
       "Id": "648039388",
@@ -448,6 +480,14 @@
       "CachePath": "0E/{0EF11CD7-1019-A066-DFAF-CC2CA37E10D1}.wem"
      },
      {
+      "Id": "984969033",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Tuxedo_nl.wav",
+      "CachePath": "65/{65D2003A-2E19-A957-550B-E6263CD137B5}.wem"
+     },
+     {
       "Id": "1008554466",
       "Language": "SFX",
       "Streaming": "false",
@@ -470,6 +510,14 @@
       "Location": "Memory",
       "ShortName": "sfx_LANDJUMP_Grass_nl_02.wav",
       "CachePath": "11/{11DA6932-FF78-1CA5-B2FC-5BACDC86D622}.wem"
+     },
+     {
+      "Id": "1059229272",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Tabby_nl.wav",
+      "CachePath": "C3/{C314D803-FC19-2F1B-E21B-B96891C44A6E}.wem"
      },
      {
       "Id": "1067639338",
@@ -524,6 +572,90 @@
        },
        {
         "Id": "899042103"
+       }
+      ]
+     },
+     {
+      "Id": "3891823391",
+      "Name": "mus_AllCatsFound",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_AllCatsFound",
+      "GUID": "{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.755833",
+      "DurationMax": "5.755833",
+      "MediaRefs": [
+       {
+        "Id": "633190278"
+       }
+      ]
+     },
+     {
+      "Id": "3509682696",
+      "Name": "mus_Bengal_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Bengal_Pose",
+      "GUID": "{9EB09BD4-906B-40E3-A2FD-58CB74414C74}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.8928614",
+      "DurationMax": "4.8928614",
+      "MediaRefs": [
+       {
+        "Id": "392363006"
+       }
+      ]
+     },
+     {
+      "Id": "3109386516",
+      "Name": "mus_GreyCat_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_GreyCat_Pose",
+      "GUID": "{5BCC366C-AB8D-4958-8EB0-A1099C7B5747}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.215802",
+      "DurationMax": "5.215802",
+      "MediaRefs": [
+       {
+        "Id": "537448878"
+       }
+      ]
+     },
+     {
+      "Id": "2889622102",
+      "Name": "mus_Ragdoll_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Ragdoll_Pose",
+      "GUID": "{987521C7-E351-4B46-B357-1E5918725A5B}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5813956",
+      "DurationMax": "5.5813956",
+      "MediaRefs": [
+       {
+        "Id": "366123906"
+       }
+      ]
+     },
+     {
+      "Id": "4016717323",
+      "Name": "mus_Tabby_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Tabby_Pose",
+      "GUID": "{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5813956",
+      "DurationMax": "5.5813956",
+      "MediaRefs": [
+       {
+        "Id": "1059229272"
+       }
+      ]
+     },
+     {
+      "Id": "1461319202",
+      "Name": "mus_Tuxedo_Pose",
+      "ObjectPath": "\\Events\\Anthony\\mus_Leitmotif\\mus_Tuxedo_Pose",
+      "GUID": "{F0CBD46F-7FDA-424C-839A-0732A938101C}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5813956",
+      "DurationMax": "5.5813956",
+      "MediaRefs": [
+       {
+        "Id": "984969033"
        }
       ]
      },
@@ -722,7 +854,8 @@
          "GroupType": "Switch",
          "GroupId": "3539622648",
          "Id": "4248645337",
-         "GUID": "{B445EED9-A9BE-4427-B99D-6F450AE17B24}"
+         "GUID": "{B445EED9-A9BE-4427-B99D-6F450AE17B24}",
+         "Default": "true"
         },
         "MediaRefs": [
          {
@@ -896,6 +1029,12 @@
         "GUID": "{E393EB9F-0EF2-467E-9F5B-539980493798}"
        },
        {
+        "Id": "2654748154",
+        "Name": "water",
+        "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\water",
+        "GUID": "{B280A249-7677-4C15-9F49-3B854E9113B5}"
+       },
+       {
         "Id": "4248645337",
         "Name": "grass",
         "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\grass",
@@ -906,6 +1045,6 @@
     ]
    }
   ],
-  "FileHash": "{52101335-193A-B19D-7B88-8D1F803501B8}"
+  "FileHash": "{3395A523-339A-9439-8EF6-B7C8ACFD6147}"
  }
 }

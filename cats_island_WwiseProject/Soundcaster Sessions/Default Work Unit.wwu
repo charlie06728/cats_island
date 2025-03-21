@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="PurrfectShot" ID="{7976134F-A9F5-4022-A3A2-5F31B0850716}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="mus_Soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<ObjectRef Name="mus_Soundtrack1" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>

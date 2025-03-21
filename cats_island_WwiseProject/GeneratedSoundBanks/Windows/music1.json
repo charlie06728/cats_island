@@ -1,0 +1,212 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1730564819",
+    "Type": "User",
+    "GUID": "{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}",
+    "Language": "SFX",
+    "Hash": "{89E8BD9E-6EC2-38B2-A6D5-DD6479DCD660}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\music1",
+    "ShortName": "music1",
+    "Path": "music1.bnk",
+    "Media": [
+     {
+      "Id": "194792555",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_forestnoon_lp.wav",
+      "CachePath": "BD/{BDB84EFB-5899-FE4B-DF5C-2C33208920AC}.wem"
+     },
+     {
+      "Id": "275975639",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMguitar_lp.wav",
+      "CachePath": "BE/{BEF5E886-A4DD-911D-802C-B7C3822AE645}.wem"
+     },
+     {
+      "Id": "313505498",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_beachambience_lp.wav",
+      "CachePath": "EC/{EC59F6B0-C3A1-648E-75B1-E7A05EF0612D}.wem"
+     },
+     {
+      "Id": "559378820",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_forestafternoon_lp.wav",
+      "CachePath": "58/{58FFF58F-F516-DD00-1F37-3797C7738377}.wem"
+     },
+     {
+      "Id": "562578964",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amb_forestmorning_lp.wav",
+      "CachePath": "0B/{0B928BEC-317B-FF7D-4252-94334708565F}.wem"
+     },
+     {
+      "Id": "605225841",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMpiano_lp.wav",
+      "CachePath": "D4/{D4FBE919-8C7B-A904-8909-76C18ACF96BF}.wem"
+     },
+     {
+      "Id": "866056481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMmarimba_lp.wav",
+      "CachePath": "02/{02C439F9-28F1-F025-D827-21757FE6E66B}.wem"
+     },
+     {
+      "Id": "979688819",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMvibraphone_lp.wav",
+      "CachePath": "4F/{4FD33BAB-5D31-165E-C7D3-039419CFB0D7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3855008934",
+      "Name": "amb_Ambience",
+      "ObjectPath": "\\Events\\Anthony\\amb_Ambience",
+      "GUID": "{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "194792555"
+       },
+       {
+        "Id": "313505498"
+       },
+       {
+        "Id": "559378820"
+       },
+       {
+        "Id": "562578964"
+       }
+      ]
+     },
+     {
+      "Id": "1211181101",
+      "Name": "midday",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\midday",
+      "GUID": "{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3997730192",
+      "Name": "mus_Soundtrack1",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack1",
+      "GUID": "{227D352D-707C-48E5-8DB5-F2320A44CA1B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "275975639"
+       },
+       {
+        "Id": "605225841"
+       },
+       {
+        "Id": "866056481"
+       },
+       {
+        "Id": "979688819"
+       }
+      ],
+      "ActionPostEvent": [
+       {
+        "Id": "1211181101",
+        "Name": "midday",
+        "ObjectPath": "\\Events\\Anthony\\mus_Stems\\midday",
+        "GUID": "{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}"
+       },
+       {
+        "Id": "3855008934",
+        "Name": "amb_Ambience",
+        "ObjectPath": "\\Events\\Anthony\\amb_Ambience",
+        "GUID": "{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "1176052424",
+        "Id": "4075332698",
+        "Name": "beach",
+        "ObjectPath": "\\States\\Anthony\\Location\\beach",
+        "GUID": "{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "207908541",
+      "Name": "Time_Of_Day",
+      "ObjectPath": "\\Game Parameters\\Anthony\\Time_Of_Day",
+      "GUID": "{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1176052424",
+      "Name": "Location",
+      "ObjectPath": "\\States\\Anthony\\Location",
+      "GUID": "{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}",
+      "States": [
+       {
+        "Id": "491961918",
+        "Name": "forest",
+        "ObjectPath": "\\States\\Anthony\\Location\\forest",
+        "GUID": "{FC60ACC4-7D06-4445-9241-52CC6047EB06}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Anthony\\Location\\None",
+        "GUID": "{894A8BA2-79B4-40B0-8702-018614CB10FF}"
+       },
+       {
+        "Id": "2281727986",
+        "Name": "cat_tree",
+        "ObjectPath": "\\States\\Anthony\\Location\\cat_tree",
+        "GUID": "{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"
+       },
+       {
+        "Id": "2822410613",
+        "Name": "lighthouse",
+        "ObjectPath": "\\States\\Anthony\\Location\\lighthouse",
+        "GUID": "{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"
+       },
+       {
+        "Id": "4075332698",
+        "Name": "beach",
+        "ObjectPath": "\\States\\Anthony\\Location\\beach",
+        "GUID": "{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{366B41A4-42E4-9412-C1D8-668F0B510C6E}"
+ }
+}

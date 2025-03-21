@@ -6,6 +6,7 @@
 				<SoundBank Name="sfx" ID="{4929EE0F-3126-4AA3-8AA6-A53F09A5BABC}">
 					<ObjectInclusionList>
 						<ObjectRef Name="sfx_Camera" ID="{CF50C1FD-65BD-4617-935A-BAD228646E4B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_Leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_PageFlip" ID="{B54CB49C-30F3-47E4-BA15-FCAF4465D387}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_Cat_Hungry_Meow" ID="{4BB4E53B-9658-4F18-ADE4-BF23276ED6A5}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_Movement" ID="{09C77F85-0185-4F4C-9925-F2112FAB4041}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
@@ -13,10 +14,10 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="music" ID="{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}">
+				<SoundBank Name="music1" ID="{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}">
 					<ObjectInclusionList>
-						<ObjectRef Name="mus_Stems" ID="{96C6895B-9AEE-4273-80FD-73F0BF0450B5}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="mus_Leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_Soundtrack1" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="midday" ID="{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -24,6 +25,13 @@
 				<SoundBank Name="ambience" ID="{003D9512-4444-4975-BDE3-88EB62DEBAE8}">
 					<ObjectInclusionList>
 						<ObjectRef Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="music2" ID="{AE86CE36-54F9-4BA5-85C1-AB7157127BE9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="mus_Soundtrack2" ID="{DB1DFB55-3569-435A-B332-B50D07C8D5C9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	192727511	sfx_CameraOff			\Anthony\sfx_Camera\sfx_CameraOff	
+	1461319202	mus_Tuxedo_Pose			\Anthony\mus_Leitmotif\mus_Tuxedo_Pose	
 	1570034758	sfx_CameraPicture			\Anthony\sfx_Camera\sfx_CameraPicture	
 	1968854379	Bengal_Hungry_Meow			\Elienna\sfx_Cat_Hungry_Meow\Bengal_Hungry_Meow	
 	1995037903	GreyCat_Hungry_Meow			\Elienna\sfx_Cat_Hungry_Meow\GreyCat_Hungry_Meow	
@@ -7,9 +8,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	2553855402	Tabby_Hungry_Meow			\Elienna\sfx_Cat_Hungry_Meow\Tabby_Hungry_Meow	
 	2801607203	sfx_CameraOn			\Anthony\sfx_Camera\sfx_CameraOn	
 	2846976621	Ragdoll_Hungry_Meow			\Elienna\sfx_Cat_Hungry_Meow\Ragdoll_Hungry_Meow	
+	2889622102	mus_Ragdoll_Pose			\Anthony\mus_Leitmotif\mus_Ragdoll_Pose	
 	2929962202	sfx_Landing			\Anthony\sfx_Movement\sfx_Landing	
+	3109386516	mus_GreyCat_Pose			\Anthony\mus_Leitmotif\mus_GreyCat_Pose	
 	3364658470	sfx_Footsteps			\Anthony\sfx_Movement\sfx_Footsteps	
+	3509682696	mus_Bengal_Pose			\Anthony\mus_Leitmotif\mus_Bengal_Pose	
 	3695098761	sfx_Jump			\Anthony\sfx_Movement\sfx_Jump	
+	3891823391	mus_AllCatsFound			\Anthony\mus_Leitmotif\mus_AllCatsFound	
+	4016717323	mus_Tabby_Pose			\Anthony\mus_Leitmotif\mus_Tabby_Pose	
 	4111794441	Tuxedo_Hungry_Meow			\Elienna\sfx_Cat_Hungry_Meow\Tuxedo_Hungry_Meow	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -18,6 +24,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	803837735	sand	Ground_Material			
 	2058049674	wood	Ground_Material			
+	2654748154	water	Ground_Material			
 	4248645337	grass	Ground_Material			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -39,9 +46,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	268962826	sfx_FOOTSTEP_Grass_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\6E\{6E27E7D5-E94E-14A9-3500-0F19C768FA1D}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\FOOTSTEPS_Grass\sfx_FOOTSTEP_Grass_02		72096
 	279185900	sfx_JUMP_Grass_nl_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\D7\{D7A72F14-C4A6-3A01-7DC4-2C92197607C2}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Grass\sfx_JUMP_Grass_nl_04		72096
 	309568486	Bengal_Hungry_Meow_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\76\{76CD1C5B-837A-F35A-3091-4A7938FEF35F}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Bengal_Hungry_Meow\Bengal_Hungry_Meow_03		131168
+	366123906	mus_LEITMOTIF_Ragdoll_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\6F\{6F6C9845-A6CB-7F48-44D3-4CDF71AD7508}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Ragdoll_nl		1071724
 	381922046	Tuxedo_Hungry_Meow_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\5A\{5ABC0E8D-00E8-964A-7AE8-632574B5FCDA}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Tuxedo_Hungry_Meow\Tuxedo_Hungry_Meow_02		131168
 	383202644	Tuxedo_Hungry_Meow_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\1C\{1C9D2914-8455-E513-3119-0FA0258F5D7A}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Tuxedo_Hungry_Meow\Tuxedo_Hungry_Meow_01		131168
 	391269093	sfx_FasterPageFlip_nl_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B7\{B775FF49-99EE-A4C8-6216-47D1184B5CDD}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_pageflip\sfx_FasterPageFlip_nl_01		288096
+	392363006	mus_LEITMOTIF_Bengal_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\BE\{BEC3B69F-8D22-F328-7CB0-0215471B6ECD}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Bengal_nl		939524
 	393128051	Tabby_Hungry_Meow_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\E5\{E575C818-A8B5-86E3-3EEB-A896B1BBDA60}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_04		65632
 	412921084	sfx_CAMERA_TurnOn_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\33\{333B0D3E-C73D-63FC-8A2A-1BDC1091449C}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_camera\sfx_CAMERA_TurnOn_nl		324096
 	423416930	sfx_LANDJUMP_Sand_nl_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\C4\{C44594A1-52CF-0A08-E7FD-81D503EB94EB}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_landing\LANDJUMP_Sand\sfx_LANDJUMP_Sand_nl_01		72780
@@ -52,12 +61,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	505438552	sfx_JUMP_Sand_nl_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\58\{58BCF509-C5FF-01E6-1EB6-A7BF63D0DBAC}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Sand\sfx_JUMP_Sand_nl_03		72096
 	507633159	Bengal_Hungry_Meow_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\4D\{4D21FBDC-466A-4F34-75C0-5067ECE9C9B0}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Bengal_Hungry_Meow\Bengal_Hungry_Meow_02		65632
 	534366144	GreyCat_Hungry_Meow_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\D2\{D2FDABF1-6013-B061-5FA4-E81FF261D6F4}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\GreyCat_Hungry_Meow\GreyCat_Hungry_Meow_02		131168
+	537448878	mus_LEITMOTIF_GreyCat_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\C6\{C6573BE2-E666-ED9F-A1F5-FA7F58810C36}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_GreyCat_nl		1001532
 	551919837	sfx_JUMP_Wood_nl_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\3A\{3A385728-3BDD-28D8-7221-E86223F0F52A}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Wood\sfx_JUMP_Wood_nl_03		54096
 	577705014	sfx_FOOTSTEP_Sand_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\11\{11AC3F0F-43C4-5E8A-7633-49A3E354B214}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\FOOTSTEPS_Sand\sfx_FOOTSTEP_Sand_01		72780
 	580223228	sfx_CAMERA_OnNoise_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\CD\{CDFF5C36-323D-8739-16A9-009BC918CBA3}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_camera\sfx_CAMERA_OnNoise_lp		1296096
 	587042106	sfx_JUMP_Wood_nl_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\3F\{3F5E02C0-586F-4400-4162-BD82E4FBB614}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Wood\sfx_JUMP_Wood_nl_02		70312
 	606005953	sfx_FOOTSTEP_Wood_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\9F\{9F2F37D5-40EB-1859-06AA-1C74797D0383}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\FOOTSTEPS_Wood\sfx_FOOTSTEP_Wood_01		125724
 	612842426	Tuxedo_Hungry_Meow_03	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B6\{B6720947-DBF7-30ED-45DF-81DD3D686B2E}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Tuxedo_Hungry_Meow\Tuxedo_Hungry_Meow_03		131168
+	633190278	mus_LEITMOTIF_AllCatsFound_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\0F\{0F3E6D77-56DA-6DCD-1FA1-6BDB62CBDDCD}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_AllCatsFound_nl		1105216
 	648039388	sfx_FOOTSTEP_Grass_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\EC\{ECF70A0F-2125-45BD-690F-276349ED4E10}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\FOOTSTEPS_Grass\sfx_FOOTSTEP_Grass_04		72096
 	668219671	Ragdoll_Hungry_Meow_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\31\{31248EF3-C866-A1CE-172A-C9666B541293}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Ragdoll_Hungry_Meow\Ragdoll_Hungry_Meow_02		131168
 	675383936	sfx_JUMP_Sand_nl_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\0C\{0CD870BA-B536-2DBD-4F68-303A649FDA36}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Sand\sfx_JUMP_Sand_nl_02		72096
@@ -75,8 +86,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	940898413	sfx_CAMERA_TakePicture_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\8F\{8FF4C44E-8A5A-FFB0-9DBC-39B428C0FB5C}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_camera\sfx_CAMERA_TakePicture_nl		67676
 	946407374	sfx_JUMP_Wood_nl_01	E:\_Github\cats_island\cats_island_WwiseProject\.cache\8D\{8DA01336-688A-6AC2-C117-08BE9113031C}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Wood\sfx_JUMP_Wood_nl_01		72096
 	972004018	Tabby_Hungry_Meow_08	E:\_Github\cats_island\cats_island_WwiseProject\.cache\0E\{0EF11CD7-1019-A066-DFAF-CC2CA37E10D1}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_08		65632
+	984969033	mus_LEITMOTIF_Tuxedo_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\65\{65D2003A-2E19-A957-550B-E6263CD137B5}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Tuxedo_nl		1071724
 	1008554466	sfx_JUMP_Sand_nl_04	E:\_Github\cats_island\cats_island_WwiseProject\.cache\46\{46693821-3573-5A4D-BB1C-170EC51E3DDD}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Sand\sfx_JUMP_Sand_nl_04		36096
 	1036404000	sfx_JUMP_Grass_nl_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\A4\{A42D8BAE-B987-2628-C42A-7A5CF94407FA}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_jump\JUMP_Grass\sfx_JUMP_Grass_nl_02		72096
 	1056697856	sfx_LANDJUMP_Grass_nl_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\11\{11DA6932-FF78-1CA5-B2FC-5BACDC86D622}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_landing\LANDJUMP_Grass\sfx_LANDJUMP_Grass_nl_02		72096
+	1059229272	mus_LEITMOTIF_Tabby_nl	E:\_Github\cats_island\cats_island_WwiseProject\.cache\C3\{C314D803-FC19-2F1B-E21B-B96891C44A6E}.wem		\Actor-Mixer Hierarchy\Anthony\mus_leitmotif\mus_LEITMOTIF_Tabby_nl		1071724
 	1067639338	Tabby_Hungry_Meow_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\57\{57AED80B-E40F-E558-3D79-FC59B01FA88E}.wem		\Actor-Mixer Hierarchy\Elienna\Cat_Hungry_Meow\Tabby_Hungry_Meow\Tabby_Hungry_Meow_02		131168
 

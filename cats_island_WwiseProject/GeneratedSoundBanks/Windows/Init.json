@@ -110,6 +110,12 @@
         "GUID": "{E393EB9F-0EF2-467E-9F5B-539980493798}"
        },
        {
+        "Id": "2654748154",
+        "Name": "water",
+        "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\water",
+        "GUID": "{B280A249-7677-4C15-9F49-3B854E9113B5}"
+       },
+       {
         "Id": "4248645337",
         "Name": "grass",
         "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\grass",
@@ -120,6 +126,6 @@
     ]
    }
   ],
-  "FileHash": "{1573276E-5BA7-0D7F-3248-0EA5511539D9}"
+  "FileHash": "{EA139FDC-7905-13F7-8EE3-996A218036C3}"
  }
 }

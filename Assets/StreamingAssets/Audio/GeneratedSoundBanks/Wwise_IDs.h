@@ -16,11 +16,13 @@ namespace AK
         static const AkUniqueID AMB_AMBIENCE = 3855008934U;
         static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
         static const AkUniqueID GREYCAT_HUNGRY_MEOW = 1995037903U;
+        static const AkUniqueID MIDDAY = 1211181101U;
         static const AkUniqueID MUS_ALLCATSFOUND = 3891823391U;
         static const AkUniqueID MUS_BENGAL_POSE = 3509682696U;
         static const AkUniqueID MUS_GREYCAT_POSE = 3109386516U;
         static const AkUniqueID MUS_RAGDOLL_POSE = 2889622102U;
-        static const AkUniqueID MUS_SOUNDTRACK = 1283697787U;
+        static const AkUniqueID MUS_SOUNDTRACK1 = 3997730192U;
+        static const AkUniqueID MUS_SOUNDTRACK2 = 3997730195U;
         static const AkUniqueID MUS_TABBY_POSE = 4016717323U;
         static const AkUniqueID MUS_TUXEDO_POSE = 1461319202U;
         static const AkUniqueID RAGDOLL_HUNGRY_MEOW = 2846976621U;
@@ -63,6 +65,7 @@ namespace AK
             {
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID SAND = 803837735U;
+                static const AkUniqueID WATER = 2654748154U;
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace GROUND_MATERIAL
@@ -78,7 +81,8 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AMBIENCE = 85412153U;
-        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSIC1 = 1730564819U;
+        static const AkUniqueID MUSIC2 = 1730564816U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 

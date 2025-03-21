@@ -1,0 +1,75 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1730564816",
+    "Type": "User",
+    "GUID": "{AE86CE36-54F9-4BA5-85C1-AB7157127BE9}",
+    "Language": "SFX",
+    "Hash": "{1455D1CF-D8B4-05F1-6086-8BAFBB66AE16}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\music2",
+    "ShortName": "music2",
+    "Path": "music2.bnk",
+    "Media": [
+     {
+      "Id": "288617981",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMflute_lp.wav",
+      "CachePath": "A0/{A06C663F-726A-A00E-9C34-4DE6741778C2}.wem"
+     },
+     {
+      "Id": "645487081",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMbongos_lp.wav",
+      "CachePath": "D9/{D9F11BD3-077B-C215-B5D4-1D99E1D0692D}.wem"
+     },
+     {
+      "Id": "782902619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMviolin_lp.wav",
+      "CachePath": "4B/{4B824650-FB82-C23E-DBE1-3D911ACFE09B}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3997730195",
+      "Name": "mus_Soundtrack2",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack2",
+      "GUID": "{DB1DFB55-3569-435A-B332-B50D07C8D5C9}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "288617981"
+       },
+       {
+        "Id": "645487081"
+       },
+       {
+        "Id": "782902619"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "207908541",
+      "Name": "Time_Of_Day",
+      "ObjectPath": "\\Game Parameters\\Anthony\\Time_Of_Day",
+      "GUID": "{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9B0A68B2-13F5-B6BC-C785-151DA5BFEFBB}"
+ }
+}
