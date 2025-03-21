@@ -331,6 +331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -404,6 +408,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -773,6 +781,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1154,6 +1166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1305,6 +1321,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2477,6 +2497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (142)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2921,6 +2945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3281,6 +3309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3432,6 +3464,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3651,6 +3687,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4695,6 +4735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (183)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4768,6 +4812,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5386,6 +5434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5615,6 +5667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5828,6 +5884,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 077ccda2162883647acec3392b8ba3af, type: 3}
       propertyPath: m_Name
       value: woodenbox2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 077ccda2162883647acec3392b8ba3af, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6091,6 +6151,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6496,6 +6560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6569,6 +6637,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (186)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6644,6 +6716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6718,6 +6794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6751,7 +6831,7 @@ GameObject:
   - component: {fileID: 135794242}
   - component: {fileID: 135794241}
   - component: {fileID: 135794240}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7354,6 +7434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7458,6 +7542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7532,6 +7620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7605,6 +7697,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8155,6 +8251,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9816,6 +9916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10665,6 +10769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10748,6 +10856,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11259,6 +11371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11577,6 +11693,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (164)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11991,6 +12111,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
       propertyPath: m_Name
       value: Wooden_barrel (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12629,6 +12753,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (167)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13892,6 +14020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14363,6 +14495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14752,6 +14888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (172)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14978,6 +15118,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (110)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15520,6 +15664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15668,6 +15816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15741,6 +15893,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (155)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16045,6 +16201,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16360,6 +16520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16499,6 +16663,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17341,6 +17509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17449,6 +17621,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17743,6 +17919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17982,6 +18162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18164,6 +18348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18299,6 +18487,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (149)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18684,6 +18876,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19260,6 +19456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (140)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19343,6 +19543,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (136)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19578,6 +19782,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20998,6 +21206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21228,6 +21440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21301,6 +21517,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (174)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21511,7 +21731,7 @@ GameObject:
   - component: {fileID: 445558156}
   - component: {fileID: 445558155}
   - component: {fileID: 445558154}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21734,6 +21954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21756,7 +21980,7 @@ GameObject:
   - component: {fileID: 447272705}
   - component: {fileID: 447272704}
   - component: {fileID: 447272703}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22354,6 +22578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22817,6 +23045,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (162)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23288,6 +23520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (147)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23502,6 +23738,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23920,6 +24160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23993,6 +24237,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (128)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24715,6 +24963,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25460,6 +25712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25767,6 +26023,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26298,6 +26558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26532,6 +26796,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27302,7 +27570,7 @@ GameObject:
   - component: {fileID: 569219733}
   - component: {fileID: 569219732}
   - component: {fileID: 569219731}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27781,7 +28049,7 @@ GameObject:
   - component: {fileID: 575774645}
   - component: {fileID: 575774644}
   - component: {fileID: 575774643}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27942,6 +28210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (178)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28015,6 +28287,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28217,7 +28493,7 @@ GameObject:
   - component: {fileID: 586299889}
   - component: {fileID: 586299888}
   - component: {fileID: 586299887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28663,6 +28939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29374,6 +29654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (181)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29908,6 +30192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (122)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30153,6 +30441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (185)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30382,7 +30674,7 @@ GameObject:
   - component: {fileID: 631661756}
   - component: {fileID: 631661755}
   - component: {fileID: 631661754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30542,6 +30834,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30881,6 +31177,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (189)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31259,6 +31559,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31646,6 +31950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31800,6 +32108,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32025,6 +32337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32238,6 +32554,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33498,6 +33818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34120,6 +34444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (151)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34352,6 +34680,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (153)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34744,6 +35076,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35145,6 +35481,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (156)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36639,6 +36979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (148)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36860,6 +37204,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37708,6 +38056,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
       propertyPath: m_Name
       value: woodenbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38604,6 +38956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38704,6 +39060,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39411,6 +39771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39725,6 +40089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39858,7 +40226,7 @@ GameObject:
   - component: {fileID: 808576230}
   - component: {fileID: 808576229}
   - component: {fileID: 808576228}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40241,6 +40609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40414,6 +40786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40517,6 +40893,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (166)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40661,6 +41041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (135)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40800,6 +41184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40873,6 +41261,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41421,6 +41813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41778,6 +42174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (173)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42083,6 +42483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: woodenbox (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42291,6 +42695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden_barrel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42473,6 +42881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (127)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42622,6 +43034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -42725,7 +43141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 870774057}
   - component: {fileID: 870774058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42988,6 +43404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (154)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43142,6 +43562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43215,6 +43639,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (175)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44165,6 +44593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44586,6 +45018,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (169)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44660,6 +45096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -44733,6 +45173,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44926,6 +45370,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45273,6 +45721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (144)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45610,6 +46062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden_barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45713,6 +46169,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46010,6 +46470,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46410,7 +46874,7 @@ GameObject:
   - component: {fileID: 949123200}
   - component: {fileID: 949123199}
   - component: {fileID: 949123198}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46785,6 +47249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46885,7 +47353,7 @@ GameObject:
   - component: {fileID: 955019700}
   - component: {fileID: 955019699}
   - component: {fileID: 955019698}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47215,6 +47683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47495,6 +47967,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47820,6 +48296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -47971,6 +48451,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
       propertyPath: m_Name
       value: woodenbox (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48980,6 +49464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49116,6 +49604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49189,6 +49681,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (120)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49575,6 +50071,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50181,6 +50681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (158)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50255,6 +50759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50328,6 +50836,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (180)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51312,6 +51824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (163)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51566,6 +52082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51669,6 +52189,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (184)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52075,6 +52599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52148,6 +52676,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52721,6 +53253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (130)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52872,6 +53408,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53025,6 +53565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (114)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53176,6 +53720,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53561,6 +54109,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54025,6 +54577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: woodenbox2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 077ccda2162883647acec3392b8ba3af, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54280,6 +54836,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -54746,6 +55306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (187)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55088,6 +55652,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (133)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55462,6 +56030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55484,7 +56056,7 @@ GameObject:
   - component: {fileID: 1126075218}
   - component: {fileID: 1126075217}
   - component: {fileID: 1126075216}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55715,6 +56287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (139)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55788,6 +56364,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -55867,6 +56447,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56082,6 +56666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -56286,6 +56874,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -56618,6 +57210,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57057,6 +57653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 022ccdbbd2e91ee4cbb1129fe72459b2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57348,6 +57948,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57668,6 +58272,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59307,6 +59915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59562,6 +60174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59723,6 +60339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59796,6 +60416,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59937,6 +60561,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -60527,6 +61155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60739,6 +61371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60943,6 +61579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -61134,6 +61774,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61646,6 +62290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden_barrel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -61775,6 +62423,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (160)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62014,6 +62666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62087,6 +62743,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (168)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62419,6 +63079,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63107,6 +63771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63181,6 +63849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (107)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63203,7 +63875,7 @@ GameObject:
   - component: {fileID: 1259989718}
   - component: {fileID: 1259989717}
   - component: {fileID: 1259989716}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63685,6 +64357,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64250,6 +64926,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64532,6 +65212,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (145)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65150,6 +65834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65533,6 +66221,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65963,6 +66655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (152)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -66144,7 +66840,7 @@ GameObject:
   - component: {fileID: 1323340237}
   - component: {fileID: 1323340236}
   - component: {fileID: 1323340235}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66453,7 +67149,7 @@ GameObject:
   - component: {fileID: 1328604955}
   - component: {fileID: 1328604954}
   - component: {fileID: 1328604953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67395,6 +68091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68025,6 +68725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68098,6 +68802,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68173,6 +68881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (176)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -68246,6 +68958,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68593,6 +69309,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68963,6 +69683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (125)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69255,6 +69979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69474,6 +70202,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -70472,6 +71204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 022ccdbbd2e91ee4cbb1129fe72459b2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -70693,6 +71429,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (182)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71285,6 +72025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (143)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71359,6 +72103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71432,6 +72180,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71728,6 +72480,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -72160,6 +72916,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (113)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -72662,7 +73422,7 @@ GameObject:
   - component: {fileID: 1463654992}
   - component: {fileID: 1463654991}
   - component: {fileID: 1463654990}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72884,6 +73644,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74437,6 +75201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (123)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74510,6 +75278,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (179)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -75121,6 +75893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75364,6 +76140,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
       propertyPath: m_Name
       value: Wooden_barrel (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -76266,6 +77046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76962,6 +77746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77273,6 +78061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77507,6 +78299,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -78243,6 +79039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78790,6 +79590,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -79368,6 +80172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79441,6 +80249,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (141)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -79922,6 +80734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80151,6 +80967,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -80657,6 +81477,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (150)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81223,6 +82047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81439,6 +82267,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (188)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81733,6 +82565,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82029,6 +82865,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82619,6 +83459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -82720,6 +83564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -82793,6 +83641,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
       propertyPath: m_Name
       value: Wooden_barrel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82924,7 +83776,7 @@ GameObject:
   - component: {fileID: 1683051833}
   - component: {fileID: 1683051832}
   - component: {fileID: 1683051831}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83084,6 +83936,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -83683,6 +84539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -83797,7 +84657,7 @@ GameObject:
   - component: {fileID: 1689517083}
   - component: {fileID: 1689517082}
   - component: {fileID: 1689517081}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84231,6 +85091,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -84795,6 +85659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (170)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -84868,6 +85736,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (177)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -85669,6 +86541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (157)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -85742,6 +86618,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86041,6 +86921,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86779,7 +87663,7 @@ GameObject:
   - component: {fileID: 1750502055}
   - component: {fileID: 1750502054}
   - component: {fileID: 1750502053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87173,6 +88057,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (134)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -88213,6 +89101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88369,6 +89261,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -89125,7 +90021,7 @@ GameObject:
   - component: {fileID: 1787940023}
   - component: {fileID: 1787940022}
   - component: {fileID: 1787940021}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89442,6 +90338,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -89593,6 +90493,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -90115,7 +91019,7 @@ GameObject:
   - component: {fileID: 1804296873}
   - component: {fileID: 1804296872}
   - component: {fileID: 1804296871}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90377,6 +91281,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (111)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -91392,6 +92300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -92204,6 +93116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (124)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -92355,6 +93271,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -92683,6 +93603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (146)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -92865,6 +93789,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -93071,6 +93999,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -93781,7 +94713,7 @@ MonoBehaviour:
       m_Flags: 0
     - m_Name: 
       m_Id: 5e4ffca0-a9b3-4f10-927e-9dd7537190e5
-      m_Path: <Gamepad>/buttonEast
+      m_Path: <Gamepad>/buttonWest
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -93797,7 +94729,7 @@ MonoBehaviour:
       m_Flags: 0
     - m_Name: 
       m_Id: 094140de-5395-4673-b5b3-27d279b09120
-      m_Path: <Gamepad>/buttonWest
+      m_Path: <Gamepad>/buttonEast
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -94076,6 +95008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (138)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -94332,7 +95268,7 @@ GameObject:
   - component: {fileID: 1871060898}
   - component: {fileID: 1871060897}
   - component: {fileID: 1871060896}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94659,7 +95595,7 @@ GameObject:
   - component: {fileID: 1880689414}
   - component: {fileID: 1880689413}
   - component: {fileID: 1880689412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95185,7 +96121,7 @@ GameObject:
   - component: {fileID: 1884156273}
   - component: {fileID: 1884156272}
   - component: {fileID: 1884156271}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95423,6 +96359,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -95844,6 +96784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (112)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96066,6 +97010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96166,6 +97114,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -96368,6 +97320,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (159)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -97435,6 +98391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -97508,6 +98468,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
       propertyPath: m_Name
       value: woodenbox (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -98307,6 +99271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -98359,7 +99327,7 @@ GameObject:
   - component: {fileID: 1951543332}
   - component: {fileID: 1951543331}
   - component: {fileID: 1951543330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98655,6 +99623,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (106)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -99006,6 +99978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (165)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -99080,6 +100056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 022ccdbbd2e91ee4cbb1129fe72459b2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -99153,6 +100133,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -99339,6 +100323,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -99815,6 +100803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (161)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100182,6 +101174,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -100651,6 +101647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100725,6 +101725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (171)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100798,6 +101802,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -100935,6 +101943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wooden_barrel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a15607b8b2745546bcce2a59b60543b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -101038,6 +102050,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -101479,6 +102495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -101782,6 +102802,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (131)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -102564,6 +103588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -102930,7 +103958,7 @@ GameObject:
   - component: {fileID: 2031302564}
   - component: {fileID: 2031302563}
   - component: {fileID: 2031302562}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103351,6 +104379,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
       propertyPath: m_Name
       value: woodenbox (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90ba2be4886e3e543a1e0a5abf675026, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -103838,6 +104870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -103911,6 +104947,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105140,6 +106180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -105533,6 +106577,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105972,6 +107020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -105992,7 +107044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081642926}
   - component: {fileID: 2081642925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NewDock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106621,6 +107673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106998,6 +108054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -107101,6 +108161,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
       propertyPath: m_Name
       value: WoodLog2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -107733,6 +108797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPlank1 (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -107806,6 +108874,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -108140,6 +109212,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
       propertyPath: m_Name
       value: BigPlank1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -108789,6 +109865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodLog2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6921b639c67608d41b5f0abd5f5be5e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -109029,7 +110109,7 @@ GameObject:
   - component: {fileID: 2141076002}
   - component: {fileID: 2141076001}
   - component: {fileID: 2141076000}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder035 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
