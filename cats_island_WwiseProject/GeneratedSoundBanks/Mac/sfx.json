@@ -8,21 +8,13 @@
    {
     "Id": "393239870",
     "Type": "User",
-    "GUID": "{4929EE0F-3126-4AA3-8AA6-A53F09A5BABC}",
+    "GUID": "{F8412985-A94D-4CA7-8939-A0FF4F83256C}",
     "Language": "SFX",
-    "Hash": "{77912FF0-6193-9359-293D-0E50D4FE7F34}",
+    "Hash": "{B7B2E93D-88EA-CBF3-0202-FA2001067818}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
     "Media": [
-     {
-      "Id": "10260743",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Bengal_Hungry_Meow\\Bengal_Hungry_Meow_01.wav",
-      "CachePath": "95/{95DA89C6-E6F9-487F-AC8E-BEDB4B7049D8}.wem"
-     },
      {
       "Id": "15268054",
       "Language": "SFX",
@@ -30,14 +22,6 @@
       "Location": "Memory",
       "ShortName": "sfx_FOOTSTEP_Sand_02.wav",
       "CachePath": "8F/{8F79D6C6-FE3A-3DD6-101C-7B9305F4550E}.wem"
-     },
-     {
-      "Id": "41394996",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\GreyCat_Hungry_Meow\\GreyCat_Hungry_Meow_04.wav",
-      "CachePath": "BD/{BDA2562C-D869-95D3-443D-A7CB1A5E3B42}.wem"
      },
      {
       "Id": "53369863",
@@ -48,20 +32,12 @@
       "CachePath": "B7/{B74F615D-06D2-5ADC-1E93-760C81E400F6}.wem"
      },
      {
-      "Id": "91613842",
+      "Id": "61250107",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Ragdoll_Hungry_Meow\\Ragdoll_Hungry_Meow_01.wav",
-      "CachePath": "99/{99439C4A-9611-7799-7CAD-D466AE2E38D6}.wem"
-     },
-     {
-      "Id": "115932909",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_07.wav",
-      "CachePath": "2E/{2E6AFDA7-C347-B2A8-DC1E-4498674AE87D}.wem"
+      "ShortName": "sfx_JUMP_Water_nl_02.wav",
+      "CachePath": "4A/{4A195724-50D3-E732-6E6B-EC120A1E3604}.wem"
      },
      {
       "Id": "124381210",
@@ -70,6 +46,14 @@
       "Location": "Memory",
       "ShortName": "sfx_LANDJUMP_Sand_nl_02.wav",
       "CachePath": "87/{87D42328-D4C8-CEC6-7D90-CADAFAC76535}.wem"
+     },
+     {
+      "Id": "134643958",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Water_03.wav",
+      "CachePath": "3F/{3FF2B8AF-EA70-8C6E-DCFE-BFBBCC6F07B8}.wem"
      },
      {
       "Id": "166098753",
@@ -86,22 +70,6 @@
       "Location": "Memory",
       "ShortName": "sfx_JUMP_Grass_nl_03.wav",
       "CachePath": "3C/{3C695008-2CDB-7AA8-F873-3795226B0B5A}.wem"
-     },
-     {
-      "Id": "198520259",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\GreyCat_Hungry_Meow\\GreyCat_Hungry_Meow_03.wav",
-      "CachePath": "C7/{C7E7A398-CD05-B303-AA48-EFF394C8C5A8}.wem"
-     },
-     {
-      "Id": "213715934",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_03.wav",
-      "CachePath": "87/{870A81C7-1B1C-7703-3AA4-F82F7AA711C3}.wem"
      },
      {
       "Id": "244655587",
@@ -152,12 +120,20 @@
       "CachePath": "D7/{D7A72F14-C4A6-3A01-7DC4-2C92197607C2}.wem"
      },
      {
-      "Id": "309568486",
+      "Id": "338506298",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Bengal_Hungry_Meow\\Bengal_Hungry_Meow_03.wav",
-      "CachePath": "76/{76CD1C5B-837A-F35A-3091-4A7938FEF35F}.wem"
+      "ShortName": "sfx_JUMP_Water_nl_01.wav",
+      "CachePath": "C6/{C6F3B707-A1A2-6B67-0F3B-82F521D1303D}.wem"
+     },
+     {
+      "Id": "342440527",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Water_02.wav",
+      "CachePath": "07/{075C4306-28A7-2ACE-7E71-D0C5A03AF22E}.wem"
      },
      {
       "Id": "366123906",
@@ -166,22 +142,6 @@
       "Location": "Memory",
       "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Ragdoll_nl.wav",
       "CachePath": "6F/{6F6C9845-A6CB-7F48-44D3-4CDF71AD7508}.wem"
-     },
-     {
-      "Id": "381922046",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tuxedo_Hungry_Meow\\Tuxedo_Hungry_Meow_02.wav",
-      "CachePath": "5A/{5ABC0E8D-00E8-964A-7AE8-632574B5FCDA}.wem"
-     },
-     {
-      "Id": "383202644",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tuxedo_Hungry_Meow\\Tuxedo_Hungry_Meow_01.wav",
-      "CachePath": "1C/{1C9D2914-8455-E513-3119-0FA0258F5D7A}.wem"
      },
      {
       "Id": "391269093",
@@ -198,14 +158,6 @@
       "Location": "Memory",
       "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Bengal_nl.wav",
       "CachePath": "BE/{BEC3B69F-8D22-F328-7CB0-0215471B6ECD}.wem"
-     },
-     {
-      "Id": "393128051",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_04.wav",
-      "CachePath": "E5/{E575C818-A8B5-86E3-3EEB-A896B1BBDA60}.wem"
      },
      {
       "Id": "412921084",
@@ -232,52 +184,12 @@
       "CachePath": "85/{8595AAC2-AC89-4D59-9FB3-797D9CE365B3}.wem"
      },
      {
-      "Id": "455538704",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Ragdoll_Hungry_Meow\\Ragdoll_Hungry_Meow_03.wav",
-      "CachePath": "93/{935EBFB4-A151-D3BA-F2C5-846776DFEE6E}.wem"
-     },
-     {
-      "Id": "472472076",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_06.wav",
-      "CachePath": "2E/{2E069612-2E1D-E0CB-0DEF-BF0B47B8BF5D}.wem"
-     },
-     {
-      "Id": "496080080",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_09.wav",
-      "CachePath": "5B/{5BD71AF2-EF98-B451-C722-A33767B88C03}.wem"
-     },
-     {
       "Id": "505438552",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_JUMP_Sand_nl_03.wav",
       "CachePath": "58/{58BCF509-C5FF-01E6-1EB6-A7BF63D0DBAC}.wem"
-     },
-     {
-      "Id": "507633159",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Bengal_Hungry_Meow\\Bengal_Hungry_Meow_02.wav",
-      "CachePath": "4D/{4D21FBDC-466A-4F34-75C0-5067ECE9C9B0}.wem"
-     },
-     {
-      "Id": "534366144",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\GreyCat_Hungry_Meow\\GreyCat_Hungry_Meow_02.wav",
-      "CachePath": "D2/{D2FDABF1-6013-B061-5FA4-E81FF261D6F4}.wem"
      },
      {
       "Id": "537448878",
@@ -294,6 +206,14 @@
       "Location": "Memory",
       "ShortName": "sfx_JUMP_Wood_nl_03.wav",
       "CachePath": "3A/{3A385728-3BDD-28D8-7221-E86223F0F52A}.wem"
+     },
+     {
+      "Id": "566248850",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_LANDJUMP_Water_nl_02.wav",
+      "CachePath": "C7/{C7B5B450-E9A6-6F53-1E2E-0E950075FF18}.wem"
      },
      {
       "Id": "577705014",
@@ -328,14 +248,6 @@
       "CachePath": "9F/{9F2F37D5-40EB-1859-06AA-1C74797D0383}.wem"
      },
      {
-      "Id": "612842426",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tuxedo_Hungry_Meow\\Tuxedo_Hungry_Meow_03.wav",
-      "CachePath": "B6/{B6720947-DBF7-30ED-45DF-81DD3D686B2E}.wem"
-     },
-     {
       "Id": "633190278",
       "Language": "SFX",
       "Streaming": "false",
@@ -350,14 +262,6 @@
       "Location": "Memory",
       "ShortName": "sfx_FOOTSTEP_Grass_04.wav",
       "CachePath": "EC/{ECF70A0F-2125-45BD-690F-276349ED4E10}.wem"
-     },
-     {
-      "Id": "668219671",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Ragdoll_Hungry_Meow\\Ragdoll_Hungry_Meow_02.wav",
-      "CachePath": "31/{31248EF3-C866-A1CE-172A-C9666B541293}.wem"
      },
      {
       "Id": "675383936",
@@ -376,28 +280,20 @@
       "CachePath": "99/{99A8F2CF-F9B0-DC36-2EA6-340EC9BF788A}.wem"
      },
      {
+      "Id": "733154926",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_FOOTSTEP_Water_01.wav",
+      "CachePath": "C5/{C5AFA337-BE81-7828-BB4E-6CE003BC135A}.wem"
+     },
+     {
       "Id": "766991488",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_LANDJUMP_Grass_nl_01.wav",
       "CachePath": "02/{02ADD7AE-93DA-FDC5-6035-1A82340BCC6E}.wem"
-     },
-     {
-      "Id": "773060117",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_05.wav",
-      "CachePath": "5D/{5DF54208-DE37-CF67-6365-C3972EBCCDEE}.wem"
-     },
-     {
-      "Id": "794342622",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Ragdoll_Hungry_Meow\\Ragdoll_Hungry_Meow_04.wav",
-      "CachePath": "10/{10F3B6D7-4941-1ED2-D954-089C91D9131A}.wem"
      },
      {
       "Id": "819261667",
@@ -416,14 +312,6 @@
       "CachePath": "B5/{B5798A92-1DAA-70BB-358A-416C65114F87}.wem"
      },
      {
-      "Id": "825910613",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\GreyCat_Hungry_Meow\\GreyCat_Hungry_Meow_01.wav",
-      "CachePath": "AA/{AA8B500D-B206-121C-65AD-BE99B849E9B7}.wem"
-     },
-     {
       "Id": "864064925",
       "Language": "SFX",
       "Streaming": "false",
@@ -440,20 +328,12 @@
       "CachePath": "6D/{6D66C3C9-11D1-FE79-1623-00EEFBEC098A}.wem"
      },
      {
-      "Id": "899042103",
+      "Id": "897249846",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\GreyCat_Hungry_Meow\\GreyCat_Hungry_Meow_05.wav",
-      "CachePath": "36/{36361857-23CF-C955-4CE6-C29ED16F3ECD}.wem"
-     },
-     {
-      "Id": "906797407",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_01.wav",
-      "CachePath": "E7/{E7FC5598-74E4-6549-F3C2-ED5851CCF372}.wem"
+      "ShortName": "sfx_LANDJUMP_Water_nl_03.wav",
+      "CachePath": "10/{1092FF7D-F05D-A89A-370E-14B3CC047B05}.wem"
      },
      {
       "Id": "940898413",
@@ -470,14 +350,6 @@
       "Location": "Memory",
       "ShortName": "sfx_JUMP_Wood_nl_01.wav",
       "CachePath": "8D/{8DA01336-688A-6AC2-C117-08BE9113031C}.wem"
-     },
-     {
-      "Id": "972004018",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_08.wav",
-      "CachePath": "0E/{0EF11CD7-1019-A066-DFAF-CC2CA37E10D1}.wem"
      },
      {
       "Id": "984969033",
@@ -504,6 +376,14 @@
       "CachePath": "A4/{A42D8BAE-B987-2628-C42A-7A5CF94407FA}.wem"
      },
      {
+      "Id": "1038288845",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_LANDJUMP_Water_nl_01.wav",
+      "CachePath": "F0/{F08546CF-7895-5C07-E105-937329FB44A0}.wem"
+     },
+     {
       "Id": "1056697856",
       "Language": "SFX",
       "Streaming": "false",
@@ -518,63 +398,9 @@
       "Location": "Memory",
       "ShortName": "LEITMOTIF\\mus_LEITMOTIF_Tabby_nl.wav",
       "CachePath": "C3/{C314D803-FC19-2F1B-E21B-B96891C44A6E}.wem"
-     },
-     {
-      "Id": "1067639338",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_02.wav",
-      "CachePath": "57/{57AED80B-E40F-E558-3D79-FC59B01FA88E}.wem"
      }
     ],
     "Events": [
-     {
-      "Id": "1968854379",
-      "Name": "Bengal_Hungry_Meow",
-      "ObjectPath": "\\Events\\Elienna\\sfx_Cat_Hungry_Meow\\Bengal_Hungry_Meow",
-      "GUID": "{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.6443515",
-      "DurationMax": "1.4465203",
-      "MediaRefs": [
-       {
-        "Id": "10260743"
-       },
-       {
-        "Id": "309568486"
-       },
-       {
-        "Id": "507633159"
-       }
-      ]
-     },
-     {
-      "Id": "1995037903",
-      "Name": "GreyCat_Hungry_Meow",
-      "ObjectPath": "\\Events\\Elienna\\sfx_Cat_Hungry_Meow\\GreyCat_Hungry_Meow",
-      "GUID": "{578A7CDB-1325-468F-837E-E6EF60C3AB38}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.288703",
-      "DurationMax": "1.4465203",
-      "MediaRefs": [
-       {
-        "Id": "41394996"
-       },
-       {
-        "Id": "198520259"
-       },
-       {
-        "Id": "534366144"
-       },
-       {
-        "Id": "825910613"
-       },
-       {
-        "Id": "899042103"
-       }
-      ]
-     },
      {
       "Id": "3891823391",
       "Name": "mus_AllCatsFound",
@@ -660,29 +486,6 @@
       ]
      },
      {
-      "Id": "2846976621",
-      "Name": "Ragdoll_Hungry_Meow",
-      "ObjectPath": "\\Events\\Elienna\\sfx_Cat_Hungry_Meow\\Ragdoll_Hungry_Meow",
-      "GUID": "{05100864-19CE-4EBD-A9A0-320999D44D78}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.288703",
-      "DurationMax": "1.4465203",
-      "MediaRefs": [
-       {
-        "Id": "91613842"
-       },
-       {
-        "Id": "455538704"
-       },
-       {
-        "Id": "668219671"
-       },
-       {
-        "Id": "794342622"
-       }
-      ]
-     },
-     {
       "Id": "192727511",
       "Name": "sfx_CameraOff",
       "ObjectPath": "\\Events\\Anthony\\sfx_Camera\\sfx_CameraOff",
@@ -732,8 +535,27 @@
       "GUID": "{887753D5-D896-48F6-A930-9858F96C2DF9}",
       "DurationType": "OneShot",
       "DurationMin": "0.33726084",
-      "DurationMax": "0.6543125",
+      "DurationMax": "2.2513592",
       "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3539622648",
+         "Id": "2654748154",
+         "GUID": "{B280A249-7677-4C15-9F49-3B854E9113B5}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "134643958"
+         },
+         {
+          "Id": "342440527"
+         },
+         {
+          "Id": "733154926"
+         }
+        ]
+       },
        {
         "SwitchValue": {
          "GroupType": "Switch",
@@ -806,8 +628,24 @@
       "GUID": "{5E376275-EC84-4840-B5B8-14B496E03F88}",
       "DurationType": "OneShot",
       "DurationMin": "0.15766808",
-      "DurationMax": "0.44595265",
+      "DurationMax": "1.25",
       "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3539622648",
+         "Id": "2654748154",
+         "GUID": "{B280A249-7677-4C15-9F49-3B854E9113B5}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "61250107"
+         },
+         {
+          "Id": "338506298"
+         }
+        ]
+       },
        {
         "SwitchValue": {
          "GroupType": "Switch",
@@ -880,9 +718,28 @@
       "ObjectPath": "\\Events\\Anthony\\sfx_Movement\\sfx_Landing",
       "GUID": "{2F994791-D8E7-4AB8-B710-338F2428E8EF}",
       "DurationType": "OneShot",
-      "DurationMin": "0.375",
-      "DurationMax": "0.6313849",
+      "DurationMin": "0.334087",
+      "DurationMax": "2.25",
       "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "3539622648",
+         "Id": "2654748154",
+         "GUID": "{B280A249-7677-4C15-9F49-3B854E9113B5}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "566248850"
+         },
+         {
+          "Id": "897249846"
+         },
+         {
+          "Id": "1038288845"
+         }
+        ]
+       },
        {
         "SwitchValue": {
          "GroupType": "Switch",
@@ -949,64 +806,6 @@
         "Id": "391269093"
        }
       ]
-     },
-     {
-      "Id": "2553855402",
-      "Name": "Tabby_Hungry_Meow",
-      "ObjectPath": "\\Events\\Elienna\\sfx_Cat_Hungry_Meow\\Tabby_Hungry_Meow",
-      "GUID": "{1EA2EA2C-4C22-419B-A2DC-568A07D026A4}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.6443515",
-      "DurationMax": "1.4465203",
-      "MediaRefs": [
-       {
-        "Id": "115932909"
-       },
-       {
-        "Id": "213715934"
-       },
-       {
-        "Id": "393128051"
-       },
-       {
-        "Id": "472472076"
-       },
-       {
-        "Id": "496080080"
-       },
-       {
-        "Id": "773060117"
-       },
-       {
-        "Id": "906797407"
-       },
-       {
-        "Id": "972004018"
-       },
-       {
-        "Id": "1067639338"
-       }
-      ]
-     },
-     {
-      "Id": "4111794441",
-      "Name": "Tuxedo_Hungry_Meow",
-      "ObjectPath": "\\Events\\Elienna\\sfx_Cat_Hungry_Meow\\Tuxedo_Hungry_Meow",
-      "GUID": "{8DD76D6C-5971-4274-91C1-C222B1C44210}",
-      "DurationType": "OneShot",
-      "DurationMin": "1.288703",
-      "DurationMax": "1.4465203",
-      "MediaRefs": [
-       {
-        "Id": "381922046"
-       },
-       {
-        "Id": "383202644"
-       },
-       {
-        "Id": "612842426"
-       }
-      ]
      }
     ],
     "SwitchGroups": [
@@ -1045,6 +844,6 @@
     ]
    }
   ],
-  "FileHash": "{A72F684C-F22B-A180-371D-2AD527708EDD}"
+  "FileHash": "{834D45C3-D644-B1CB-940B-9199E53F0155}"
  }
 }

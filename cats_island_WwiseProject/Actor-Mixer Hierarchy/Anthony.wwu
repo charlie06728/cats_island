@@ -14,11 +14,16 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-4</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{9C6B6B55-8584-432A-9B91-B9AEA266404C}"/>
+									<Modifier Name="" ID="{9C6B6B55-8584-432A-9B91-B9AEA266404C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
@@ -392,11 +397,129 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="FOOTSTEPS_Water" ID="{8DA1BFBD-4834-4BA5-90D8-329B4CE4C224}" ShortID="781371994">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0BD6DD0C-17D3-42C4-AE9D-7F81D9829EB4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D7B410BE-5C66-4375-9707-1311CA1E56DA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_FOOTSTEP_Water_03" ID="{C41022F6-9896-4731-8911-6033DF7BF0EB}" ShortID="529135094">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Water_03" ID="{AC8BFF7A-E709-4287-8220-5CDD6B427B43}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Water_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="134643958"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Water_03" ID="{AC8BFF7A-E709-4287-8220-5CDD6B427B43}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_FOOTSTEP_Water_01" ID="{1E30F799-C076-4CFD-9733-C93E721107C2}" ShortID="607371246">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Water_01" ID="{BEB49B2F-0CD7-476E-9916-E4E10461E93E}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Water_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="733154926"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Water_01" ID="{BEB49B2F-0CD7-476E-9916-E4E10461E93E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_FOOTSTEP_Water_02" ID="{B069BF11-5D36-4785-8ACA-EAAA96BC2A38}" ShortID="345442051">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_FOOTSTEP_Water_02" ID="{6274B152-B4CE-4AA1-80D5-1CAE54D56B59}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_FOOTSTEP_Water_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="342440527"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_FOOTSTEP_Water_02" ID="{6274B152-B4CE-4AA1-80D5-1CAE54D56B59}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
 								<ItemRef Name="FOOTSTEPS_Wood" ID="{1429BD28-8BAD-4623-A936-2AF169171512}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="FOOTSTEPS_Water" ID="{8DA1BFBD-4834-4BA5-90D8-329B4CE4C224}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="FOOTSTEPS_Sand" ID="{5AD3B9C1-5ABB-47C5-8A97-D1702191F688}"/>
@@ -406,6 +529,12 @@
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="water" ID="{B280A249-7677-4C15-9F49-3B854E9113B5}"/>
+								<ItemList>
+									<ItemRef Name="FOOTSTEPS_Water" ID="{8DA1BFBD-4834-4BA5-90D8-329B4CE4C224}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="wood" ID="{E393EB9F-0EF2-467E-9F5B-539980493798}"/>
 								<ItemList>
@@ -1738,6 +1867,18 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3BDC5599-9946-4D9D-9166-89AF000621E8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1980,6 +2121,9 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{9B7194C0-BDA5-40C7-B253-5FE2C777C95F}">
@@ -2069,6 +2213,91 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="JUMP_Water" ID="{06A4DFB4-D752-4AE6-8C3D-0B6B6213D6B0}" ShortID="1046998074">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{902E85DE-F31D-4479-AE96-364A26CE9726}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8534ECF5-8378-4A0D-87D3-1E43D0E6D22D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_JUMP_Water_nl_01" ID="{D2ADCD5F-6809-4ED6-A455-3CFD42239796}" ShortID="200174579">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Water_nl_01" ID="{0949D899-607D-4DF7-B736-8CA6E9599A41}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Water_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="338506298"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Water_nl_01" ID="{0949D899-607D-4DF7-B736-8CA6E9599A41}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_JUMP_Water_nl_02" ID="{BD942144-DEA6-4964-AD9E-D1B3F284150C}" ShortID="361935173">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_JUMP_Water_nl_02" ID="{9C75165A-AACB-4B79-9CC4-3F16B5142CFD}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_JUMP_Water_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="61250107"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_JUMP_Water_nl_02" ID="{9C75165A-AACB-4B79-9CC4-3F16B5142CFD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -2079,10 +2308,19 @@
 								<ItemRef Name="JUMP_Sand" ID="{239AE284-61AD-4666-BC43-D2767F779145}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
+								<ItemRef Name="JUMP_Water" ID="{06A4DFB4-D752-4AE6-8C3D-0B6B6213D6B0}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="JUMP_Grass" ID="{F0978DEF-E4DC-438F-9F5C-337784F52C30}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="water" ID="{B280A249-7677-4C15-9F49-3B854E9113B5}"/>
+								<ItemList>
+									<ItemRef Name="JUMP_Water" ID="{06A4DFB4-D752-4AE6-8C3D-0B6B6213D6B0}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="wood" ID="{E393EB9F-0EF2-467E-9F5B-539980493798}"/>
 								<ItemList>
@@ -2109,14 +2347,24 @@
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{C9EB6002-FE39-462E-8D4C-85AA17EE9904}"/>
+									<Modifier Name="" ID="{C9EB6002-FE39-462E-8D4C-85AA17EE9904}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+										</PropertyList>
+									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{392AB6A6-6BB6-46EC-ABCF-4293583DDE01}"/>
+									<Modifier Name="" ID="{392AB6A6-6BB6-46EC-ABCF-4293583DDE01}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
@@ -2150,7 +2398,7 @@
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-16</Value>
+										<Value>-8</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -2235,7 +2483,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-7</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -2390,6 +2638,113 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="LANDJUMP_Water" ID="{C601E08A-280C-4058-93D0-0D9A705AA638}" ShortID="968209732">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8914FD44-6771-4DDD-8F5C-C45E34610059}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EFF025BF-09C7-4EBF-A3AE-46F3FB63252A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_LANDJUMP_Water_nl_01" ID="{CCC1DE5F-7561-4397-B589-BB19CA18A11F}" ShortID="560778123">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Water_nl_01" ID="{5754A357-C609-49A6-BAC5-A2BDFEDAA0F8}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Water_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1038288845"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Water_nl_01" ID="{5754A357-C609-49A6-BAC5-A2BDFEDAA0F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_LANDJUMP_Water_nl_02" ID="{09DE9A0E-653A-4FF9-A0AA-485038AA7E17}" ShortID="7425887">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Water_nl_02" ID="{C517B40F-A55B-4B93-9959-DE995322C556}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Water_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="566248850"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Water_nl_02" ID="{C517B40F-A55B-4B93-9959-DE995322C556}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_LANDJUMP_Water_nl_03" ID="{53D79EC3-D036-45E4-9557-B37CF2997BC6}" ShortID="926636560">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_LANDJUMP_Water_nl_03" ID="{C15316F2-60EC-4288-BC52-22938966FB80}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_LANDJUMP_Water_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="897249846"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_LANDJUMP_Water_nl_03" ID="{C15316F2-60EC-4288-BC52-22938966FB80}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -2402,8 +2757,17 @@
 							<GroupingBehavior>
 								<ItemRef Name="LANDJUMP_Wood" ID="{7C0F5E52-2F28-49EA-A38F-2858EABFE046}"/>
 							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="LANDJUMP_Water" ID="{C601E08A-280C-4058-93D0-0D9A705AA638}"/>
+							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="water" ID="{B280A249-7677-4C15-9F49-3B854E9113B5}"/>
+								<ItemList>
+									<ItemRef Name="LANDJUMP_Water" ID="{C601E08A-280C-4058-93D0-0D9A705AA638}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="wood" ID="{E393EB9F-0EF2-467E-9F5B-539980493798}"/>
 								<ItemList>

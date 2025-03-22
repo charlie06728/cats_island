@@ -160,8 +160,28 @@
 				</Folder>
 				<Folder Name="mus_Stems" ID="{96C6895B-9AEE-4273-80FD-73F0BF0450B5}" ShortID="1034437115">
 					<ChildrenList>
-						<Event Name="mus_Soundtrack1" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}">
+						<Event Name="mus_Soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}">
 							<ChildrenList>
+								<Action Name="" ID="{A4BC2580-B642-43A5-8C75-42B4391FBC2F}" ShortID="966203326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack2" ID="{DB1DFB55-3569-435A-B332-B50D07C8D5C9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0412E2C7-D510-4393-A2CE-D976CA5DA6CD}" ShortID="829793086">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack3" ID="{405208F4-2D6F-4749-BC81-CF71C86B6502}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{4C17DA26-1523-4A64-B947-DB342C4F1FAE}" ShortID="315175506">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="38"/>
@@ -205,20 +225,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="mus_4-4_86bpm_STEMvibraphone_lp" ID="{66DB089D-DECB-4BE8-BBC1-AA99624BFCFA}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{367E9AC0-ABA1-4346-8DE4-FAB57E5AEC42}" ShortID="831263678">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="mus_4-4_86bpm_STEMpiano_lp" ID="{004A5595-6C8B-4B28-963F-1346C73F6210}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{5C6430B4-E1F3-4462-8D8D-3ED275A71EF5}" ShortID="636541038">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="mus_4-4_86bpm_STEMguitar_lp" ID="{A0D4A08A-56C2-4B61-9DA8-EEB8F082BD47}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -281,6 +287,24 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="mus_4-4_86bpm_STEMviolin_lp" ID="{C0930C3D-D9D1-43FD-AC0F-70CD046167E5}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="mus_Soundtrack3" ID="{405208F4-2D6F-4749-BC81-CF71C86B6502}">
+							<ChildrenList>
+								<Action Name="" ID="{367E9AC0-ABA1-4346-8DE4-FAB57E5AEC42}" ShortID="831263678">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMpiano_lp" ID="{004A5595-6C8B-4B28-963F-1346C73F6210}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5C6430B4-E1F3-4462-8D8D-3ED275A71EF5}" ShortID="636541038">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMguitar_lp" ID="{A0D4A08A-56C2-4B61-9DA8-EEB8F082BD47}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

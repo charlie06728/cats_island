@@ -14,18 +14,16 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_AMBIENCE = 3855008934U;
-        static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
-        static const AkUniqueID GREYCAT_HUNGRY_MEOW = 1995037903U;
         static const AkUniqueID MIDDAY = 1211181101U;
         static const AkUniqueID MUS_ALLCATSFOUND = 3891823391U;
         static const AkUniqueID MUS_BENGAL_POSE = 3509682696U;
         static const AkUniqueID MUS_GREYCAT_POSE = 3109386516U;
         static const AkUniqueID MUS_RAGDOLL_POSE = 2889622102U;
-        static const AkUniqueID MUS_SOUNDTRACK1 = 3997730192U;
+        static const AkUniqueID MUS_SOUNDTRACK = 1283697787U;
         static const AkUniqueID MUS_SOUNDTRACK2 = 3997730195U;
+        static const AkUniqueID MUS_SOUNDTRACK3 = 3997730194U;
         static const AkUniqueID MUS_TABBY_POSE = 4016717323U;
         static const AkUniqueID MUS_TUXEDO_POSE = 1461319202U;
-        static const AkUniqueID RAGDOLL_HUNGRY_MEOW = 2846976621U;
         static const AkUniqueID SFX_CAMERAOFF = 192727511U;
         static const AkUniqueID SFX_CAMERAON = 2801607203U;
         static const AkUniqueID SFX_CAMERAPICTURE = 1570034758U;
@@ -33,8 +31,6 @@ namespace AK
         static const AkUniqueID SFX_JUMP = 3695098761U;
         static const AkUniqueID SFX_LANDING = 2929962202U;
         static const AkUniqueID SFX_PAGEFLIP = 2084073701U;
-        static const AkUniqueID TABBY_HUNGRY_MEOW = 2553855402U;
-        static const AkUniqueID TUXEDO_HUNGRY_MEOW = 4111794441U;
     } // namespace EVENTS
 
     namespace STATES
@@ -84,6 +80,7 @@ namespace AK
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID MUSIC1 = 1730564819U;
         static const AkUniqueID MUSIC2 = 1730564816U;
+        static const AkUniqueID MUSIC3 = 1730564817U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 

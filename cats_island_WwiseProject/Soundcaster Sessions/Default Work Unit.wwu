@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="PurrfectShot" ID="{7976134F-A9F5-4022-A3A2-5F31B0850716}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="mus_Soundtrack1" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<ObjectRef Name="mus_Soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
@@ -30,7 +30,7 @@
 							<Position X="0" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<ObjectRef Name="mus_Soundtrack2" ID="{DB1DFB55-3569-435A-B332-B50D07C8D5C9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
@@ -48,6 +48,10 @@
 						<Module>
 							<ObjectRef Name="sfx_CameraPicture" ID="{1162A07A-212F-4536-955C-6CD4ECE48AD7}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
 							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="sfx_Landing" ID="{2F994791-D8E7-4AB8-B710-338F2428E8EF}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>

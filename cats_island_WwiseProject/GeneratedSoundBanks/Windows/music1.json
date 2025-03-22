@@ -8,9 +8,9 @@
    {
     "Id": "1730564819",
     "Type": "User",
-    "GUID": "{A79DBA8F-1FDC-4C9C-85BF-788B3DB56C29}",
+    "GUID": "{CC6523E7-0AFB-4DFE-B1B6-208FC4C92C74}",
     "Language": "SFX",
-    "Hash": "{89E8BD9E-6EC2-38B2-A6D5-DD6479DCD660}",
+    "Hash": "{FA096A5B-6D73-F330-DBD6-B0A068400D26}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music1",
     "ShortName": "music1",
     "Path": "music1.bnk",
@@ -22,14 +22,6 @@
       "Location": "Memory",
       "ShortName": "amb_forestnoon_lp.wav",
       "CachePath": "BD/{BDB84EFB-5899-FE4B-DF5C-2C33208920AC}.wem"
-     },
-     {
-      "Id": "275975639",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "mus_4-4_86bpm_STEMguitar_lp.wav",
-      "CachePath": "BE/{BEF5E886-A4DD-911D-802C-B7C3822AE645}.wem"
      },
      {
       "Id": "313505498",
@@ -54,14 +46,6 @@
       "Location": "Memory",
       "ShortName": "amb_forestmorning_lp.wav",
       "CachePath": "0B/{0B928BEC-317B-FF7D-4252-94334708565F}.wem"
-     },
-     {
-      "Id": "605225841",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "mus_4-4_86bpm_STEMpiano_lp.wav",
-      "CachePath": "D4/{D4FBE919-8C7B-A904-8909-76C18ACF96BF}.wem"
      },
      {
       "Id": "866056481",
@@ -113,18 +97,12 @@
       "DurationMax": "0"
      },
      {
-      "Id": "3997730192",
-      "Name": "mus_Soundtrack1",
-      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack1",
+      "Id": "1283697787",
+      "Name": "mus_Soundtrack",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack",
       "GUID": "{227D352D-707C-48E5-8DB5-F2320A44CA1B}",
       "DurationType": "Infinite",
       "MediaRefs": [
-       {
-        "Id": "275975639"
-       },
-       {
-        "Id": "605225841"
-       },
        {
         "Id": "866056481"
        },
@@ -213,6 +191,6 @@
     ]
    }
   ],
-  "FileHash": "{A9E26EA2-29A0-F767-2ADB-09F694A166B4}"
+  "FileHash": "{472E62AD-F79E-6746-9A8A-74EC1DB1D5DB}"
  }
 }

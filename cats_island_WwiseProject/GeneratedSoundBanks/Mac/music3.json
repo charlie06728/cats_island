@@ -1,0 +1,64 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1730564817",
+    "Type": "User",
+    "GUID": "{57ADB351-565B-47B1-B70F-E2667EAB822C}",
+    "Language": "SFX",
+    "Hash": "{3BB26580-7386-B397-C961-F729644EE817}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\music3",
+    "ShortName": "music3",
+    "Path": "music3.bnk",
+    "Media": [
+     {
+      "Id": "275975639",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMguitar_lp.wav",
+      "CachePath": "BE/{BEF5E886-A4DD-911D-802C-B7C3822AE645}.wem"
+     },
+     {
+      "Id": "605225841",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMpiano_lp.wav",
+      "CachePath": "D4/{D4FBE919-8C7B-A904-8909-76C18ACF96BF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3997730194",
+      "Name": "mus_Soundtrack3",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack3",
+      "GUID": "{405208F4-2D6F-4749-BC81-CF71C86B6502}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "275975639"
+       },
+       {
+        "Id": "605225841"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "207908541",
+      "Name": "Time_Of_Day",
+      "ObjectPath": "\\Game Parameters\\Anthony\\Time_Of_Day",
+      "GUID": "{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{06A106CD-2C97-1E46-2270-A1B3A017A7BE}"
+ }
+}
