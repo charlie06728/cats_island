@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 7497760a65bb00459549f9069674c4d4
     GuidInternal: 
-    m_lastTime: -8584594671253914511
+    m_lastTime: -8584593019457314678
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 47dc6fec587c2446a7b9dbcf10e31f07
     GuidInternal: 
-    m_lastTime: -8584594671253934925
+    m_lastTime: -8584593019467938098
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,50 +66,8 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584593579727008735
-    List:
-    - name: ambience
-      guid: 12953d0044447549bde388eb62debae8
-      id: 85412153
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d545957780d4ba4e9ec07055abeef632
-      - ElementName: ambience
-        ObjectType: 7
-        guid: 12953d0044447549bde388eb62debae8
-      Path: SoundBanks\Default Work Unit\ambience
-    - name: music
-      guid: 8fba9da7dc1f9c4c85bf788b3db56c29
-      id: 3991942870
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d545957780d4ba4e9ec07055abeef632
-      - ElementName: music
-        ObjectType: 7
-        guid: 8fba9da7dc1f9c4c85bf788b3db56c29
-      Path: SoundBanks\Default Work Unit\music
-    - name: sfx
-      guid: 0fee29492631a34a8aa6a53f09a5babc
-      id: 393239870
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d545957780d4ba4e9ec07055abeef632
-      - ElementName: sfx
-        ObjectType: 7
-        guid: 0fee29492631a34a8aa6a53f09a5babc
-      Path: SoundBanks\Default Work Unit\sfx
+    m_lastTime: -8584589986045313883
+    List: []
   EventWwu:
   - PhysicalPath: Events\Anthony.wwu
     PathAndIcons:
@@ -122,7 +80,7 @@ MonoBehaviour:
     ParentPath: Events\Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584590405337082777
+    m_lastTime: -8584587603023128269
     List:
     - name: amb_Ambience
       guid: 53a4f75f8bae2c4a9a65689f2a7ce253
@@ -138,6 +96,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 53a4f75f8bae2c4a9a65689f2a7ce253
       Path: Events\Anthony\amb_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: midday
+      guid: cda96a43a678154a94fa4e7909faaa26
+      id: 1211181101
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_Stems
+        ObjectType: 4
+        guid: 5b89c696ee9a734280fd73f0bf0450b5
+      - ElementName: midday
+        ObjectType: 3
+        guid: cda96a43a678154a94fa4e7909faaa26
+      Path: Events\Anthony\mus_Stems\midday
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -258,6 +236,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: mus_Soundtrack2
+      guid: 55fb1ddb69355a43b332b50d07c8d5c9
+      id: 3997730195
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_Stems
+        ObjectType: 4
+        guid: 5b89c696ee9a734280fd73f0bf0450b5
+      - ElementName: mus_Soundtrack2
+        ObjectType: 3
+        guid: 55fb1ddb69355a43b332b50d07c8d5c9
+      Path: Events\Anthony\mus_Stems\mus_Soundtrack2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: mus_Soundtrack3
+      guid: f40852406f2d4947bc81cf71c86b6502
+      id: 3997730194
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_Stems
+        ObjectType: 4
+        guid: 5b89c696ee9a734280fd73f0bf0450b5
+      - ElementName: mus_Soundtrack3
+        ObjectType: 3
+        guid: f40852406f2d4947bc81cf71c86b6502
+      Path: Events\Anthony\mus_Stems\mus_Soundtrack3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: mus_Soundtrack4
+      guid: 1f04dbd33c96d14fb3ff13f06f4b6c6b
+      id: 3997730197
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: bcce342bf7a25d469d9a1d28b8579891
+      - ElementName: mus_Stems
+        ObjectType: 4
+        guid: 5b89c696ee9a734280fd73f0bf0450b5
+      - ElementName: mus_Soundtrack4
+        ObjectType: 3
+        guid: 1f04dbd33c96d14fb3ff13f06f4b6c6b
+      Path: Events\Anthony\mus_Stems\mus_Soundtrack4
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Stems
       guid: 5b89c696ee9a734280fd73f0bf0450b5
       id: 2325593425
@@ -410,7 +448,7 @@ MonoBehaviour:
         guid: d553778896d8f648a9309858f96c2df9
       Path: Events\Anthony\sfx_Movement\sfx_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.6543125
+      maxDuration: 2.2513592
       minDuration: 0.33726084
     - name: sfx_Jump
       guid: 7562375e84ec4048b5b814b496e03f88
@@ -430,7 +468,7 @@ MonoBehaviour:
         guid: 7562375e84ec4048b5b814b496e03f88
       Path: Events\Anthony\sfx_Movement\sfx_Jump
       maxAttenuation: 0
-      maxDuration: 0.44595265
+      maxDuration: 1.25
       minDuration: 0.15766808
     - name: sfx_Landing
       guid: 9147992fe7d8b84ab710338f2428e8ef
@@ -450,8 +488,8 @@ MonoBehaviour:
         guid: 9147992fe7d8b84ab710338f2428e8ef
       Path: Events\Anthony\sfx_Movement\sfx_Landing
       maxAttenuation: 0
-      maxDuration: 0.6313849
-      minDuration: 0.375
+      maxDuration: 2.25
+      minDuration: 0.334087
     - name: sfx_Movement
       guid: 857fc70985014c4f9925f2112fab4041
       id: 1332754450
@@ -497,7 +535,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 6dbcaf644f31214ca23f64f63faf663a
     GuidInternal: 
-    m_lastTime: -8584594671253934925
+    m_lastTime: -8584593019484309803
     List: []
   - PhysicalPath: Events\Elienna.wwu
     PathAndIcons:
@@ -510,7 +548,7 @@ MonoBehaviour:
     ParentPath: Events\Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584593847788998431
+    m_lastTime: -8584587603023058349
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -522,16 +560,19 @@ MonoBehaviour:
       - ElementName: Elienna
         ObjectType: 12
         guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
       - ElementName: sfx_Cat_Hungry_Meow
         ObjectType: 4
         guid: 3be5b44b5896184fade4bf23276ed6a5
       - ElementName: Bengal_Hungry_Meow
         ObjectType: 3
         guid: bf85011b5a4da14f93c89b985d79da33
-      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Bengal_Hungry_Meow
+      Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Bengal_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: 1.4465203
-      minDuration: 0.6443515
+      maxDuration: -1
+      minDuration: -1
     - name: GreyCat_Hungry_Meow
       guid: db7c8a5725138f46837ee6ef60c3ab38
       id: 1995037903
@@ -542,16 +583,19 @@ MonoBehaviour:
       - ElementName: Elienna
         ObjectType: 12
         guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
       - ElementName: sfx_Cat_Hungry_Meow
         ObjectType: 4
         guid: 3be5b44b5896184fade4bf23276ed6a5
       - ElementName: GreyCat_Hungry_Meow
         ObjectType: 3
         guid: db7c8a5725138f46837ee6ef60c3ab38
-      Path: Events\Elienna\sfx_Cat_Hungry_Meow\GreyCat_Hungry_Meow
+      Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\GreyCat_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: 1.4465203
-      minDuration: 1.288703
+      maxDuration: -1
+      minDuration: -1
     - name: Ragdoll_Hungry_Meow
       guid: 64081005ce19bd4ea9a0320999d44d78
       id: 2846976621
@@ -562,16 +606,76 @@ MonoBehaviour:
       - ElementName: Elienna
         ObjectType: 12
         guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
       - ElementName: sfx_Cat_Hungry_Meow
         ObjectType: 4
         guid: 3be5b44b5896184fade4bf23276ed6a5
       - ElementName: Ragdoll_Hungry_Meow
         ObjectType: 3
         guid: 64081005ce19bd4ea9a0320999d44d78
-      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Ragdoll_Hungry_Meow
+      Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Ragdoll_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: 1.4465203
-      minDuration: 1.288703
+      maxDuration: -1
+      minDuration: -1
+    - name: sfx_Cat
+      guid: fa4c24f16dbefc42812a106a59f990e3
+      id: 481770683
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
+      Path: Events\Elienna\sfx_Cat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: sfx_cat_eat
+      guid: 93247aa9d3c28d448498e52a3e382826
+      id: 3836755088
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
+      - ElementName: sfx_cat_eat
+        ObjectType: 3
+        guid: 93247aa9d3c28d448498e52a3e382826
+      Path: Events\Elienna\sfx_Cat\sfx_cat_eat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: sfx_cat_hiss
+      guid: 052d5aa22ceb174eb22fc002e81ec8a8
+      id: 550596841
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
+      - ElementName: sfx_cat_hiss
+        ObjectType: 3
+        guid: 052d5aa22ceb174eb22fc002e81ec8a8
+      Path: Events\Elienna\sfx_Cat\sfx_cat_hiss
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_Cat_Hungry_Meow
       guid: 3be5b44b5896184fade4bf23276ed6a5
       id: 633889308
@@ -582,10 +686,70 @@ MonoBehaviour:
       - ElementName: Elienna
         ObjectType: 12
         guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
       - ElementName: sfx_Cat_Hungry_Meow
         ObjectType: 4
         guid: 3be5b44b5896184fade4bf23276ed6a5
-      Path: Events\Elienna\sfx_Cat_Hungry_Meow
+      Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: sfx_Treat
+      guid: d74a60a6cfb0bb4092ced7b143ef1dd5
+      id: 3947416347
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Treat
+        ObjectType: 4
+        guid: d74a60a6cfb0bb4092ced7b143ef1dd5
+      Path: Events\Elienna\sfx_Treat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: sfx_treat_drop
+      guid: 146573602ae1f74481dda333f1ae480d
+      id: 3249613541
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Treat
+        ObjectType: 4
+        guid: d74a60a6cfb0bb4092ced7b143ef1dd5
+      - ElementName: sfx_treat_drop
+        ObjectType: 3
+        guid: 146573602ae1f74481dda333f1ae480d
+      Path: Events\Elienna\sfx_Treat\sfx_treat_drop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: sfx_treat_launch
+      guid: 47a72ddbe11dd14eb1a36dbe29c2da87
+      id: 651286159
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Treat
+        ObjectType: 4
+        guid: d74a60a6cfb0bb4092ced7b143ef1dd5
+      - ElementName: sfx_treat_launch
+        ObjectType: 3
+        guid: 47a72ddbe11dd14eb1a36dbe29c2da87
+      Path: Events\Elienna\sfx_Treat\sfx_treat_launch
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -599,16 +763,19 @@ MonoBehaviour:
       - ElementName: Elienna
         ObjectType: 12
         guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
       - ElementName: sfx_Cat_Hungry_Meow
         ObjectType: 4
         guid: 3be5b44b5896184fade4bf23276ed6a5
       - ElementName: Tabby_Hungry_Meow
         ObjectType: 3
         guid: 2ceaa21e224c9b41a2dc568a07d026a4
-      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Tabby_Hungry_Meow
+      Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Tabby_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: 1.4465203
-      minDuration: 0.6443515
+      maxDuration: -1
+      minDuration: -1
     - name: Tuxedo_Hungry_Meow
       guid: 6c6dd78d7159744291c1c222b1c44210
       id: 4111794441
@@ -619,16 +786,19 @@ MonoBehaviour:
       - ElementName: Elienna
         ObjectType: 12
         guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_Cat
+        ObjectType: 4
+        guid: fa4c24f16dbefc42812a106a59f990e3
       - ElementName: sfx_Cat_Hungry_Meow
         ObjectType: 4
         guid: 3be5b44b5896184fade4bf23276ed6a5
       - ElementName: Tuxedo_Hungry_Meow
         ObjectType: 3
         guid: 6c6dd78d7159744291c1c222b1c44210
-      Path: Events\Elienna\sfx_Cat_Hungry_Meow\Tuxedo_Hungry_Meow
+      Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Tuxedo_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: 1.4465203
-      minDuration: 1.288703
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Anthony.wwu
     PathAndIcons:
@@ -641,7 +811,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Anthony
     guid: 747ed4c5d250174d9c25eb13858cdf27
     GuidInternal: 
-    m_lastTime: -8584593847788998431
+    m_lastTime: -8584593019484299801
     List:
     - name: Time_Of_Day
       guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
@@ -668,7 +838,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b00b9c776284c047af9d52e603c58215
     GuidInternal: 
-    m_lastTime: -8584594671253934925
+    m_lastTime: -8584593019484299801
     List: []
   - PhysicalPath: Game Parameters\Elienna.wwu
     PathAndIcons:
@@ -681,7 +851,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Elienna
     guid: e9fcf40ce1fb60438256a5203cf5a15a
     GuidInternal: 
-    m_lastTime: -8584593847788988139
+    m_lastTime: -8584593019484299801
     List: []
   StateWwu:
   - PhysicalPath: States\Anthony.wwu
@@ -695,7 +865,7 @@ MonoBehaviour:
     ParentPath: States\Anthony
     guid: 21611006dff36c499e841738153e7461
     GuidInternal: 
-    m_lastTime: -8584593847772717915
+    m_lastTime: -8584587603014250212
     List:
     - name: Location
       guid: 97fecb8cb61cb44f9455af3c9e336327
@@ -744,6 +914,22 @@ MonoBehaviour:
         - ElementName: cat_tree
           ObjectType: 8
           guid: daca2d337f5bfd408e6088d7c98f2381
+      - name: catnip
+        guid: d53d8c181c972149ad9ceb197d1c59c4
+        id: 3223325804
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 21611006dff36c499e841738153e7461
+        - ElementName: Location
+          ObjectType: 9
+          guid: 97fecb8cb61cb44f9455af3c9e336327
+        - ElementName: catnip
+          ObjectType: 8
+          guid: d53d8c181c972149ad9ceb197d1c59c4
       - name: forest
         guid: c4ac60fc067d4544924152cc6047eb06
         id: 491961918
@@ -792,6 +978,22 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: a28b4a89b479b0408702018614cb10ff
+      - name: pond
+        guid: 27fa578d75fce3408ef7347eb83849ce
+        id: 1944232204
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 21611006dff36c499e841738153e7461
+        - ElementName: Location
+          ObjectType: 9
+          guid: 97fecb8cb61cb44f9455af3c9e336327
+        - ElementName: pond
+          ObjectType: 8
+          guid: 27fa578d75fce3408ef7347eb83849ce
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -806,8 +1008,219 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b874c196a1cfcc48b790c06e60758510
     GuidInternal: 
-    m_lastTime: -8584594430388103588
+    m_lastTime: -8584593019457337080
     List: []
+  - PhysicalPath: States\Elienna.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Elienna
+      ObjectType: 12
+      guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+    ParentPath: States\Elienna
+    guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+    GuidInternal: 
+    m_lastTime: -8584587603014219701
+    List:
+    - name: CameraMode
+      guid: 31885a453636c745b077c60a8981b803
+      id: 1112732945
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+      - ElementName: CameraMode
+        ObjectType: 9
+        guid: 31885a453636c745b077c60a8981b803
+      Path: States\Elienna\CameraMode
+      values:
+      - name: camera_off
+        guid: d49425e293b82d468f1c28ef01a6dc69
+        id: 3677392886
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: CameraMode
+          ObjectType: 9
+          guid: 31885a453636c745b077c60a8981b803
+        - ElementName: camera_off
+          ObjectType: 8
+          guid: d49425e293b82d468f1c28ef01a6dc69
+      - name: camera_on
+        guid: 9fe11266372b4049ae605d59732fa5e7
+        id: 3897109560
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: CameraMode
+          ObjectType: 9
+          guid: 31885a453636c745b077c60a8981b803
+        - ElementName: camera_on
+          ObjectType: 8
+          guid: 9fe11266372b4049ae605d59732fa5e7
+      - name: None
+        guid: 5c63b5f4e668d84191873a561f56beff
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: CameraMode
+          ObjectType: 9
+          guid: 31885a453636c745b077c60a8981b803
+        - ElementName: None
+          ObjectType: 8
+          guid: 5c63b5f4e668d84191873a561f56beff
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Preferred_Treat
+      guid: fd4d8967cf5f5148939979a53e10a071
+      id: 1310789233
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+      - ElementName: Preferred_Treat
+        ObjectType: 9
+        guid: fd4d8967cf5f5148939979a53e10a071
+      Path: States\Elienna\Preferred_Treat
+      values:
+      - name: None
+        guid: 09263c219fd6de48bde61f3bbb3d40a7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: Preferred_Treat
+          ObjectType: 9
+          guid: fd4d8967cf5f5148939979a53e10a071
+        - ElementName: None
+          ObjectType: 8
+          guid: 09263c219fd6de48bde61f3bbb3d40a7
+      - name: not_preferred_treat
+        guid: ae045b9d7457114db4779ea3d26b0d95
+        id: 2365261663
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: Preferred_Treat
+          ObjectType: 9
+          guid: fd4d8967cf5f5148939979a53e10a071
+        - ElementName: not_preferred_treat
+          ObjectType: 8
+          guid: ae045b9d7457114db4779ea3d26b0d95
+      - name: yes_preferred_treat
+        guid: 7b750b38ecf04b4f864a42695a687cab
+        id: 3541290649
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: Preferred_Treat
+          ObjectType: 9
+          guid: fd4d8967cf5f5148939979a53e10a071
+        - ElementName: yes_preferred_treat
+          ObjectType: 8
+          guid: 7b750b38ecf04b4f864a42695a687cab
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: View
+      guid: 2b75d0d76398824ca6359830e8ea78d8
+      id: 3235954734
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+      - ElementName: View
+        ObjectType: 9
+        guid: 2b75d0d76398824ca6359830e8ea78d8
+      Path: States\Elienna\View
+      values:
+      - name: album
+        guid: 91187d993f80304f93cf878f28c30650
+        id: 603211426
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: View
+          ObjectType: 9
+          guid: 2b75d0d76398824ca6359830e8ea78d8
+        - ElementName: album
+          ObjectType: 8
+          guid: 91187d993f80304f93cf878f28c30650
+      - name: brochure
+        guid: 66b89a9c29fae4469c2fd18b8c14796b
+        id: 3761523285
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: View
+          ObjectType: 9
+          guid: 2b75d0d76398824ca6359830e8ea78d8
+        - ElementName: brochure
+          ObjectType: 8
+          guid: 66b89a9c29fae4469c2fd18b8c14796b
+      - name: None
+        guid: 7ad077bcb5e2764f9eae34b61aa0dce1
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Elienna
+          ObjectType: 12
+          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
+        - ElementName: View
+          ObjectType: 9
+          guid: 2b75d0d76398824ca6359830e8ea78d8
+        - ElementName: None
+          ObjectType: 8
+          guid: 7ad077bcb5e2764f9eae34b61aa0dce1
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Anthony.wwu
     PathAndIcons:
@@ -820,7 +1233,7 @@ MonoBehaviour:
     ParentPath: Switches\Anthony
     guid: 27638023a565d7418bfab37636cd15b1
     GuidInternal: 
-    m_lastTime: -8584593579726998539
+    m_lastTime: -8584589986045292216
     List:
     - name: Ground_Material
       guid: 40e2080494fea64782f310d790d4c05f
@@ -869,6 +1282,22 @@ MonoBehaviour:
         - ElementName: sand
           ObjectType: 10
           guid: d2144a68945c5e4da362df59feba08fd
+      - name: water
+        guid: 49a280b27776154c9f493b854e9113b5
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Anthony
+          ObjectType: 12
+          guid: 27638023a565d7418bfab37636cd15b1
+        - ElementName: Ground_Material
+          ObjectType: 11
+          guid: 40e2080494fea64782f310d790d4c05f
+        - ElementName: water
+          ObjectType: 10
+          guid: 49a280b27776154c9f493b854e9113b5
       - name: wood
         guid: 9feb93e3f20e7e469f5b539980493798
         id: 2058049674
@@ -899,7 +1328,20 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 6a38469adc0030469182708ec8541dbb
     GuidInternal: 
-    m_lastTime: -8584594671253924759
+    m_lastTime: -8584593019457324691
+    List: []
+  - PhysicalPath: Switches\Elienna.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Elienna
+      ObjectType: 12
+      guid: c437981960abf84e9b98078bdbc19c55
+    ParentPath: Switches\Elienna
+    guid: c437981960abf84e9b98078bdbc19c55
+    GuidInternal: 
+    m_lastTime: -8584587603014179828
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -913,7 +1355,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 47e94a7a22be964d82a63388717af54b
     GuidInternal: 
-    m_lastTime: -8584594671253914511
+    m_lastTime: -8584593019457324691
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 02000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000010000000120000001300000014000000150000001700000018000000190000001a0000001b0000001e000000200000002100000022000000
