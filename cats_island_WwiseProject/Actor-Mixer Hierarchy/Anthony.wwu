@@ -880,9 +880,19 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
+										<StateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
+										<CustomState Name="" ID="{BFBFE68D-04DE-4EAE-97FC-1084869EC469}" ShortID="4391387">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
 										<CustomState Name="" ID="{1C800F51-3EAF-4F47-B98B-55F6F99B4A93}" ShortID="959314074">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
@@ -891,6 +901,7 @@
 										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
 										<CustomState Name="" ID="{B96A6BFD-96B3-4A50-96AB-1575DA989E7F}" ShortID="904802093">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
@@ -899,13 +910,19 @@
 										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
 										<CustomState Name="" ID="{C2B2238B-633A-49F9-BE8C-34C8876BB18B}" ShortID="403227970">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
-										<CustomState Name="" ID="{541482AB-85E8-4692-9BE1-1E5FF6DE07FF}" ShortID="528134681"/>
+										<CustomState Name="" ID="{541482AB-85E8-4692-9BE1-1E5FF6DE07FF}" ShortID="528134681">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
@@ -1192,6 +1209,15 @@
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
+										<StateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
+										<CustomState Name="" ID="{3388A1CB-CA0C-4822-8C30-3556F96A4AB9}" ShortID="502943322">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
 										<CustomState Name="" ID="{D5EECADB-92EA-4D4B-9CA8-55EBE6686F4B}" ShortID="707143029"/>
 									</CustomState>
@@ -1199,6 +1225,7 @@
 										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
 										<CustomState Name="" ID="{1955AF59-9451-492E-9A43-D0AACF0976BF}" ShortID="903517603">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
@@ -1207,18 +1234,25 @@
 										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
 										<CustomState Name="" ID="{D2D078FA-3E47-4A45-BD12-5C227942D4AD}" ShortID="986301606">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
-										<CustomState Name="" ID="{933E1AF2-6263-4C07-868F-7C30B108F9B9}" ShortID="733943855"/>
+										<CustomState Name="" ID="{933E1AF2-6263-4C07-868F-7C30B108F9B9}" ShortID="733943855">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
 										<CustomState Name="" ID="{5292D44F-BF09-418D-8874-AF2899F1F8A7}" ShortID="942402761">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
 											</PropertyList>
 										</CustomState>
@@ -1309,6 +1343,121 @@
 								<ActiveSource Name="mus_4-4_86bpm_STEMbongos_lp" ID="{7E576079-9BE5-46F1-BEA2-DD3FD7B770E7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="mus_4-4_86bpm_STEMhorn_lp" ID="{4E2F0F14-C61E-4B8C-ADAA-7BF4131850E1}" ShortID="141042938">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9CC8383F-DC6B-42D6-A53F-8D34BA6F1532}">
+									<Language>SFX</Language>
+									<AudioFile>mus_4-4_86bpm_STEMenghorn_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="723336337"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9CC8383F-DC6B-42D6-A53F-8D34BA6F1532}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9B5A78B4-0C25-4C99-B48C-499AF7B15080}" ShortID="369745826">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{39AE0999-279E-48F3-8278-9751792D2EFD}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.717964940423133"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.43592988084627"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>mus_4-4_86bpm_STEMenghorn_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="270066165"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Location" ID="{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
+										<CustomState Name="" ID="{737AF344-7F1D-4D14-AACA-5AB4FFEDB75D}" ShortID="547098097">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
+										<CustomState Name="" ID="{4DD8E6C2-B146-4472-8AA7-347A3558E370}" ShortID="359858312">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
+										<CustomState Name="" ID="{2834D087-2B46-4C18-A379-8CE85EB84D58}" ShortID="958881012">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
+										<CustomState Name="" ID="{8C519619-7890-48A7-B058-7F06C5408F72}" ShortID="12130469">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
+										<CustomState Name="" ID="{48E661C0-A2BF-4824-BA8C-282037B275C1}" ShortID="1049908651"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
+										<CustomState Name="" ID="{8CE4937D-034D-40CA-AAAD-79238FF67839}" ShortID="942555739">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{39AE0999-279E-48F3-8278-9751792D2EFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="amb_ambience" ID="{229427EC-B921-44F4-B40E-3909764A1F19}" ShortID="628291795">
@@ -1344,8 +1493,15 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Location" ID="{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{D7D0752B-9863-4C82-A635-9830E8EA78D8}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
+										<CustomState Name="" ID="{ABD57703-F7B6-4EFB-B067-232ADAA1A576}" ShortID="773479873"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
 										<CustomState Name="" ID="{7002A8C1-3CFE-4B74-885A-D9C020000747}" ShortID="179679988">
@@ -1363,6 +1519,14 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="brochure" ID="{9C9AB866-FA29-46E4-9C2F-D18B8C14796B}"/>
+										<CustomState Name="" ID="{4AC15DDF-AA02-4E98-AEAD-84882EAE622B}" ShortID="218716874">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="30"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
 										<CustomState Name="" ID="{612874A9-CA51-49D5-9E29-1BFE90E97C0D}" ShortID="256330629"/>
 									</CustomState>
@@ -1373,6 +1537,14 @@
 									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
 										<CustomState Name="" ID="{DD4E1674-186D-4DAB-8426-C81928C6B89A}" ShortID="410833310"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="album" ID="{997D1891-803F-4F30-93CF-878F28C30650}"/>
+										<CustomState Name="" ID="{E2792893-5ED8-4BA7-921E-462822C91D11}" ShortID="228224621">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="30"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -1532,8 +1704,15 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Location" ID="{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="View" ID="{D7D0752B-9863-4C82-A635-9830E8EA78D8}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
+										<CustomState Name="" ID="{88A072BF-23CE-41AD-918B-8E2419B2A09F}" ShortID="511845764"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
 										<CustomState Name="" ID="{E8388413-E60E-4B2C-BEAF-595FAB50D14A}" ShortID="122455388"/>
@@ -1541,6 +1720,14 @@
 									<CustomState>
 										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
 										<CustomState Name="" ID="{7CBFBF08-510C-43A6-B217-CC8B483EC6CD}" ShortID="526918333"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="brochure" ID="{9C9AB866-FA29-46E4-9C2F-D18B8C14796B}"/>
+										<CustomState Name="" ID="{9D818330-546B-4F1E-9D9F-661E350AB2DB}" ShortID="629821624">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="30"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
@@ -1559,6 +1746,14 @@
 										<CustomState Name="" ID="{B4D80C06-8F88-4A3C-8138-EF3D63EC4E7C}" ShortID="56712495">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="album" ID="{997D1891-803F-4F30-93CF-878F28C30650}"/>
+										<CustomState Name="" ID="{2FD745CC-9ED7-4C91-B199-DB6025A45A60}" ShortID="438995037">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="30"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -2796,7 +2991,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-16</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2817,6 +3012,27 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="CameraMode" ID="{455A8831-3636-45C7-B077-C60A8981B803}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="camera_off" ID="{E22594D4-B893-462D-8F1C-28EF01A6DC69}"/>
+										<CustomState Name="" ID="{DD5B5774-6C3D-481C-8807-D1810C16E662}" ShortID="234443359">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="camera_on" ID="{6612E19F-2B37-4940-AE60-5D59732FA5E7}"/>
+										<CustomState Name="" ID="{F75F7B54-3C75-48DC-B050-8AC3D643D220}" ShortID="360294177"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_CAMERA_OnNoise_lp" ID="{3A95435D-1D9E-4AEE-B7C3-0522294BAA96}" Platform="Linked"/>
 							</ActiveSourceList>
