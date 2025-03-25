@@ -284,13 +284,13 @@ namespace Player {
                 }
             }
 
-            if (keyDown) {
-                // if (!footStepSound.isPlaying) footStepSound.Play();
-                FootStepManager.Instance.PlayFootstep();
-            } else {
-                // footStepSound.Stop();
-                FootStepManager.Instance.StopFootstep();
-            }
+            // if (keyDown) {
+            //     // if (!footStepSound.isPlaying) footStepSound.Play();
+            //     FootStepManager.Instance.PlayFootstep();
+            // } else {
+            //     // footStepSound.Stop();
+            //     FootStepManager.Instance.StopFootstep();
+            // }
             
             /* Make sure the body is not tilted */
             transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);

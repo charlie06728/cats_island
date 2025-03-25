@@ -431,6 +431,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 0}
   hook: {fileID: 7827883251493949082}
+  cameraOn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cf81c800cdabf4546af1c3669ff108b6, type: 2}
+  cameraOff:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a58e5720caf217149aa6413223515940, type: 2}
   photoCamera: {fileID: 8946509900950308749}
   cameraScale: {x: 0.02, y: 0.02, z: 0.02}
   photoPrefab: {fileID: 5142363858012916415, guid: ed97be82d7a671643936d0a729222f74, type: 3}
@@ -559,7 +567,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 733e6b85985e98c4a9984bb77a68af11, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 40d1ae248fb641743aa2445b77698d21, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0

@@ -6,6 +6,7 @@ using Image = UnityEngine.UI.Image;
 
 public class TimeManager : MonoBehaviour
 {
+    public static TimeManager Instance;
     public float day_length; // How many real-world seconds is an in-game day?
     private float hour_length; // How long is an hour?
 
@@ -15,7 +16,21 @@ public class TimeManager : MonoBehaviour
     public int minutes;
     
     public Image[] clock_images;
-    
+
+    public float NormalizeTimeSound {
+        get {
+            return curr_time / day_length * 12f;
+        }
+    }
+
+    private void Awake() {
+        /* Singleton pattern */
+        if (Instance == null) {
+            Instance = this;
+        } else {
+            Destroy(gameObject);
+        }
+    }
 
     void Start() {
         hour_length = day_length / 15f;
@@ -39,6 +54,9 @@ public class TimeManager : MonoBehaviour
         for (int i = 0; i < 9; i++) {
             clock_images[i].gameObject.SetActive(i == imageIndex);
         }
+        
+        /* Normalized the time to a float between 0 and 12 */
+        float normalized = curr_time / day_length * 12f;
     }
 
 
@@ -46,4 +64,5 @@ public class TimeManager : MonoBehaviour
         // OnDaysChanged not implemented yet, this can be for displaying results screen when the day ends
         curr_time = 0;
     }
+
 }

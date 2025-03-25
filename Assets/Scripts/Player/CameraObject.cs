@@ -17,6 +17,8 @@ using Vector3 = UnityEngine.Vector3;
 namespace Player {
     /* The camera objet */
     public class CameraObject : Item {
+        public AK.Wwise.Event cameraOn;
+        public AK.Wwise.Event cameraOff;
         public Camera photoCamera;
         public Vector3 cameraScale;
         public GameObject photoPrefab;
@@ -415,6 +417,9 @@ namespace Player {
             // hand_renderer.enabled = false;
             zoomScroll.gameObject.SetActive(true);
             Server.Server.Instance.cameraMode.SetActive(true);
+            
+            /* Post caemra on sfx */
+            cameraOn.Post(gameObject);
         }
 
         protected void ExitCameraMode() {
@@ -493,6 +498,9 @@ namespace Player {
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
+            
+            /* Post camera off sfx */
+            cameraOff.Post(gameObject);
         }
 
         protected void EnableCameraModeUI() {
