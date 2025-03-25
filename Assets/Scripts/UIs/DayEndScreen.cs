@@ -10,6 +10,8 @@ public class DayEndScreen : MonoBehaviour
 
     void OnEnable() {
         // set the text to the number of cats 
+        cats.text = $"{Server.Server.Instance.StarCount}";
+        remaining.text = $"{5 - Server.Server.Instance.StarCount}";
     }
 
     void Update()

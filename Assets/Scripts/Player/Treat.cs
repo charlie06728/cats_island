@@ -74,14 +74,14 @@ namespace Player {
         protected override void Update() {
             base.Update();
             if (gameObject.activeInHierarchy) {
-                Server.Server.Instance.treatCountText.SetText(Count.ToString());
+                // Server.Server.Instance.treatCountText.SetText(Count.ToString());
                 
                 /* Set it to red if < 3 */
-                if (Count < 3) {
-                    Server.Server.Instance.treatCountText.color = Color.red;
-                } else {
-                    Server.Server.Instance.treatCountText.color = Color.black;
-                }
+                // if (Count < 3) {
+                //     Server.Server.Instance.treatCountText.color = Color.red;
+                // } else {
+                //     Server.Server.Instance.treatCountText.color = Color.black;
+                // }
             }
         }
     }

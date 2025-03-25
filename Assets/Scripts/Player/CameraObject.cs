@@ -286,6 +286,7 @@ namespace Player {
             catsInView.Add(finalCat);
             
             /* Check if the cat is captured before */
+            Debug.Log(finalCat.catBreed);
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);
