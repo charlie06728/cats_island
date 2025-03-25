@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using DefaultNamespace.Sound;
+using Terrain;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
@@ -39,6 +40,28 @@ namespace Player {
         /*  */
         private Vector3 MoveDirection = new Vector3();
         private Dictionary<string, bool> _keyDown = new Dictionary<string, bool>();
+        
+        /* Sounds */
+        private LayerMask currentLayer;
+        public AK.Wwise.Switch Grass;
+        public AK.Wwise.Switch Sand;
+        public AK.Wwise.Switch Water;
+        public AK.Wwise.Switch Wood;
+        
+        public AK.Wwise.Event Event;
+
+        protected bool InCollision;
+        protected bool SoundPlaying;
+
+        protected bool IsMoving {
+            get {
+                foreach (string k in new []{"W", "S", "A", "D"}) {
+                    if (_keyDown.ContainsKey(k) && _keyDown[k]) return true;
+                }
+
+                return false;
+            }
+        }
 
 
         /* Recieves messages from the PlayerInput component on the player when the player presses/releases shift/ctrl */
@@ -133,13 +156,17 @@ namespace Player {
         
         private void OnCollisionStay(Collision collision)
         {
+            UpdateLayer(collision);
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) {
                 _isGrounded = true;
             }
         }
         
-        private void OnCollisionExit(Collision collision)
-        {
+        private void OnCollisionExit(Collision collision) {
+            InCollision = false;
+            /* Stop the footstep sound */
+            Event.Stop(gameObject);
+            
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0)
             {
                 _isGrounded = false;
@@ -148,10 +175,99 @@ namespace Player {
         
         private void OnCollisionEnter(Collision collision)
         {
+            InCollision = true;
+            UpdateLayer(collision);
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) // Check if touching terrain
             {
                 _isGrounded = true;
             }
+        }
+
+        private void UpdateLayer(Collision collision) {
+            /* Get the layer of hitting object */
+            LayerMask targetLayer = collision.gameObject.layer;
+            if (targetLayer == currentLayer) return;
+            
+            int woodLayer = LayerMask.NameToLayer("Wood");
+            int grassLayer = LayerMask.NameToLayer("Grass");
+            int sandLayer = LayerMask.NameToLayer("Sand");
+            int waterLayer = LayerMask.NameToLayer("Water");
+            int terrainLayer = LayerMask.NameToLayer("Terrain");
+            
+            if (targetLayer == woodLayer) {
+                Wood.SetValue(gameObject);
+            } else if (targetLayer == grassLayer) {
+                Grass.SetValue(gameObject);
+            } else if (targetLayer == sandLayer) {
+                Sand.SetValue(gameObject);
+            } else if (targetLayer == waterLayer) {
+                Water.SetValue(gameObject);
+            } else if (targetLayer == terrainLayer) {
+                string terrainType = GetTerrainTexture();
+                switch (terrainType) {
+                    case "wood":
+                        Wood.SetValue(gameObject);
+                        break;
+                    case "grass":
+                        Grass.SetValue(gameObject);
+                        break;
+                    case "sand":
+                        Sand.SetValue(gameObject);
+                        break;
+                    default:
+                        Wood.SetValue(gameObject);
+                        break;
+                }
+            } else {
+                Sand.SetValue(gameObject);
+            }
+            
+            PlayFootStepSound();
+        }
+        
+        private string GetTerrainTexture() {
+            // UnityEngine.Terrain terrain = TerrainManager.Instance.Terrain;
+            UnityEngine.Terrain terrain = TerrainManager.Instance.Terrain;
+            TerrainData terrainData = TerrainManager.Instance.Terrain.terrainData;
+            Vector3 playerPos = Server.Server.Instance.player.transform.position;
+            
+            float[,,] splatmapData = terrainData.GetAlphamaps(
+                (int)((playerPos.x - terrain.transform.position.x) / terrainData.size.x * terrainData.alphamapWidth),
+                (int)((playerPos.z - terrain.transform.position.z) / terrainData.size.z * terrainData.alphamapHeight),
+                1, 1);
+
+            float maxVal = 0;
+            int maxIndex = 0;
+            for (int i = 0; i < splatmapData.GetLength(2); i++)
+            {
+                if (splatmapData[0, 0, i] > maxVal)
+                {
+                    maxVal = splatmapData[0, 0, i];
+                    maxIndex = i;
+                }
+            }
+
+            // Define terrain textures manually (must match Unity terrain layers)
+            string[] terrainTextures = { "grass", "sand", "grass", "wood" };
+            Debug.Log(terrainTextures[maxIndex]);
+            return terrainTextures[maxIndex];
+        }
+
+        protected void PlayFootStepSound() {
+            /* If it's not moving or not grounded, stop the sound */
+            if (!IsMoving || !_isGrounded) {
+                Event.Stop(gameObject);
+                SoundPlaying = false;
+                return;
+            }
+            
+            if (SoundPlaying) return;
+            SoundPlaying = true;
+            Event.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, OnSoundEnd, null);
+        }
+        
+        void OnSoundEnd(object in_cookie, AkCallbackType in_type, object in_info) {
+            SoundPlaying = false;
         }
 
         private void FixedUpdate() {

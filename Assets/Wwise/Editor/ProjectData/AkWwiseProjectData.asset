@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584589986045313883
+    m_lastTime: -8584587193604061373
     List: []
   EventWwu:
   - PhysicalPath: Events\Anthony.wwu
@@ -80,7 +80,7 @@ MonoBehaviour:
     ParentPath: Events\Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584587603023128269
+    m_lastTime: -8584587193627599354
     List:
     - name: amb_Ambience
       guid: 53a4f75f8bae2c4a9a65689f2a7ce253
@@ -548,7 +548,7 @@ MonoBehaviour:
     ParentPath: Events\Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584587603023058349
+    m_lastTime: -8584587193627594282
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -571,8 +571,8 @@ MonoBehaviour:
         guid: bf85011b5a4da14f93c89b985d79da33
       Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Bengal_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4465203
+      minDuration: 0.6443515
     - name: GreyCat_Hungry_Meow
       guid: db7c8a5725138f46837ee6ef60c3ab38
       id: 1995037903
@@ -594,8 +594,8 @@ MonoBehaviour:
         guid: db7c8a5725138f46837ee6ef60c3ab38
       Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\GreyCat_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4465203
+      minDuration: 1.288703
     - name: Ragdoll_Hungry_Meow
       guid: 64081005ce19bd4ea9a0320999d44d78
       id: 2846976621
@@ -617,8 +617,8 @@ MonoBehaviour:
         guid: 64081005ce19bd4ea9a0320999d44d78
       Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Ragdoll_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4465203
+      minDuration: 1.288703
     - name: sfx_Cat
       guid: fa4c24f16dbefc42812a106a59f990e3
       id: 481770683
@@ -774,8 +774,8 @@ MonoBehaviour:
         guid: 2ceaa21e224c9b41a2dc568a07d026a4
       Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Tabby_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4465203
+      minDuration: 0.6443515
     - name: Tuxedo_Hungry_Meow
       guid: 6c6dd78d7159744291c1c222b1c44210
       id: 4111794441
@@ -797,8 +797,8 @@ MonoBehaviour:
         guid: 6c6dd78d7159744291c1c222b1c44210
       Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Tuxedo_Hungry_Meow
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4465203
+      minDuration: 1.288703
   RtpcWwu:
   - PhysicalPath: Game Parameters\Anthony.wwu
     PathAndIcons:
@@ -865,7 +865,7 @@ MonoBehaviour:
     ParentPath: States\Anthony
     guid: 21611006dff36c499e841738153e7461
     GuidInternal: 
-    m_lastTime: -8584587603014250212
+    m_lastTime: -8584587193604051233
     List:
     - name: Location
       guid: 97fecb8cb61cb44f9455af3c9e336327
@@ -1021,7 +1021,7 @@ MonoBehaviour:
     ParentPath: States\Elienna
     guid: 7f2b418ba36b2d40a4e4e5cc6a552367
     GuidInternal: 
-    m_lastTime: -8584587603014219701
+    m_lastTime: -8584587193604040756
     List:
     - name: CameraMode
       guid: 31885a453636c745b077c60a8981b803
@@ -1233,7 +1233,7 @@ MonoBehaviour:
     ParentPath: Switches\Anthony
     guid: 27638023a565d7418bfab37636cd15b1
     GuidInternal: 
-    m_lastTime: -8584589986045292216
+    m_lastTime: -8584587193604040756
     List:
     - name: Ground_Material
       guid: 40e2080494fea64782f310d790d4c05f
@@ -1341,7 +1341,7 @@ MonoBehaviour:
     ParentPath: Switches\Elienna
     guid: c437981960abf84e9b98078bdbc19c55
     GuidInternal: 
-    m_lastTime: -8584587603014179828
+    m_lastTime: -8584587193604040756
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -1358,7 +1358,7 @@ MonoBehaviour:
     m_lastTime: -8584593019457324691
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000010000000120000001300000014000000150000001700000018000000190000001a0000001b0000001e000000200000002100000022000000
+  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000f00000010000000120000001300000014000000150000001700000018000000190000001a0000001b0000001c0000001d0000001e000000200000002100000022000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
