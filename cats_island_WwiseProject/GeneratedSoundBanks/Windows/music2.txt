@@ -7,8 +7,10 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	491961918	forest	Location			
 	748895195	None	Location			
+	1944232204	pond	Location			
 	2281727986	cat_tree	Location			
 	2822410613	lighthouse	Location			
+	3223325804	catnip	Location			
 	4075332698	beach	Location			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes

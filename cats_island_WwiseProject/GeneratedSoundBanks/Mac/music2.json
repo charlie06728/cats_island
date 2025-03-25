@@ -8,9 +8,9 @@
    {
     "Id": "1730564816",
     "Type": "User",
-    "GUID": "{BFB2BF0B-AF8A-4BA1-9AA2-A44B84EA3354}",
+    "GUID": "{614E52E7-C108-4820-A95F-CC513F99750C}",
     "Language": "SFX",
-    "Hash": "{1455D1CF-D8B4-05F1-6086-8BAFBB66AE16}",
+    "Hash": "{71723A3B-B5D1-6A32-9590-12B2C7EF088A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music2",
     "ShortName": "music2",
     "Path": "music2.bnk",
@@ -70,6 +70,6 @@
     ]
    }
   ],
-  "FileHash": "{6D3FE6AB-D720-69A8-662E-6749AAE176E0}"
+  "FileHash": "{5C9EA294-81D6-BC2A-2AE7-A3A4CBC47BA0}"
  }
 }

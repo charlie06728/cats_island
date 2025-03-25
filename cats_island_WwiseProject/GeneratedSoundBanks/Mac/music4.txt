@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3997730197	mus_Soundtrack4			\Anthony\mus_Stems\mus_Soundtrack4	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1176052424	Location			\Anthony\Location	
+
+State	ID	Name	State Group			Notes
+	491961918	forest	Location			
+	748895195	None	Location			
+	1944232204	pond	Location			
+	2281727986	cat_tree	Location			
+	2822410613	lighthouse	Location			
+	3223325804	catnip	Location			
+	4075332698	beach	Location			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	270066165	mus_4-4_86bpm_STEMenghorn_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\5B\{5B7C298B-0803-25D3-DD6F-8F5BF6CA0F67}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMenghorn_lp		12323820
+	723336337	mus_4-4_86bpm_STEMhorn_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\41\{416DF2EE-15BB-6A76-81C2-DB32CDD453F1}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMhorn_lp		12323820
+

@@ -8,45 +8,13 @@
    {
     "Id": "1730564819",
     "Type": "User",
-    "GUID": "{CC6523E7-0AFB-4DFE-B1B6-208FC4C92C74}",
+    "GUID": "{0D7FECC1-D223-440E-9605-DAD075EFE083}",
     "Language": "SFX",
-    "Hash": "{FA096A5B-6D73-F330-DBD6-B0A068400D26}",
+    "Hash": "{F3033F26-93D2-3932-62FC-5A592C31C449}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music1",
     "ShortName": "music1",
     "Path": "music1.bnk",
     "Media": [
-     {
-      "Id": "194792555",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "amb_forestnoon_lp.wav",
-      "CachePath": "BD/{BDB84EFB-5899-FE4B-DF5C-2C33208920AC}.wem"
-     },
-     {
-      "Id": "313505498",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "amb_beachambience_lp.wav",
-      "CachePath": "EC/{EC59F6B0-C3A1-648E-75B1-E7A05EF0612D}.wem"
-     },
-     {
-      "Id": "559378820",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "amb_forestafternoon_lp.wav",
-      "CachePath": "58/{58FFF58F-F516-DD00-1F37-3797C7738377}.wem"
-     },
-     {
-      "Id": "562578964",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "amb_forestmorning_lp.wav",
-      "CachePath": "0B/{0B928BEC-317B-FF7D-4252-94334708565F}.wem"
-     },
      {
       "Id": "866056481",
       "Language": "SFX",
@@ -65,27 +33,6 @@
      }
     ],
     "Events": [
-     {
-      "Id": "3855008934",
-      "Name": "amb_Ambience",
-      "ObjectPath": "\\Events\\Anthony\\amb_Ambience",
-      "GUID": "{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "194792555"
-       },
-       {
-        "Id": "313505498"
-       },
-       {
-        "Id": "559378820"
-       },
-       {
-        "Id": "562578964"
-       }
-      ]
-     },
      {
       "Id": "1211181101",
       "Name": "midday",
@@ -116,12 +63,6 @@
         "Name": "midday",
         "ObjectPath": "\\Events\\Anthony\\mus_Stems\\midday",
         "GUID": "{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}"
-       },
-       {
-        "Id": "3855008934",
-        "Name": "amb_Ambience",
-        "ObjectPath": "\\Events\\Anthony\\amb_Ambience",
-        "GUID": "{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}"
        }
       ],
       "ActionSetState": [
@@ -163,6 +104,12 @@
         "GUID": "{894A8BA2-79B4-40B0-8702-018614CB10FF}"
        },
        {
+        "Id": "1944232204",
+        "Name": "pond",
+        "ObjectPath": "\\States\\Anthony\\Location\\pond",
+        "GUID": "{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"
+       },
+       {
         "Id": "2281727986",
         "Name": "cat_tree",
         "ObjectPath": "\\States\\Anthony\\Location\\cat_tree",
@@ -191,6 +138,6 @@
     ]
    }
   ],
-  "FileHash": "{472E62AD-F79E-6746-9A8A-74EC1DB1D5DB}"
+  "FileHash": "{FBE5062D-B57E-37B6-2C56-4EFC3D42B029}"
  }
 }

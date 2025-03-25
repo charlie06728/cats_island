@@ -1,15 +1,32 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1112732945	CameraMode			\Elienna\CameraMode	
 	1176052424	Location			\Anthony\Location	
+	1310789233	Preferred_Treat			\Elienna\Preferred_Treat	
+	3235954734	View			\Elienna\View	
 
 State	ID	Name	State Group			Notes
+	748895195	None	CameraMode			
+	3677392886	camera_off	CameraMode			
+	3897109560	camera_on	CameraMode			
 	491961918	forest	Location			
 	748895195	None	Location			
+	1944232204	pond	Location			
 	2281727986	cat_tree	Location			
 	2822410613	lighthouse	Location			
+	3223325804	catnip	Location			
 	4075332698	beach	Location			
+	748895195	None	Preferred_Treat			
+	2365261663	not_preferred_treat	Preferred_Treat			
+	3541290649	yes_preferred_treat	Preferred_Treat			
+	603211426	album	View			
+	748895195	None	View			
+	3761523285	brochure	View			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3558246879	Volume_Global			\Anthony\Volume_Global	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	835198467	MasterBus			\Default Work Unit\MasterBus	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

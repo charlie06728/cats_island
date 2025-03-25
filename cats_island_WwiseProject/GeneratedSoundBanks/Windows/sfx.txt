@@ -22,6 +22,14 @@ Switch	ID	Name	Switch Group			Notes
 	2654748154	water	Ground_Material			
 	4248645337	grass	Ground_Material			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1112732945	CameraMode			\Elienna\CameraMode	
+
+State	ID	Name	State Group			Notes
+	748895195	None	CameraMode			
+	3677392886	camera_off	CameraMode			
+	3897109560	camera_on	CameraMode			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	15268054	sfx_FOOTSTEP_Sand_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\8F\{8F79D6C6-FE3A-3DD6-101C-7B9305F4550E}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\FOOTSTEPS_Sand\sfx_FOOTSTEP_Sand_02		72780
 	53369863	sfx_FOOTSTEP_Wood_02	E:\_Github\cats_island\cats_island_WwiseProject\.cache\B7\{B74F615D-06D2-5ADC-1E93-760C81E400F6}.wem		\Actor-Mixer Hierarchy\Anthony\sfx_footsteps\FOOTSTEPS_Wood\sfx_FOOTSTEP_Wood_02		125724
