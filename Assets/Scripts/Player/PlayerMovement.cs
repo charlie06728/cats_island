@@ -6,6 +6,7 @@ using DefaultNamespace.Sound;
 using Terrain;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -48,9 +49,12 @@ namespace Player {
         public AK.Wwise.Switch Water;
         public AK.Wwise.Switch Wood;
         
-        public AK.Wwise.Event Event;
+        [FormerlySerializedAs("Event")] public AK.Wwise.Event EventGround;
+        public AK.Wwise.Event EventJump;
+        public AK.Wwise.Event EventLand;
 
         protected bool InCollision;
+        protected bool Jumped;
         protected bool SoundPlaying;
 
         protected bool IsMoving {
@@ -148,6 +152,8 @@ namespace Player {
                     // _upAcceleration = Physics.gravity.y;
                     // Rigidbody.useGravity = true;
                     Debug.Log("Jumping");
+                    EventJump.Post(gameObject);
+                    Jumped = true;
                     // AkUnitySoundEngine.SetSwitch("sfx_Jump", "grass", gameObject);
                     // AkUnitySoundEngine.PostEvent("sfx_Jump", gameObject);
                 }
@@ -165,7 +171,7 @@ namespace Player {
         private void OnCollisionExit(Collision collision) {
             InCollision = false;
             /* Stop the footstep sound */
-            Event.Stop(gameObject);
+            EventGround.Stop(gameObject);
             
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0)
             {
@@ -175,6 +181,9 @@ namespace Player {
         
         private void OnCollisionEnter(Collision collision)
         {
+            if (Jumped) {
+                EventLand.Post(gameObject);
+            }
             InCollision = true;
             UpdateLayer(collision);
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) // Check if touching terrain
@@ -256,14 +265,14 @@ namespace Player {
         protected void PlayFootStepSound() {
             /* If it's not moving or not grounded, stop the sound */
             if (!IsMoving || !_isGrounded) {
-                Event.Stop(gameObject);
+                EventGround.Stop(gameObject);
                 SoundPlaying = false;
                 return;
             }
             
             if (SoundPlaying) return;
             SoundPlaying = true;
-            Event.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, OnSoundEnd, null);
+            EventGround.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, OnSoundEnd, null);
         }
         
         void OnSoundEnd(object in_cookie, AkCallbackType in_type, object in_info) {

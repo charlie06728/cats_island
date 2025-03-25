@@ -132242,6 +132242,22 @@ PrefabInstance:
       propertyPath: Water.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 2c7c4d710f792ce439444949f01742fe, type: 2}
+    - target: {fileID: 6752396979572187379, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: EventJump.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 18673e960fdecd14aac72433f9e282f4, type: 2}
+    - target: {fileID: 6752396979572187379, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: EventLand.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: bdfa4a66a5364524ebb836259e4710a2, type: 2}
+    - target: {fileID: 6752396979572187379, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: JumpEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 55166db6c90489f43ab22505da7aac22, type: 2}
+    - target: {fileID: 6752396979572187379, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: EventGround.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 503936172344f094b9a8f08216411bb8, type: 2}
     - target: {fileID: 8012816237433524855, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
