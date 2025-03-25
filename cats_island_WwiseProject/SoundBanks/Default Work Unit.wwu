@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{779545D5-D480-4EBA-9EC0-7055ABEEF632}" SchemaVersion="123">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{779545D5-D480-4EBA-9EC0-7055ABEEF632}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{779545D5-D480-4EBA-9EC0-7055ABEEF632}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="music1" ID="{0D7FECC1-D223-440E-9605-DAD075EFE083}">
+					<ObjectInclusionList>
+						<ObjectRef Name="mus_Soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="music2" ID="{614E52E7-C108-4820-A95F-CC513F99750C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="mus_Soundtrack2" ID="{DB1DFB55-3569-435A-B332-B50D07C8D5C9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="music3" ID="{9DB67D36-D2C4-441E-9D55-34DD856CD472}">
+					<ObjectInclusionList>
+						<ObjectRef Name="mus_Soundtrack3" ID="{405208F4-2D6F-4749-BC81-CF71C86B6502}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="music4" ID="{DDCA63C9-74B7-4123-8823-3A8CC138E55D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="mus_Soundtrack4" ID="{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="sfx" ID="{5054B7FD-17EE-4A49-B11C-CBEC5B5924B5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="mus_Bengal_Pose" ID="{9EB09BD4-906B-40E3-A2FD-58CB74414C74}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Tabby_Hungry_Meow" ID="{1EA2EA2C-4C22-419B-A2DC-568A07D026A4}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_Tuxedo_Pose" ID="{F0CBD46F-7FDA-424C-839A-0732A938101C}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cat_eat" ID="{A97A2493-C2D3-448D-8498-E52A3E382826}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_treat_drop" ID="{60736514-E12A-44F7-81DD-A333F1AE480D}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_CameraPicture" ID="{1162A07A-212F-4536-955C-6CD4ECE48AD7}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_Camera" ID="{CF50C1FD-65BD-4617-935A-BAD228646E4B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GreyCat_Hungry_Meow" ID="{578A7CDB-1325-468F-837E-E6EF60C3AB38}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_Leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_PageFlip" ID="{B54CB49C-30F3-47E4-BA15-FCAF4465D387}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_Jump" ID="{5E376275-EC84-4840-B5B8-14B496E03F88}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_Footsteps" ID="{887753D5-D896-48F6-A930-9858F96C2DF9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_GreyCat_Pose" ID="{5BCC366C-AB8D-4958-8EB0-A1099C7B5747}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_Landing" ID="{2F994791-D8E7-4AB8-B710-338F2428E8EF}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_Ragdoll_Pose" ID="{987521C7-E351-4B46-B357-1E5918725A5B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_CameraOn" ID="{DA27556A-B40C-4CBC-9AEC-93C6EA636251}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_CameraOff" ID="{40ECE379-A5B1-4D8A-9AAE-8B08B3122CC2}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cat_hiss" ID="{A25A2D05-EB2C-4E17-B22F-C002E81EC8A8}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ragdoll_Hungry_Meow" ID="{05100864-19CE-4EBD-A9A0-320999D44D78}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_treat_launch" ID="{DB2DA747-1DE1-4ED1-B1A3-6DBE29C2DA87}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_Tabby_Pose" ID="{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_Movement" ID="{09C77F85-0185-4F4C-9925-F2112FAB4041}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="mus_AllCatsFound" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Bengal_Hungry_Meow" ID="{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="ambience" ID="{EBF6918A-D7ED-484A-8012-6C323DDCBC79}">
+					<ObjectInclusionList>
+						<ObjectRef Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

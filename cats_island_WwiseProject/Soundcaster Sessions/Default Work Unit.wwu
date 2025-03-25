@@ -108,12 +108,15 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Volume_Global" ID="{C4122A7E-E930-45E0-B214-7C2CAE095566}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"/>
 							<Value>6.1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="camera_off" ID="{E22594D4-B893-462D-8F1C-28EF01A6DC69}"/>
 						<CurrentStateRef Name="yes_preferred_treat" ID="{380B757B-F0EC-4F4B-864A-42695A687CAB}"/>
 						<CurrentStateRef Name="None" ID="{BC77D07A-E2B5-4F76-9EAE-34B61AA0DCE1}"/>
 						<CurrentStateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>

@@ -8,9 +8,9 @@
    {
     "Id": "1730564817",
     "Type": "User",
-    "GUID": "{57ADB351-565B-47B1-B70F-E2667EAB822C}",
+    "GUID": "{9DB67D36-D2C4-441E-9D55-34DD856CD472}",
     "Language": "SFX",
-    "Hash": "{3BB26580-7386-B397-C961-F729644EE817}",
+    "Hash": "{876FB240-9A36-2BDB-0B4E-8EE009D9C32B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music3",
     "ShortName": "music3",
     "Path": "music3.bnk",
@@ -59,6 +59,6 @@
     ]
    }
   ],
-  "FileHash": "{61AE6BCA-C78A-AE29-399E-848D7A42A7CD}"
+  "FileHash": "{E3E327A4-EE65-AC9F-7A8D-24C47F023A50}"
  }
 }

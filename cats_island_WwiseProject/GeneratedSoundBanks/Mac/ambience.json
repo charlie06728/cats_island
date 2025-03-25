@@ -8,9 +8,9 @@
    {
     "Id": "85412153",
     "Type": "User",
-    "GUID": "{1BAA935E-8ACB-4A65-B470-86C68A74FFE3}",
+    "GUID": "{EBF6918A-D7ED-484A-8012-6C323DDCBC79}",
     "Language": "SFX",
-    "Hash": "{4ECB79C3-9F72-9039-2DA0-FA75FC15B8AD}",
+    "Hash": "{8F45C2E5-4B24-B91B-CA26-1544CD67E327}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\ambience",
     "ShortName": "ambience",
     "Path": "ambience.bnk",
@@ -81,6 +81,6 @@
     ]
    }
   ],
-  "FileHash": "{A8D88FBC-D7D0-B451-89E8-6D1F9885CDE1}"
+  "FileHash": "{0632E534-3334-C91E-3229-6D7F65F23172}"
  }
 }
