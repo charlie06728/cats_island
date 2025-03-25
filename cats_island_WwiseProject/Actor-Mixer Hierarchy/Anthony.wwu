@@ -3012,27 +3012,6 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="CameraMode" ID="{455A8831-3636-45C7-B077-C60A8981B803}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="camera_off" ID="{E22594D4-B893-462D-8F1C-28EF01A6DC69}"/>
-										<CustomState Name="" ID="{DD5B5774-6C3D-481C-8807-D1810C16E662}" ShortID="234443359">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-100"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="camera_on" ID="{6612E19F-2B37-4940-AE60-5D59732FA5E7}"/>
-										<CustomState Name="" ID="{F75F7B54-3C75-48DC-B050-8AC3D643D220}" ShortID="360294177"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="sfx_CAMERA_OnNoise_lp" ID="{3A95435D-1D9E-4AEE-B7C3-0522294BAA96}" Platform="Linked"/>
 							</ActiveSourceList>
