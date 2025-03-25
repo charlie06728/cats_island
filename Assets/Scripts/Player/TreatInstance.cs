@@ -17,7 +17,7 @@ namespace Player {
                     float distance = Vector3.Distance(cat.transform.position, transform.position);
                     if (distance < treatWorkDistance) {
                         /* Check if the cat is already following the treat */
-                        if (cat.Behaviour.State != CatState.FollowTreat) {
+                        if (cat.Behaviour.State != CatState.FollowTreat && cat.Behaviour.State != CatState.Eat) {
                             // if (!cat.Navigator.Agent.hasPath) {
                             /* Move the cat to the treat */
                             // cat.Navigator.MoveTo(transform.position);

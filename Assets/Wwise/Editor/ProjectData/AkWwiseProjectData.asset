@@ -38,11 +38,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 47dc6fec587c2446a7b9dbcf10e31f07
     GuidInternal: 
-    m_lastTime: -8584593019467938098
+    m_lastTime: -8584586696859289045
     List:
-    - name: Master Audio Bus
+    - name: MasterBus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
-      id: 3803692087
+      id: 835198467
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -50,10 +50,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 47dc6fec587c2446a7b9dbcf10e31f07
-      - ElementName: Master Audio Bus
+      - ElementName: MasterBus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+      Path: Master-Mixer Hierarchy\Default Work Unit\MasterBus
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,8 +66,92 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584587193604061373
-    List: []
+    m_lastTime: -8584586696859278672
+    List:
+    - name: ambience
+      guid: 8a91f6ebedd74a4880126c323ddcbc79
+      id: 85412153
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: ambience
+        ObjectType: 7
+        guid: 8a91f6ebedd74a4880126c323ddcbc79
+      Path: SoundBanks\Default Work Unit\ambience
+    - name: music1
+      guid: c1ec7f0d23d20e449605dad075efe083
+      id: 1730564819
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: music1
+        ObjectType: 7
+        guid: c1ec7f0d23d20e449605dad075efe083
+      Path: SoundBanks\Default Work Unit\music1
+    - name: music2
+      guid: e7524e6108c12048a95fcc513f99750c
+      id: 1730564816
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: music2
+        ObjectType: 7
+        guid: e7524e6108c12048a95fcc513f99750c
+      Path: SoundBanks\Default Work Unit\music2
+    - name: music3
+      guid: 367db69dc4d21e449d5534dd856cd472
+      id: 1730564817
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: music3
+        ObjectType: 7
+        guid: 367db69dc4d21e449d5534dd856cd472
+      Path: SoundBanks\Default Work Unit\music3
+    - name: music4
+      guid: c963caddb774234188233a8cc138e55d
+      id: 1730564822
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: music4
+        ObjectType: 7
+        guid: c963caddb774234188233a8cc138e55d
+      Path: SoundBanks\Default Work Unit\music4
+    - name: sfx
+      guid: fdb75450ee17494ab11ccbec5b5924b5
+      id: 393239870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d545957780d4ba4e9ec07055abeef632
+      - ElementName: sfx
+        ObjectType: 7
+        guid: fdb75450ee17494ab11ccbec5b5924b5
+      Path: SoundBanks\Default Work Unit\sfx
   EventWwu:
   - PhysicalPath: Events\Anthony.wwu
     PathAndIcons:
@@ -80,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584587193627599354
+    m_lastTime: -8584586696872974517
     List:
     - name: amb_Ambience
       guid: 53a4f75f8bae2c4a9a65689f2a7ce253
@@ -811,7 +895,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Anthony
     guid: 747ed4c5d250174d9c25eb13858cdf27
     GuidInternal: 
-    m_lastTime: -8584593019484299801
+    m_lastTime: -8584586696872974517
     List:
     - name: Time_Of_Day
       guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
@@ -827,6 +911,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
       Path: Game Parameters\Anthony\Time_Of_Day
+    - name: Volume_Global
+      guid: 7e2a12c430e9e045b2147c2cae095566
+      id: 3558246879
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Anthony
+        ObjectType: 12
+        guid: 747ed4c5d250174d9c25eb13858cdf27
+      - ElementName: Volume_Global
+        ObjectType: 13
+        guid: 7e2a12c430e9e045b2147c2cae095566
+      Path: Game Parameters\Anthony\Volume_Global
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -1021,74 +1119,8 @@ MonoBehaviour:
     ParentPath: States\Elienna
     guid: 7f2b418ba36b2d40a4e4e5cc6a552367
     GuidInternal: 
-    m_lastTime: -8584587193604040756
+    m_lastTime: -8584586696859278672
     List:
-    - name: CameraMode
-      guid: 31885a453636c745b077c60a8981b803
-      id: 1112732945
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Elienna
-        ObjectType: 12
-        guid: 7f2b418ba36b2d40a4e4e5cc6a552367
-      - ElementName: CameraMode
-        ObjectType: 9
-        guid: 31885a453636c745b077c60a8981b803
-      Path: States\Elienna\CameraMode
-      values:
-      - name: camera_off
-        guid: d49425e293b82d468f1c28ef01a6dc69
-        id: 3677392886
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Elienna
-          ObjectType: 12
-          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
-        - ElementName: CameraMode
-          ObjectType: 9
-          guid: 31885a453636c745b077c60a8981b803
-        - ElementName: camera_off
-          ObjectType: 8
-          guid: d49425e293b82d468f1c28ef01a6dc69
-      - name: camera_on
-        guid: 9fe11266372b4049ae605d59732fa5e7
-        id: 3897109560
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Elienna
-          ObjectType: 12
-          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
-        - ElementName: CameraMode
-          ObjectType: 9
-          guid: 31885a453636c745b077c60a8981b803
-        - ElementName: camera_on
-          ObjectType: 8
-          guid: 9fe11266372b4049ae605d59732fa5e7
-      - name: None
-        guid: 5c63b5f4e668d84191873a561f56beff
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Elienna
-          ObjectType: 12
-          guid: 7f2b418ba36b2d40a4e4e5cc6a552367
-        - ElementName: CameraMode
-          ObjectType: 9
-          guid: 31885a453636c745b077c60a8981b803
-        - ElementName: None
-          ObjectType: 8
-          guid: 5c63b5f4e668d84191873a561f56beff
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: Preferred_Treat
       guid: fd4d8967cf5f5148939979a53e10a071
       id: 1310789233
