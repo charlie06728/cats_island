@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_AMBIENCE = 3855008934U;
+        static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
+        static const AkUniqueID GREYCAT_HUNGRY_MEOW = 1995037903U;
         static const AkUniqueID MIDDAY = 1211181101U;
         static const AkUniqueID MUS_ALLCATSFOUND = 3891823391U;
         static const AkUniqueID MUS_BENGAL_POSE = 3509682696U;
@@ -25,29 +27,24 @@ namespace AK
         static const AkUniqueID MUS_SOUNDTRACK4 = 3997730197U;
         static const AkUniqueID MUS_TABBY_POSE = 4016717323U;
         static const AkUniqueID MUS_TUXEDO_POSE = 1461319202U;
+        static const AkUniqueID RAGDOLL_HUNGRY_MEOW = 2846976621U;
         static const AkUniqueID SFX_CAMERAOFF = 192727511U;
         static const AkUniqueID SFX_CAMERAON = 2801607203U;
         static const AkUniqueID SFX_CAMERAPICTURE = 1570034758U;
+        static const AkUniqueID SFX_CAT_EAT = 3836755088U;
+        static const AkUniqueID SFX_CAT_HISS = 550596841U;
         static const AkUniqueID SFX_FOOTSTEPS = 3364658470U;
         static const AkUniqueID SFX_JUMP = 3695098761U;
         static const AkUniqueID SFX_LANDING = 2929962202U;
         static const AkUniqueID SFX_PAGEFLIP = 2084073701U;
+        static const AkUniqueID SFX_TREAT_DROP = 3249613541U;
+        static const AkUniqueID SFX_TREAT_LAUNCH = 651286159U;
+        static const AkUniqueID TABBY_HUNGRY_MEOW = 2553855402U;
+        static const AkUniqueID TUXEDO_HUNGRY_MEOW = 4111794441U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace CAMERAMODE
-        {
-            static const AkUniqueID GROUP = 1112732945U;
-
-            namespace STATE
-            {
-                static const AkUniqueID CAMERA_OFF = 3677392886U;
-                static const AkUniqueID CAMERA_ON = 3897109560U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace CAMERAMODE
-
         namespace LOCATION
         {
             static const AkUniqueID GROUP = 1176052424U;

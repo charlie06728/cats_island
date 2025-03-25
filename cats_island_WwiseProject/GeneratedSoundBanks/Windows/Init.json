@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C47EF080-AE4B-3A01-65AF-D69373E93708}",
+    "Hash": "{791C7356-0AC1-B9F3-58AE-A4B9E19C3AFF}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -57,32 +57,6 @@
      }
     ],
     "StateGroups": [
-     {
-      "Id": "1112732945",
-      "Name": "CameraMode",
-      "ObjectPath": "\\States\\Elienna\\CameraMode",
-      "GUID": "{455A8831-3636-45C7-B077-C60A8981B803}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Elienna\\CameraMode\\None",
-        "GUID": "{F4B5635C-68E6-41D8-9187-3A561F56BEFF}"
-       },
-       {
-        "Id": "3677392886",
-        "Name": "camera_off",
-        "ObjectPath": "\\States\\Elienna\\CameraMode\\camera_off",
-        "GUID": "{E22594D4-B893-462D-8F1C-28EF01A6DC69}"
-       },
-       {
-        "Id": "3897109560",
-        "Name": "camera_on",
-        "ObjectPath": "\\States\\Elienna\\CameraMode\\camera_on",
-        "GUID": "{6612E19F-2B37-4940-AE60-5D59732FA5E7}"
-       }
-      ]
-     },
      {
       "Id": "1176052424",
       "Name": "Location",
@@ -222,6 +196,6 @@
     ]
    }
   ],
-  "FileHash": "{6115ACD0-79BB-4588-397D-5A40ACB1A2D1}"
+  "FileHash": "{F0F15A40-2BB2-4D5D-9F97-8F73DF2ED273}"
  }
 }

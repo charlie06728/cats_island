@@ -1,13 +1,9 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1112732945	CameraMode			\Elienna\CameraMode	
 	1176052424	Location			\Anthony\Location	
 	1310789233	Preferred_Treat			\Elienna\Preferred_Treat	
 	3235954734	View			\Elienna\View	
 
 State	ID	Name	State Group			Notes
-	748895195	None	CameraMode			
-	3677392886	camera_off	CameraMode			
-	3897109560	camera_on	CameraMode			
 	491961918	forest	Location			
 	748895195	None	Location			
 	1944232204	pond	Location			
