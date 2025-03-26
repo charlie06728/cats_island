@@ -15,5 +15,4 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	270066165	mus_4-4_86bpm_STEMenghorn_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\5B\{5B7C298B-0803-25D3-DD6F-8F5BF6CA0F67}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMenghorn_lp		12323820
-	723336337	mus_4-4_86bpm_STEMhorn_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\41\{416DF2EE-15BB-6A76-81C2-DB32CDD453F1}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMhorn_lp		12323820
 
