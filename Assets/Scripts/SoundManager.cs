@@ -5,6 +5,7 @@ namespace DefaultNamespace {
     public class SoundManager : MonoBehaviour {
         public AK.Wwise.Event amb;
         public AK.Wwise.Event snd;
+        public AK.Wwise.RTPC timeOfDay;
         public AkEvent ambEvent;
 
         protected uint sndID;
@@ -16,10 +17,8 @@ namespace DefaultNamespace {
         
         protected void Update() {
             /* Set RTPC */
-            AKRESULT setRes = AkSoundEngine.SetRTPCValue("Time_Of_Day", TimeManager.Instance.NormalizeTimeSound);
-            // int valueType = 1;
-            // AKRESULT result = AkSoundEngine.GetRTPCValue("Time_Of_Day", null, sndID, out float timeOfDay, ref valueType);
-            // Debug.Log("Time of day for WWISE : " + timeOfDay);
+            timeOfDay.SetValue(gameObject, TimeManager.Instance.NormalizeTimeSound);
+            // AKRESULT setRes = AkSoundEngine.SetRTPCValue("Time_Of_Day", TimeManager.Instance.NormalizeTimeSound);
         }
     }
 }

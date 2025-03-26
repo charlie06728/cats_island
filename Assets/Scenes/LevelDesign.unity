@@ -28773,6 +28773,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d9a9e657a6a5650468ff2553498d9ff1, type: 2}
+  timeOfDay:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db2bd61588e3d4745826cf56daf397d5, type: 2}
   ambEvent: {fileID: 0}
 --- !u!114 &468484094
 MonoBehaviour:
