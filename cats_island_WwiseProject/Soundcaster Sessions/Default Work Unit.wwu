@@ -62,7 +62,7 @@
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<ObjectRef Name="mus_Soundtrack3" ID="{405208F4-2D6F-4749-BC81-CF71C86B6502}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
@@ -82,6 +82,10 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="mus_Soundtrack4" ID="{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Bengal_Hungry_Meow" ID="{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
 							<Position X="3" Y="2"/>
 						</Module>
@@ -92,6 +96,10 @@
 						<Module>
 							<ObjectRef Name="sfx_treat_drop" ID="{60736514-E12A-44F7-81DD-A333F1AE480D}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
 							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="amb_Ambience" ID="{5FF7A453-AE8B-4A2C-9A65-689F2A7CE253}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
@@ -113,7 +121,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"/>
-							<Value>6.1</Value>
+							<Value>12</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
