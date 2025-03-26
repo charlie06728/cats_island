@@ -415,6 +415,10 @@ MonoBehaviour:
   walkProportion: 0.7
   sitProportion: 0.3
   castPoints: []
+  catEat:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 476c29b0a0048cd48861dbbdc0dfbb41, type: 2}
   livingArea: {fileID: 0}
   catName: 
   catBreed: Bengal

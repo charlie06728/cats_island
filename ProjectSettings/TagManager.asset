@@ -6,6 +6,12 @@ TagManager:
   tags:
   - CameraScroll
   - Terrain
+  - CatTree
+  - Pond
+  - Beach
+  - Catnip
+  - LightHouse
+  - Forest
   layers:
   - Default
   - TransparentFX
@@ -19,7 +25,7 @@ TagManager:
   - Treat
   - Wood
   - Water
-  - 
+  - Area
   - 
   - 
   - 

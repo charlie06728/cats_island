@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1982ad8b8a1e3c641bec9fd9cc236647, type: 3}
+  m_Name: DB2DA747-1DE1-4ED1-B1A3-6DBE29C2DA87
+  m_EditorClassIdentifier: 
+  objectName: sfx_treat_launch
+  id: 651286159
+  guid: DB2DA747-1DE1-4ED1-B1A3-6DBE29C2DA87
+  IsInUserDefinedSoundBank: 1
+  IsAutoBankLoaded: 0

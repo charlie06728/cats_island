@@ -35,6 +35,7 @@ namespace Cat.Behaviours {
                     Cat.Behaviour.SwitchState(CatState.Pose);
                 }
             } else {
+                Cat.catEat.Post(Cat.gameObject);
                 Eating = true;
                 StartEtaTime = Time.time;
                 /* Trigger the eating animation */

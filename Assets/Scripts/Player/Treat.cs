@@ -7,6 +7,7 @@ using UnityEngine.Serialization;
 
 namespace Player {
     public class Treat : Item {
+        public AK.Wwise.Event TreatLaunch;
         public GameObject treatPrefab;
         public float treat_distance; // Distance at which we should be able to give a treat
         [NonSerialized] public int Count = 10;
@@ -39,6 +40,7 @@ namespace Player {
 
         public bool GiveTreat() {
             if (Count <= 0) return false;
+            TreatLaunch.Post(gameObject);
             Count--;
             RaycastHit hit;
             

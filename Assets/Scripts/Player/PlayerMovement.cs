@@ -53,9 +53,17 @@ namespace Player {
         public AK.Wwise.Event EventJump;
         public AK.Wwise.Event EventLand;
 
+        public AK.Wwise.State catTree;
+        public AK.Wwise.State catnip;
+        public AK.Wwise.State lightHouse;
+        public AK.Wwise.State pond;
+        public AK.Wwise.State beach;
+        public AK.Wwise.State forest;
+
         protected bool InCollision;
         protected bool Jumped;
         protected bool SoundPlaying;
+        protected bool EnteredArea;
 
         protected bool IsMoving {
             get {
@@ -169,6 +177,7 @@ namespace Player {
         }
         
         private void OnCollisionExit(Collision collision) {
+            
             InCollision = false;
             /* Stop the footstep sound */
             EventGround.Stop(gameObject);
@@ -178,7 +187,54 @@ namespace Player {
                 _isGrounded = false;
             }
         }
-        
+
+        private void OnTriggerExit(Collider collision) {
+            /* Get the area layer mask */
+            LayerMask areaLayer = LayerMask.NameToLayer("Area");
+            
+            if (collision.gameObject.layer == areaLayer.value) {
+                EnteredArea = false;
+            }
+        }
+
+        private void OnTriggerEnter(Collider collision) {
+            /* Get the area layer mask */
+            LayerMask areaLayer = LayerMask.NameToLayer("Area");
+            if (collision.gameObject.layer == areaLayer.value) {
+                /* Get the obj tag, and set RTPC correspondingly */
+                string tag = collision.gameObject.tag;
+                Debug.Log("Entered area: " + tag);
+                switch (tag) {
+                    case "CatTree":
+                        catTree.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "Catnip":
+                        catnip.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "LightHouse":
+                        lightHouse.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "Pond":
+                        pond.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "Beach":
+                        beach.SetValue();
+                        break;
+                    case "Forest":
+                        forest.SetValue();
+                        break;
+                    default:
+                        beach.SetValue();
+                        break;
+                }
+                return;
+            }
+        }
+
         private void OnCollisionEnter(Collision collision)
         {
             if (Jumped) {
@@ -219,16 +275,19 @@ namespace Player {
                         break;
                     case "grass":
                         Grass.SetValue(gameObject);
+                        if (!EnteredArea) forest.SetValue();
                         break;
                     case "sand":
                         Sand.SetValue(gameObject);
+                        if (!EnteredArea) beach.SetValue();
                         break;
                     default:
-                        Wood.SetValue(gameObject);
+                        Sand.SetValue(gameObject);
+                        if (!EnteredArea) beach.SetValue();
                         break;
                 }
             } else {
-                Sand.SetValue(gameObject);
+                return;
             }
             
             PlayFootStepSound();
@@ -257,7 +316,7 @@ namespace Player {
             }
 
             // Define terrain textures manually (must match Unity terrain layers)
-            string[] terrainTextures = { "grass", "sand", "grass", "wood" };
+            string[] terrainTextures = { "grass", "sand", "grass", "sand" };
             Debug.Log(terrainTextures[maxIndex]);
             return terrainTextures[maxIndex];
         }

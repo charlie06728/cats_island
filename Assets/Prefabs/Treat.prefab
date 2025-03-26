@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5746142890480141066}
   - component: {fileID: 5922724281337243212}
+  - component: {fileID: 7965239612239517360}
   m_Layer: 0
   m_Name: Treat
   m_TagString: Untagged
@@ -79,8 +80,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 0}
   hook: {fileID: 5130405280807645016}
+  TreatLaunch:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 69ee65fb22a523c40a1a10fb417ac138, type: 2}
   treatPrefab: {fileID: 7874631266701535451, guid: f0b5246cbb046b04ab56485f8c37ebd9, type: 3}
   treat_distance: 20
+--- !u!114 &7965239612239517360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7874631266701535451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280a61356edf39945997629f4e7ef7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 40d1ae248fb641743aa2445b77698d21, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1001 &563665616811217930
 PrefabInstance:
   m_ObjectHideFlags: 0
