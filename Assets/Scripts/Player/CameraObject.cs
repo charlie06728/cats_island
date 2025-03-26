@@ -20,8 +20,10 @@ namespace Player {
         public AK.Wwise.Event cameraOn;
         public AK.Wwise.Event cameraOff;
         public Camera photoCamera;
+        public GameObject screen;
         public Vector3 cameraScale;
         public GameObject photoPrefab;
+        public GameObject screenCameraAnimationPrefab;
         public AudioSource cameraSoundTakePicture;
         public LayerMask catLayerMask;
         [NonSerialized] public Photo CurrentPhoto;
@@ -49,7 +51,9 @@ namespace Player {
 
         private float _prevTakeTime = 0f;
         private Animator _snapAnimator;
+        private Animator _screenSnapAnimator;
         private CameraAnimation _cameraAnimation;
+        private CameraAnimation _screenCameraAnimation;
         
         /* child mesh renderers */
         private MeshRenderer[] meshRenderers;
@@ -142,6 +146,14 @@ namespace Player {
                 _cameraAnimation.ShowImage();
                 // _snapAnimator.SetTrigger("TakePhoto");
                 _snapAnimator.Play("CameraAnimation", 0, 0f);
+            } else {
+                /* Instantiate and set active all components */
+                if (_screenSnapAnimator == null) _screenSnapAnimator = GameObject.Instantiate(screenCameraAnimationPrefab, screen.transform).GetComponent<Animator>();
+                if (_screenCameraAnimation == null) _screenCameraAnimation = _screenSnapAnimator.gameObject.GetComponent<CameraAnimation>();
+                _screenCameraAnimation.HideImage();
+                _screenSnapAnimator.gameObject.SetActive(true);
+                _screenCameraAnimation.ShowImage();
+                _screenSnapAnimator.Play("CameraAnimation", 0, 0);
             }
             
             /* Record the camera position */
