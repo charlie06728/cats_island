@@ -164,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584585912624404383
+    m_lastTime: -8584584962393148063
     List:
     - name: amb_Ambience
       guid: 53a4f75f8bae2c4a9a65689f2a7ce253
@@ -181,8 +181,8 @@ MonoBehaviour:
         guid: 53a4f75f8bae2c4a9a65689f2a7ce253
       Path: Events\Anthony\amb_Ambience
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: midday
       guid: cda96a43a678154a94fa4e7909faaa26
       id: 1211181101
@@ -201,8 +201,8 @@ MonoBehaviour:
         guid: cda96a43a678154a94fa4e7909faaa26
       Path: Events\Anthony\mus_Stems\midday
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: mus_AllCatsFound
       guid: 9ed4d49ee6655e4fafbbd7e1535ad178
       id: 3891823391
@@ -221,8 +221,8 @@ MonoBehaviour:
         guid: 9ed4d49ee6655e4fafbbd7e1535ad178
       Path: Events\Anthony\mus_Leitmotif\mus_AllCatsFound
       maxAttenuation: 0
-      maxDuration: 5.755833
-      minDuration: 5.755833
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Bengal_Pose
       guid: d49bb09e6b90e340a2fd58cb74414c74
       id: 3509682696
@@ -241,8 +241,8 @@ MonoBehaviour:
         guid: d49bb09e6b90e340a2fd58cb74414c74
       Path: Events\Anthony\mus_Leitmotif\mus_Bengal_Pose
       maxAttenuation: 0
-      maxDuration: 4.8928614
-      minDuration: 4.8928614
+      maxDuration: -1
+      minDuration: -1
     - name: mus_GreyCat_Pose
       guid: 6c36cc5b8dab58498eb0a1099c7b5747
       id: 3109386516
@@ -261,8 +261,8 @@ MonoBehaviour:
         guid: 6c36cc5b8dab58498eb0a1099c7b5747
       Path: Events\Anthony\mus_Leitmotif\mus_GreyCat_Pose
       maxAttenuation: 0
-      maxDuration: 5.215802
-      minDuration: 5.215802
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Leitmotif
       guid: 1840a09551c46547b875cdca2a474610
       id: 1773569240
@@ -298,8 +298,8 @@ MonoBehaviour:
         guid: c721759851e3464bb3571e5918725a5b
       Path: Events\Anthony\mus_Leitmotif\mus_Ragdoll_Pose
       maxAttenuation: 0
-      maxDuration: 5.5813956
-      minDuration: 5.5813956
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Soundtrack
       guid: 2d357d227c70e5488db5f2320a44ca1b
       id: 1283697787
@@ -318,8 +318,8 @@ MonoBehaviour:
         guid: 2d357d227c70e5488db5f2320a44ca1b
       Path: Events\Anthony\mus_Stems\mus_Soundtrack
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Soundtrack2
       guid: 55fb1ddb69355a43b332b50d07c8d5c9
       id: 3997730195
@@ -338,8 +338,8 @@ MonoBehaviour:
         guid: 55fb1ddb69355a43b332b50d07c8d5c9
       Path: Events\Anthony\mus_Stems\mus_Soundtrack2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Soundtrack3
       guid: f40852406f2d4947bc81cf71c86b6502
       id: 3997730194
@@ -358,8 +358,8 @@ MonoBehaviour:
         guid: f40852406f2d4947bc81cf71c86b6502
       Path: Events\Anthony\mus_Stems\mus_Soundtrack3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Soundtrack4
       guid: 1f04dbd33c96d14fb3ff13f06f4b6c6b
       id: 3997730197
@@ -378,8 +378,8 @@ MonoBehaviour:
         guid: 1f04dbd33c96d14fb3ff13f06f4b6c6b
       Path: Events\Anthony\mus_Stems\mus_Soundtrack4
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Stems
       guid: 5b89c696ee9a734280fd73f0bf0450b5
       id: 2325593425
@@ -415,8 +415,8 @@ MonoBehaviour:
         guid: d4c44207f36dde4e801c84a1c52029c4
       Path: Events\Anthony\mus_Leitmotif\mus_Tabby_Pose
       maxAttenuation: 0
-      maxDuration: 5.5813956
-      minDuration: 5.5813956
+      maxDuration: -1
+      minDuration: -1
     - name: mus_Tuxedo_Pose
       guid: 6fd4cbf0da7f4c42839a0732a938101c
       id: 1461319202
@@ -435,8 +435,8 @@ MonoBehaviour:
         guid: 6fd4cbf0da7f4c42839a0732a938101c
       Path: Events\Anthony\mus_Leitmotif\mus_Tuxedo_Pose
       maxAttenuation: 0
-      maxDuration: 5.5813956
-      minDuration: 5.5813956
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_Camera
       guid: fdc150cfbd651746935abad228646e4b
       id: 3750115664
@@ -472,8 +472,8 @@ MonoBehaviour:
         guid: 79e3ec40b1a58a4d9aae8b08b3122cc2
       Path: Events\Anthony\sfx_Camera\sfx_CameraOff
       maxAttenuation: 0
-      maxDuration: 0.1875
-      minDuration: 0.1875
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_CameraOn
       guid: 6a5527da0cb4bc4c9aec93c6ea636251
       id: 2801607203
@@ -492,8 +492,8 @@ MonoBehaviour:
         guid: 6a5527da0cb4bc4c9aec93c6ea636251
       Path: Events\Anthony\sfx_Camera\sfx_CameraOn
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_CameraPicture
       guid: 7aa062112f213645955c6cd4ece48ad7
       id: 1570034758
@@ -512,8 +512,8 @@ MonoBehaviour:
         guid: 7aa062112f213645955c6cd4ece48ad7
       Path: Events\Anthony\sfx_Camera\sfx_CameraPicture
       maxAttenuation: 0
-      maxDuration: 0.35197917
-      minDuration: 0.35197917
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_Footsteps
       guid: d553778896d8f648a9309858f96c2df9
       id: 3364658470
@@ -532,8 +532,8 @@ MonoBehaviour:
         guid: d553778896d8f648a9309858f96c2df9
       Path: Events\Anthony\sfx_Movement\sfx_Footsteps
       maxAttenuation: 0
-      maxDuration: 2.2513592
-      minDuration: 0.33726084
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_Jump
       guid: 7562375e84ec4048b5b814b496e03f88
       id: 3695098761
@@ -552,8 +552,8 @@ MonoBehaviour:
         guid: 7562375e84ec4048b5b814b496e03f88
       Path: Events\Anthony\sfx_Movement\sfx_Jump
       maxAttenuation: 0
-      maxDuration: 1.25
-      minDuration: 0.15766808
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_Landing
       guid: 9147992fe7d8b84ab710338f2428e8ef
       id: 2929962202
@@ -572,8 +572,8 @@ MonoBehaviour:
         guid: 9147992fe7d8b84ab710338f2428e8ef
       Path: Events\Anthony\sfx_Movement\sfx_Landing
       maxAttenuation: 0
-      maxDuration: 2.25
-      minDuration: 0.334087
+      maxDuration: -1
+      minDuration: -1
     - name: sfx_Movement
       guid: 857fc70985014c4f9925f2112fab4041
       id: 1332754450
@@ -606,8 +606,8 @@ MonoBehaviour:
         guid: 9cb44cb5f330e447ba15fcaf4465d387
       Path: Events\Anthony\sfx_PageFlip
       maxAttenuation: 0
-      maxDuration: 1.683693
-      minDuration: 1.0305656
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
