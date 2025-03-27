@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{DDCA63C9-74B7-4123-8823-3A8CC138E55D}",
     "Language": "SFX",
-    "Hash": "{1B2D2965-C92A-E0CD-9ED7-E913CA595005}",
+    "Hash": "{8D916EDD-46D3-3425-DD69-8744A6AF0ABE}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music4",
     "ShortName": "music4",
     "Path": "music4.bnk",
     "Media": [
+     {
+      "Id": "39169034",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMhorn_lp.wav",
+      "CachePath": "E0/{E04C593C-3BAA-3D03-A90A-5FBFB6B3DCA9}.wem"
+     },
      {
       "Id": "270066165",
       "Language": "SFX",
@@ -33,6 +41,9 @@
       "DurationType": "Infinite",
       "MediaRefs": [
        {
+        "Id": "39169034"
+       },
+       {
         "Id": "270066165"
        }
       ]
@@ -40,6 +51,6 @@
     ]
    }
   ],
-  "FileHash": "{F0B94418-77A9-689B-9664-9648827CA932}"
+  "FileHash": "{4651E832-A37D-A95C-9EE6-C9888AC6157D}"
  }
 }

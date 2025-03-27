@@ -14,5 +14,6 @@ State	ID	Name	State Group			Notes
 	4075332698	beach	Location			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	270066165	mus_4-4_86bpm_STEMenghorn_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\5B\{5B7C298B-0803-25D3-DD6F-8F5BF6CA0F67}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMenghorn_lp		12323820
+	39169034	mus_4-4_86bpm_STEMhorn_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\E0\{E04C593C-3BAA-3D03-A90A-5FBFB6B3DCA9}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMhorn_lp		12323820
+	270066165	mus_4-4_86bpm_STEMenghorn_lp	Y:\Desktop\cats_island\cats_island_WwiseProject\.cache\5B\{5B7C298B-0803-25D3-DD6F-8F5BF6CA0F67}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMenghorn_lp		12323820
 

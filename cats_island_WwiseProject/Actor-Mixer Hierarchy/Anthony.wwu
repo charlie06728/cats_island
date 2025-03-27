@@ -851,7 +851,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>2</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1343,34 +1343,12 @@
 								<ActiveSource Name="mus_4-4_86bpm_STEMbongos_lp" ID="{7E576079-9BE5-46F1-BEA2-DD3FD7B770E7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="mus_4-4_86bpm_STEMhorn_lp" ID="{4E2F0F14-C61E-4B8C-ADAA-7BF4131850E1}" ShortID="141042938">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="MasterBus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9CC8383F-DC6B-42D6-A53F-8D34BA6F1532}">
-									<Language>SFX</Language>
-									<AudioFile>mus_4-4_86bpm_STEMenghorn_lp.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="723336337"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9CC8383F-DC6B-42D6-A53F-8D34BA6F1532}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9B5A78B4-0C25-4C99-B48C-499AF7B15080}" ShortID="369745826">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1456,6 +1434,94 @@
 							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{39AE0999-279E-48F3-8278-9751792D2EFD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="mus_4-4_86bpm_STEMhorn_lp" ID="{86E97556-ACA1-4F4B-A069-1ABB8563ED3A}" ShortID="56774333">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="MasterBus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC6FDC47-7C58-4624-A7B9-DBCF10E31F07}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mus_4-4_86bpm_STEMhorn_lp" ID="{436B9216-7A02-4903-9D37-D94030983379}">
+									<Language>SFX</Language>
+									<AudioFile>mus_4-4_86bpm_STEMhorn_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="39169034"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Location" ID="{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
+										<CustomState Name="" ID="{4CCCCA09-D9A2-4E5F-ADF4-2D767F1B987B}" ShortID="631385859"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
+										<CustomState Name="" ID="{A577EA99-1F45-4F2F-80EA-54AACA782B00}" ShortID="822559778">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="forest" ID="{FC60ACC4-7D06-4445-9241-52CC6047EB06}"/>
+										<CustomState Name="" ID="{A95B3316-62CD-4354-BF41-9C7B24DA2B96}" ShortID="112642064">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
+										<CustomState Name="" ID="{453BA4E8-5DA1-446D-BDD1-9164AF16EC71}" ShortID="963864878">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
+										<CustomState Name="" ID="{0D437B83-D462-4DE1-8C0B-0A328BCAF3CE}" ShortID="153316274">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
+										<CustomState Name="" ID="{66A0DF60-622A-481D-A290-C1F3FEE5D667}" ShortID="107233012">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="mus_4-4_86bpm_STEMhorn_lp" ID="{436B9216-7A02-4903-9D37-D94030983379}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

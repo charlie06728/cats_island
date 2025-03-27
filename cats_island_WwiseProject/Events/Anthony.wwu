@@ -328,16 +328,9 @@
 						<Event Name="mus_Soundtrack4" ID="{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}">
 							<ChildrenList>
 								<Action Name="" ID="{ABB67F34-41C2-4487-8D46-53D6119E9738}" ShortID="791997658">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_4-4_86bpm_STEMhorn_lp" ID="{4E2F0F14-C61E-4B8C-ADAA-7BF4131850E1}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+											<ObjectRef Name="mus_4-4_86bpm_STEMhorn_lp" ID="{86E97556-ACA1-4F4B-A069-1ABB8563ED3A}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
