@@ -59,6 +59,7 @@ namespace Server {
         
         /* Player obj */
         public GameObject player;
+        public Player.Player playerScript;
         
         protected void Awake() {
             if (Instance == null) {

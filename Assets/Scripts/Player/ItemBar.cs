@@ -20,6 +20,7 @@ namespace Player {
         public GameObject heartSelect;
 
         public void SetCurrentItem(Items item) {
+            player.Pocket.CurrentItem = item;
             switch (item) {
                 case Items.Camera:
                     DeSelectAll();

@@ -18,6 +18,7 @@ namespace Cat {
     public class CatBehaviour : MonoBehaviour {
         public Animator Animator;
         public Cat Cat;
+        public GameObject catIdentifier;
         [NonSerialized] public CatState State = CatState.Idle;
         [NonSerialized] public TreatInstance TargetTreat;
         
@@ -34,6 +35,13 @@ namespace Cat {
             StateToBehaviour[State].Disable();
             State = state;
             StateToBehaviour[State].Enable();
+        }
+        
+        public void StopOtherAnimations() {
+            Cat.Behaviour.Animator.SetBool("IsWondering", false);
+            Cat.Behaviour.Animator.SetBool("IsWalking", false);
+            Cat.Behaviour.Animator.SetBool("IsSitting", false);
+            Cat.Navigator.Agent.ResetPath();
         }
         
         protected void Awake() {

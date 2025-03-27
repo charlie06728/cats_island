@@ -259,7 +259,7 @@ namespace Player {
                 
                 /* Cast a ray between main camera and cat to see if being blocked by terrains */
                 RaycastHit cameraHit;
-                Vector3 rayDirection = obj.transform.position - camera.transform.position;
+                Vector3 rayDirection = cat.Behaviour.catIdentifier.transform.position - camera.transform.position;
                 if (Physics.Raycast(camera.transform.position, rayDirection, out cameraHit, rayDirection.magnitude, layerMask:cameraLayerMask)) {
                     continue;
                 }
