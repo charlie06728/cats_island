@@ -11,51 +11,77 @@ namespace Cat.Behaviours {
         public CatIdleBehaviour(Cat cat) : base(cat) { }
         protected float WonderStopTime;
         protected float WonderTime = 2.5f;
+        protected float playerAlartDistance = 15;
+        protected float runAwayDistance = 7;
 
         public override void Update() {
             base.Update();
             
-            /* Check if time delta reach the random move interval */
-            if (Time.time - PreviousEvaluateTime >= Server.Server.Instance.CatRandomMoveInterval) {
-                PreviousEvaluateTime = Time.time;
-                
-                /* Generate a random boolean */
-                float rand1 = UnityEngine.Random.value;
-                if (rand1 < Cat.walkProportion) {
-                    Vector3 position = Cat.livingArea.transform.position;
-                    /* Convert position to terrain local coordinates */
-                    position = TerrainManager.Instance.Terrain.transform.InverseTransformPoint(position);
-                    float radius = 20;
-                
-                    Vector3 terrainSize = TerrainManager.Instance.Terrain.terrainData.size;
-                    /* Generate a random position with fixed radius in the terrain */
-                    Vector3 randomPosition = new Vector3(
-                        UnityEngine.Random.Range(position.x - radius, position.x + radius),
-                        0,
-                        UnityEngine.Random.Range(position.z - radius, position.z + radius)
-                    );
-                    // Vector3 randomPosition = new Vector3(
-                    //     UnityEngine.Random.Range(0, terrainSize.x),
-                    //     0,
-                    //     UnityEngine.Random.Range(0, terrainSize.z)
-                    // );
-                
-                    /* convert this local position to world position */
-                    randomPosition = TerrainManager.Instance.Terrain.transform.TransformPoint(randomPosition);
-                    
-                    /* Move to the random position */
-                    Cat.Navigator.MoveTo(randomPosition);
-                    
-                } else if (rand1 > Cat.sitProportion + Cat.walkProportion){
-                    if (Cat.Behaviour.Animator.GetBool("IsWondering")) {
-                        WonderStopTime += WonderTime;
-                        return;
+            /* Check distance between the player */
+            float distance = Vector3.Distance(Cat.transform.position, Server.Server.Instance.player.transform.position);
+            if (distance <= runAwayDistance) {
+                StopOtherAnimations();
+                Debug.Log("Entering run away mode");
+                /* calculate the vector opposite to the cat player direction */
+                Vector3 runAwayDirection = Cat.transform.position - Server.Server.Instance.player.transform.position;
+                /* Normalize it to playerAlartDistance */
+                runAwayDirection = runAwayDirection.normalized * playerAlartDistance * 3;
+                Vector3 destination = Cat.transform.position + runAwayDirection;
+                Cat.Navigator.MoveTo(destination, true);
+            } else if (distance <= playerAlartDistance) {
+                StopOtherAnimations();
+                Debug.Log("Entering player alart mode");
+                /* Make cat turn face to the player smoothly */
+                Vector3 direction = Server.Server.Instance.player.transform.position - Cat.transform.position;
+                direction.y = 0;
+                Quaternion toRotation = Quaternion.LookRotation(direction);
+                Cat.transform.rotation = Quaternion.RotateTowards(Cat.transform.rotation, toRotation, 180 * Time.deltaTime);
+            } else {
+
+                /* Check if time delta reach the random move interval */
+                if (Time.time - PreviousEvaluateTime >= Server.Server.Instance.CatRandomMoveInterval) {
+                    PreviousEvaluateTime = Time.time;
+
+                    /* Generate a random boolean */
+                    float rand1 = UnityEngine.Random.value;
+                    if (rand1 < Cat.walkProportion) {
+                        Vector3 position = Cat.livingArea.transform.position;
+                        /* Convert position to terrain local coordinates */
+                        position = TerrainManager.Instance.Terrain.transform.InverseTransformPoint(position);
+                        float radius = 20;
+
+                        Vector3 terrainSize = TerrainManager.Instance.Terrain.terrainData.size;
+                        /* Generate a random position with fixed radius in the terrain */
+                        Vector3 randomPosition = new Vector3(
+                            UnityEngine.Random.Range(position.x - radius, position.x + radius),
+                            0,
+                            UnityEngine.Random.Range(position.z - radius, position.z + radius)
+                        );
+                        // Vector3 randomPosition = new Vector3(
+                        //     UnityEngine.Random.Range(0, terrainSize.x),
+                        //     0,
+                        //     UnityEngine.Random.Range(0, terrainSize.z)
+                        // );
+
+                        /* convert this local position to world position */
+                        randomPosition = TerrainManager.Instance.Terrain.transform.TransformPoint(randomPosition);
+
+                        /* Move to the random position */
+                        Cat.Navigator.MoveTo(randomPosition);
+
                     }
-                    
-                    Cat.Behaviour.Animator.SetBool("IsWondering", true);
-                    Cat.StartCoroutine(WonderingStopCoroutine(WonderTime));
-                } else {
-                    Cat.Behaviour.SwitchState(CatState.Sit);
+                    else if (rand1 > Cat.sitProportion + Cat.walkProportion) {
+                        if (Cat.Behaviour.Animator.GetBool("IsWondering")) {
+                            WonderStopTime += WonderTime;
+                            return;
+                        }
+
+                        Cat.Behaviour.Animator.SetBool("IsWondering", true);
+                        Cat.StartCoroutine(WonderingStopCoroutine(WonderTime));
+                    }
+                    else {
+                        Cat.Behaviour.SwitchState(CatState.Sit);
+                    }
                 }
             }
         }
@@ -77,6 +103,12 @@ namespace Cat.Behaviours {
             }
             
             Cat.Behaviour.Animator.SetBool("IsWondering", false);
+        }
+
+        protected void StopOtherAnimations() {
+            Cat.Behaviour.Animator.SetBool("IsWondering", false);
+            Cat.Behaviour.Animator.SetBool("IsWalking", false);
+            Cat.Navigator.Agent.ResetPath();
         }
     }
 }

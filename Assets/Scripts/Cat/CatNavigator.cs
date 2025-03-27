@@ -30,7 +30,10 @@ namespace Cat {
         }
 
         /* Move to a specific world position */
-        public void MoveTo(Vector3 position) {
+        public void MoveTo(Vector3 position, bool run = false) {
+            /* Double the speed if run */
+            Agent.speed = run ? Server.Server.Instance.CatMoveSpeed * 2.5f : Server.Server.Instance.CatMoveSpeed;
+            
             /* y field of this position has to be the height of terrain */
             position.y = Terrain.TerrainManager.Instance.Terrain.SampleHeight(position);
             
