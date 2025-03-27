@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Player;
 using TMPro;
@@ -74,10 +75,43 @@ namespace Server {
             cameraMode.gameObject.SetActive(false);
             
             Cursor.visible = false;
+
+            StartCoroutine(ColliderHandling());
         }
 
         protected void Update() {
             Clock.Update();
+        }
+
+        protected IEnumerator ColliderHandling() {
+            /* wait for 0.5 seconds */
+            yield return new WaitForSeconds(0.5f);
+            
+            string[] bothColliderAndRb = new string[] {"Bowl", "Toy"};
+            string[] colliderOnly = new string[] {"Rock"};
+            /* Iterate through all game objects in the scene, add mesh collider to the object with name that contains letter "Bowl" */
+            foreach (GameObject go in UnityEngine.Object.FindObjectsOfType<GameObject>()) {
+                bool added = false;
+                foreach (string n in bothColliderAndRb) {
+                    if (go.name.Contains(n)) {
+                        go.AddComponent<MeshCollider>();
+                        Rigidbody rb = go.AddComponent<Rigidbody>();
+                        rb = go.GetComponent<Rigidbody>();
+                        rb.isKinematic = false;
+                        added = true;
+                        break;
+                    }
+                }
+                
+                if (!added) {
+                    foreach (string n in colliderOnly) {
+                        if (go.name.Contains(n)) {
+                            go.AddComponent<MeshCollider>();
+                            break;
+                        }
+                    }
+                }
+            }
         }
     }
 }
