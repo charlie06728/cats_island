@@ -218,6 +218,51 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{B436F41B-D23E-484E-BFC7-755EDACDDB8D}" ShortID="642950872">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack2" ID="{DB1DFB55-3569-435A-B332-B50D07C8D5C9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{17BEDDF8-1392-4381-BFBC-96C1AA2FFEE3}" ShortID="16213607">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack3" ID="{405208F4-2D6F-4749-BC81-CF71C86B6502}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4569DFFF-0282-49CB-B710-93E786216EA5}" ShortID="395266811">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack4" ID="{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="midday" ID="{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}">
@@ -283,6 +328,13 @@
 						<Event Name="mus_Soundtrack4" ID="{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}">
 							<ChildrenList>
 								<Action Name="" ID="{ABB67F34-41C2-4487-8D46-53D6119E9738}" ShortID="791997658">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="mus_4-4_86bpm_STEMhorn_lp" ID="{4E2F0F14-C61E-4B8C-ADAA-7BF4131850E1}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>

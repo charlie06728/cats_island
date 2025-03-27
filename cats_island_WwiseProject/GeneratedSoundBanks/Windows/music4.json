@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{DDCA63C9-74B7-4123-8823-3A8CC138E55D}",
     "Language": "SFX",
-    "Hash": "{309DC266-6076-5374-E7B6-D74453573EC4}",
+    "Hash": "{1B2D2965-C92A-E0CD-9ED7-E913CA595005}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\music4",
     "ShortName": "music4",
     "Path": "music4.bnk",
@@ -22,14 +22,6 @@
       "Location": "Memory",
       "ShortName": "mus_4-4_86bpm_STEMenghorn_lp.wav",
       "CachePath": "5B/{5B7C298B-0803-25D3-DD6F-8F5BF6CA0F67}.wem"
-     },
-     {
-      "Id": "723336337",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "mus_4-4_86bpm_STEMenghorn_lp.wav",
-      "CachePath": "41/{416DF2EE-15BB-6A76-81C2-DB32CDD453F1}.wem"
      }
     ],
     "Events": [
@@ -42,15 +34,12 @@
       "MediaRefs": [
        {
         "Id": "270066165"
-       },
-       {
-        "Id": "723336337"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{17E5E8E1-AFFD-11D0-6041-BB63D46102AB}"
+  "FileHash": "{F0B94418-77A9-689B-9664-9648827CA932}"
  }
 }

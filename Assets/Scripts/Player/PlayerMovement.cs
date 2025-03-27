@@ -237,11 +237,9 @@ namespace Player {
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (Jumped) {
-                EventLand.Post(gameObject);
-            }
             InCollision = true;
             UpdateLayer(collision);
+            if (Jumped) { EventLand.Post(gameObject); }
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) // Check if touching terrain
             {
                 _isGrounded = true;
