@@ -16,6 +16,8 @@ namespace Server {
         public float ControllerSenstivity = 1f;
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
+        
+        public LayerMask GroundLayer;
 
         public float cameraCoolDown;
 
@@ -94,7 +96,11 @@ namespace Server {
                 bool added = false;
                 foreach (string n in bothColliderAndRb) {
                     if (go.name.Contains(n)) {
-                        go.AddComponent<MeshCollider>();
+                        go.AddComponent<BoxCollider>();
+                        BoxCollider mc = go.GetComponent<BoxCollider>();
+                        mc.includeLayers = GroundLayer;
+                        
+                        /* Set include layers to every layer */
                         Rigidbody rb = go.AddComponent<Rigidbody>();
                         rb = go.GetComponent<Rigidbody>();
                         rb.isKinematic = false;

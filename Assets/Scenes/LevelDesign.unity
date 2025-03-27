@@ -72299,6 +72299,9 @@ MonoBehaviour:
   ControllerSenstivity: 1
   MoveSpeed: 10
   JumpForce: 10
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   cameraCoolDown: 0
   CatRandomMoveInterval: 4
   CatMoveSpeed: 2
@@ -115302,6 +115305,9 @@ MonoBehaviour:
   ControllerSenstivity: 200
   MoveSpeed: 400
   JumpForce: 12
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
   cameraCoolDown: 2
   CatRandomMoveInterval: 4
   CatMoveSpeed: 2
