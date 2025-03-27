@@ -50,9 +50,16 @@ namespace Cat {
             
             /* check if the cat is moving, and set the animation correspondingly */
             if (Agent.velocity.magnitude < 0.1f) {
+                Cat.Behaviour.Animator.SetBool("IsRunning", false);
                 Cat.Behaviour.Animator.SetBool("IsWalking", false);
             } else {
-                Cat.Behaviour.Animator.SetBool("IsWalking", true);
+                if (Agent.speed > Server.Server.Instance.CatMoveSpeed * 1.5f) {
+                    Cat.Behaviour.Animator.SetBool("IsRunning", true);
+                    Cat.Behaviour.Animator.SetBool("IsWalking", false);
+                } else {
+                    Cat.Behaviour.Animator.SetBool("IsRunning", false);
+                    Cat.Behaviour.Animator.SetBool("IsWalking", true);
+                }
             }
         }
     }

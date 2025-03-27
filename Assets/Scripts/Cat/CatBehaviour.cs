@@ -41,6 +41,7 @@ namespace Cat {
             Cat.Behaviour.Animator.SetBool("IsWondering", false);
             Cat.Behaviour.Animator.SetBool("IsWalking", false);
             Cat.Behaviour.Animator.SetBool("IsSitting", false);
+            Cat.Behaviour.Animator.SetBool("IsRunning", false);
             Cat.Navigator.Agent.ResetPath();
         }
         
