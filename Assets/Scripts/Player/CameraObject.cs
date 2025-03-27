@@ -433,6 +433,7 @@ namespace Player {
 
             foreach (Cat.Cat cat in photo.Cats) {
                 if (cat.Behaviour.State == Cat.CatState.Pose) {
+                    Brochure.PurrfectCats.Add(cat.catBreed);
                     star++;
                 }
             }

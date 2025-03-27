@@ -38,6 +38,7 @@ namespace Player {
 
         [NonSerialized] public List<Cat.Cat> _allCats;
         [NonSerialized] public static HashSet<string> CollectedCats = new HashSet<string>();
+        [NonSerialized] public static HashSet<string> PurrfectCats = new HashSet<string>();
         
         // [NonSerialized] public Photo Photo1;
         // [NonSerialized] public Photo Photo2;

@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class CatIcon : MonoBehaviour
 {
-    public Sprite catsprite;
+    public Sprite catSprite;
+    public Sprite purrfectSprite;
     private Image image;
     
     void Awake() {
@@ -11,6 +12,10 @@ public class CatIcon : MonoBehaviour
     }
 
     public void ToggleOn() {
-        image.sprite = catsprite;
+        image.sprite = catSprite;
+    }
+
+    public void TogglePurrfect() {
+        image.sprite = purrfectSprite;
     }
 }
