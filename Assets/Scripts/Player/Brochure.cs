@@ -217,5 +217,11 @@ namespace Player {
             habitat1.gameObject.SetActive(true);
             habitat2.gameObject.SetActive(true);
         }
+
+        public void ResetProgress() {
+            // Reset progress
+            CollectedCats = new HashSet<string>();
+            PurrfectCats = new HashSet<string>();
+        }
     }
 }

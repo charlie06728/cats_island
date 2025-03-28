@@ -273,5 +273,10 @@ namespace Player {
                 }
             };
         }
+
+        public void ResetAlbum() {
+            // Reset progress
+            Photos = new List<Photo>();
+        }
     }
 }

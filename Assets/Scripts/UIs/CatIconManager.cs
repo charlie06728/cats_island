@@ -88,5 +88,20 @@ namespace Player {
                     break;
             }
         }
+
+        public void ResetIcons() {
+            // Reset icons
+            ragdoll.ToggleOff();
+            tabby.ToggleOff();
+            tuxedo.ToggleOff();
+            gray.ToggleOff();
+            bengal.ToggleOff();
+            catlist = new List<string>();
+            catlist.Add("Grey Tabby");
+            catlist.Add("Grey Cat");
+            catlist.Add("Tuxedo");
+            catlist.Add("Ragdoll");
+            catlist.Add("Bengal");
+        }
     }
 }

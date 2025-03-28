@@ -54,4 +54,12 @@ public class TimeManager : MonoBehaviour
         Time.timeScale = 0;
         dayEndScreen.SetActive(true);
     }
+
+    public void ResetTime() {
+        // Reset the time to the beginning
+        curr_time = 0;
+        minutes = 0;
+        hours = 0;
+        days = 0;
+    }
 }

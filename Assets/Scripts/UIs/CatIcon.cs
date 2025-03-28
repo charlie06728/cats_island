@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class CatIcon : MonoBehaviour
 {
+    public Sprite unknownSprite;
     public Sprite catSprite;
     public Sprite purrfectSprite;
     private Image image;
@@ -17,5 +18,9 @@ public class CatIcon : MonoBehaviour
 
     public void TogglePurrfect() {
         image.sprite = purrfectSprite;
+    }
+
+    public void ToggleOff() {
+        image.sprite = unknownSprite;
     }
 }
