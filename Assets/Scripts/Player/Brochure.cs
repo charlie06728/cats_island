@@ -14,6 +14,10 @@ namespace Player {
         public RawImage rawImage1;
         public RawImage rawImage2;
 
+        // Covers for left and right page
+        public Image cover1;
+        public Image cover2;
+
         public RawImage collect1;
         public RawImage collect2;
 
@@ -140,6 +144,12 @@ namespace Player {
             if (displayIndex == 0) {
                 rawImage1.gameObject.SetActive(true);
                 if (CollectedCats.Contains(cat.catBreed)) {
+                    cover1.gameObject.SetActive(false);
+                } else {
+                    cover1.gameObject.SetActive(true);
+                }
+
+                if (PurrfectCats.Contains(cat.catBreed)) {
                     collect1.gameObject.SetActive(true);
                 } else {
                     collect1.gameObject.SetActive(false);
@@ -158,6 +168,12 @@ namespace Player {
             } else {
                 rawImage2.gameObject.SetActive(true);
                 if (CollectedCats.Contains(cat.catBreed)) {
+                    cover2.gameObject.SetActive(false);
+                } else {
+                    cover2.gameObject.SetActive(true);
+                }
+
+                if (PurrfectCats.Contains(cat.catBreed)) {
                     collect2.gameObject.SetActive(true);
                 } else {
                     collect2.gameObject.SetActive(false);
