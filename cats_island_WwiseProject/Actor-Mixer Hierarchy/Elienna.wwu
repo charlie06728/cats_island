@@ -7,6 +7,7 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Bengal_Hungry_Meow" ID="{E2083ADD-E9CE-4932-A2A4-DA24905DF8E6}" ShortID="840037245">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -28,6 +29,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_generic_30m" ID="{C455AD8B-7A93-40C6-91ED-83165919B56D}" WorkUnitID="{9293D8F0-EB2A-4D54-B874-CC3CC60F1A1F}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
 								</Reference>
@@ -841,6 +845,7 @@
 					<ChildrenList>
 						<Sound Name="sfx_cat_hiss_ah" ID="{AED564FB-BD8C-414E-8A77-EFDD93EEA315}" ShortID="954287126">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
 										<Value>0.1</Value>
@@ -884,6 +889,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_generic_30m" ID="{C455AD8B-7A93-40C6-91ED-83165919B56D}" WorkUnitID="{9293D8F0-EB2A-4D54-B874-CC3CC60F1A1F}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
 								</Reference>
@@ -1002,6 +1010,7 @@
 				</Folder>
 				<RandomSequenceContainer Name="sfx_Cat_Eat" ID="{B8F4955F-948B-4717-9882-35EA5EE4F9E2}" ShortID="692909128">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
 								<Value>400</Value>
@@ -1025,6 +1034,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_generic_30m" ID="{C455AD8B-7A93-40C6-91ED-83165919B56D}" WorkUnitID="{9293D8F0-EB2A-4D54-B874-CC3CC60F1A1F}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
 						</Reference>
@@ -2003,6 +2015,7 @@
 						</Sound>
 						<Sound Name="treat_launch" ID="{C5A1A849-CE77-4631-81DC-0C9053FB4834}" ShortID="884221550">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>200</Value>
@@ -2036,6 +2049,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="att_generic_30m" ID="{C455AD8B-7A93-40C6-91ED-83165919B56D}" WorkUnitID="{9293D8F0-EB2A-4D54-B874-CC3CC60F1A1F}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
 								</Reference>

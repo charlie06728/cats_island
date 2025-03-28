@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SwitchContainer Name="sfx_footsteps" ID="{B47B1E80-9A45-4108-BA23-F98339A8527B}" ShortID="489545419">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -29,6 +30,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_generic_30m" ID="{C455AD8B-7A93-40C6-91ED-83165919B56D}" WorkUnitID="{9293D8F0-EB2A-4D54-B874-CC3CC60F1A1F}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
 						</Reference>
@@ -2071,6 +2075,7 @@
 				</RandomSequenceContainer>
 				<SwitchContainer Name="sfx_jump" ID="{CAC4276D-304E-4435-B462-AAC3DB2EB06E}" ShortID="661320943">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -2100,6 +2105,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="att_generic_30m" ID="{C455AD8B-7A93-40C6-91ED-83165919B56D}" WorkUnitID="{9293D8F0-EB2A-4D54-B874-CC3CC60F1A1F}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
 						</Reference>
