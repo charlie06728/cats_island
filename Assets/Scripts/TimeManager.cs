@@ -1,11 +1,8 @@
 using UnityEngine;
 using System;
-<<<<<<< HEAD
 using System.Collections.Generic;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
-=======
->>>>>>> main
 
 public class TimeManager : MonoBehaviour
 {
@@ -26,6 +23,7 @@ public class TimeManager : MonoBehaviour
     void Start() {
         hour_length = day_length / 15f;
         dayEndScreen.SetActive(false);
+    }
 
 
     void Update()

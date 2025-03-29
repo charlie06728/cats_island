@@ -70,7 +70,7 @@ namespace Player {
 
         public void Awake() {
             /* Make head in the same direction as camera */
-            headTargetPosition = new Vector3(0, 0, 0);
+            crouchTarget = new Vector3(0, 0, 0);
 
             PlayerCamera = UnityEngine.Camera.main;
             PlayerCamera.transform.parent = Head.transform;
