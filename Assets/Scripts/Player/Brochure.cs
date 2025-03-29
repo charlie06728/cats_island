@@ -155,9 +155,9 @@ namespace Player {
                     collect1.gameObject.SetActive(false);
                 }
                 // catName1.gameObject.SetActive(true);
-                catBreed1.gameObject.SetActive(true);
-                preferSnack1.gameObject.SetActive(true);
-                habitat1.gameObject.SetActive(true);
+                // catBreed1.gameObject.SetActive(true);
+                // preferSnack1.gameObject.SetActive(true);
+                // habitat1.gameObject.SetActive(true);
 
                 rawImage1.texture = cat.catImage.mainTexture;
                 // catName1.text = cat.catName;
@@ -179,9 +179,9 @@ namespace Player {
                     collect2.gameObject.SetActive(false);
                 }
                 // catName2.gameObject.SetActive(true);
-                catBreed2.gameObject.SetActive(true);
-                preferSnack2.gameObject.SetActive(true);
-                habitat2.gameObject.SetActive(true);
+                // catBreed2.gameObject.SetActive(true);
+                // preferSnack2.gameObject.SetActive(true);
+                // habitat2.gameObject.SetActive(true);
 
                 rawImage2.texture = cat.catImage.mainTexture;
                 // catName2.text = cat.catName;

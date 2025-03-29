@@ -34,6 +34,10 @@ namespace Player {
         [NonSerialized] public int CurrentItem = 0;
         [NonSerialized] public List<Items> Treats = new List<Items> {Items.Cookie, Items.Heart, Items.Fish};
         [NonSerialized] public List<Item> ItemList = new List<Item>();
+
+        public GameObject treatControls;
+        public GameObject cameraControls;
+        public GameObject albumControls;
         
         /* Brochure prefab and component after it being initialized */
         public Brochure brochure;
@@ -92,13 +96,22 @@ namespace Player {
             /* Define the item switch behaviour */
             Server.Server.Instance.InputActionMap["1"].performed += context => {
                 CameraObject.TakeOut(); 
+                cameraControls.SetActive(true);
+                treatControls.SetActive(false);
+                albumControls.SetActive(false);
             };
             Server.Server.Instance.InputActionMap["2"].performed += context => {
                 Album.TakeOut(); 
+                cameraControls.SetActive(false);
+                treatControls.SetActive(false);
+                albumControls.SetActive(true);
             };
             Server.Server.Instance.InputActionMap["3"].performed += context => {
                 /* Put back all other items */
                 CameraObject.PutBackAll();
+                cameraControls.SetActive(false);
+                treatControls.SetActive(true);
+                albumControls.SetActive(false);
                 
                 CurrentTreat++;
                 if (CurrentTreat >= Treats.Count) CurrentTreat = 0;
@@ -106,9 +119,15 @@ namespace Player {
                 Server.Server.Instance.itemBar.SetCurrentItem(Treats[CurrentTreat]);
             };
             Server.Server.Instance.InputActionMap["4"].performed += context => {
+                cameraControls.SetActive(false);
+                treatControls.SetActive(false);
+                albumControls.SetActive(true);
                 brochure.TakeOut(); 
             };
             Server.Server.Instance.InputActionMap["5"].performed += context => {
+                cameraControls.SetActive(false);
+                treatControls.SetActive(false);
+                albumControls.SetActive(false);
                 Player.Pocket.CameraObject.PutBackAll(); 
                 Server.Server.Instance.itemBar.DeSelectAll();
             };
