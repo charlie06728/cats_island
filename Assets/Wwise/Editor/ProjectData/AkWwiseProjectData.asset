@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 7497760a65bb00459549f9069674c4d4
     GuidInternal: 
-    m_lastTime: -8584590966150788106
+    m_lastTime: -8584583385852253787
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 47dc6fec587c2446a7b9dbcf10e31f07
     GuidInternal: 
-    m_lastTime: -8584590966160005134
+    m_lastTime: -8584583385868906557
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584590966150794484
+    m_lastTime: -8584583385852260849
     List:
     - name: ambience
       guid: 12953d0044447549bde388eb62debae8
@@ -122,7 +122,7 @@ MonoBehaviour:
     ParentPath: Events/Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584590966173118996
+    m_lastTime: -8584583385888184613
     List:
     - name: amb_Ambience
       guid: 53a4f75f8bae2c4a9a65689f2a7ce253
@@ -497,7 +497,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 6dbcaf644f31214ca23f64f63faf663a
     GuidInternal: 
-    m_lastTime: -8584590966173118283
+    m_lastTime: -8584583385888183823
     List: []
   - PhysicalPath: Events/Elienna.wwu
     PathAndIcons:
@@ -510,7 +510,7 @@ MonoBehaviour:
     ParentPath: Events/Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584590966173117219
+    m_lastTime: -8584583385888176638
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -641,7 +641,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Anthony
     guid: 747ed4c5d250174d9c25eb13858cdf27
     GuidInternal: 
-    m_lastTime: -8584590966173116274
+    m_lastTime: -8584583385888175420
     List:
     - name: Time_Of_Day
       guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
@@ -668,7 +668,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: b00b9c776284c047af9d52e603c58215
     GuidInternal: 
-    m_lastTime: -8584590966173115360
+    m_lastTime: -8584583385888174786
     List: []
   - PhysicalPath: Game Parameters/Elienna.wwu
     PathAndIcons:
@@ -681,7 +681,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Elienna
     guid: e9fcf40ce1fb60438256a5203cf5a15a
     GuidInternal: 
-    m_lastTime: -8584590966173114775
+    m_lastTime: -8584583385888174156
     List: []
   StateWwu:
   - PhysicalPath: States/Anthony.wwu
@@ -695,7 +695,7 @@ MonoBehaviour:
     ParentPath: States/Anthony
     guid: 21611006dff36c499e841738153e7461
     GuidInternal: 
-    m_lastTime: -8584590966150792325
+    m_lastTime: -8584583385852258535
     List:
     - name: Location
       guid: 97fecb8cb61cb44f9455af3c9e336327
@@ -806,7 +806,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: b874c196a1cfcc48b790c06e60758510
     GuidInternal: 
-    m_lastTime: -8584590966150791701
+    m_lastTime: -8584583385852257951
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Anthony.wwu
@@ -820,7 +820,7 @@ MonoBehaviour:
     ParentPath: Switches/Anthony
     guid: 27638023a565d7418bfab37636cd15b1
     GuidInternal: 
-    m_lastTime: -8584590966150790644
+    m_lastTime: -8584583385852256937
     List:
     - name: Ground_Material
       guid: 40e2080494fea64782f310d790d4c05f
@@ -899,7 +899,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 6a38469adc0030469182708ec8541dbb
     GuidInternal: 
-    m_lastTime: -8584590966150790040
+    m_lastTime: -8584583385852256205
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -913,7 +913,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 47e94a7a22be964d82a63388717af54b
     GuidInternal: 
-    m_lastTime: -8584590966150789109
+    m_lastTime: -8584583385852254991
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 02000000050000000600000007000000090000000a0000000b0000000c0000000d0000000f00000010000000120000001300000014000000150000001700000018000000190000001a0000001b0000001e000000200000002100000022000000
