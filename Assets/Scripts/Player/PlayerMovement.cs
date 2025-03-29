@@ -42,6 +42,8 @@ namespace Player {
         private Vector3 MoveDirection = new Vector3();
         private Dictionary<string, bool> _keyDown = new Dictionary<string, bool>();
 
+        public GameObject pauseMenu;
+
 
         /* Recieves messages from the PlayerInput component on the player when the player presses/releases shift/ctrl */
         // public void OnSprint(InputValue val){
@@ -130,6 +132,10 @@ namespace Player {
                     // AkUnitySoundEngine.SetSwitch("sfx_Jump", "grass", gameObject);
                     // AkUnitySoundEngine.PostEvent("sfx_Jump", gameObject);
                 }
+            };
+            Server.Server.Instance.InputActionMap["Pause"].performed += context => {
+                Time.timeScale = 0;
+                pauseMenu.SetActive(true);
             };
         }
         
