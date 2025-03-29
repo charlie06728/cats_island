@@ -70,6 +70,7 @@ namespace Player {
 
         public void Awake() {
             /* Make head in the same direction as camera */
+            headTargetPosition = new Vector3(0, 0, 0);
 
             PlayerCamera = UnityEngine.Camera.main;
             PlayerCamera.transform.parent = Head.transform;
@@ -111,15 +112,15 @@ namespace Player {
                 crouchTarget = new Vector3(0, 0, 0);
                 isCrouching = false; 
             };
-            Server.Server.Instance.InputActionMap["CrouchToggle"].performed += context => {
-                if (isCrouching) {
-                    Head.transform.position += new Vector3(0, crouchDist, 0);
-                    isCrouching = false;
-                } else {
-                    Head.transform.position -= new Vector3(0, crouchDist, 0);
-                    isCrouching = true;
-                }
-            };
+            // Server.Server.Instance.InputActionMap["CrouchToggle"].performed += context => {
+            //     if (isCrouching) {
+            //         Head.transform.position += new Vector3(0, crouchDist, 0);
+            //         isCrouching = false;
+            //     } else {
+            //         Head.transform.position -= new Vector3(0, crouchDist, 0);
+            //         isCrouching = true;
+            //     }
+            // };
             Server.Server.Instance.InputActionMap["GamePadLeft"].performed += context => { _keyDown["GamePadLeft"] = true; };
             Server.Server.Instance.InputActionMap["GamePadLeft"].canceled += context => { _keyDown["GamePadLeft"] = false; };
             Server.Server.Instance.InputActionMap["Space"].performed += context => {
@@ -162,9 +163,9 @@ namespace Player {
             }
         }
 
+
         private void FixedUpdate() {
             Head.transform.localPosition = Vector3.Lerp(Head.transform.localPosition, crouchTarget, crouchSpeed * Time.deltaTime);
-
             Vector3 MoveValue = new Vector3();
             if (_keyDown.ContainsKey("GamePadLeft") && _keyDown["GamePadLeft"]) MoveValue += MoveByGamePad();
             
@@ -235,8 +236,8 @@ namespace Player {
                         break;
                 }
             }
-            
-            MoveValue += MoveDirection.normalized * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+            MoveValue += MoveDirection * Time.deltaTime * Server.Server.Instance.MoveSpeed;
+
             if (isSprinting) {
                 MoveValue *= sprintMultiplier;
             } else if (isCrouching) { // Holding sprint overrides the effects of holding crouch
