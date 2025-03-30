@@ -18,6 +18,8 @@ namespace Cat {
 
         public List<GameObject> castPoints;
         
+        public AK.Wwise.Event catEat;
+        
         /* The pointer around which cat moves */
         public GameObject livingArea;
 

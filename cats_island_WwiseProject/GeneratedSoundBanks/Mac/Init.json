@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{600EB45A-9C11-614D-834D-3786A720B043}",
+    "Hash": "{96576CFD-8EF7-1381-13EE-3D84D58C64EE}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,9 +36,9 @@
     },
     "Busses": [
      {
-      "Id": "3803692087",
-      "Name": "Master Audio Bus",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "Id": "835198467",
+      "Name": "MasterBus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\MasterBus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
     ],
@@ -48,6 +48,12 @@
       "Name": "Time_Of_Day",
       "ObjectPath": "\\Game Parameters\\Anthony\\Time_Of_Day",
       "GUID": "{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"
+     },
+     {
+      "Id": "3558246879",
+      "Name": "Volume_Global",
+      "ObjectPath": "\\Game Parameters\\Anthony\\Volume_Global",
+      "GUID": "{C4122A7E-E930-45E0-B214-7C2CAE095566}"
      }
     ],
     "StateGroups": [
@@ -70,6 +76,12 @@
         "GUID": "{894A8BA2-79B4-40B0-8702-018614CB10FF}"
        },
        {
+        "Id": "1944232204",
+        "Name": "pond",
+        "ObjectPath": "\\States\\Anthony\\Location\\pond",
+        "GUID": "{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"
+       },
+       {
         "Id": "2281727986",
         "Name": "cat_tree",
         "ObjectPath": "\\States\\Anthony\\Location\\cat_tree",
@@ -82,10 +94,68 @@
         "GUID": "{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"
        },
        {
+        "Id": "3223325804",
+        "Name": "catnip",
+        "ObjectPath": "\\States\\Anthony\\Location\\catnip",
+        "GUID": "{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"
+       },
+       {
         "Id": "4075332698",
         "Name": "beach",
         "ObjectPath": "\\States\\Anthony\\Location\\beach",
         "GUID": "{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"
+       }
+      ]
+     },
+     {
+      "Id": "1310789233",
+      "Name": "Preferred_Treat",
+      "ObjectPath": "\\States\\Elienna\\Preferred_Treat",
+      "GUID": "{67894DFD-5FCF-4851-9399-79A53E10A071}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Elienna\\Preferred_Treat\\None",
+        "GUID": "{213C2609-D69F-48DE-BDE6-1F3BBB3D40A7}"
+       },
+       {
+        "Id": "2365261663",
+        "Name": "not_preferred_treat",
+        "ObjectPath": "\\States\\Elienna\\Preferred_Treat\\not_preferred_treat",
+        "GUID": "{9D5B04AE-5774-4D11-B477-9EA3D26B0D95}"
+       },
+       {
+        "Id": "3541290649",
+        "Name": "yes_preferred_treat",
+        "ObjectPath": "\\States\\Elienna\\Preferred_Treat\\yes_preferred_treat",
+        "GUID": "{380B757B-F0EC-4F4B-864A-42695A687CAB}"
+       }
+      ]
+     },
+     {
+      "Id": "3235954734",
+      "Name": "View",
+      "ObjectPath": "\\States\\Elienna\\View",
+      "GUID": "{D7D0752B-9863-4C82-A635-9830E8EA78D8}",
+      "States": [
+       {
+        "Id": "603211426",
+        "Name": "album",
+        "ObjectPath": "\\States\\Elienna\\View\\album",
+        "GUID": "{997D1891-803F-4F30-93CF-878F28C30650}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Elienna\\View\\None",
+        "GUID": "{BC77D07A-E2B5-4F76-9EAE-34B61AA0DCE1}"
+       },
+       {
+        "Id": "3761523285",
+        "Name": "brochure",
+        "ObjectPath": "\\States\\Elienna\\View\\brochure",
+        "GUID": "{9C9AB866-FA29-46E4-9C2F-D18B8C14796B}"
        }
       ]
      }
@@ -110,6 +180,12 @@
         "GUID": "{E393EB9F-0EF2-467E-9F5B-539980493798}"
        },
        {
+        "Id": "2654748154",
+        "Name": "water",
+        "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\water",
+        "GUID": "{B280A249-7677-4C15-9F49-3B854E9113B5}"
+       },
+       {
         "Id": "4248645337",
         "Name": "grass",
         "ObjectPath": "\\Switches\\Anthony\\Ground_Material\\grass",
@@ -120,6 +196,6 @@
     ]
    }
   ],
-  "FileHash": "{AD57477B-C25B-F952-B341-572A0A4F0AD8}"
+  "FileHash": "{BB847FF5-B7CD-B44C-9F34-5CDF33140396}"
  }
 }

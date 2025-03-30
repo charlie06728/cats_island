@@ -22,8 +22,8 @@ namespace Cat.Behaviours {
             float distance = Vector3.Distance(Cat.Behaviour.TargetTreat.transform.position, Cat.transform.position);
             if (distance < 1.5f) {
                 /* Eat treat */
-                GameObject.Destroy(Cat.Behaviour.TargetTreat.gameObject);
-                Cat.Behaviour.SwitchState(CatState.Pose);
+                // GameObject.Destroy(Cat.Behaviour.TargetTreat.gameObject);
+                Cat.Behaviour.SwitchState(CatState.Eat);
             }
             
             /* Move the cat towards to target treat */

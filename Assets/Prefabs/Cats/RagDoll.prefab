@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5462535732111784877}
     m_Modifications:
+    - target: {fileID: 5067880373173593263, guid: d411039869946844e9702d281f3a34dc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d7aac91ed150fc247bb2e384978bde1c, type: 2}
     - target: {fileID: 7258851268381406803, guid: d411039869946844e9702d281f3a34dc, type: 3}
       propertyPath: m_Name
       value: FatCatFinal
@@ -238,6 +242,10 @@ MonoBehaviour:
   walkProportion: 0.7
   sitProportion: 0.3
   castPoints: []
+  catEat:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 476c29b0a0048cd48861dbbdc0dfbb41, type: 2}
   livingArea: {fileID: 0}
   catName: 
   catBreed: Ragdoll

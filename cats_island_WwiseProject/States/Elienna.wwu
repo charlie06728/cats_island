@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8B412B7F-6BA3-402D-A4E4-E5CC6A552367}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="Elienna" ID="{8B412B7F-6BA3-402D-A4E4-E5CC6A552367}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Preferred_Treat" ID="{67894DFD-5FCF-4851-9399-79A53E10A071}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{213C2609-D69F-48DE-BDE6-1F3BBB3D40A7}"/>
+						<State Name="yes_preferred_treat" ID="{380B757B-F0EC-4F4B-864A-42695A687CAB}"/>
+						<State Name="not_preferred_treat" ID="{9D5B04AE-5774-4D11-B477-9EA3D26B0D95}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="View" ID="{D7D0752B-9863-4C82-A635-9830E8EA78D8}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{BC77D07A-E2B5-4F76-9EAE-34B61AA0DCE1}"/>
+						<State Name="brochure" ID="{9C9AB866-FA29-46E4-9C2F-D18B8C14796B}"/>
+						<State Name="album" ID="{997D1891-803F-4F30-93CF-878F28C30650}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

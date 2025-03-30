@@ -79,6 +79,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 0}
   hook: {fileID: 5130405280807645016}
+  TreatLaunch:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 69ee65fb22a523c40a1a10fb417ac138, type: 2}
   treatPrefab: {fileID: 7874631266701535451, guid: 0adfd750d41513e49bc0d7db7367f9e5, type: 3}
   treat_distance: 20
 --- !u!1001 &2271331040138231527

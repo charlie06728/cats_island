@@ -162,6 +162,38 @@
 					<ChildrenList>
 						<Event Name="mus_Soundtrack" ID="{227D352D-707C-48E5-8DB5-F2320A44CA1B}">
 							<ChildrenList>
+								<Action Name="" ID="{4C17DA26-1523-4A64-B947-DB342C4F1FAE}" ShortID="315175506">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D116C5E5-F4B1-43EF-8B0A-027EB0A7EABD}" ShortID="65852355">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="60"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E12EA737-1A7D-4D9F-828D-56D9259768BC}" ShortID="686594290">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}" WorkUnitID="{06106121-F3DF-496C-9E84-1738153E7461}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{9E8A72BB-9B9A-4F02-BB0F-965E3D7DCB91}" ShortID="78647486">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -176,6 +208,107 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{905A3E1F-E45D-4B56-980A-44C985C23748}" ShortID="757887326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="midday" ID="{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B436F41B-D23E-484E-BFC7-755EDACDDB8D}" ShortID="642950872">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack2" ID="{DB1DFB55-3569-435A-B332-B50D07C8D5C9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{17BEDDF8-1392-4381-BFBC-96C1AA2FFEE3}" ShortID="16213607">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack3" ID="{405208F4-2D6F-4749-BC81-CF71C86B6502}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4569DFFF-0282-49CB-B710-93E786216EA5}" ShortID="395266811">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Soundtrack4" ID="{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="midday" ID="{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}">
+							<ChildrenList>
+								<Action Name="" ID="{7AC67F26-0CD8-4943-AB6F-1CC325BA0C57}" ShortID="128906155">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="Delay" Type="Real64" Value="60"/>
+										<Property Name="FadeTime" Type="Real64" Value="60"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="12"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}" WorkUnitID="{C5D47E74-50D2-4D17-9C25-EB13858CDF27}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="mus_Soundtrack2" ID="{DB1DFB55-3569-435A-B332-B50D07C8D5C9}">
+							<ChildrenList>
+								<Action Name="" ID="{69CE63CF-F368-4F63-B6F2-5D39AC13FA71}" ShortID="998783273">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMbongos_lp" ID="{4189450C-E5DD-415C-8BD0-13A1EC2045AB}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9718F5C4-1388-4636-B07F-7DDB75038958}" ShortID="973048763">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMflute_lp" ID="{F594E1A8-6F12-48BE-987D-3C5199033E67}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{890BF6DB-DAA2-43E8-A6C7-28D1A2FCCA40}" ShortID="628029269">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMviolin_lp" ID="{C0930C3D-D9D1-43FD-AC0F-70CD046167E5}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="mus_Soundtrack3" ID="{405208F4-2D6F-4749-BC81-CF71C86B6502}">
+							<ChildrenList>
 								<Action Name="" ID="{367E9AC0-ABA1-4346-8DE4-FAB57E5AEC42}" ShortID="831263678">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -190,24 +323,21 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{890BF6DB-DAA2-43E8-A6C7-28D1A2FCCA40}" ShortID="628029269">
+							</ChildrenList>
+						</Event>
+						<Event Name="mus_Soundtrack4" ID="{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}">
+							<ChildrenList>
+								<Action Name="" ID="{ABB67F34-41C2-4487-8D46-53D6119E9738}" ShortID="791997658">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_4-4_86bpm_STEMviolin_lp" ID="{C0930C3D-D9D1-43FD-AC0F-70CD046167E5}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+											<ObjectRef Name="mus_4-4_86bpm_STEMhorn_lp" ID="{86E97556-ACA1-4F4B-A069-1ABB8563ED3A}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{9718F5C4-1388-4636-B07F-7DDB75038958}" ShortID="973048763">
+								<Action Name="" ID="{FE03F042-BF21-4B07-8266-D4C641556EC5}" ShortID="1016755908">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="mus_4-4_86bpm_STEMflute_lp" ID="{F594E1A8-6F12-48BE-987D-3C5199033E67}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{69CE63CF-F368-4F63-B6F2-5D39AC13FA71}" ShortID="998783273">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="mus_4-4_86bpm_STEMbongos_lp" ID="{4189450C-E5DD-415C-8BD0-13A1EC2045AB}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+											<ObjectRef Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9B5A78B4-0C25-4C99-B48C-499AF7B15080}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

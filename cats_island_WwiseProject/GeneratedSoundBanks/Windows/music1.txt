@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1211181101	midday			\Anthony\mus_Stems\midday	
+	1283697787	mus_Soundtrack			\Anthony\mus_Stems\mus_Soundtrack	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	207908541	Time_Of_Day			\Anthony\Time_Of_Day	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	866056481	mus_4-4_86bpm_STEMmarimba_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\02\{02C439F9-28F1-F025-D827-21757FE6E66B}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMmarimba_lp		12323820
+	979688819	mus_4-4_86bpm_STEMvibraphone_lp	E:\_Github\cats_island\cats_island_WwiseProject\.cache\4F\{4FD33BAB-5D31-165E-C7D3-039419CFB0D7}.wem		\Actor-Mixer Hierarchy\Anthony\mus_stems\mus_4-4_86bpm_STEMvibraphone_lp		12323820
+
