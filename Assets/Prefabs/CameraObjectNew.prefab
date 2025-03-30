@@ -169,7 +169,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -1.798}
   m_LocalScale: {x: 1.3560567, y: 10, z: 0.9484633}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6846944276537490509}
   m_Father: {fileID: 9141431250781600422}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: -270}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -321,6 +322,108 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9141431250781600422}
   m_LocalEulerAnglesHint: {x: 0, y: -122.18, z: 0}
+--- !u!1001 &5799721075844981918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7307164443495671667}
+    m_Modifications:
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 9.993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 10.0546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155440138913110976, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+      propertyPath: m_Name
+      value: CameraAnimation 1 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+--- !u!224 &6846944276537490509 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1115067646832744659, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
+  m_PrefabInstance: {fileID: 5799721075844981918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8743274920865209677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,9 +534,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 0}
   hook: {fileID: 7827883251493949082}
+  cameraOn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cf81c800cdabf4546af1c3669ff108b6, type: 2}
+  cameraOff:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a58e5720caf217149aa6413223515940, type: 2}
   photoCamera: {fileID: 8946509900950308749}
+  screen: {fileID: 5283078222132476207}
   cameraScale: {x: 0.02, y: 0.02, z: 0.02}
   photoPrefab: {fileID: 5142363858012916415, guid: ed97be82d7a671643936d0a729222f74, type: 3}
+  screenCameraAnimationPrefab: {fileID: 8155440138913110976, guid: d88b003f92542a64d9a9a48c9beda504, type: 3}
   cameraSoundTakePicture: {fileID: 8555878005223502510}
   catLayerMask:
     serializedVersion: 2
@@ -441,6 +554,9 @@ MonoBehaviour:
   zoom_max: 30
   zoom_speed: 0.5
   zoom_speed_controller: 1.5
+  cameraLayerMask:
+    serializedVersion: 2
+    m_Bits: 1152
   zoomScroll: {fileID: 0}
 --- !u!82 &8555878005223502510
 AudioSource:
@@ -556,7 +672,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 733e6b85985e98c4a9984bb77a68af11, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 40d1ae248fb641743aa2445b77698d21, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0

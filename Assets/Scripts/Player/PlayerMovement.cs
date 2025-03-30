@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using DefaultNamespace.Sound;
+using Terrain;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -41,6 +43,39 @@ namespace Player {
         /*  */
         private Vector3 MoveDirection = new Vector3();
         private Dictionary<string, bool> _keyDown = new Dictionary<string, bool>();
+        
+        /* Sounds */
+        private LayerMask currentLayer;
+        public AK.Wwise.Switch Grass;
+        public AK.Wwise.Switch Sand;
+        public AK.Wwise.Switch Water;
+        public AK.Wwise.Switch Wood;
+        
+        [FormerlySerializedAs("Event")] public AK.Wwise.Event EventGround;
+        public AK.Wwise.Event EventJump;
+        public AK.Wwise.Event EventLand;
+
+        public AK.Wwise.State catTree;
+        public AK.Wwise.State catnip;
+        public AK.Wwise.State lightHouse;
+        public AK.Wwise.State pond;
+        public AK.Wwise.State beach;
+        public AK.Wwise.State forest;
+
+        protected bool InCollision;
+        protected bool Jumped;
+        protected bool SoundPlaying;
+        protected bool EnteredArea;
+
+        protected bool IsMoving {
+            get {
+                foreach (string k in new []{"W", "S", "A", "D"}) {
+                    if (_keyDown.ContainsKey(k) && _keyDown[k]) return true;
+                }
+
+                return false;
+            }
+        }
 
         public GameObject pauseMenu;
 
@@ -130,6 +165,8 @@ namespace Player {
                     // _upAcceleration = Physics.gravity.y;
                     // Rigidbody.useGravity = true;
                     Debug.Log("Jumping");
+                    EventJump.Post(gameObject);
+                    Jumped = true;
                     // AkUnitySoundEngine.SetSwitch("sfx_Jump", "grass", gameObject);
                     // AkUnitySoundEngine.PostEvent("sfx_Jump", gameObject);
                 }
@@ -142,27 +179,171 @@ namespace Player {
         
         private void OnCollisionStay(Collision collision)
         {
+            UpdateLayer(collision);
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) {
                 _isGrounded = true;
             }
         }
         
-        private void OnCollisionExit(Collision collision)
-        {
+        private void OnCollisionExit(Collision collision) {
+            
+            InCollision = false;
+            /* Stop the footstep sound */
+            EventGround.Stop(gameObject);
+            
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0)
             {
                 _isGrounded = false;
             }
         }
-        
+
+        private void OnTriggerExit(Collider collision) {
+            /* Get the area layer mask */
+            LayerMask areaLayer = LayerMask.NameToLayer("Area");
+            
+            if (collision.gameObject.layer == areaLayer.value) {
+                EnteredArea = false;
+            }
+        }
+
+        private void OnTriggerEnter(Collider collision) {
+            /* Get the area layer mask */
+            LayerMask areaLayer = LayerMask.NameToLayer("Area");
+            if (collision.gameObject.layer == areaLayer.value) {
+                /* Get the obj tag, and set RTPC correspondingly */
+                string tag = collision.gameObject.tag;
+                Debug.Log("Entered area: " + tag);
+                switch (tag) {
+                    case "CatTree":
+                        catTree.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "Catnip":
+                        catnip.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "LightHouse":
+                        lightHouse.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "Pond":
+                        pond.SetValue();
+                        EnteredArea = true;
+                        break;
+                    case "Beach":
+                        beach.SetValue();
+                        break;
+                    case "Forest":
+                        forest.SetValue();
+                        break;
+                    default:
+                        beach.SetValue();
+                        break;
+                }
+                return;
+            }
+        }
+
         private void OnCollisionEnter(Collision collision)
         {
+            InCollision = true;
+            UpdateLayer(collision);
+            if (Jumped) { EventLand.Post(gameObject); }
             if ((groundLayer.value & (1 << collision.gameObject.layer)) > 0) // Check if touching terrain
             {
                 _isGrounded = true;
             }
         }
 
+        private void UpdateLayer(Collision collision) {
+            /* Get the layer of hitting object */
+            LayerMask targetLayer = collision.gameObject.layer;
+            if (targetLayer == currentLayer) return;
+            
+            int woodLayer = LayerMask.NameToLayer("Wood");
+            int grassLayer = LayerMask.NameToLayer("Grass");
+            int sandLayer = LayerMask.NameToLayer("Sand");
+            int waterLayer = LayerMask.NameToLayer("Water");
+            int terrainLayer = LayerMask.NameToLayer("Terrain");
+            
+            if (targetLayer == woodLayer) {
+                Wood.SetValue(gameObject);
+            } else if (targetLayer == grassLayer) {
+                Grass.SetValue(gameObject);
+            } else if (targetLayer == sandLayer) {
+                Sand.SetValue(gameObject);
+            } else if (targetLayer == waterLayer) {
+                Water.SetValue(gameObject);
+            } else if (targetLayer == terrainLayer) {
+                string terrainType = GetTerrainTexture();
+                switch (terrainType) {
+                    case "wood":
+                        Wood.SetValue(gameObject);
+                        break;
+                    case "grass":
+                        Grass.SetValue(gameObject);
+                        if (!EnteredArea) forest.SetValue();
+                        break;
+                    case "sand":
+                        Sand.SetValue(gameObject);
+                        if (!EnteredArea) beach.SetValue();
+                        break;
+                    default:
+                        Sand.SetValue(gameObject);
+                        if (!EnteredArea) beach.SetValue();
+                        break;
+                }
+            } else {
+                return;
+            }
+            
+            PlayFootStepSound();
+        }
+        
+        private string GetTerrainTexture() {
+            // UnityEngine.Terrain terrain = TerrainManager.Instance.Terrain;
+            UnityEngine.Terrain terrain = TerrainManager.Instance.Terrain;
+            TerrainData terrainData = TerrainManager.Instance.Terrain.terrainData;
+            Vector3 playerPos = Server.Server.Instance.player.transform.position;
+            
+            float[,,] splatmapData = terrainData.GetAlphamaps(
+                (int)((playerPos.x - terrain.transform.position.x) / terrainData.size.x * terrainData.alphamapWidth),
+                (int)((playerPos.z - terrain.transform.position.z) / terrainData.size.z * terrainData.alphamapHeight),
+                1, 1);
+
+            float maxVal = 0;
+            int maxIndex = 0;
+            for (int i = 0; i < splatmapData.GetLength(2); i++)
+            {
+                if (splatmapData[0, 0, i] > maxVal)
+                {
+                    maxVal = splatmapData[0, 0, i];
+                    maxIndex = i;
+                }
+            }
+
+            // Define terrain textures manually (must match Unity terrain layers)
+            string[] terrainTextures = { "grass", "sand", "grass", "sand" };
+            Debug.Log(terrainTextures[maxIndex]);
+            return terrainTextures[maxIndex];
+        }
+
+        protected void PlayFootStepSound() {
+            /* If it's not moving or not grounded, stop the sound */
+            if (!IsMoving || !_isGrounded) {
+                EventGround.Stop(gameObject);
+                SoundPlaying = false;
+                return;
+            }
+            
+            if (SoundPlaying) return;
+            SoundPlaying = true;
+            EventGround.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, OnSoundEnd, null);
+        }
+        
+        void OnSoundEnd(object in_cookie, AkCallbackType in_type, object in_info) {
+            SoundPlaying = false;
+        }
 
         private void FixedUpdate() {
             Head.transform.localPosition = Vector3.Lerp(Head.transform.localPosition, crouchTarget, crouchSpeed * Time.deltaTime);
@@ -179,13 +360,13 @@ namespace Player {
                 }
             }
 
-            if (keyDown) {
-                // if (!footStepSound.isPlaying) footStepSound.Play();
-                FootStepManager.Instance.PlayFootstep();
-            } else {
-                // footStepSound.Stop();
-                FootStepManager.Instance.StopFootstep();
-            }
+            // if (keyDown) {
+            //     // if (!footStepSound.isPlaying) footStepSound.Play();
+            //     FootStepManager.Instance.PlayFootstep();
+            // } else {
+            //     // footStepSound.Stop();
+            //     FootStepManager.Instance.StopFootstep();
+            // }
             
             /* Make sure the body is not tilted */
             transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);

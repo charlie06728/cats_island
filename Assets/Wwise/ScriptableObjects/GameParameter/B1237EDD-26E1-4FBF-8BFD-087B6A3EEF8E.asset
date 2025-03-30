@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac57eddb0c10ee1478e7d2b37c46cbb4, type: 3}
+  m_Name: B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E
+  m_EditorClassIdentifier: 
+  objectName: Time_Of_Day
+  id: 207908541
+  guid: B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E

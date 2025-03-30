@@ -17,15 +17,22 @@ using Vector3 = UnityEngine.Vector3;
 namespace Player {
     /* The camera objet */
     public class CameraObject : Item {
+        public AK.Wwise.Event cameraOn;
+        public AK.Wwise.Event cameraOff;
         public Camera photoCamera;
+        public GameObject screen;
         public Vector3 cameraScale;
         public GameObject photoPrefab;
+        public GameObject screenCameraAnimationPrefab;
         public AudioSource cameraSoundTakePicture;
         public LayerMask catLayerMask;
         [NonSerialized] public Photo CurrentPhoto;
         public float zoom_max = 30f; // Max amount of zoom
         public float zoom_speed = 0.5f; // Speed at which scrolling zooms in/out
         public float zoom_speed_controller = 1000f;
+        
+        public LayerMask cameraLayerMask;
+        
         // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
         MeshRenderer screen_renderer;
@@ -44,7 +51,9 @@ namespace Player {
 
         private float _prevTakeTime = 0f;
         private Animator _snapAnimator;
+        private Animator _screenSnapAnimator;
         private CameraAnimation _cameraAnimation;
+        private CameraAnimation _screenCameraAnimation;
         
         /* child mesh renderers */
         private MeshRenderer[] meshRenderers;
@@ -137,6 +146,14 @@ namespace Player {
                 _cameraAnimation.ShowImage();
                 // _snapAnimator.SetTrigger("TakePhoto");
                 _snapAnimator.Play("CameraAnimation", 0, 0f);
+            } else {
+                /* Instantiate and set active all components */
+                if (_screenSnapAnimator == null) _screenSnapAnimator = GameObject.Instantiate(screenCameraAnimationPrefab, screen.transform).GetComponent<Animator>();
+                if (_screenCameraAnimation == null) _screenCameraAnimation = _screenSnapAnimator.gameObject.GetComponent<CameraAnimation>();
+                _screenCameraAnimation.HideImage();
+                _screenSnapAnimator.gameObject.SetActive(true);
+                _screenCameraAnimation.ShowImage();
+                _screenSnapAnimator.Play("CameraAnimation", 0, 0);
             }
             
             /* Record the camera position */
@@ -234,18 +251,18 @@ namespace Player {
             // foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
             
             Cat.Cat finalCat = null;
-            float finalDistance = float.MaxValue;
+            float finalDistance = 25;
             
             /* Iterate through the cats and see if within the frustum */
             foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
                 GameObject obj = cat.gameObject;
                 
-                /* Calculate the distance between main camera and cat */
-                float d = Vector3.Distance(camera.transform.position, obj.transform.position);
-                if (d < finalDistance) {
-                    finalDistance = d;
-                    finalCat = cat;
-                } else continue;
+                /* Cast a ray between main camera and cat to see if being blocked by terrains */
+                RaycastHit cameraHit;
+                Vector3 rayDirection = obj.transform.position - camera.transform.position;
+                if (Physics.Raycast(camera.transform.position, rayDirection, out cameraHit, rayDirection.magnitude, layerMask:cameraLayerMask)) {
+                    continue;
+                }
 
                 CurrentPhoto.Stars = 0;
                 
@@ -254,36 +271,44 @@ namespace Player {
                 // Get all renderers in this object and its children
                 Renderer[] childRenderers = obj.GetComponentsInChildren<Renderer>();
             
+                int casthit = 0;
                 foreach (Renderer renderer in childRenderers) {
                     if (GeometryUtility.TestPlanesAABB(frustumPlanes, renderer.bounds)) {
-                        int casthit = 0;
-                        foreach (GameObject castPoint in cat.castPoints) {
-                            RaycastHit hit;
-                            Vector3 direction = castPoint.transform.position - camera.transform.position;
-                            float distance = direction.magnitude; // Limit ray to cat's distance
-                            if (Physics.Raycast(camera.transform.position, direction, out hit, distance)) {
-                                /* If the hit object has cat layer, means hit */
-                                if ((1 << hit.transform.gameObject.layer & catLayerMask) != 0) {
-                                    casthit++;
-                                }
-                            }
-                        }
-
-                        if (casthit > 0) {
-                            // catsInView.Add(cat);
-                            finalCat = cat;
-                            // CurrentPhoto.Stars += casthit;
-                            Debug.Log($"Cat star: {casthit}");
-                        }
+                        casthit++;
+                        // foreach (GameObject castPoint in cat.castPoints) {
+                        //     RaycastHit hit;
+                        //     Vector3 direction = castPoint.transform.position - camera.transform.position;
+                        //     float distance = direction.magnitude; // Limit ray to cat's distance
+                            // if (Physics.Raycast(camera.transform.position, direction, out hit, distance)) {
+                            //     /* If the hit object has cat layer, means hit */
+                            //     if ((1 << hit.transform.gameObject.layer & catLayerMask) != 0) {
+                            //         casthit++;
+                            //     }
+                            // }
+                        // }
                         
                         // Debug.Log($"{renderer.gameObject.name} is visible.");
                         // catsInView.Add(obj.gameObject.GetComponent<Cat.Cat>());
-                        break;
+                        // break;
+                    }
+                    
+                    if (casthit >= childRenderers.Length / 2 && casthit > 0) {
+                        // catsInView.Add(cat);
+                        // finalCat = cat;
+                        // CurrentPhoto.Stars += casthit;
+                        Debug.Log($"Cat star: {casthit}");
+                            
+                        /* Calculate the distance between main camera and cat */
+                        float d = Vector3.Distance(camera.transform.position, obj.transform.position);
+                        if (d < finalDistance) {
+                            finalDistance = d;
+                            finalCat = cat;
+                        } else continue;
                     }
                 }
             }
             
-            catsInView.Add(finalCat);
+            if (finalCat != null) catsInView.Add(finalCat);
             
             /* Check if the cat is captured before */
             Debug.Log(finalCat.catBreed);
@@ -405,6 +430,9 @@ namespace Player {
             // hand_renderer.enabled = false;
             zoomScroll.gameObject.SetActive(true);
             Server.Server.Instance.cameraMode.SetActive(true);
+            
+            /* Post caemra on sfx */
+            cameraOn.Post(gameObject);
         }
 
         protected void ExitCameraMode() {
@@ -484,6 +512,9 @@ namespace Player {
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
+            
+            /* Post camera off sfx */
+            cameraOff.Post(gameObject);
         }
 
         protected void EnableCameraModeUI() {

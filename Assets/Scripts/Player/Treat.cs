@@ -9,6 +9,7 @@ namespace Player {
     public class Treat : Item {
         public float treat_distance; // Distance at which we should be able to place a treat
         public float cat_trigger_distance; // Distance at which we trigger cats to enter treat mode
+        public AK.Wwise.Event TreatLaunch;
         public GameObject treatPrefab;
         CatBehaviour[] cats;
         // Camera mainCamera;

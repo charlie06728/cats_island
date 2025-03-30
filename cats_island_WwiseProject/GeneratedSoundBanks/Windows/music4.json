@@ -1,0 +1,56 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1730564822",
+    "Type": "User",
+    "GUID": "{DDCA63C9-74B7-4123-8823-3A8CC138E55D}",
+    "Language": "SFX",
+    "Hash": "{8D916EDD-46D3-3425-DD69-8744A6AF0ABE}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\music4",
+    "ShortName": "music4",
+    "Path": "music4.bnk",
+    "Media": [
+     {
+      "Id": "39169034",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMhorn_lp.wav",
+      "CachePath": "E0/{E04C593C-3BAA-3D03-A90A-5FBFB6B3DCA9}.wem"
+     },
+     {
+      "Id": "270066165",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMenghorn_lp.wav",
+      "CachePath": "5B/{5B7C298B-0803-25D3-DD6F-8F5BF6CA0F67}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3997730197",
+      "Name": "mus_Soundtrack4",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack4",
+      "GUID": "{D3DB041F-963C-4FD1-B3FF-13F06F4B6C6B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "39169034"
+       },
+       {
+        "Id": "270066165"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4651E832-A37D-A95C-9EE6-C9888AC6157D}"
+ }
+}

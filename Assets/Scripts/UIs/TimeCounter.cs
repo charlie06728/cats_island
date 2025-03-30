@@ -4,6 +4,7 @@ using TMPro;
 
 public class TimeCounter : MonoBehaviour
 {
+    public static TimeCounter instance;
     public TimeManager tm;
     private TMP_Text text;
 
@@ -12,6 +13,13 @@ public class TimeCounter : MonoBehaviour
     string ampm;
 
     void Start() {
+        /* Singleton pattern */
+        if (instance == null) {
+            instance = this;
+        } else {
+            Destroy(gameObject);
+        }
+        
         text = gameObject.GetComponent<TMP_Text>();
     }
     void Update()

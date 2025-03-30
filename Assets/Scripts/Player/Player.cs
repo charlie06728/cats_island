@@ -8,6 +8,7 @@ namespace Player {
         public GameObject Hand;
         public GameObject ItemHook;
         public GameObject EyeView;
+        
 
         protected void Awake() {
             /* Make sure the components are set */

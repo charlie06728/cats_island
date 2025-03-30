@@ -1,0 +1,143 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1730564819",
+    "Type": "User",
+    "GUID": "{0D7FECC1-D223-440E-9605-DAD075EFE083}",
+    "Language": "SFX",
+    "Hash": "{F3033F26-93D2-3932-62FC-5A592C31C449}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\music1",
+    "ShortName": "music1",
+    "Path": "music1.bnk",
+    "Media": [
+     {
+      "Id": "866056481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMmarimba_lp.wav",
+      "CachePath": "02/{02C439F9-28F1-F025-D827-21757FE6E66B}.wem"
+     },
+     {
+      "Id": "979688819",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "mus_4-4_86bpm_STEMvibraphone_lp.wav",
+      "CachePath": "4F/{4FD33BAB-5D31-165E-C7D3-039419CFB0D7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1211181101",
+      "Name": "midday",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\midday",
+      "GUID": "{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1283697787",
+      "Name": "mus_Soundtrack",
+      "ObjectPath": "\\Events\\Anthony\\mus_Stems\\mus_Soundtrack",
+      "GUID": "{227D352D-707C-48E5-8DB5-F2320A44CA1B}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "866056481"
+       },
+       {
+        "Id": "979688819"
+       }
+      ],
+      "ActionPostEvent": [
+       {
+        "Id": "1211181101",
+        "Name": "midday",
+        "ObjectPath": "\\Events\\Anthony\\mus_Stems\\midday",
+        "GUID": "{436AA9CD-78A6-4A15-94FA-4E7909FAAA26}"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "1176052424",
+        "Id": "4075332698",
+        "Name": "beach",
+        "ObjectPath": "\\States\\Anthony\\Location\\beach",
+        "GUID": "{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "207908541",
+      "Name": "Time_Of_Day",
+      "ObjectPath": "\\Game Parameters\\Anthony\\Time_Of_Day",
+      "GUID": "{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1176052424",
+      "Name": "Location",
+      "ObjectPath": "\\States\\Anthony\\Location",
+      "GUID": "{8CCBFE97-1CB6-4FB4-9455-AF3C9E336327}",
+      "States": [
+       {
+        "Id": "491961918",
+        "Name": "forest",
+        "ObjectPath": "\\States\\Anthony\\Location\\forest",
+        "GUID": "{FC60ACC4-7D06-4445-9241-52CC6047EB06}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Anthony\\Location\\None",
+        "GUID": "{894A8BA2-79B4-40B0-8702-018614CB10FF}"
+       },
+       {
+        "Id": "1944232204",
+        "Name": "pond",
+        "ObjectPath": "\\States\\Anthony\\Location\\pond",
+        "GUID": "{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"
+       },
+       {
+        "Id": "2281727986",
+        "Name": "cat_tree",
+        "ObjectPath": "\\States\\Anthony\\Location\\cat_tree",
+        "GUID": "{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"
+       },
+       {
+        "Id": "2822410613",
+        "Name": "lighthouse",
+        "ObjectPath": "\\States\\Anthony\\Location\\lighthouse",
+        "GUID": "{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"
+       },
+       {
+        "Id": "3223325804",
+        "Name": "catnip",
+        "ObjectPath": "\\States\\Anthony\\Location\\catnip",
+        "GUID": "{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"
+       },
+       {
+        "Id": "4075332698",
+        "Name": "beach",
+        "ObjectPath": "\\States\\Anthony\\Location\\beach",
+        "GUID": "{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FBE5062D-B57E-37B6-2C56-4EFC3D42B029}"
+ }
+}

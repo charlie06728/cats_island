@@ -3,58 +3,120 @@
 	<Events>
 		<WorkUnit Name="Elienna" ID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="sfx_Cat_Hungry_Meow" ID="{4BB4E53B-9658-4F18-ADE4-BF23276ED6A5}" ShortID="942417516">
+				<Folder Name="sfx_Cat" ID="{F1244CFA-BE6D-42FC-812A-106A59F990E3}" ShortID="627555412">
 					<ChildrenList>
-						<Event Name="Bengal_Hungry_Meow" ID="{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}">
+						<Folder Name="sfx_Cat_Hungry_Meow" ID="{4BB4E53B-9658-4F18-ADE4-BF23276ED6A5}" ShortID="942417516">
 							<ChildrenList>
-								<Action Name="" ID="{C28187D2-E924-4F32-80EC-3CF26BF6A67D}" ShortID="660297257">
+								<Event Name="Bengal_Hungry_Meow" ID="{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}">
+									<ChildrenList>
+										<Action Name="" ID="{C28187D2-E924-4F32-80EC-3CF26BF6A67D}" ShortID="660297257">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bengal_Hungry_Meow" ID="{E2083ADD-E9CE-4932-A2A4-DA24905DF8E6}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="GreyCat_Hungry_Meow" ID="{578A7CDB-1325-468F-837E-E6EF60C3AB38}">
+									<ChildrenList>
+										<Action Name="" ID="{440767BA-BD72-4EFF-9F7B-23DF56F4FEEE}" ShortID="239919535">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GreyCat_Hungry_Meow" ID="{C10A9564-7FE0-437F-B9AC-E3136D05F18C}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}">
+									<ChildrenList>
+										<Action Name="" ID="{5BF5BCDF-87FC-4405-A1DF-F73EBBDA963B}" ShortID="405491027">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{62BF9E46-26A5-40B6-B5C0-9133D6334407}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Ragdoll_Hungry_Meow" ID="{05100864-19CE-4EBD-A9A0-320999D44D78}">
+									<ChildrenList>
+										<Action Name="" ID="{799648C9-2FA3-4DA1-9A21-0E7C91285E5B}" ShortID="798322080">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ragdoll_Hungry_Meow" ID="{D6B64EB1-12C6-47C9-A403-D13670FED01C}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Tabby_Hungry_Meow" ID="{1EA2EA2C-4C22-419B-A2DC-568A07D026A4}">
+									<ChildrenList>
+										<Action Name="" ID="{2D3E0BE5-B358-41D8-8AA1-BF5529CE47FD}" ShortID="381164487">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Tabby_Hungry_Meow" ID="{04B4B24C-D662-45C2-AAB3-A9BBF798D554}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="sfx_cat_eat" ID="{A97A2493-C2D3-448D-8498-E52A3E382826}">
+							<ChildrenList>
+								<Action Name="" ID="{C7EA30C5-F1E4-4FA0-A71E-6A82DEFFA83F}" ShortID="1025818457">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.4"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Bengal_Hungry_Meow" ID="{E2083ADD-E9CE-4932-A2A4-DA24905DF8E6}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+											<ObjectRef Name="sfx_Cat_Eat" ID="{B8F4955F-948B-4717-9882-35EA5EE4F9E2}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="GreyCat_Hungry_Meow" ID="{578A7CDB-1325-468F-837E-E6EF60C3AB38}">
+						<Event Name="sfx_cat_hiss" ID="{A25A2D05-EB2C-4E17-B22F-C002E81EC8A8}">
 							<ChildrenList>
-								<Action Name="" ID="{440767BA-BD72-4EFF-9F7B-23DF56F4FEEE}" ShortID="239919535">
+								<Action Name="" ID="{5D637138-007A-4F48-BEB1-961E9FFC873A}" ShortID="72649748">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="GreyCat_Hungry_Meow" ID="{C10A9564-7FE0-437F-B9AC-E3136D05F18C}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+											<ObjectRef Name="sfx_cat_hiss_ah" ID="{AED564FB-BD8C-414E-8A77-EFDD93EEA315}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B958CEB5-D419-4DAF-886A-5BD14D32E2CF}" ShortID="1067160773">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_cat_hiss_ss" ID="{609A29C3-41D2-48CB-86E2-B72F7B656DE9}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}">
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sfx_Treat" ID="{A6604AD7-B0CF-40BB-92CE-D7B143EF1DD5}" ShortID="661131822">
+					<ChildrenList>
+						<Event Name="sfx_treat_launch" ID="{DB2DA747-1DE1-4ED1-B1A3-6DBE29C2DA87}">
 							<ChildrenList>
-								<Action Name="" ID="{5BF5BCDF-87FC-4405-A1DF-F73EBBDA963B}" ShortID="405491027">
+								<Action Name="" ID="{0169A1AD-9BFE-40D6-8A1F-6EAAA47D7684}" ShortID="357848712">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{62BF9E46-26A5-40B6-B5C0-9133D6334407}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+											<ObjectRef Name="treat_launch" ID="{C5A1A849-CE77-4631-81DC-0C9053FB4834}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Ragdoll_Hungry_Meow" ID="{05100864-19CE-4EBD-A9A0-320999D44D78}">
+						<Event Name="sfx_treat_drop" ID="{60736514-E12A-44F7-81DD-A333F1AE480D}">
 							<ChildrenList>
-								<Action Name="" ID="{799648C9-2FA3-4DA1-9A21-0E7C91285E5B}" ShortID="798322080">
+								<Action Name="" ID="{DA53F5AA-B795-4B82-BBA0-74601732EB89}" ShortID="862637053">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ragdoll_Hungry_Meow" ID="{D6B64EB1-12C6-47C9-A403-D13670FED01C}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Tabby_Hungry_Meow" ID="{1EA2EA2C-4C22-419B-A2DC-568A07D026A4}">
-							<ChildrenList>
-								<Action Name="" ID="{2D3E0BE5-B358-41D8-8AA1-BF5529CE47FD}" ShortID="381164487">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Tabby_Hungry_Meow" ID="{04B4B24C-D662-45C2-AAB3-A9BBF798D554}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+											<ObjectRef Name="treat_drop" ID="{4419FD20-5BD8-482D-BA08-74A1F9E00369}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
