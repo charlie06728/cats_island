@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 47dc6fec587c2446a7b9dbcf10e31f07
     GuidInternal: 
-    m_lastTime: -8584586553091698906
+    m_lastTime: -8584582488509892545
     List:
     - name: MasterBus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584586553074283272
+    m_lastTime: -8584582488498337224
     List:
     - name: ambience
       guid: 8a91f6ebedd74a4880126c323ddcbc79
@@ -164,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events\Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584584932407672887
+    m_lastTime: -8584582488543388115
     List:
     - name: amb_Ambience
       guid: 53a4f75f8bae2c4a9a65689f2a7ce253
@@ -531,7 +531,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d553778896d8f648a9309858f96c2df9
       Path: Events\Anthony\sfx_Movement\sfx_Footsteps
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 2.2513592
       minDuration: 0.33726084
     - name: sfx_Jump
@@ -551,7 +551,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7562375e84ec4048b5b814b496e03f88
       Path: Events\Anthony\sfx_Movement\sfx_Jump
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.25
       minDuration: 0.15766808
     - name: sfx_Landing
@@ -632,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events\Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584586553111763879
+    m_lastTime: -8584582488543377527
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -654,7 +654,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: bf85011b5a4da14f93c89b985d79da33
       Path: Events\Elienna\sfx_Cat\sfx_Cat_Hungry_Meow\Bengal_Hungry_Meow
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 1.4465203
       minDuration: 0.6443515
     - name: GreyCat_Hungry_Meow
@@ -737,7 +737,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 93247aa9d3c28d448498e52a3e382826
       Path: Events\Elienna\sfx_Cat\sfx_cat_eat
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 4.078922
       minDuration: 3.4935923
     - name: sfx_cat_hiss
@@ -834,7 +834,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 47a72ddbe11dd14eb1a36dbe29c2da87
       Path: Events\Elienna\sfx_Treat\sfx_treat_launch
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 2.3386092
       minDuration: 1.7519772
     - name: Tabby_Hungry_Meow
@@ -895,7 +895,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Anthony
     guid: 747ed4c5d250174d9c25eb13858cdf27
     GuidInternal: 
-    m_lastTime: -8584586553111758170
+    m_lastTime: -8584582488543367340
     List:
     - name: Time_Of_Day
       guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
@@ -963,7 +963,7 @@ MonoBehaviour:
     ParentPath: States\Anthony
     guid: 21611006dff36c499e841738153e7461
     GuidInternal: 
-    m_lastTime: -8584586553074283272
+    m_lastTime: -8584582488498314644
     List:
     - name: Location
       guid: 97fecb8cb61cb44f9455af3c9e336327
@@ -1119,7 +1119,7 @@ MonoBehaviour:
     ParentPath: States\Elienna
     guid: 7f2b418ba36b2d40a4e4e5cc6a552367
     GuidInternal: 
-    m_lastTime: -8584586553074267974
+    m_lastTime: -8584582488498314644
     List:
     - name: Preferred_Treat
       guid: fd4d8967cf5f5148939979a53e10a071
@@ -1265,7 +1265,7 @@ MonoBehaviour:
     ParentPath: Switches\Anthony
     guid: 27638023a565d7418bfab37636cd15b1
     GuidInternal: 
-    m_lastTime: -8584586553074267974
+    m_lastTime: -8584582488498303769
     List:
     - name: Ground_Material
       guid: 40e2080494fea64782f310d790d4c05f
@@ -1373,7 +1373,7 @@ MonoBehaviour:
     ParentPath: Switches\Elienna
     guid: c437981960abf84e9b98078bdbc19c55
     GuidInternal: 
-    m_lastTime: -8584586553074267974
+    m_lastTime: -8584582488498293272
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu

@@ -45,6 +45,7 @@ namespace Server {
         public Scrollbar zoomScroll;
         public GameObject cameraMode;
         public ItemBar itemBar;
+        public Canvas pausemenu;
         
         /* Cats */
         [NonSerialized] public List<Cat.Cat> Cats = new List<Cat.Cat>();

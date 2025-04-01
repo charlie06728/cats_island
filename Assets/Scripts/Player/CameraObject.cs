@@ -311,6 +311,7 @@ namespace Player {
             if (finalCat != null) catsInView.Add(finalCat);
             
             /* Check if the cat is captured before */
+            Debug.Log(finalCat.catBreed);
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);
@@ -460,6 +461,7 @@ namespace Player {
 
             foreach (Cat.Cat cat in photo.Cats) {
                 if (cat.Behaviour.State == Cat.CatState.Pose) {
+                    Brochure.PurrfectCats.Add(cat.catBreed);
                     star++;
                 }
             }

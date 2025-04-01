@@ -14,6 +14,10 @@ namespace Player {
         public RawImage rawImage1;
         public RawImage rawImage2;
 
+        // Covers for left and right page
+        public Image cover1;
+        public Image cover2;
+
         public RawImage collect1;
         public RawImage collect2;
 
@@ -38,6 +42,7 @@ namespace Player {
 
         [NonSerialized] public List<Cat.Cat> _allCats;
         [NonSerialized] public static HashSet<string> CollectedCats = new HashSet<string>();
+        [NonSerialized] public static HashSet<string> PurrfectCats = new HashSet<string>();
         
         // [NonSerialized] public Photo Photo1;
         // [NonSerialized] public Photo Photo2;
@@ -139,14 +144,20 @@ namespace Player {
             if (displayIndex == 0) {
                 rawImage1.gameObject.SetActive(true);
                 if (CollectedCats.Contains(cat.catBreed)) {
+                    cover1.gameObject.SetActive(false);
+                } else {
+                    cover1.gameObject.SetActive(true);
+                }
+
+                if (PurrfectCats.Contains(cat.catBreed)) {
                     collect1.gameObject.SetActive(true);
                 } else {
                     collect1.gameObject.SetActive(false);
                 }
                 // catName1.gameObject.SetActive(true);
-                catBreed1.gameObject.SetActive(true);
-                preferSnack1.gameObject.SetActive(true);
-                habitat1.gameObject.SetActive(true);
+                // catBreed1.gameObject.SetActive(true);
+                // preferSnack1.gameObject.SetActive(true);
+                // habitat1.gameObject.SetActive(true);
 
                 rawImage1.texture = cat.catImage.mainTexture;
                 // catName1.text = cat.catName;
@@ -157,14 +168,20 @@ namespace Player {
             } else {
                 rawImage2.gameObject.SetActive(true);
                 if (CollectedCats.Contains(cat.catBreed)) {
+                    cover2.gameObject.SetActive(false);
+                } else {
+                    cover2.gameObject.SetActive(true);
+                }
+
+                if (PurrfectCats.Contains(cat.catBreed)) {
                     collect2.gameObject.SetActive(true);
                 } else {
                     collect2.gameObject.SetActive(false);
                 }
                 // catName2.gameObject.SetActive(true);
-                catBreed2.gameObject.SetActive(true);
-                preferSnack2.gameObject.SetActive(true);
-                habitat2.gameObject.SetActive(true);
+                // catBreed2.gameObject.SetActive(true);
+                // preferSnack2.gameObject.SetActive(true);
+                // habitat2.gameObject.SetActive(true);
 
                 rawImage2.texture = cat.catImage.mainTexture;
                 // catName2.text = cat.catName;
@@ -199,6 +216,12 @@ namespace Player {
             preferSnack2.gameObject.SetActive(true);
             habitat1.gameObject.SetActive(true);
             habitat2.gameObject.SetActive(true);
+        }
+
+        public void ResetProgress() {
+            // Reset progress
+            CollectedCats = new HashSet<string>();
+            PurrfectCats = new HashSet<string>();
         }
     }
 }

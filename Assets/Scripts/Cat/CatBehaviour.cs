@@ -50,7 +50,8 @@ namespace Cat {
 
             StateToBehaviour[CatState.Idle] = new CatIdleBehaviour(Cat);
             //TODO: change to other behaviours
-            StateToBehaviour[CatState.Treat] = new CatIdleBehaviour(Cat);
+            StateToBehaviour[CatState.Treat] = new CatTreatBehaviour(Cat);
+            StateToBehaviour[CatState.Pose] = new CatPoseBehaviour(Cat);
             StateToBehaviour[CatState.Sit] = new CatSitBehaviour(Cat);
             StateToBehaviour[CatState.FollowTreat] = new CatFollowTreatBehaviour(Cat);
             StateToBehaviour[CatState.Pose] = new CatPoseBehaviour(Cat);

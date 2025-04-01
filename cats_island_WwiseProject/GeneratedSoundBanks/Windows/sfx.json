@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5054B7FD-17EE-4A49-B11C-CBEC5B5924B5}",
     "Language": "SFX",
-    "Hash": "{1082670E-0A6C-3F4C-F246-A91C58324806}",
+    "Hash": "{59AF6458-8A98-151F-B440-BBC9DF751518}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -670,6 +670,7 @@
       "Name": "Bengal_Hungry_Meow",
       "ObjectPath": "\\Events\\Elienna\\sfx_Cat\\sfx_Cat_Hungry_Meow\\Bengal_Hungry_Meow",
       "GUID": "{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "0.6443515",
       "DurationMax": "1.4465203",
@@ -866,6 +867,7 @@
       "Name": "sfx_cat_eat",
       "ObjectPath": "\\Events\\Elienna\\sfx_Cat\\sfx_cat_eat",
       "GUID": "{A97A2493-C2D3-448D-8498-E52A3E382826}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "3.4935923",
       "DurationMax": "4.078922",
@@ -909,6 +911,7 @@
       "Name": "sfx_Footsteps",
       "ObjectPath": "\\Events\\Anthony\\sfx_Movement\\sfx_Footsteps",
       "GUID": "{887753D5-D896-48F6-A930-9858F96C2DF9}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "0.33726084",
       "DurationMax": "2.2513592",
@@ -1002,6 +1005,7 @@
       "Name": "sfx_Jump",
       "ObjectPath": "\\Events\\Anthony\\sfx_Movement\\sfx_Jump",
       "GUID": "{5E376275-EC84-4840-B5B8-14B496E03F88}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "0.15766808",
       "DurationMax": "1.25",
@@ -1202,6 +1206,7 @@
       "Name": "sfx_treat_launch",
       "ObjectPath": "\\Events\\Elienna\\sfx_Treat\\sfx_treat_launch",
       "GUID": "{DB2DA747-1DE1-4ED1-B1A3-6DBE29C2DA87}",
+      "MaxAttenuation": "30",
       "DurationType": "OneShot",
       "DurationMin": "1.7519772",
       "DurationMax": "2.3386092",
@@ -1306,6 +1311,6 @@
     ]
    }
   ],
-  "FileHash": "{E28FE583-005D-81AE-E231-D8D4B5D059AA}"
+  "FileHash": "{F0BCF5B9-7C63-1C4E-BD68-8FF04944B3CE}"
  }
 }

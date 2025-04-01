@@ -14,9 +14,12 @@ public class TimeManager : MonoBehaviour
     
     public int hours;
     public int minutes;
+    public int days;
     
     public Image[] clock_images;
 
+    public GameObject dayEndScreen;
+    
     public float NormalizeTimeSound {
         get {
             return curr_time / day_length * 12f;
@@ -34,7 +37,9 @@ public class TimeManager : MonoBehaviour
 
     void Start() {
         hour_length = day_length / 15f;
+        dayEndScreen.SetActive(false);
     }
+
 
     void Update()
     {
@@ -42,6 +47,8 @@ public class TimeManager : MonoBehaviour
         gameObject.transform.rotation = Quaternion.Euler(180 * (curr_time / day_length), 0f, 0f);
         if (curr_time >= day_length) {
             curr_time = 0;
+            days += 1;
+            day_change();
         }
         // Sun rises at 6 am and sets at 9 pm
         // 15 total hours
@@ -60,9 +67,21 @@ public class TimeManager : MonoBehaviour
     }
 
 
-    private void OnDaysChange(int value) {
+    private void day_change() {
         // OnDaysChanged not implemented yet, this can be for displaying results screen when the day ends
         curr_time = 0;
+        Time.timeScale = 0;
+        dayEndScreen.SetActive(true);
+    }
+
+    public void ResetTime() {
+        // Reset the time to the beginning
+        curr_time = 0;
+        minutes = 0;
+        hours = 0;
+        days = 0;
     }
 
 }
+
+
