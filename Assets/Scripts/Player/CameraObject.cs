@@ -251,7 +251,7 @@ namespace Player {
             // foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
             
             Cat.Cat finalCat = null;
-            float finalDistance = 25;
+            float finalDistance = 45;
             
             /* Iterate through the cats and see if within the frustum */
             foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
@@ -307,11 +307,13 @@ namespace Player {
                     }
                 }
             }
-            
-            if (finalCat != null) catsInView.Add(finalCat);
+
+            if (finalCat != null) {
+                catsInView.Add(finalCat);
+                Debug.Log(finalCat.catBreed);
+            }
             
             /* Check if the cat is captured before */
-            Debug.Log(finalCat.catBreed);
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);

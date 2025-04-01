@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -13,13 +15,36 @@ namespace Player {
         public Brochure brochure;
         public PlayerPocket pocket;
 
-        
+        private Action<InputAction.CallbackContext> _close;
 
         public void OnVolumeChanged (){
             AkSoundEngine.SetRTPCValue("MasterVolume", volumeSlider.value);
         }
 
+        public void Show() {
+            if (gameObject.activeInHierarchy) {
+                Resume();
+            } else {
+                gameObject.SetActive(true);
+                Time.timeScale = 0;
+            
+                /* Display the cursor */
+                Cursor.visible = true;
+            }
+        }
+
+        public void Update() {
+            if (gameObject.activeInHierarchy) {
+                /* Display the cursor */
+                Cursor.visible = true;
+            } else {
+                /* Hide the cursor */
+                Cursor.visible = false;
+            }
+        }
+
         public void Resume() {
+            Cursor.visible = false;
             Time.timeScale = 1;
             gameObject.SetActive(false);
         }

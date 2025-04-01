@@ -45,6 +45,7 @@ namespace Player {
         private Dictionary<string, bool> _keyDown = new Dictionary<string, bool>();
         
         /* Sounds */
+        private bool _inWater = false;
         private LayerMask currentLayer;
         public AK.Wwise.Switch Grass;
         public AK.Wwise.Switch Sand;
@@ -77,7 +78,7 @@ namespace Player {
             }
         }
 
-        public GameObject pauseMenu;
+        public SettingsMenu pauseMenu;
 
 
         /* Recieves messages from the PlayerInput component on the player when the player presses/releases shift/ctrl */
@@ -172,8 +173,7 @@ namespace Player {
                 }
             };
             Server.Server.Instance.InputActionMap["Pause"].performed += context => {
-                Time.timeScale = 0;
-                pauseMenu.SetActive(true);
+                pauseMenu.Show();
             };
         }
         
@@ -323,7 +323,7 @@ namespace Player {
             }
 
             // Define terrain textures manually (must match Unity terrain layers)
-            string[] terrainTextures = { "grass", "sand", "grass", "sand" };
+            string[] terrainTextures = { "grass", "sand", "grass", "sand", "grass"};
             Debug.Log(terrainTextures[maxIndex]);
             return terrainTextures[maxIndex];
         }

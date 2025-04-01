@@ -90,13 +90,16 @@ namespace Server {
             /* wait for 0.5 seconds */
             yield return new WaitForSeconds(0.5f);
             
-            string[] bothColliderAndRb = new string[] {"Bowl", "Toy"};
-            string[] colliderOnly = new string[] {"Rock"};
+            string[] bothColliderAndRb = new string[] {"Bowl", "Toy", "Littlelight"};
+            string[] colliderOnly = new string[] {"Rock", "sign"};
             /* Iterate through all game objects in the scene, add mesh collider to the object with name that contains letter "Bowl" */
             foreach (GameObject go in UnityEngine.Object.FindObjectsOfType<GameObject>()) {
                 bool added = false;
                 foreach (string n in bothColliderAndRb) {
                     if (go.name.Contains(n)) {
+                        /* Set the object layer to terrain */
+                        go.layer = LayerMask.NameToLayer("Toy");
+                        
                         go.AddComponent<BoxCollider>();
                         BoxCollider mc = go.GetComponent<BoxCollider>();
                         mc.includeLayers = GroundLayer;
@@ -113,6 +116,9 @@ namespace Server {
                 if (!added) {
                     foreach (string n in colliderOnly) {
                         if (go.name.Contains(n)) {
+                            /* Set the object layer to terrain */
+                            go.layer = LayerMask.NameToLayer("Toy");
+                            
                             go.AddComponent<MeshCollider>();
                             break;
                         }
