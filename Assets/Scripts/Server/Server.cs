@@ -91,7 +91,7 @@ namespace Server {
             yield return new WaitForSeconds(0.5f);
             
             string[] bothColliderAndRb = new string[] {"Bowl", "Toy", "Littlelight"};
-            string[] colliderOnly = new string[] {"Rock", "sign"};
+            string[] colliderOnly = new string[] {"Rock"};
             /* Iterate through all game objects in the scene, add mesh collider to the object with name that contains letter "Bowl" */
             foreach (GameObject go in UnityEngine.Object.FindObjectsOfType<GameObject>()) {
                 bool added = false;
