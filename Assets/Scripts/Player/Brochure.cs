@@ -20,21 +20,7 @@ namespace Player {
 
         public RawImage collect1;
         public RawImage collect2;
-
-        // public TextMeshProUGUI catName1;
-        // public TextMeshProUGUI catName2;
         
-        public TextMeshProUGUI catBreed1;
-        public TextMeshProUGUI catBreed2;
-        
-        public TextMeshProUGUI preferSnack1;
-        public TextMeshProUGUI preferSnack2;
-        
-        public TextMeshProUGUI habitat1;
-        public TextMeshProUGUI habitat2;
-        
-        public GameObject prevPrompt;
-        public GameObject nextPrompt;
 
         [NonSerialized] public int CurrentStartIndex = 0;
         private Action<InputAction.CallbackContext> _nextPage;
@@ -44,8 +30,6 @@ namespace Player {
         [NonSerialized] public static HashSet<string> CollectedCats = new HashSet<string>();
         [NonSerialized] public static HashSet<string> PurrfectCats = new HashSet<string>();
         
-        // [NonSerialized] public Photo Photo1;
-        // [NonSerialized] public Photo Photo2;
         
         public override void TakeOut() {
             if (gameObject.activeInHierarchy) {
@@ -111,17 +95,17 @@ namespace Player {
             }
             
             /* Hide prompts if possible */
-            if (CurrentStartIndex - 2 < 0) {
-                prevPrompt.SetActive(false);
-            } else {
-                prevPrompt.SetActive(true);
-            }
+            // if (CurrentStartIndex - 2 < 0) {
+            //     prevPrompt.SetActive(false);
+            // } else {
+            //     prevPrompt.SetActive(true);
+            // }
             
-            if (CurrentStartIndex + 2 >= cats.Count) {
-                nextPrompt.SetActive(false);
-            } else {
-                nextPrompt.SetActive(true);
-            }
+            // if (CurrentStartIndex + 2 >= cats.Count) {
+            //     nextPrompt.SetActive(false);
+            // } else {
+            //     nextPrompt.SetActive(true);
+            // }
             
             // List<Photo> photos = PlayerPocket.Album.Photos;
             //
@@ -161,10 +145,10 @@ namespace Player {
 
                 rawImage1.texture = cat.catImage.mainTexture;
                 // catName1.text = cat.catName;
-                catBreed1.text = cat.catBreed;
+                // catBreed1.text = cat.catBreed;
                 
-                preferSnack1.text = cat.catPreferredSnack;
-                habitat1.text = cat.catHabitat;
+                // preferSnack1.text = cat.catPreferredSnack;
+                // habitat1.text = cat.catHabitat;
             } else {
                 rawImage2.gameObject.SetActive(true);
                 if (CollectedCats.Contains(cat.catBreed)) {
@@ -185,10 +169,10 @@ namespace Player {
 
                 rawImage2.texture = cat.catImage.mainTexture;
                 // catName2.text = cat.catName;
-                catBreed2.text = cat.catBreed;
+                // catBreed2.text = cat.catBreed;
                 
-                preferSnack2.text = cat.catPreferredSnack;
-                habitat2.text = cat.catHabitat;
+                // preferSnack2.text = cat.catPreferredSnack;
+                // habitat2.text = cat.catHabitat;
             }
         }
 
@@ -197,12 +181,12 @@ namespace Player {
             rawImage2.gameObject.SetActive(false);
             // catName1.gameObject.SetActive(false);
             // catName2.gameObject.SetActive(false);
-            catBreed1.gameObject.SetActive(false);
-            catBreed2.gameObject.SetActive(false);
-            preferSnack1.gameObject.SetActive(false);
-            preferSnack2.gameObject.SetActive(false);
-            habitat1.gameObject.SetActive(false);
-            habitat2.gameObject.SetActive(false);
+            // catBreed1.gameObject.SetActive(false);
+            // catBreed2.gameObject.SetActive(false);
+            // preferSnack1.gameObject.SetActive(false);
+            // preferSnack2.gameObject.SetActive(false);
+            // habitat1.gameObject.SetActive(false);
+            // habitat2.gameObject.SetActive(false);
         }
         
         protected void ShowAll() {
@@ -210,12 +194,12 @@ namespace Player {
             rawImage2.gameObject.SetActive(true);
             // catName1.gameObject.SetActive(true);
             // catName2.gameObject.SetActive(true);
-            catBreed1.gameObject.SetActive(true);
-            catBreed2.gameObject.SetActive(true);
-            preferSnack1.gameObject.SetActive(true);
-            preferSnack2.gameObject.SetActive(true);
-            habitat1.gameObject.SetActive(true);
-            habitat2.gameObject.SetActive(true);
+            // catBreed1.gameObject.SetActive(true);
+            // catBreed2.gameObject.SetActive(true);
+            // preferSnack1.gameObject.SetActive(true);
+            // preferSnack2.gameObject.SetActive(true);
+            // habitat1.gameObject.SetActive(true);
+            // habitat2.gameObject.SetActive(true);
         }
 
         public void ResetProgress() {
