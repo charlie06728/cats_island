@@ -70,7 +70,13 @@ namespace Player {
         protected override void Awake() {
             base.Awake();
             
-            _allCats = Server.Server.Instance.CatDictionary.Values.ToList();
+            // _allCats = Server.Server.Instance.CatDictionary.Values.ToList();
+            _allCats = new List<Cat.Cat>();
+            _allCats.Add(Server.Server.Instance.CatDictionary["Ragdoll"]);
+            _allCats.Add(Server.Server.Instance.CatDictionary["Grey Tabby"]);
+            _allCats.Add(Server.Server.Instance.CatDictionary["Tuxedo"]);
+            _allCats.Add(Server.Server.Instance.CatDictionary["Grey Cat"]);
+            _allCats.Add(Server.Server.Instance.CatDictionary["Bengal"]);
 
             _nextPage = ctx => {
                 if (CurrentStartIndex + 2 < _allCats.Count) {
