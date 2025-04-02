@@ -20,6 +20,10 @@ namespace Player {
 
         public RawImage collect1;
         public RawImage collect2;
+
+        public GameObject prevPrompt;
+
+        public GameObject nextPrompt;
         
 
         [NonSerialized] public int CurrentStartIndex = 0;
@@ -95,17 +99,17 @@ namespace Player {
             }
             
             /* Hide prompts if possible */
-            // if (CurrentStartIndex - 2 < 0) {
-            //     prevPrompt.SetActive(false);
-            // } else {
-            //     prevPrompt.SetActive(true);
-            // }
+            if (CurrentStartIndex - 2 < 0) {
+                prevPrompt.SetActive(false);
+            } else {
+                prevPrompt.SetActive(true);
+            }
             
-            // if (CurrentStartIndex + 2 >= cats.Count) {
-            //     nextPrompt.SetActive(false);
-            // } else {
-            //     nextPrompt.SetActive(true);
-            // }
+            if (CurrentStartIndex + 2 >= cats.Count) {
+                nextPrompt.SetActive(false);
+            } else {
+                nextPrompt.SetActive(true);
+            }
             
             // List<Photo> photos = PlayerPocket.Album.Photos;
             //

@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &7234518577175574573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,18 +1344,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 0}
   hook: {fileID: 6546605834943009380}
+  notification: {fileID: 0}
   rawImage1: {fileID: 5402853835242360497}
   rawImage2: {fileID: 5588217533325425485}
+  cover1: {fileID: 0}
+  cover2: {fileID: 0}
   collect1: {fileID: 4993038657816554812}
   collect2: {fileID: 1851312922026044000}
-  catBreed1: {fileID: 8280715206610989739}
-  catBreed2: {fileID: 6963446152473097300}
-  preferSnack1: {fileID: 5462040348386203787}
-  preferSnack2: {fileID: 8238756114466746419}
-  habitat1: {fileID: 744941296226610612}
-  habitat2: {fileID: 5285639527229281211}
-  prevPrompt: {fileID: 3295578678011855939}
-  nextPrompt: {fileID: 2262458874008099409}
 --- !u!1 &7117552289651787937
 GameObject:
   m_ObjectHideFlags: 0
