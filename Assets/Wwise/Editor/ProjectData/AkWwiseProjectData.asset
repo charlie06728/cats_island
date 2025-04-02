@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 47dc6fec587c2446a7b9dbcf10e31f07
     GuidInternal: 
-    m_lastTime: -8584582597586528071
+    m_lastTime: -8584581108150473089
     List:
     - name: MasterBus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584582597581618380
+    m_lastTime: -8584581108145886175
     List:
     - name: ambience
       guid: 8a91f6ebedd74a4880126c323ddcbc79
@@ -164,7 +164,7 @@ MonoBehaviour:
     ParentPath: Events/Anthony
     guid: bcce342bf7a25d469d9a1d28b8579891
     GuidInternal: 
-    m_lastTime: -8584582597603578429
+    m_lastTime: -8584581108170227679
     List:
     - name: amb_Ambience
       guid: 53a4f75f8bae2c4a9a65689f2a7ce253
@@ -632,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events/Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584582597603577013
+    m_lastTime: -8584581108170227679
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -895,7 +895,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Anthony
     guid: 747ed4c5d250174d9c25eb13858cdf27
     GuidInternal: 
-    m_lastTime: -8584582597603573838
+    m_lastTime: -8584581108170227679
     List:
     - name: Time_Of_Day
       guid: dd7e23b1e126bf4f8bfd087b6a3eef8e
@@ -963,7 +963,7 @@ MonoBehaviour:
     ParentPath: States/Anthony
     guid: 21611006dff36c499e841738153e7461
     GuidInternal: 
-    m_lastTime: -8584582597581615589
+    m_lastTime: -8584581108145876004
     List:
     - name: Location
       guid: 97fecb8cb61cb44f9455af3c9e336327
@@ -1119,7 +1119,7 @@ MonoBehaviour:
     ParentPath: States/Elienna
     guid: 7f2b418ba36b2d40a4e4e5cc6a552367
     GuidInternal: 
-    m_lastTime: -8584582597581615031
+    m_lastTime: -8584581108145876004
     List:
     - name: Preferred_Treat
       guid: fd4d8967cf5f5148939979a53e10a071
@@ -1265,7 +1265,7 @@ MonoBehaviour:
     ParentPath: Switches/Anthony
     guid: 27638023a565d7418bfab37636cd15b1
     GuidInternal: 
-    m_lastTime: -8584582597581614004
+    m_lastTime: -8584581108145876004
     List:
     - name: Ground_Material
       guid: 40e2080494fea64782f310d790d4c05f
@@ -1373,7 +1373,7 @@ MonoBehaviour:
     ParentPath: Switches/Elienna
     guid: c437981960abf84e9b98078bdbc19c55
     GuidInternal: 
-    m_lastTime: -8584582597581613424
+    m_lastTime: -8584581108145876004
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu

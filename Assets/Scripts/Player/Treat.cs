@@ -7,24 +7,18 @@ using UnityEngine.Serialization;
 
 namespace Player {
     public class Treat : Item {
-        public float treat_distance; // Distance at which we should be able to place a treat
-        public float cat_trigger_distance; // Distance at which we trigger cats to enter treat mode
         public AK.Wwise.Event TreatLaunch;
         public GameObject treatPrefab;
-        CatBehaviour[] cats;
+        public float treat_distance; // Distance at which we should be able to give a treat
+        [NonSerialized] public int Count = 10;
+
         // Camera mainCamera;
 
         private Action<InputAction.CallbackContext> _giveTreatAction;
 
         public override void TakeOut() {
-//             base.TakeOut();
-//             Server.Server.Instance.itemBar.SetCurrentItem(Items.Cookie);
-
-           
             /* Set item visible */
-            cats = FindObjectsByType<CatBehaviour>(FindObjectsSortMode.None);
             gameObject.SetActive(true);
-
             
             /* Make sure the parent is hand */
             transform.SetParent(PlayerPocket.Player.ItemHook.transform);
@@ -44,37 +38,39 @@ namespace Player {
             Server.Server.Instance.InputActionMap["LeftMouse"].performed -= _giveTreatAction;
         }
 
-        public void GiveTreat() {
+        public bool GiveTreat() {
+            if (Count <= 0) return false;
+            TreatLaunch.Post(gameObject);
+            // Count--;
             RaycastHit hit;
             
+            /* Instantiate the treat prefab and drop to the ground */
+            GameObject treat = Instantiate(treatPrefab, transform.position, Quaternion.identity);
+            /* Get the rigidbody of spawned */
+            Rigidbody rb = treat.GetComponent<Rigidbody>();
+            
+            /* Add a force to the forward direction of player */
+            rb.AddForce(PlayerPocket.Player.Head.transform.forward * 5, ForceMode.Impulse);
+            
             // Send out a ray in the direction the camera is facing
-            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
-            if (Physics.Raycast(ray, out hit, treat_distance)) {   
-                // Create a treat on that surface
-                Instantiate(treatPrefab, new Vector3(hit.point.x, hit.point.y + 0.5f, hit.point.z), new Quaternion(0,0,0,0));
+            // Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, treat_distance));
+            // if (Physics.Raycast(ray, out hit, treat_distance)) {   
+            //     if (hit.transform.gameObject.GetComponent<CatBehaviour>() != null) {
+            //         CatBehaviour behaviour = hit.transform.gameObject.GetComponent<CatBehaviour>(); 
+            //         behaviour.SwitchState(CatState.Pose);
+            //         Debug.Log("Given Treat!");
+            //         return true;
+            //     }
+            // }
+            // return false;
 
-                Vector3 currentPos = gameObject.transform.position;
-
-                // All nearby cats move to nearest treat
-                foreach (CatBehaviour c in cats)
-                {   
-                    Transform t = c.gameObject.transform;
-                    float dist = Vector3.Distance(t.position, currentPos);
-                    if (dist < cat_trigger_distance)
-                    {
-                        c.SwitchState(CatState.Treat);
-                    }
-                }
-            }
-        }
-
-        void Start() {
-            cats = FindObjectsOfType<CatBehaviour>();
+            return true;
         }
 
         protected override void Awake() {
             base.Awake();
             _giveTreatAction = ctx => GiveTreat();
+            // mainCamera = mainCamera.main();
         }
 
         protected override void Update() {

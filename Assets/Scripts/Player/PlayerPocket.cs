@@ -31,7 +31,7 @@ namespace Player {
         [NonSerialized] public Heart Heart;
         [NonSerialized] public Fish Fish;
         [NonSerialized] public int CurrentTreat = 0;
-        [NonSerialized] public int CurrentItem = 0;
+        [NonSerialized] public Items CurrentItem = 0;
         [NonSerialized] public List<Items> Treats = new List<Items> {Items.Cookie, Items.Heart, Items.Fish};
         [NonSerialized] public List<Item> ItemList = new List<Item>();
 

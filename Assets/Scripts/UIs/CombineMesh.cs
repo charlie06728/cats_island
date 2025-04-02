@@ -12,7 +12,7 @@ namespace UIs {
             {
                 combine[i].mesh = meshFilters[i].sharedMesh;
                 combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
-                meshFilters[i].gameObject.SetActive(false);
+                // meshFilters[i].gameObject.SetActive(false);
             }
 
             MeshFilter meshFilter = gameObject.AddComponent<MeshFilter>();

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Player;
 using TMPro;
@@ -15,6 +16,8 @@ namespace Server {
         public float ControllerSenstivity = 1f;
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
+        
+        public LayerMask GroundLayer;
 
         public float cameraCoolDown;
 
@@ -60,6 +63,7 @@ namespace Server {
         
         /* Player obj */
         public GameObject player;
+        public Player.Player playerScript;
         
         protected void Awake() {
             if (Instance == null) {
@@ -74,10 +78,53 @@ namespace Server {
             cameraMode.gameObject.SetActive(false);
             
             Cursor.visible = false;
+
+            StartCoroutine(ColliderHandling());
         }
 
         protected void Update() {
             Clock.Update();
+        }
+
+        protected IEnumerator ColliderHandling() {
+            /* wait for 0.5 seconds */
+            yield return new WaitForSeconds(0.5f);
+            
+            string[] bothColliderAndRb = new string[] {"Bowl", "Toy", "Littlelight"};
+            string[] colliderOnly = new string[] {"Rock"};
+            /* Iterate through all game objects in the scene, add mesh collider to the object with name that contains letter "Bowl" */
+            foreach (GameObject go in UnityEngine.Object.FindObjectsOfType<GameObject>()) {
+                bool added = false;
+                foreach (string n in bothColliderAndRb) {
+                    if (go.name.ToLower().Contains(n.ToLower())) {
+                        /* Set the object layer to terrain */
+                        go.layer = LayerMask.NameToLayer("Toy");
+                        
+                        go.AddComponent<BoxCollider>();
+                        BoxCollider mc = go.GetComponent<BoxCollider>();
+                        mc.includeLayers = GroundLayer;
+                        
+                        /* Set include layers to every layer */
+                        Rigidbody rb = go.AddComponent<Rigidbody>();
+                        rb = go.GetComponent<Rigidbody>();
+                        rb.isKinematic = false;
+                        added = true;
+                        break;
+                    }
+                }
+                
+                if (!added) {
+                    foreach (string n in colliderOnly) {
+                        if (go.name.ToLower().Contains(n.ToLower())) {
+                            /* Set the object layer to terrain */
+                            go.layer = LayerMask.NameToLayer("Toy");
+                            
+                            go.AddComponent<MeshCollider>();
+                            break;
+                        }
+                    }
+                }
+            }
         }
     }
 }

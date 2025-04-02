@@ -127,7 +127,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="yes_preferred_treat" ID="{380B757B-F0EC-4F4B-864A-42695A687CAB}"/>
 						<CurrentStateRef Name="None" ID="{BC77D07A-E2B5-4F76-9EAE-34B61AA0DCE1}"/>
-						<CurrentStateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
+						<CurrentStateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="grass" ID="{B445EED9-A9BE-4427-B99D-6F450AE17B24}"/>

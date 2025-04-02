@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using Server;
 using UnityEngine;
 using Time = UnityEngine.Time;
@@ -32,6 +34,10 @@ namespace Cat.Behaviours {
                     Cat.Behaviour.Animator.SetBool("IsEating", false);
                     /* Destroy the treat */
                     GameObject.Destroy(Cat.Behaviour.TargetTreat.gameObject);
+                    
+                    /* Scale cat bigger including childs object */
+                    Cat.StartCoroutine(Bigger(Cat.gameObject));
+                    
                     Cat.Behaviour.SwitchState(CatState.Pose);
                 }
             } else {
@@ -40,6 +46,19 @@ namespace Cat.Behaviours {
                 StartEtaTime = Time.time;
                 /* Trigger the eating animation */
                 Cat.Behaviour.Animator.SetBool("IsEating", true);
+            }
+        }
+
+        protected IEnumerator Bigger(GameObject cat) {
+            /* Make cat bigger smoothly */
+            float time = 0f;
+            float duration = 1f;
+            Vector3 startScale = cat.transform.localScale;
+            Vector3 endScale = startScale * 1.5f;
+            while (time < duration) {
+                time += Time.deltaTime;
+                cat.transform.localScale = Vector3.Lerp(startScale, endScale, time / duration);
+                yield return null;
             }
         }
     }

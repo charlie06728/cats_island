@@ -251,7 +251,7 @@ namespace Player {
             // foreach (var cat in Server.Server.Instance.Cats) { cats.Add(cat.gameObject); }
             
             Cat.Cat finalCat = null;
-            float finalDistance = 25;
+            float finalDistance = 45;
             
             /* Iterate through the cats and see if within the frustum */
             foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
@@ -259,7 +259,7 @@ namespace Player {
                 
                 /* Cast a ray between main camera and cat to see if being blocked by terrains */
                 RaycastHit cameraHit;
-                Vector3 rayDirection = obj.transform.position - camera.transform.position;
+                Vector3 rayDirection = cat.Behaviour.catIdentifier.transform.position - camera.transform.position;
                 if (Physics.Raycast(camera.transform.position, rayDirection, out cameraHit, rayDirection.magnitude, layerMask:cameraLayerMask)) {
                     continue;
                 }
@@ -307,11 +307,13 @@ namespace Player {
                     }
                 }
             }
-            
-            if (finalCat != null) catsInView.Add(finalCat);
+
+            if (finalCat != null) {
+                catsInView.Add(finalCat);
+                Debug.Log(finalCat.catBreed);
+            }
             
             /* Check if the cat is captured before */
-            Debug.Log(finalCat.catBreed);
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);

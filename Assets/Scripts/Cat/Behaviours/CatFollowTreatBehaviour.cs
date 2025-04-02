@@ -7,6 +7,11 @@ namespace Cat.Behaviours {
         
         protected float prevUpdateTime = 0f;
 
+        public override void Enable() {
+            base.Enable();
+            Cat.Behaviour.StopOtherAnimations();
+        }
+
         public override void Update() {
             base.Update();
             

@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_BaseOffset
       value: -0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1230879071504620754, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 5676312482289313859, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
       propertyPath: Animator
       value: 
@@ -32,6 +36,10 @@ PrefabInstance:
       propertyPath: meow.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 2f91f91bd97ea4b469cd6d67d582130e, type: 2}
+    - target: {fileID: 5802444324787306064, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
+      propertyPath: onBuilding
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6318525976924567728, guid: 822c641e505c62149ad1dd3ae528e505, type: 3}
       propertyPath: m_Controller
       value: 

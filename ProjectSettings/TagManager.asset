@@ -12,6 +12,7 @@ TagManager:
   - Catnip
   - LightHouse
   - Forest
+  - placedTreat
   layers:
   - Default
   - TransparentFX
@@ -26,8 +27,8 @@ TagManager:
   - Wood
   - Water
   - Area
-  - 
-  - 
+  - Toy
+  - Post
   - 
   - 
   - 

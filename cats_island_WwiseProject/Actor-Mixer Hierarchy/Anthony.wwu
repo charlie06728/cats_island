@@ -1423,7 +1423,11 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="catnip" ID="{188C3DD5-971C-4921-AD9C-EB197D1C59C4}"/>
-										<CustomState Name="" ID="{48E661C0-A2BF-4824-BA8C-282037B275C1}" ShortID="1049908651"/>
+										<CustomState Name="" ID="{48E661C0-A2BF-4824-BA8C-282037B275C1}" ShortID="1049908651">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-15"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="lighthouse" ID="{45D13FEF-3C14-4D4D-B24B-850B1F64626F}"/>
@@ -1475,7 +1479,11 @@
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
-										<CustomState Name="" ID="{4CCCCA09-D9A2-4E5F-ADF4-2D767F1B987B}" ShortID="631385859"/>
+										<CustomState Name="" ID="{4CCCCA09-D9A2-4E5F-ADF4-2D767F1B987B}" ShortID="631385859">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-12"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="cat_tree" ID="{332DCADA-5B7F-40FD-8E60-88D7C98F2381}"/>
