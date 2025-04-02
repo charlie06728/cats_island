@@ -96,7 +96,7 @@ namespace Server {
             foreach (GameObject go in UnityEngine.Object.FindObjectsOfType<GameObject>()) {
                 bool added = false;
                 foreach (string n in bothColliderAndRb) {
-                    if (go.name.Contains(n)) {
+                    if (go.name.ToLower().Contains(n.ToLower())) {
                         /* Set the object layer to terrain */
                         go.layer = LayerMask.NameToLayer("Toy");
                         
@@ -115,7 +115,7 @@ namespace Server {
                 
                 if (!added) {
                     foreach (string n in colliderOnly) {
-                        if (go.name.Contains(n)) {
+                        if (go.name.ToLower().Contains(n.ToLower())) {
                             /* Set the object layer to terrain */
                             go.layer = LayerMask.NameToLayer("Toy");
                             

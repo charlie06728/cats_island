@@ -333,6 +333,10 @@ MonoBehaviour:
   im: {fileID: 0}
   brochure: {fileID: 0}
   pocket: {fileID: 0}
+  masterVolume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7ab5bad2f696f3847b9f24e064eb6c17, type: 2}
 --- !u!1 &2257248301799473667
 GameObject:
   m_ObjectHideFlags: 0

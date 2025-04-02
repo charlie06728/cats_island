@@ -14,11 +14,13 @@ namespace Player {
         public CatIconManager im;
         public Brochure brochure;
         public PlayerPocket pocket;
+        public AK.Wwise.RTPC masterVolume;
 
         private Action<InputAction.CallbackContext> _close;
 
         public void OnVolumeChanged (){
-            AkSoundEngine.SetRTPCValue("MasterVolume", volumeSlider.value);
+            // AkSoundEngine.SetRTPCValue("MasterVolume", volumeSlider.value);
+            masterVolume.SetValue(gameObject, volumeSlider.value);
         }
 
         public void Show() {
@@ -41,6 +43,11 @@ namespace Player {
                 /* Hide the cursor */
                 Cursor.visible = false;
             }
+        }
+
+        public void Start() {
+            /* Register game object to WWISE */
+            AkUnitySoundEngine.RegisterGameObj(gameObject);
         }
 
         public void Resume() {
