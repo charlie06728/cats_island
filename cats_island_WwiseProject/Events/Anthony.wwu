@@ -91,6 +91,28 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{FB7D7FF5-CF73-43A0-8E5E-C3C6A65C8A4F}" ShortID="1043362624">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9B5A78B4-0C25-4C99-B48C-499AF7B15080}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3C181849-BBA5-4DD2-9E7A-B3C00FA9C19D}" ShortID="31882616">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_4-4_86bpm_STEMhorn_lp" ID="{86E97556-ACA1-4F4B-A069-1ABB8563ED3A}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{317771A4-1B1F-47EC-80E9-22B4CAAF8510}" ShortID="356421604">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="10"/>

@@ -3,7 +3,7 @@
   "Project": {
    "Name": "cats_island_WwiseProject",
    "GUID": "{A52D67DB-78E2-46E1-81AE-F93FB2FDD453}",
-   "Generator": "2024.1.3.8749"
+   "Generator": "2024.1.2.8726"
   },
   "CacheRoot": "../../../../cats_island_WwiseProject/.cache",
   "Platforms": [
@@ -31,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{4002D572-B586-73BB-6914-15BBDDCE68C0}"
+  "FileHash": "{F449DDCF-E326-9375-5EF3-61A35FDCD75E}"
  }
 }
