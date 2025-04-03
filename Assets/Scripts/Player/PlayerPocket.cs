@@ -38,6 +38,9 @@ namespace Player {
         public GameObject treatControls;
         public GameObject cameraControls;
         public GameObject albumControls;
+
+        public AK.Wwise.Event sfx_select;
+        public AK.Wwise.Event sfx_equip;
         
         /* Brochure prefab and component after it being initialized */
         public Brochure brochure;

@@ -17,8 +17,11 @@ public class DayEndScreen : MonoBehaviour
     void Update()
     {
         if (Input.anyKeyDown) {
+            Server.Server.Instance.playerScript.Pocket.sfx_select.Post(Server.Server.Instance.playerScript.Pocket
+                .gameObject);
+            
             Time.timeScale = 1;
-            player.transform.position = playerSpawn.position;
+            // player.transform.position = playerSpawn.position;
             gameObject.SetActive(false);
         }
     }

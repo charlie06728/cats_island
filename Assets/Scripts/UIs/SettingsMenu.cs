@@ -24,6 +24,9 @@ namespace Player {
         }
 
         public void Show() {
+            Server.Server.Instance.playerScript.Pocket.sfx_select.Post(Server.Server.Instance.playerScript.Pocket
+                .gameObject);
+            
             if (gameObject.activeInHierarchy) {
                 Resume();
             } else {

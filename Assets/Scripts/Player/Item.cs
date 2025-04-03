@@ -14,6 +14,9 @@ namespace Player {
                 return;
             }
             
+            /* Play sfx equip */
+            PlayerPocket.sfx_equip.Post(PlayerPocket.gameObject);
+            
             PutBackAll();
             
             /* Set item visible */
@@ -30,6 +33,9 @@ namespace Player {
         public virtual void PutBack() {
             /* make item invisible */
             gameObject.SetActive(false);
+            
+            /* play sfx equip */
+            PlayerPocket.sfx_equip.Post(PlayerPocket.gameObject);
             
             Server.Server.Instance.itemBar.DeSelectAll();
         }

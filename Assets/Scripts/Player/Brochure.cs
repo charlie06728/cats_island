@@ -101,6 +101,10 @@ namespace Player {
             cover1.gameObject.SetActive(false);
             cover2.gameObject.SetActive(false);
             
+            /* Hide the stamps */
+            collect1.gameObject.SetActive(false);
+            collect2.gameObject.SetActive(false);
+            
             HideAll();
             List<Cat.Cat> cats = _allCats;
             

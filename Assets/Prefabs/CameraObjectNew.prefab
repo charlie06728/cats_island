@@ -572,7 +572,7 @@ MonoBehaviour:
   sfx_win:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b4061ae9db19a9d4f82cd462f9995b52, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 55166db6c90489f43ab22505da7aac22, type: 2}
   zoomScroll: {fileID: 0}
 --- !u!82 &8555878005223502510
 AudioSource:

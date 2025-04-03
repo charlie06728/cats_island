@@ -250,19 +250,28 @@ namespace Player {
             _prevPage = context => { PreviousPage(); };
             _nextPage = context => { NextPage(); };
             _up = context => {
+                int previousSelect = CurrentSelect;
                 if (CurrentSelect == 1 || CurrentSelect == 3) CurrentSelect -= 1;
+                if (CurrentSelect != previousSelect) { PlayerPocket.sfx_select.Post(PlayerPocket.gameObject); }
             };
             _down = context => {
+                int previousSelect = CurrentSelect;
                 if (CurrentSelect == 0 || CurrentSelect == 2) CurrentSelect += 1;
+                if (CurrentSelect != previousSelect) { PlayerPocket.sfx_select.Post(PlayerPocket.gameObject); }
             };
             _left = context => {
+                int previousSelect = CurrentSelect;
                 if (CurrentSelect == 2 || CurrentSelect == 3) CurrentSelect -= 2;
+                if (CurrentSelect != previousSelect) { PlayerPocket.sfx_select.Post(PlayerPocket.gameObject); }
             };
             _right = context => {
+                int previousSelect = CurrentSelect;
                 if (CurrentSelect == 0 || CurrentSelect == 1) CurrentSelect += 2;
+                if (CurrentSelect != previousSelect) { PlayerPocket.sfx_select.Post(PlayerPocket.gameObject); }
             };
             _delete = context => {
                 if (Photos.Count == 0) return;
+                PlayerPocket.sfx_select.Post(PlayerPocket.gameObject);
                 /* calculate the current selected photo index */
                 int photoIndex = CurrentStartIndex + CurrentSelect;
                 if (photoIndex >= Photos.Count) return;

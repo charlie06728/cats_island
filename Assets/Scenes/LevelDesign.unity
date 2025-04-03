@@ -130289,6 +130289,14 @@ PrefabInstance:
       propertyPath: cameraVirtualPosition
       value: 
       objectReference: {fileID: 1214473687}
+    - target: {fileID: 1047616094570437615, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: sfx_equip.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047616094570437615, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
+      propertyPath: sfx_select.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1238753969655648698, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
@@ -130423,7 +130431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6752396979572187379, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: groundLayer.m_Bits
-      value: 9408
+      value: 9424
       objectReference: {fileID: 0}
     - target: {fileID: 6752396979572187379, guid: d034f6fa1ed981d4887c4d9f22f989a8, type: 3}
       propertyPath: Sand.WwiseObjectReference

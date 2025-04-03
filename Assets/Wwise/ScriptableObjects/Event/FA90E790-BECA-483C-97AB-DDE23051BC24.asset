@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1982ad8b8a1e3c641bec9fd9cc236647, type: 3}
-  m_Name: 30668BB1-2573-464A-92D7-70AFBDB47AE1
+  m_Name: FA90E790-BECA-483C-97AB-DDE23051BC24
   m_EditorClassIdentifier: 
-  objectName: sfx_win
-  id: 478519405
-  guid: 30668BB1-2573-464A-92D7-70AFBDB47AE1
+  objectName: sfx_equip
+  id: 2410495363
+  guid: FA90E790-BECA-483C-97AB-DDE23051BC24
   IsInUserDefinedSoundBank: 1
   IsAutoBankLoaded: 0
