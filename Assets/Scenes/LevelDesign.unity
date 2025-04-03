@@ -98557,6 +98557,76 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1672247940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1672247941}
+  - component: {fileID: 1672247942}
+  - component: {fileID: 1672247943}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1672247941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672247940}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 63.5, y: 12.506, z: 355.01}
+  m_LocalScale: {x: 46.965, y: 46.964993, z: 46.964993}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1672247942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672247940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702ecb5b694b4bd19aa1523ab631afa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1672247943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672247940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312d380fed67661419224d7a0abc8c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 4584bd2c9e5467c4e9db7c0f2647528f, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
 --- !u!1 &1672457948 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e62d00aebc405a45a52af396cc0cdca, type: 3}
@@ -111788,7 +111858,6 @@ GameObject:
   - component: {fileID: 1863594071}
   - component: {fileID: 1863594070}
   - component: {fileID: 1863594069}
-  - component: {fileID: 1863594074}
   m_Layer: 0
   m_Name: Server (1)
   m_TagString: Untagged
@@ -112637,31 +112706,6 @@ Transform:
   - {fileID: 1371676601}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1863594074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863594068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 312d380fed67661419224d7a0abc8c74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 4584bd2c9e5467c4e9db7c0f2647528f, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!1001 &1864035437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131336,6 +131380,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1170698412211634, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: purrfectSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 924b4013164a88e4eb0153ee16753e21, type: 3}
     - target: {fileID: 1987390368396442612, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
@@ -131384,6 +131432,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5007577268320426372, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: purrfectSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3176d010b87f8e244ac1334c9dba87e9, type: 3}
+    - target: {fileID: 5126874411825733157, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: purrfectSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34a39a2c6a955834eac77556ef2680ff, type: 3}
     - target: {fileID: 5442563845866641966, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -131560,6 +131616,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8144687795759461505, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: purrfectSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b3aa39eb5208294595a5e4dce70ce5f, type: 3}
     - target: {fileID: 8841556746101255139, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_SizeDelta.x
       value: 4.1802
@@ -131623,6 +131683,7 @@ SceneRoots:
   - {fileID: 684765743}
   - {fileID: 265202449}
   - {fileID: 843557820}
+  - {fileID: 1672247941}
   - {fileID: 1863594073}
   - {fileID: 4989765483726220884}
   - {fileID: 2445449018775612133}

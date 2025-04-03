@@ -57,7 +57,10 @@ namespace Player {
         }
 
         public void Restart() {
-            tm.ResetTime();
+            /* restart the game */
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
+            // tm.ResetTime();
             // playerTransform.position = playerSpawn.position;
             // brochure.ResetProgress();
             // im.ResetIcons();
