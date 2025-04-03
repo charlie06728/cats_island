@@ -106,6 +106,10 @@
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="sfx_catfound" ID="{2B43408E-B690-41A8-AEA1-FD93428F0FE3}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
 							<Position X="4" Y="2"/>
 						</Module>

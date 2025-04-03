@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5054B7FD-17EE-4A49-B11C-CBEC5B5924B5}",
     "Language": "SFX",
-    "Hash": "{805A8414-9781-A908-8262-CC12CB07CC3E}",
+    "Hash": "{1D3912C6-7999-9357-144F-528359FF728B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -54,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "sfx_JUMP_Water_nl_02.wav",
       "CachePath": "4A/{4A195724-50D3-E732-6E6B-EC120A1E3604}.wem"
+     },
+     {
+      "Id": "66878186",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_19.wav",
+      "CachePath": "DA/{DA2D19BD-3A18-0CA6-BFB8-2938C2CB43C5}.wem"
      },
      {
       "Id": "91613842",
@@ -104,12 +112,28 @@
       "CachePath": "1F/{1F732667-58A8-C67F-3514-AE8542C2DF57}.wem"
      },
      {
+      "Id": "147194448",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_21.wav",
+      "CachePath": "5D/{5D6E3FD4-C2E1-7240-AD13-845B8674E8C0}.wem"
+     },
+     {
       "Id": "166098753",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_PageFlip_nl_01.wav",
       "CachePath": "0E/{0E620EDE-7D2D-1B02-9122-DC9EBE4FA0C5}.wem"
+     },
+     {
+      "Id": "175057375",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_16.wav",
+      "CachePath": "B3/{B3F75043-5F08-2572-5A3E-0F8F3E318225}.wem"
      },
      {
       "Id": "195661107",
@@ -536,6 +560,14 @@
       "CachePath": "10/{10F3B6D7-4941-1ED2-D954-089C91D9131A}.wem"
      },
      {
+      "Id": "816150269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_23.wav",
+      "CachePath": "7F/{7FE3B0F9-206C-99B8-8575-4F7A2B7580BC}.wem"
+     },
+     {
       "Id": "819261667",
       "Language": "SFX",
       "Streaming": "false",
@@ -614,6 +646,14 @@
       "Location": "Memory",
       "ShortName": "sfx_JUMP_Wood_nl_01.wav",
       "CachePath": "8D/{8DA01336-688A-6AC2-C117-08BE9113031C}.wem"
+     },
+     {
+      "Id": "960785000",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_20.wav",
+      "CachePath": "DC/{DC2CB096-9392-3427-76DF-BF6CEAEAB33B}.wem"
      },
      {
       "Id": "972004018",
@@ -943,6 +983,32 @@
        },
        {
         "Id": "1042088995"
+       }
+      ]
+     },
+     {
+      "Id": "2925565417",
+      "Name": "sfx_catfound",
+      "ObjectPath": "\\Events\\Elienna\\sfx_catfound",
+      "GUID": "{2B43408E-B690-41A8-AEA1-FD93428F0FE3}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9948583",
+      "DurationMax": "2.0520878",
+      "MediaRefs": [
+       {
+        "Id": "66878186"
+       },
+       {
+        "Id": "147194448"
+       },
+       {
+        "Id": "175057375"
+       },
+       {
+        "Id": "816150269"
+       },
+       {
+        "Id": "960785000"
        }
       ]
      },
@@ -1377,6 +1443,6 @@
     ]
    }
   ],
-  "FileHash": "{63592103-A9DA-3321-2EC9-A6774C9A00AD}"
+  "FileHash": "{06A10E2D-6D54-C047-0FE8-41B6FE4AAA9C}"
  }
 }

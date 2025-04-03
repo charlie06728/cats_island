@@ -33,6 +33,7 @@ namespace AK
         static const AkUniqueID SFX_CAMERAPICTURE = 1570034758U;
         static const AkUniqueID SFX_CAT_EAT = 3836755088U;
         static const AkUniqueID SFX_CAT_HISS = 550596841U;
+        static const AkUniqueID SFX_CATFOUND = 2925565417U;
         static const AkUniqueID SFX_FOOTSTEPS = 3364658470U;
         static const AkUniqueID SFX_JUMP = 3695098761U;
         static const AkUniqueID SFX_LANDING = 2929962202U;

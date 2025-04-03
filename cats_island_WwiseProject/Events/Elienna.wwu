@@ -135,6 +135,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="sfx_catfound" ID="{2B43408E-B690-41A8-AEA1-FD93428F0FE3}">
+					<ChildrenList>
+						<Action Name="" ID="{AA0A57E5-192A-4EE7-BB7B-2BAF21E19DB4}" ShortID="43856514">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_catfound" ID="{65119F70-5B7F-4EE7-A247-A00F07588585}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
