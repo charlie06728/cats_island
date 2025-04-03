@@ -33,6 +33,7 @@ namespace Player {
         
         public LayerMask cameraLayerMask;
         public AK.Wwise.Event sfx_ps;
+        public AK.Wwise.Event sfx_album_full;
         
         // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
@@ -140,6 +141,11 @@ namespace Player {
                 || Time.time - _prevTakeTime < Server.Server.Instance.cameraCoolDown) return;
             Server.Server.Instance.FilmUsed++;
             _prevTakeTime = Time.time;
+            
+            /* Play the album full sfx if it's full */
+            if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount) {
+                sfx_album_full.Post(gameObject);
+            }
             
             if (_isCameraMode) {
                 // PlayerPocket.cameraAnimator.speed = 1;
