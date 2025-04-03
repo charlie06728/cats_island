@@ -34,6 +34,7 @@ namespace Player {
         public LayerMask cameraLayerMask;
         public AK.Wwise.Event sfx_ps;
         public AK.Wwise.Event sfx_album_full;
+        public AK.Wwise.Event sfx_album_almost_full;
         
         // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
@@ -145,6 +146,8 @@ namespace Player {
             /* Play the album full sfx if it's full */
             if (Server.Server.Instance.FilmUsed >= Server.Server.Instance.FilmCount) {
                 sfx_album_full.Post(gameObject);
+            } else if (Server.Server.Instance.FilmCount - Server.Server.Instance.FilmUsed <= 3) {
+                sfx_album_almost_full.Post(gameObject);
             }
             
             if (_isCameraMode) {
