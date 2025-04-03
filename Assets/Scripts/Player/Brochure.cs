@@ -65,6 +65,7 @@ namespace Player {
             
             /* make item invisible */
             gameObject.SetActive(false);
+            
         }
 
         protected override void Awake() {
@@ -95,6 +96,10 @@ namespace Player {
         protected void DisplayPhotos() {
             /* Play flip page audio */
             AkUnitySoundEngine.PostEvent("sfx_pageflip", gameObject);
+            
+            /* Hide the covers */
+            cover1.gameObject.SetActive(false);
+            cover2.gameObject.SetActive(false);
             
             HideAll();
             List<Cat.Cat> cats = _allCats;

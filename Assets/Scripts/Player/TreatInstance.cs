@@ -23,6 +23,7 @@ namespace Player {
                             // cat.Navigator.MoveTo(transform.position);
                             cat.Behaviour.TargetTreat = this;
                             cat.Behaviour.SwitchState(CatState.FollowTreat);
+                            break;
                             // }
                         }
                     }

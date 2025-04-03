@@ -16,6 +16,8 @@ namespace Server {
         public float ControllerSenstivity = 1f;
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
+
+        public GameObject[] stickers;
         
         public LayerMask GroundLayer;
 

@@ -44,6 +44,11 @@ namespace Player {
             /* Reset the notifications */
             Server.Server.Instance.albumNotification.SetActive(false);
             
+            /* Hide the sticker */
+            foreach (var sticker in Server.Server.Instance.stickers) {
+                sticker.SetActive(false);
+            }
+            
             RenderImages();
             
             // int currentSlot = 0;
@@ -137,6 +142,11 @@ namespace Player {
             
             /* Allow player move */
             Server.Server.Instance.SuspendPlayerMove = false;
+            
+            /* Show the stickers */
+            foreach (var sticker in Server.Server.Instance.stickers) {
+                sticker.SetActive(true);
+            }
             
             // /* Hide all the photos */
             // foreach (var photo in Photos) {

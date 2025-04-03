@@ -58,11 +58,11 @@ namespace Player {
 
         public void Restart() {
             tm.ResetTime();
-            playerTransform.position = playerSpawn.position;
-            brochure.ResetProgress();
-            im.ResetIcons();
-            pocket.Album.ResetAlbum();
-            pocket.Album.ResetAlbum();
+            // playerTransform.position = playerSpawn.position;
+            // brochure.ResetProgress();
+            // im.ResetIcons();
+            // pocket.Album.ResetAlbum();
+            // pocket.Album.ResetAlbum();
             // PlayerPocket.Album.Photos = new List<Photo>();
         }
     }
