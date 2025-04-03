@@ -1511,7 +1511,7 @@
 								<ActiveSource Name="sfx_ui_17" ID="{A651477E-E313-40FE-B899-5E6985DBF01B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sfx_ui_18" ID="{DD4C77CE-C58A-425B-B80C-8FABDA9C09C7}" ShortID="593226297">
+						<Sound Name="sfx_win" ID="{DD4C77CE-C58A-425B-B80C-8FABDA9C09C7}" ShortID="593226297">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -1533,7 +1533,7 @@
 								<ActiveSource Name="sfx_ui_18" ID="{6FAADF29-10DA-4A37-B560-93690F2A70E4}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sfx_ui_24" ID="{DBFBADE8-C9A4-48D2-AE00-5F5734B6A945}" ShortID="220977825">
+						<Sound Name="sfx_endofday" ID="{DBFBADE8-C9A4-48D2-AE00-5F5734B6A945}" ShortID="220977825">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -1621,7 +1621,7 @@
 								<ActiveSource Name="sfx_ui_27" ID="{0B2C4FE9-EE7D-4660-A1EA-FFFDC6BF6279}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sfx_ui_28" ID="{3752367A-9A64-426E-BA3E-58503389D25E}" ShortID="112107933">
+						<Sound Name="sfx_albumalmostfull" ID="{3752367A-9A64-426E-BA3E-58503389D25E}" ShortID="112107933">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>
@@ -1665,7 +1665,7 @@
 								<ActiveSource Name="sfx_ui_29" ID="{D8861471-CC2B-4595-B655-4BAD2624A91A}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="sfx_ui_30" ID="{BF7B63D5-A2C3-4C7E-A11D-D1619704B8AE}" ShortID="148937849">
+						<Sound Name="sfx_albumfull" ID="{BF7B63D5-A2C3-4C7E-A11D-D1619704B8AE}" ShortID="148937849">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{255543D7-1E96-4926-A685-C9E73075B990}"/>

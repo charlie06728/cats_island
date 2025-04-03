@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{5054B7FD-17EE-4A49-B11C-CBEC5B5924B5}",
     "Language": "SFX",
-    "Hash": "{1D3912C6-7999-9357-144F-528359FF728B}",
+    "Hash": "{2FF38F74-3D39-FBE2-E27E-95B9D455CD51}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
     "Media": [
+     {
+      "Id": "4199753",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_28.wav",
+      "CachePath": "C6/{C61F4AD0-6389-449C-3020-2D94BDFC5651}.wem"
+     },
      {
       "Id": "10260743",
       "Language": "SFX",
@@ -62,6 +70,14 @@
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_19.wav",
       "CachePath": "DA/{DA2D19BD-3A18-0CA6-BFB8-2938C2CB43C5}.wem"
+     },
+     {
+      "Id": "72646831",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_30.wav",
+      "CachePath": "37/{37562EE1-98EC-AC32-0EE4-955AC55EC9F5}.wem"
      },
      {
       "Id": "91613842",
@@ -302,6 +318,14 @@
       "Location": "Memory",
       "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_04.wav",
       "CachePath": "E5/{E575C818-A8B5-86E3-3EEB-A896B1BBDA60}.wem"
+     },
+     {
+      "Id": "411530210",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_24.wav",
+      "CachePath": "57/{577C442B-B513-1271-F36E-6897AE7CC23C}.wem"
      },
      {
       "Id": "412921084",
@@ -558,6 +582,14 @@
       "Location": "Memory",
       "ShortName": "Cat_Hungry_Meow\\Ragdoll_Hungry_Meow\\Ragdoll_Hungry_Meow_04.wav",
       "CachePath": "10/{10F3B6D7-4941-1ED2-D954-089C91D9131A}.wem"
+     },
+     {
+      "Id": "808255758",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_18.wav",
+      "CachePath": "54/{54D19AF0-20F0-7128-AC74-86DCE93616D6}.wem"
      },
      {
       "Id": "816150269",
@@ -900,6 +932,34 @@
       ]
      },
      {
+      "Id": "226028271",
+      "Name": "sfx_albumalmostfull",
+      "ObjectPath": "\\Events\\Elienna\\sfx_albumalmostfull",
+      "GUID": "{E8051620-C3DE-4383-A27E-6BD6FBE4C8EC}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.096",
+      "DurationMax": "4.096",
+      "MediaRefs": [
+       {
+        "Id": "4199753"
+       }
+      ]
+     },
+     {
+      "Id": "1315666677",
+      "Name": "sfx_albumfull",
+      "ObjectPath": "\\Events\\Elienna\\sfx_albumfull",
+      "GUID": "{4B3D6172-D48F-4293-9F25-11726F27B817}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.4613333",
+      "DurationMax": "5.4613333",
+      "MediaRefs": [
+       {
+        "Id": "72646831"
+       }
+      ]
+     },
+     {
       "Id": "192727511",
       "Name": "sfx_CameraOff",
       "ObjectPath": "\\Events\\Anthony\\sfx_Camera\\sfx_CameraOff",
@@ -1009,6 +1069,20 @@
        },
        {
         "Id": "960785000"
+       }
+      ]
+     },
+     {
+      "Id": "1823052487",
+      "Name": "sfx_endofday",
+      "ObjectPath": "\\Events\\Elienna\\sfx_endofday",
+      "GUID": "{7F38BFE3-9D2F-4E2D-A996-BFDB890D3BF5}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.826667",
+      "DurationMax": "6.826667",
+      "MediaRefs": [
+       {
+        "Id": "411530210"
        }
       ]
      },
@@ -1349,6 +1423,20 @@
       ]
      },
      {
+      "Id": "478519405",
+      "Name": "sfx_win",
+      "ObjectPath": "\\Events\\Elienna\\sfx_win",
+      "GUID": "{30668BB1-2573-464A-92D7-70AFBDB47AE1}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.826667",
+      "DurationMax": "6.826667",
+      "MediaRefs": [
+       {
+        "Id": "808255758"
+       }
+      ]
+     },
+     {
       "Id": "2553855402",
       "Name": "Tabby_Hungry_Meow",
       "ObjectPath": "\\Events\\Elienna\\sfx_Cat\\sfx_Cat_Hungry_Meow\\Tabby_Hungry_Meow",
@@ -1443,6 +1531,6 @@
     ]
    }
   ],
-  "FileHash": "{5EB095B2-E5B5-FAD5-9B59-EC930823E4B8}"
+  "FileHash": "{AFDD6736-7A51-4C73-C098-0844D4B097A0}"
  }
 }

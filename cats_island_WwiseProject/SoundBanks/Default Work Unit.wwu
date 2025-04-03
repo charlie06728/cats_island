@@ -38,10 +38,13 @@
 						<ObjectRef Name="sfx_catfound" ID="{2B43408E-B690-41A8-AEA1-FD93428F0FE3}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mus_Tuxedo_Pose" ID="{F0CBD46F-7FDA-424C-839A-0732A938101C}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_albumfull" ID="{4B3D6172-D48F-4293-9F25-11726F27B817}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_albumalmostfull" ID="{E8051620-C3DE-4383-A27E-6BD6FBE4C8EC}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cat_eat" ID="{A97A2493-C2D3-448D-8498-E52A3E382826}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_treat_drop" ID="{60736514-E12A-44F7-81DD-A333F1AE480D}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_CameraPicture" ID="{1162A07A-212F-4536-955C-6CD4ECE48AD7}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_Camera" ID="{CF50C1FD-65BD-4617-935A-BAD228646E4B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_win" ID="{30668BB1-2573-464A-92D7-70AFBDB47AE1}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GreyCat_Hungry_Meow" ID="{578A7CDB-1325-468F-837E-E6EF60C3AB38}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mus_Leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_PageFlip" ID="{B54CB49C-30F3-47E4-BA15-FCAF4465D387}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
@@ -53,6 +56,7 @@
 						<ObjectRef Name="sfx_CameraOn" ID="{DA27556A-B40C-4CBC-9AEC-93C6EA636251}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_CameraOff" ID="{40ECE379-A5B1-4D8A-9AAE-8B08B3122CC2}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cat_hiss" ID="{A25A2D05-EB2C-4E17-B22F-C002E81EC8A8}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_endofday" ID="{7F38BFE3-9D2F-4E2D-A996-BFDB890D3BF5}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ragdoll_Hungry_Meow" ID="{05100864-19CE-4EBD-A9A0-320999D44D78}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_treat_launch" ID="{DB2DA747-1DE1-4ED1-B1A3-6DBE29C2DA87}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mus_Tabby_Pose" ID="{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>

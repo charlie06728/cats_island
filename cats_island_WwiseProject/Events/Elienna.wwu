@@ -146,6 +146,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="sfx_win" ID="{30668BB1-2573-464A-92D7-70AFBDB47AE1}">
+					<ChildrenList>
+						<Action Name="" ID="{77C2B563-6C5A-407C-9485-CA05FB3E5203}" ShortID="751764930">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_win" ID="{DD4C77CE-C58A-425B-B80C-8FABDA9C09C7}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_endofday" ID="{7F38BFE3-9D2F-4E2D-A996-BFDB890D3BF5}">
+					<ChildrenList>
+						<Action Name="" ID="{F2BC149C-0461-42E7-8023-A489137D2DFF}" ShortID="998489678">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_endofday" ID="{DBFBADE8-C9A4-48D2-AE00-5F5734B6A945}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_albumalmostfull" ID="{E8051620-C3DE-4383-A27E-6BD6FBE4C8EC}">
+					<ChildrenList>
+						<Action Name="" ID="{FB1B420E-0748-43CC-A459-BEE2335486CC}" ShortID="128430893">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_albumalmostfull" ID="{3752367A-9A64-426E-BA3E-58503389D25E}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_albumfull" ID="{4B3D6172-D48F-4293-9F25-11726F27B817}">
+					<ChildrenList>
+						<Action Name="" ID="{95AF6C1D-463C-4798-B2F6-5F94A73B061F}" ShortID="132052895">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_albumfull" ID="{BF7B63D5-A2C3-4C7E-A11D-D1619704B8AE}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -28,12 +28,15 @@ namespace AK
         static const AkUniqueID MUS_TABBY_POSE = 4016717323U;
         static const AkUniqueID MUS_TUXEDO_POSE = 1461319202U;
         static const AkUniqueID RAGDOLL_HUNGRY_MEOW = 2846976621U;
+        static const AkUniqueID SFX_ALBUMALMOSTFULL = 226028271U;
+        static const AkUniqueID SFX_ALBUMFULL = 1315666677U;
         static const AkUniqueID SFX_CAMERAOFF = 192727511U;
         static const AkUniqueID SFX_CAMERAON = 2801607203U;
         static const AkUniqueID SFX_CAMERAPICTURE = 1570034758U;
         static const AkUniqueID SFX_CAT_EAT = 3836755088U;
         static const AkUniqueID SFX_CAT_HISS = 550596841U;
         static const AkUniqueID SFX_CATFOUND = 2925565417U;
+        static const AkUniqueID SFX_ENDOFDAY = 1823052487U;
         static const AkUniqueID SFX_FOOTSTEPS = 3364658470U;
         static const AkUniqueID SFX_JUMP = 3695098761U;
         static const AkUniqueID SFX_LANDING = 2929962202U;
@@ -41,6 +44,7 @@ namespace AK
         static const AkUniqueID SFX_PS = 3946625230U;
         static const AkUniqueID SFX_TREAT_DROP = 3249613541U;
         static const AkUniqueID SFX_TREAT_LAUNCH = 651286159U;
+        static const AkUniqueID SFX_WIN = 478519405U;
         static const AkUniqueID TABBY_HUNGRY_MEOW = 2553855402U;
         static const AkUniqueID TUXEDO_HUNGRY_MEOW = 4111794441U;
     } // namespace EVENTS
