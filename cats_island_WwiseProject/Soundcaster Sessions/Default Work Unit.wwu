@@ -118,7 +118,7 @@
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="mus_AllCatsFound" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}"/>
+							<ObjectRef Name="sfx_win" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
 							<Position X="5" Y="3"/>
 						</Module>
 					</ModuleList>

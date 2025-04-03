@@ -17,7 +17,6 @@ namespace AK
         static const AkUniqueID BENGAL_HUNGRY_MEOW = 1968854379U;
         static const AkUniqueID GREYCAT_HUNGRY_MEOW = 1995037903U;
         static const AkUniqueID MIDDAY = 1211181101U;
-        static const AkUniqueID MUS_ALLCATSFOUND = 3891823391U;
         static const AkUniqueID MUS_BENGAL_POSE = 3509682696U;
         static const AkUniqueID MUS_GREYCAT_POSE = 3109386516U;
         static const AkUniqueID MUS_RAGDOLL_POSE = 2889622102U;
@@ -37,11 +36,13 @@ namespace AK
         static const AkUniqueID SFX_CAT_HISS = 550596841U;
         static const AkUniqueID SFX_CATFOUND = 2925565417U;
         static const AkUniqueID SFX_ENDOFDAY = 1823052487U;
+        static const AkUniqueID SFX_EQUIP = 2410495363U;
         static const AkUniqueID SFX_FOOTSTEPS = 3364658470U;
         static const AkUniqueID SFX_JUMP = 3695098761U;
         static const AkUniqueID SFX_LANDING = 2929962202U;
         static const AkUniqueID SFX_PAGEFLIP = 2084073701U;
         static const AkUniqueID SFX_PS = 3946625230U;
+        static const AkUniqueID SFX_SELECT = 580936885U;
         static const AkUniqueID SFX_TREAT_DROP = 3249613541U;
         static const AkUniqueID SFX_TREAT_LAUNCH = 651286159U;
         static const AkUniqueID SFX_WIN = 478519405U;

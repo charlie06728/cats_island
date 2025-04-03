@@ -146,17 +146,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="sfx_win" ID="{30668BB1-2573-464A-92D7-70AFBDB47AE1}">
-					<ChildrenList>
-						<Action Name="" ID="{77C2B563-6C5A-407C-9485-CA05FB3E5203}" ShortID="751764930">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_win" ID="{DD4C77CE-C58A-425B-B80C-8FABDA9C09C7}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="sfx_endofday" ID="{7F38BFE3-9D2F-4E2D-A996-BFDB890D3BF5}">
 					<ChildrenList>
 						<Action Name="" ID="{F2BC149C-0461-42E7-8023-A489137D2DFF}" ShortID="998489678">
@@ -185,6 +174,153 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="sfx_albumfull" ID="{BF7B63D5-A2C3-4C7E-A11D-D1619704B8AE}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_win" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}">
+					<ChildrenList>
+						<Action Name="" ID="{C9C08B65-2358-4700-90E2-CB58A117D793}" ShortID="1030431226">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_LEITMOTIF_AllCatsFound_nl" ID="{98A3BFA3-752B-49A3-95BD-A2141D36A304}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B4CF4C49-2589-48E5-A26A-F29A881AAFDA}" ShortID="647368657">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMbongos_lp" ID="{4189450C-E5DD-415C-8BD0-13A1EC2045AB}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C13E5286-B85F-43A5-81E7-FCD70D3378BE}" ShortID="563414854">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMflute_lp" ID="{F594E1A8-6F12-48BE-987D-3C5199033E67}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E34FF58D-5F15-483A-A1E6-3673EF2B7F83}" ShortID="964918815">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMguitar_lp" ID="{A0D4A08A-56C2-4B61-9DA8-EEB8F082BD47}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{271EBAA8-9BAC-4CE3-8EA9-7DAA64BE7F2E}" ShortID="707354515">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMmarimba_lp" ID="{ED0F3EE0-5CA8-44D2-8872-1B861A216A04}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{51114307-120C-46BE-B2BA-B776A214FA6F}" ShortID="790774776">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMpiano_lp" ID="{004A5595-6C8B-4B28-963F-1346C73F6210}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A478A879-D252-4C78-9F22-0066D283BBC5}" ShortID="453555032">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMvibraphone_lp" ID="{66DB089D-DECB-4BE8-BBC1-AA99624BFCFA}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{53A4495C-92ED-4B88-AFAA-C82557A81468}" ShortID="703411597">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMviolin_lp" ID="{C0930C3D-D9D1-43FD-AC0F-70CD046167E5}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FB7D7FF5-CF73-43A0-8E5E-C3C6A65C8A4F}" ShortID="1043362624">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMenghorn_lp" ID="{9B5A78B4-0C25-4C99-B48C-499AF7B15080}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3C181849-BBA5-4DD2-9E7A-B3C00FA9C19D}" ShortID="31882616">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mus_4-4_86bpm_STEMhorn_lp" ID="{86E97556-ACA1-4F4B-A069-1ABB8563ED3A}" WorkUnitID="{953095C9-DECC-4DBA-8283-A1AC735132AD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{317771A4-1B1F-47EC-80E9-22B4CAAF8510}" ShortID="356421604">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="Delay" Type="Real64" Value="4"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{857D810B-9223-44AA-ABB9-88F38A676CD7}" ShortID="802012999">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_win" ID="{DD4C77CE-C58A-425B-B80C-8FABDA9C09C7}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_equip" ID="{FA90E790-BECA-483C-97AB-DDE23051BC24}">
+					<ChildrenList>
+						<Action Name="" ID="{4739341F-7E95-40C6-BDA0-C344CB4E3E0E}" ShortID="1013924436">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_equip" ID="{837F814C-A3E7-459B-BAE4-A0519CE84B64}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_select" ID="{F15CE740-461C-4824-9EC7-2C4871322017}">
+					<ChildrenList>
+						<Action Name="" ID="{960A68F5-DB24-44DC-805A-4358C84BF282}" ShortID="726896446">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_select" ID="{FDB83940-FC67-41A5-A91F-BF6CCB6B424D}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

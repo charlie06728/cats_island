@@ -44,10 +44,11 @@
 						<ObjectRef Name="sfx_treat_drop" ID="{60736514-E12A-44F7-81DD-A333F1AE480D}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_CameraPicture" ID="{1162A07A-212F-4536-955C-6CD4ECE48AD7}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_Camera" ID="{CF50C1FD-65BD-4617-935A-BAD228646E4B}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="sfx_win" ID="{30668BB1-2573-464A-92D7-70AFBDB47AE1}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GreyCat_Hungry_Meow" ID="{578A7CDB-1325-468F-837E-E6EF60C3AB38}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mus_Leitmotif" ID="{95A04018-C451-4765-B875-CDCA2A474610}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_PageFlip" ID="{B54CB49C-30F3-47E4-BA15-FCAF4465D387}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_select" ID="{F15CE740-461C-4824-9EC7-2C4871322017}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_equip" ID="{FA90E790-BECA-483C-97AB-DDE23051BC24}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_Jump" ID="{5E376275-EC84-4840-B5B8-14B496E03F88}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_Footsteps" ID="{887753D5-D896-48F6-A930-9858F96C2DF9}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mus_GreyCat_Pose" ID="{5BCC366C-AB8D-4958-8EB0-A1099C7B5747}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
@@ -62,7 +63,7 @@
 						<ObjectRef Name="mus_Tabby_Pose" ID="{0742C4D4-6DF3-4EDE-801C-84A1C52029C4}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_ps" ID="{A5CB4D69-3261-4F03-8B21-E63DDA3D1B0A}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_Movement" ID="{09C77F85-0185-4F4C-9925-F2112FAB4041}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="mus_AllCatsFound" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_win" ID="{9ED4D49E-65E6-4F5E-AFBB-D7E1535AD178}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Bengal_Hungry_Meow" ID="{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
