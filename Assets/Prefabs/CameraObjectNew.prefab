@@ -557,6 +557,10 @@ MonoBehaviour:
   cameraLayerMask:
     serializedVersion: 2
     m_Bits: 1152
+  sfx_ps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 390c01ae52251514eafda56d0b3b7a82, type: 2}
   zoomScroll: {fileID: 0}
 --- !u!82 &8555878005223502510
 AudioSource:

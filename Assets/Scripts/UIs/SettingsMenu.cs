@@ -58,7 +58,10 @@ namespace Player {
 
         public void Restart() {
             /* restart the game */
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
+            Application.Quit();
+            System.Diagnostics.Process.Start(Application.dataPath.Replace("_Data", ".exe"));
             
             // tm.ResetTime();
             // playerTransform.position = playerSpawn.position;

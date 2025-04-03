@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584581108145886175
+    m_lastTime: -8584579596486738046
     List:
     - name: ambience
       guid: 8a91f6ebedd74a4880126c323ddcbc79
@@ -632,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events\Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584581108170227679
+    m_lastTime: -8584579596488506936
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -780,6 +780,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: sfx_ps
+      guid: 694dcba56132034f8b21e63dda3d1b0a
+      id: 3946625230
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_ps
+        ObjectType: 3
+        guid: 694dcba56132034f8b21e63dda3d1b0a
+      Path: Events\Elienna\sfx_ps
+      maxAttenuation: 0
+      maxDuration: 2.6243832
+      minDuration: 2.043912
     - name: sfx_Treat
       guid: d74a60a6cfb0bb4092ced7b143ef1dd5
       id: 3947416347
@@ -1390,7 +1407,7 @@ MonoBehaviour:
     m_lastTime: -8584594671253914511
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000200000002100000022000000290000002a000000
+  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000200000002100000022000000290000002a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

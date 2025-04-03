@@ -32,6 +32,7 @@ namespace Player {
         public float zoom_speed_controller = 1000f;
         
         public LayerMask cameraLayerMask;
+        public AK.Wwise.Event sfx_ps;
         
         // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
@@ -349,7 +350,11 @@ namespace Player {
             CurrentPhoto.Cats.AddRange(catsInView);
             CurrentPhoto.Stars = 0;
             CurrentPhoto.Stars += CalculateStar(CurrentPhoto);
-            if (CurrentPhoto.Stars > 1) CurrentPhoto.Stars = 1;
+            if (CurrentPhoto.Stars >= 1) {
+                CurrentPhoto.Stars = 1;
+                sfx_ps.Post(gameObject);
+            }
+            
             Server.Server.Instance.StarCount += CurrentPhoto.Stars;
             
             yield return new WaitForEndOfFrame(); // Ensures rendering is completed
