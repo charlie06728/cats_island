@@ -131384,6 +131384,10 @@ PrefabInstance:
       propertyPath: purrfectSprite
       value: 
       objectReference: {fileID: 21300000, guid: 924b4013164a88e4eb0153ee16753e21, type: 3}
+    - target: {fileID: 815309188312606972, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b00750821596648d4a8b9781dd163a8b, type: 3}
     - target: {fileID: 1987390368396442612, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
