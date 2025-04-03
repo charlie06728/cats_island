@@ -35,6 +35,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="mus_Bengal_Pose" ID="{9EB09BD4-906B-40E3-A2FD-58CB74414C74}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Tabby_Hungry_Meow" ID="{1EA2EA2C-4C22-419B-A2DC-568A07D026A4}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_catfound" ID="{2B43408E-B690-41A8-AEA1-FD93428F0FE3}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mus_Tuxedo_Pose" ID="{F0CBD46F-7FDA-424C-839A-0732A938101C}" WorkUnitID="{2B34CEBC-A2F7-465D-9D9A-1D28B8579891}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Tuxedo_Hungry_Meow" ID="{8DD76D6C-5971-4274-91C1-C222B1C44210}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cat_eat" ID="{A97A2493-C2D3-448D-8498-E52A3E382826}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}" Origin="Manual" Filter="7"/>
