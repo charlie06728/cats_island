@@ -22778,6 +22778,7 @@ GameObject:
   - component: {fileID: 410087040}
   - component: {fileID: 410087042}
   - component: {fileID: 410087043}
+  - component: {fileID: 410087044}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -22900,6 +22901,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b478207832d40c89565a758153cb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endofDaySound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b323a37a5ca77bd4189007a6aa4b2723, type: 2}
   day_length: 300
   hours: 0
   minutes: 0
@@ -22915,6 +22920,31 @@ MonoBehaviour:
   - {fileID: 760476435}
   - {fileID: 908423056}
   dayEndScreen: {fileID: 1617700076}
+--- !u!114 &410087044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280a61356edf39945997629f4e7ef7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 40d1ae248fb641743aa2445b77698d21, type: 2}
+  decodeBank: 0
+  overrideLoadSetting: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &412575224
 GameObject:
   m_ObjectHideFlags: 0

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d545957780d4ba4e9ec07055abeef632
     GuidInternal: 
-    m_lastTime: -8584579596486738046
+    m_lastTime: -8584579574728888084
     List:
     - name: ambience
       guid: 8a91f6ebedd74a4880126c323ddcbc79
@@ -632,7 +632,7 @@ MonoBehaviour:
     ParentPath: Events\Elienna
     guid: adf8905879c15d4d8e28ad1f6376b94c
     GuidInternal: 
-    m_lastTime: -8584579596488506936
+    m_lastTime: -8584579574731128441
     List:
     - name: Bengal_Hungry_Meow
       guid: bf85011b5a4da14f93c89b985d79da33
@@ -703,6 +703,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.4465203
       minDuration: 1.288703
+    - name: sfx_albumalmostfull
+      guid: 201605e8dec38343a27e6bd6fbe4c8ec
+      id: 226028271
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_albumalmostfull
+        ObjectType: 3
+        guid: 201605e8dec38343a27e6bd6fbe4c8ec
+      Path: Events\Elienna\sfx_albumalmostfull
+      maxAttenuation: 0
+      maxDuration: 4.096
+      minDuration: 4.096
+    - name: sfx_albumfull
+      guid: 72613d4b8fd493429f2511726f27b817
+      id: 1315666677
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_albumfull
+        ObjectType: 3
+        guid: 72613d4b8fd493429f2511726f27b817
+      Path: Events\Elienna\sfx_albumfull
+      maxAttenuation: 0
+      maxDuration: 5.4613333
+      minDuration: 5.4613333
     - name: sfx_Cat
       guid: fa4c24f16dbefc42812a106a59f990e3
       id: 481770683
@@ -780,6 +814,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: sfx_catfound
+      guid: 8e40432b90b6a841aea1fd93428f0fe3
+      id: 2925565417
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_catfound
+        ObjectType: 3
+        guid: 8e40432b90b6a841aea1fd93428f0fe3
+      Path: Events\Elienna\sfx_catfound
+      maxAttenuation: 0
+      maxDuration: 2.0520878
+      minDuration: 1.9948583
+    - name: sfx_endofday
+      guid: e3bf387f2f9d2d4ea996bfdb890d3bf5
+      id: 1823052487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_endofday
+        ObjectType: 3
+        guid: e3bf387f2f9d2d4ea996bfdb890d3bf5
+      Path: Events\Elienna\sfx_endofday
+      maxAttenuation: 0
+      maxDuration: 6.826667
+      minDuration: 6.826667
     - name: sfx_ps
       guid: 694dcba56132034f8b21e63dda3d1b0a
       id: 3946625230
@@ -854,6 +922,23 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: 2.3386092
       minDuration: 1.7519772
+    - name: sfx_win
+      guid: b18b663073254a4692d770afbdb47ae1
+      id: 478519405
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Elienna
+        ObjectType: 12
+        guid: adf8905879c15d4d8e28ad1f6376b94c
+      - ElementName: sfx_win
+        ObjectType: 3
+        guid: b18b663073254a4692d770afbdb47ae1
+      Path: Events\Elienna\sfx_win
+      maxAttenuation: 0
+      maxDuration: 6.826667
+      minDuration: 6.826667
     - name: Tabby_Hungry_Meow
       guid: 2ceaa21e224c9b41a2dc568a07d026a4
       id: 2553855402
@@ -1407,7 +1492,7 @@ MonoBehaviour:
     m_lastTime: -8584594671253914511
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000200000002100000022000000290000002a000000
+  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000290000002a00000045000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

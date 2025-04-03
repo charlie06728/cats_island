@@ -6,6 +6,7 @@ using Image = UnityEngine.UI.Image;
 
 public class TimeManager : MonoBehaviour
 {
+    public AK.Wwise.Event endofDaySound;
     public static TimeManager Instance;
     public float day_length; // How many real-world seconds is an in-game day?
     private float hour_length; // How long is an hour?
@@ -71,6 +72,7 @@ public class TimeManager : MonoBehaviour
         // OnDaysChanged not implemented yet, this can be for displaying results screen when the day ends
         curr_time = 0;
         Time.timeScale = 0;
+        endofDaySound.Post(gameObject);
         dayEndScreen.SetActive(true);
     }
 

@@ -561,6 +561,18 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 390c01ae52251514eafda56d0b3b7a82, type: 2}
+  sfx_album_full:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: abbe261763a007145bfec6347d89ec45, type: 2}
+  sfx_album_almost_full:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 808471de53f374b49a08a5c7084ce9f8, type: 2}
+  sfx_win:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b4061ae9db19a9d4f82cd462f9995b52, type: 2}
   zoomScroll: {fileID: 0}
 --- !u!82 &8555878005223502510
 AudioSource:

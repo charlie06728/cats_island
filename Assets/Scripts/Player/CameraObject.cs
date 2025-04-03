@@ -35,6 +35,7 @@ namespace Player {
         public AK.Wwise.Event sfx_ps;
         public AK.Wwise.Event sfx_album_full;
         public AK.Wwise.Event sfx_album_almost_full;
+        public AK.Wwise.Event sfx_win;
         
         // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
@@ -328,30 +329,30 @@ namespace Player {
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);
 
-                if (Brochure.CollectedCats.Count == Server.Server.Instance.CatDictionary.Count) {
-                    AkUnitySoundEngine.PostEvent("mus_AllCatsFound", gameObject);
-                } else {
-                    string catBreed = finalCat.catBreed.ToLower();
-                    switch (catBreed) {
-                        case "ragdoll":
-                            AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
-                            break;
-                        case "grey cat":
-                            AkUnitySoundEngine.PostEvent("mus_GreyCat_Pose", gameObject);
-                            break;
-                        case "grey tabby":
-                            AkUnitySoundEngine.PostEvent("mus_Tabby_Pose", gameObject);
-                            break;
-                        case "tuxedo":
-                            AkUnitySoundEngine.PostEvent("mus_Tuxedo_Pose", gameObject);
-                            break;
-                        case "bengal":
-                            AkUnitySoundEngine.PostEvent("mus_Bengal_Pose", gameObject);
-                            break;
-                        default:
-                            AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
-                            break;
-                    }
+                // if (Brochure.CollectedCats.Count == Server.Server.Instance.CatDictionary.Count) {
+                //     AkUnitySoundEngine.PostEvent("mus_AllCatsFound", gameObject);
+                // } else {
+                string catBreed = finalCat.catBreed.ToLower();
+                switch (catBreed) {
+                    case "ragdoll":
+                        AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                        break;
+                    case "grey cat":
+                        AkUnitySoundEngine.PostEvent("mus_GreyCat_Pose", gameObject);
+                        break;
+                    case "grey tabby":
+                        AkUnitySoundEngine.PostEvent("mus_Tabby_Pose", gameObject);
+                        break;
+                    case "tuxedo":
+                        AkUnitySoundEngine.PostEvent("mus_Tuxedo_Pose", gameObject);
+                        break;
+                    case "bengal":
+                        AkUnitySoundEngine.PostEvent("mus_Bengal_Pose", gameObject);
+                        break;
+                    default:
+                        AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                        break;
+                    // }
                 }
             }
             
@@ -362,6 +363,11 @@ namespace Player {
             if (CurrentPhoto.Stars >= 1) {
                 CurrentPhoto.Stars = 1;
                 sfx_ps.Post(gameObject);
+                
+                /* play win music */
+                if (Server.Server.Instance.StarCount + 1 >= Server.Server.Instance.CatDictionary.Count) {
+                    sfx_win.Post(gameObject);
+                }
             }
             
             Server.Server.Instance.StarCount += CurrentPhoto.Stars;
