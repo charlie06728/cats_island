@@ -37,6 +37,7 @@ namespace AK
         static const AkUniqueID SFX_JUMP = 3695098761U;
         static const AkUniqueID SFX_LANDING = 2929962202U;
         static const AkUniqueID SFX_PAGEFLIP = 2084073701U;
+        static const AkUniqueID SFX_PS = 3946625230U;
         static const AkUniqueID SFX_TREAT_DROP = 3249613541U;
         static const AkUniqueID SFX_TREAT_LAUNCH = 651286159U;
         static const AkUniqueID TABBY_HUNGRY_MEOW = 2553855402U;

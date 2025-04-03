@@ -86,6 +86,10 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="sfx_ps" ID="{A5CB4D69-3261-4F03-8B21-E63DDA3D1B0A}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Bengal_Hungry_Meow" ID="{1B0185BF-4D5A-4FA1-93C8-9B985D79DA33}" WorkUnitID="{5890F8AD-C179-4D5D-8E28-AD1F6376B94C}"/>
 							<Position X="3" Y="2"/>
 						</Module>
@@ -121,13 +125,13 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Time_Of_Day" ID="{B1237EDD-26E1-4FBF-8BFD-087B6A3EEF8E}"/>
-							<Value>0</Value>
+							<Value>7.8</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="yes_preferred_treat" ID="{380B757B-F0EC-4F4B-864A-42695A687CAB}"/>
 						<CurrentStateRef Name="None" ID="{BC77D07A-E2B5-4F76-9EAE-34B61AA0DCE1}"/>
-						<CurrentStateRef Name="pond" ID="{8D57FA27-FC75-40E3-8EF7-347EB83849CE}"/>
+						<CurrentStateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="grass" ID="{B445EED9-A9BE-4427-B99D-6F450AE17B24}"/>

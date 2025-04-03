@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5054B7FD-17EE-4A49-B11C-CBEC5B5924B5}",
     "Language": "SFX",
-    "Hash": "{731066E5-A977-353B-F540-301F5FC26512}",
+    "Hash": "{805A8414-9781-A908-8262-CC12CB07CC3E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -128,12 +128,28 @@
       "CachePath": "C7/{C7E7A398-CD05-B303-AA48-EFF394C8C5A8}.wem"
      },
      {
+      "Id": "203056935",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_33.wav",
+      "CachePath": "5F/{5F9DC322-0D22-C2F4-4991-7AD6D60740F5}.wem"
+     },
+     {
       "Id": "213715934",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cat_Hungry_Meow\\Tabby_Hungry_Meow\\Tabby_Hungry_Meow_03.wav",
       "CachePath": "87/{870A81C7-1B1C-7703-3AA4-F82F7AA711C3}.wem"
+     },
+     {
+      "Id": "239186846",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_32.wav",
+      "CachePath": "18/{1883F92E-D53A-842F-59FD-9286E5FBB9CA}.wem"
      },
      {
       "Id": "244655587",
@@ -288,6 +304,14 @@
       "CachePath": "85/{8595AAC2-AC89-4D59-9FB3-797D9CE365B3}.wem"
      },
      {
+      "Id": "440700733",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_34.wav",
+      "CachePath": "42/{42F59F55-FE28-B1B7-28B3-89AB92F9C9F9}.wem"
+     },
+     {
       "Id": "455538704",
       "Language": "SFX",
       "Streaming": "false",
@@ -400,6 +424,14 @@
       "CachePath": "3F/{3F5E02C0-586F-4400-4162-BD82E4FBB614}.wem"
      },
      {
+      "Id": "599733338",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_36.wav",
+      "CachePath": "0D/{0D0A5108-45AC-FE89-6661-072A34CBFD27}.wem"
+     },
+     {
       "Id": "606005953",
       "Language": "SFX",
       "Streaming": "false",
@@ -462,6 +494,14 @@
       "Location": "Memory",
       "ShortName": "sfx_LANDJUMP_Wood_nl_02.wav",
       "CachePath": "99/{99A8F2CF-F9B0-DC36-2EA6-340EC9BF788A}.wem"
+     },
+     {
+      "Id": "706328897",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sfx_UI\\sfx_ui_35.wav",
+      "CachePath": "D7/{D7A981BB-46CD-AA0A-B19C-7A35E544C03E}.wem"
      },
      {
       "Id": "733154926",
@@ -1188,6 +1228,32 @@
       ]
      },
      {
+      "Id": "3946625230",
+      "Name": "sfx_ps",
+      "ObjectPath": "\\Events\\Elienna\\sfx_ps",
+      "GUID": "{A5CB4D69-3261-4F03-8B21-E63DDA3D1B0A}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.043912",
+      "DurationMax": "2.6243832",
+      "MediaRefs": [
+       {
+        "Id": "203056935"
+       },
+       {
+        "Id": "239186846"
+       },
+       {
+        "Id": "440700733"
+       },
+       {
+        "Id": "599733338"
+       },
+       {
+        "Id": "706328897"
+       }
+      ]
+     },
+     {
       "Id": "3249613541",
       "Name": "sfx_treat_drop",
       "ObjectPath": "\\Events\\Elienna\\sfx_Treat\\sfx_treat_drop",
@@ -1311,6 +1377,6 @@
     ]
    }
   ],
-  "FileHash": "{F63B05AA-8F58-A6FC-AE1D-A6BDF4FFFEA3}"
+  "FileHash": "{63592103-A9DA-3321-2EC9-A6774C9A00AD}"
  }
 }

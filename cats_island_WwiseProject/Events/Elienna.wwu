@@ -124,6 +124,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="sfx_ps" ID="{A5CB4D69-3261-4F03-8B21-E63DDA3D1B0A}">
+					<ChildrenList>
+						<Action Name="" ID="{8AB16350-D806-4333-9CF3-8C27FE4E70A0}" ShortID="941091969">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ps" ID="{5CE32FB2-A6C5-4B1F-8969-951772F76EF3}" WorkUnitID="{8F16DC1B-877B-4E66-A5FE-8E32FCCD929F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
