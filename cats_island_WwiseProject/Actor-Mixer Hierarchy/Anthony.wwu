@@ -3145,6 +3145,19 @@
 						</Sound>
 						<Sound Name="sfx_CAMERA_TurnOff_nl" ID="{4948DFBB-9BC6-42B0-8910-70D0DD352AA0}" ShortID="775016213">
 							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{26061DCF-F85F-4429-8ACB-7FD897C3F041}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-16</Value>

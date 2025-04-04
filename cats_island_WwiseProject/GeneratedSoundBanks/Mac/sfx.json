@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5054B7FD-17EE-4A49-B11C-CBEC5B5924B5}",
     "Language": "SFX",
-    "Hash": "{9E0F4565-AFD8-AA0E-CC65-CCF92BD19044}",
+    "Hash": "{BDE4F230-9D24-575B-6C8F-ECF63681AD3A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -1095,8 +1095,8 @@
       "ObjectPath": "\\Events\\Anthony\\sfx_Camera\\sfx_CameraOff",
       "GUID": "{40ECE379-A5B1-4D8A-9AAE-8B08B3122CC2}",
       "DurationType": "OneShot",
-      "DurationMin": "0.1875",
-      "DurationMax": "0.1875",
+      "DurationMin": "0.1670435",
+      "DurationMax": "0.21046163",
       "MediaRefs": [
        {
         "Id": "864064925"
@@ -1740,6 +1740,6 @@
     ]
    }
   ],
-  "FileHash": "{E04BB3F4-4516-93DA-14FE-C92035C71506}"
+  "FileHash": "{7F30728A-6AAE-BBDD-3ABC-F45B2752031D}"
  }
 }
