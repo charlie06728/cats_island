@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5054B7FD-17EE-4A49-B11C-CBEC5B5924B5}",
     "Language": "SFX",
-    "Hash": "{758948D1-2684-1B55-2ACB-0E620F852641}",
+    "Hash": "{9E0F4565-AFD8-AA0E-CC65-CCF92BD19044}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\sfx",
     "ShortName": "sfx",
     "Path": "sfx.bnk",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_27.wav",
-      "CachePath": "F9/{F92FB548-CB17-B972-FD7E-1EEFE1595335}.wem"
+      "CachePath": "30/{303D9963-5792-1AD9-9A4E-D8A2E20CDB3C}.wem"
      },
      {
       "Id": "134643958",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_04.wav",
-      "CachePath": "FA/{FAF09BC6-997E-26B1-836A-C252954601A2}.wem"
+      "CachePath": "05/{05B3048B-A472-5B21-290A-F5B6527A69CF}.wem"
      },
      {
       "Id": "161574749",
@@ -157,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_14.wav",
-      "CachePath": "4D/{4D55B5F4-6033-5768-D152-25AC54B4688C}.wem"
+      "CachePath": "FE/{FE47C0BC-7CC1-501F-E91E-2EFE08D7647D}.wem"
      },
      {
       "Id": "166098753",
@@ -269,7 +269,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_02.wav",
-      "CachePath": "6E/{6E15E8B9-1E3F-C190-25E2-507F6AB7485C}.wem"
+      "CachePath": "42/{428E0DE4-0FAC-BD6C-F2C8-4E89C3401C87}.wem"
      },
      {
       "Id": "306692995",
@@ -277,7 +277,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_03.wav",
-      "CachePath": "F5/{F535B84F-9948-4E8F-002C-65922811FC72}.wem"
+      "CachePath": "D7/{D70EE2AE-B47D-7F4A-B76F-2E30D6447CA8}.wem"
      },
      {
       "Id": "309568486",
@@ -317,7 +317,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_12.wav",
-      "CachePath": "77/{7724154F-4100-5184-AA5F-7B512F0A8460}.wem"
+      "CachePath": "BE/{BEF3A759-24D7-188E-C78E-4ACA63A34FE4}.wem"
      },
      {
       "Id": "366123906",
@@ -381,7 +381,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_CAMERA_TurnOn_nl.wav",
-      "CachePath": "33/{333B0D3E-C73D-63FC-8A2A-1BDC1091449C}.wem"
+      "CachePath": "5A/{5A963597-AA8A-E38B-E130-4613C0DDFAE0}.wem"
      },
      {
       "Id": "423416930",
@@ -397,7 +397,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_26.wav",
-      "CachePath": "EA/{EAC0782B-F6DB-3222-8ECF-8033B00F375F}.wem"
+      "CachePath": "C8/{C8307190-9011-0AA8-1131-A0EF51EFCCB6}.wem"
      },
      {
       "Id": "426945148",
@@ -405,7 +405,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_07.wav",
-      "CachePath": "E3/{E3A762BE-90A9-240C-D189-95A72ADE38D2}.wem"
+      "CachePath": "B2/{B253A289-ED4F-7475-F398-D4782B3C6519}.wem"
      },
      {
       "Id": "432585928",
@@ -485,7 +485,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_11.wav",
-      "CachePath": "85/{8542F479-FEB2-7C5B-6AE9-AE332C3934FE}.wem"
+      "CachePath": "B4/{B4CDE473-F739-B843-10F5-FC2691CAF714}.wem"
      },
      {
       "Id": "534366144",
@@ -597,7 +597,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_13.wav",
-      "CachePath": "06/{06ED9AF9-FE54-2D4B-992E-13319C020156}.wem"
+      "CachePath": "40/{4061D96D-0591-4933-1B6E-506AC701CC54}.wem"
      },
      {
       "Id": "668219671",
@@ -645,7 +645,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_05.wav",
-      "CachePath": "85/{8545ACB5-AC04-F848-957E-A4478018A705}.wem"
+      "CachePath": "44/{4432D65B-874A-9D8A-C79D-71889CA6B87D}.wem"
      },
      {
       "Id": "751154373",
@@ -653,7 +653,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_31.wav",
-      "CachePath": "0A/{0A034F32-DCB8-9D6D-BAB8-A6A55CC44524}.wem"
+      "CachePath": "D5/{D5D0B9B2-3930-966D-334D-620A7E53A154}.wem"
      },
      {
       "Id": "766991488",
@@ -677,7 +677,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_15.wav",
-      "CachePath": "AE/{AE81AAB4-08B3-DD90-9AF8-FD3722D5DE22}.wem"
+      "CachePath": "23/{23F56238-1540-28A4-77B7-C9D9B50673E8}.wem"
      },
      {
       "Id": "791357612",
@@ -685,7 +685,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_01.wav",
-      "CachePath": "93/{9376B23D-3E95-DC40-A6A1-51C4EEEF7FA6}.wem"
+      "CachePath": "10/{10017BA1-874D-D7D1-CFEE-2BF8724A8BB3}.wem"
      },
      {
       "Id": "794342622",
@@ -749,7 +749,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_09.wav",
-      "CachePath": "DF/{DF719A96-BE8A-1C67-8D72-64EF92D71B8B}.wem"
+      "CachePath": "02/{02073E09-135C-C78D-2F0B-D46EA18C3D4B}.wem"
      },
      {
       "Id": "892275074",
@@ -781,7 +781,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_08.wav",
-      "CachePath": "AE/{AEB758A3-372E-9622-4F4E-FB7A9FD3356E}.wem"
+      "CachePath": "F1/{F14DC21E-9EF8-7A51-6480-48BCA5455646}.wem"
      },
      {
       "Id": "906797407",
@@ -797,7 +797,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_10.wav",
-      "CachePath": "9E/{9EC69873-2E69-6985-C890-266B0AA3EB17}.wem"
+      "CachePath": "FF/{FF51E9EE-D36C-7164-DF41-BE4648210B36}.wem"
      },
      {
       "Id": "940898413",
@@ -861,7 +861,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "sfx_UI\\sfx_ui_06.wav",
-      "CachePath": "AB/{ABE9E500-3202-83F1-B56E-2B659DD6C7B1}.wem"
+      "CachePath": "A6/{A635DC4F-A9C8-CA2D-9FCB-6C535B328D4A}.wem"
      },
      {
       "Id": "1036404000",
@@ -1740,6 +1740,6 @@
     ]
    }
   ],
-  "FileHash": "{A7D2AFFE-7895-D686-B780-C75C3A998D96}"
+  "FileHash": "{E04BB3F4-4516-93DA-14FE-C92035C71506}"
  }
 }
