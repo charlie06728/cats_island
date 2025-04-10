@@ -21,6 +21,7 @@ namespace Cat {
         public GameObject catIdentifier;
         [NonSerialized] public CatState State = CatState.Idle;
         [NonSerialized] public TreatInstance TargetTreat;
+        [HideInInspector] public float prevEatTime = 0f;
         
         /* Audios */
         // public AudioSource meowAudio;

@@ -40,6 +40,9 @@ namespace Player {
         private void SetTarget() {
             bool catFound = false;
             foreach (Cat.Cat cat in Server.Server.Instance.Cats) {
+                /* Skip if eat interval is smaller than 10s */
+                if (Time.time - cat.Behaviour.prevEatTime < 10f) continue;
+                
                 /* Check the distance of cat */
                 float distance = Vector3.Distance(cat.transform.position, transform.position);
                 if (distance < treatWorkDistance) {

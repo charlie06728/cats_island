@@ -46,6 +46,7 @@ namespace Cat.Behaviours {
                 StartEtaTime = Time.time;
                 /* Trigger the eating animation */
                 Cat.Behaviour.Animator.SetBool("IsEating", true);
+                Cat.Behaviour.prevEatTime = Time.time;
             }
         }
 
