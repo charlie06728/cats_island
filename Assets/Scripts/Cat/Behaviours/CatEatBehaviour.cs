@@ -55,6 +55,7 @@ namespace Cat.Behaviours {
             float duration = 1f;
             Vector3 startScale = cat.transform.localScale;
             Vector3 endScale = startScale * 1.25f;
+            if (endScale.x > 4f) endScale = new Vector3(4f, 4f, 4f);
             while (time < duration) {
                 time += Time.deltaTime;
                 cat.transform.localScale = Vector3.Lerp(startScale, endScale, time / duration);
