@@ -17,6 +17,9 @@ namespace Server {
         public float MoveSpeed = 1f;
         public float JumpForce = 1f;
 
+        public FlashNotif CatFoundUI;
+        public GameObject FinishUI;
+
         public GameObject[] stickers;
         
         public LayerMask GroundLayer;

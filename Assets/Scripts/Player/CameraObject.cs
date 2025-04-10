@@ -326,6 +326,7 @@ namespace Player {
             
             /* Check if the cat is captured before */
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
+                Server.Server.Instance.CatFoundUI.StartFlash();
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);
 
@@ -367,6 +368,7 @@ namespace Player {
                 /* play win music */
                 if (Server.Server.Instance.StarCount + 1 >= Server.Server.Instance.CatDictionary.Count) {
                     sfx_win.Post(gameObject);
+                    Server.Server.Instance.FinishUI.SetActive(false);
                 }
             }
             
