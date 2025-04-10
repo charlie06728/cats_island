@@ -1958,10 +1958,15 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="sfx_select" ID="{FDB83940-FC67-41A5-A91F-BF6CCB6B424D}" ShortID="681872057">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>40</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

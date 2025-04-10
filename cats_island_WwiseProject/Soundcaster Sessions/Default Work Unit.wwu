@@ -138,7 +138,7 @@
 						<CurrentStateRef Name="beach" ID="{BC8C05D3-0206-4907-91FA-B5AD469EFF7F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="sand" ID="{684A14D2-5C94-4D5E-A362-DF59FEBA08FD}"/>
+						<CurrentSwitchRef Name="grass" ID="{B445EED9-A9BE-4427-B99D-6F450AE17B24}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
