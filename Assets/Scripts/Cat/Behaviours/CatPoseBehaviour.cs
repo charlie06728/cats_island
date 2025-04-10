@@ -19,7 +19,16 @@ namespace Cat.Behaviours {
         
         public override void Enable() {
             base.Enable();
-            Cat.Behaviour.Animator.SetBool("IsPosing", true);
+            /* 0.5 change of using regular pose */
+            bool regularPose = Random.Range(0f, 1f) < 0.5f;
+            string parameterName;
+            if (regularPose) {
+                parameterName = "IsPosing";
+            } else {
+                parameterName = "IsPosingYoga";
+            }
+            
+            Cat.Behaviour.Animator.SetBool(parameterName, true);
             prevUpdateTime = Time.time;
             
             string catBreed = Cat.catBreed.ToLower();
