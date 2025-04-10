@@ -80,9 +80,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23384c3ab26744dcac6a20afc5d568a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  treat: 4
   rigidbody: {fileID: 4871046323838806687}
   evaluateInterval: 1.5
   treatWorkDistance: 15
+  targeted: 0
 --- !u!54 &4871046323838806687
 Rigidbody:
   m_ObjectHideFlags: 0

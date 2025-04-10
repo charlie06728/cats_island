@@ -112355,6 +112355,14 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
+    - m_Name: Reset
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 34109abc-fb93-4c1c-8a14-5c0e57d96b29
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
     m_Bindings:
     - m_Name: 
       m_Id: 9a0f700e-7c9a-460e-88bf-4b36300c7dc9
@@ -112702,11 +112710,35 @@ MonoBehaviour:
       m_Flags: 0
     - m_Name: 
       m_Id: c66b9a5f-828d-42c6-902f-cb5f5c12fb3c
-      m_Path: <Gamepad>/select
+      m_Path: <DualShockGamepad>/start
       m_Interactions: 
       m_Processors: 
       m_Groups: 
       m_Action: Pause
+      m_Flags: 0
+    - m_Name: 
+      m_Id: e34e78a9-33e7-40fb-8bf9-02a5bf9975b7
+      m_Path: <XInputController>/start
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Pause
+      m_Flags: 0
+    - m_Name: 
+      m_Id: d6c3f5af-c58d-4980-9ef6-88e3291c56a8
+      m_Path: <Gamepad>/buttonWest
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Reset
+      m_Flags: 0
+    - m_Name: 
+      m_Id: b25a20e8-17be-4dcf-842a-df744edd829d
+      m_Path: <Keyboard>/r
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Reset
       m_Flags: 0
   canvas: {fileID: 1881234974}
   zoomScroll: {fileID: 801064152}
@@ -131422,6 +131454,10 @@ PrefabInstance:
       propertyPath: purrfectSprite
       value: 
       objectReference: {fileID: 21300000, guid: 924b4013164a88e4eb0153ee16753e21, type: 3}
+    - target: {fileID: 634570496714978483, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 815309188312606972, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -131578,6 +131614,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -56.886826
       objectReference: {fileID: 0}
+    - target: {fileID: 5637565081982195956, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2.13387
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637565081982195956, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637565081982195956, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.9823897
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637565081982195956, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.1632
+      objectReference: {fileID: 0}
     - target: {fileID: 5819879982160148370, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_LocalScale.x
       value: 6
@@ -131597,6 +131649,10 @@ PrefabInstance:
     - target: {fileID: 5819879982160148370, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -54.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877748398886805944, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
+      propertyPath: m_text
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6124194245101374254, guid: f6ca2aee443484616af03a6be99863b9, type: 3}
       propertyPath: m_SizeDelta.x

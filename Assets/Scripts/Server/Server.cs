@@ -56,7 +56,7 @@ namespace Server {
         public GameObject albumNotification;
         
         /* Film */
-        [NonSerialized] public int FilmCount = 18;
+        [NonSerialized] public int FilmCount = 99;
         [NonSerialized] public int FilmUsed = 0;
         public FilmUsage filmUsage;
         

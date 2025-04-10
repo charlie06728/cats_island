@@ -17,6 +17,7 @@ namespace Player {
         public AK.Wwise.RTPC masterVolume;
 
         private Action<InputAction.CallbackContext> _close;
+        private Action<InputAction.CallbackContext> _restart;
 
         public void OnVolumeChanged (){
             // AkSoundEngine.SetRTPCValue("MasterVolume", volumeSlider.value);
@@ -28,9 +29,11 @@ namespace Player {
                 .gameObject);
             
             if (gameObject.activeInHierarchy) {
+                Server.Server.Instance.InputActionMap["Reset"].performed -= _restart;
                 Resume();
             } else {
                 gameObject.SetActive(true);
+                Server.Server.Instance.InputActionMap["Reset"].performed += _restart;
                 Time.timeScale = 0;
             
                 /* Display the cursor */
@@ -48,9 +51,16 @@ namespace Player {
             }
         }
 
+        public void Awake() {
+            _restart = context => {
+                Restart();
+            };
+        }
+
         public void Start() {
             /* Register game object to WWISE */
             AkUnitySoundEngine.RegisterGameObj(gameObject);
+            
         }
 
         public void Resume() {

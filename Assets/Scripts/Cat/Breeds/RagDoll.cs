@@ -1,4 +1,5 @@
 using System;
+using Player;
 
 namespace Cat.Breeds {
     public class RagDoll : Cat {
@@ -9,6 +10,7 @@ namespace Cat.Breeds {
             if (catPreferredSnack == null) catPreferredSnack = "Cookie";
             if (catHabitat == null) catHabitat = "Beach, Catnip Garden";
             if (catBreed == null) catBreed = "Rag Doll";
+            favTreat = Items.Cookie;
         }
     }
 }

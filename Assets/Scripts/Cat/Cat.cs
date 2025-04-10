@@ -25,6 +25,7 @@ namespace Cat {
 
         public string catName;
         public string catBreed;
+        [HideInInspector] public Items favTreat = Items.Cookie;
 
         public void RegisterTreat(TreatInstance treat) {
             

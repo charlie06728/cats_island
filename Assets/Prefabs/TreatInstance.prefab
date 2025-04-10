@@ -79,9 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23384c3ab26744dcac6a20afc5d568a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  treat: 3
   rigidbody: {fileID: 7949368273305893079}
   evaluateInterval: 1.5
   treatWorkDistance: 15
+  targeted: 0
 --- !u!65 &4871134454096866091
 BoxCollider:
   m_ObjectHideFlags: 0
