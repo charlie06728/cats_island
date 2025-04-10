@@ -66,6 +66,10 @@ namespace Player {
             /* make item invisible */
             gameObject.SetActive(false);
             
+            /* Define the switch page behaviour */
+            Server.Server.Instance.InputActionMap["Next"].performed -= _nextPage;
+            Server.Server.Instance.InputActionMap["Prev"].performed -= _prevPage;
+            
         }
 
         protected override void Awake() {
