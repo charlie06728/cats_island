@@ -1,4 +1,5 @@
 using Server;
+using UnityEngine;
 using Time = UnityEngine.Time;
 
 namespace Cat.Behaviours {
@@ -20,6 +21,30 @@ namespace Cat.Behaviours {
             base.Enable();
             Cat.Behaviour.Animator.SetBool("IsPosing", true);
             prevUpdateTime = Time.time;
+            
+            string catBreed = Cat.catBreed.ToLower();
+            GameObject gameObject = Server.Server.Instance.playerScript.Pocket.CameraObject.gameObject;
+            switch (catBreed) {
+                case "ragdoll":
+                    AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                    break;
+                case "grey cat":
+                    AkUnitySoundEngine.PostEvent("mus_GreyCat_Pose", gameObject);
+                    break;
+                case "grey tabby":
+                    AkUnitySoundEngine.PostEvent("mus_Tabby_Pose", gameObject);
+                    break;
+                case "tuxedo":
+                    AkUnitySoundEngine.PostEvent("mus_Tuxedo_Pose", gameObject);
+                    break;
+                case "bengal":
+                    AkUnitySoundEngine.PostEvent("mus_Bengal_Pose", gameObject);
+                    break;
+                default:
+                    AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                    break;
+                // }
+            }
         }
         
         public override void Disable() {

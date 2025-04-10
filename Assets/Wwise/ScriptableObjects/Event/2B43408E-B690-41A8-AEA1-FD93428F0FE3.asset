@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1982ad8b8a1e3c641bec9fd9cc236647, type: 3}
+  m_Name: 2B43408E-B690-41A8-AEA1-FD93428F0FE3
+  m_EditorClassIdentifier: 
+  objectName: sfx_catfound
+  id: 2925565417
+  guid: 2B43408E-B690-41A8-AEA1-FD93428F0FE3
+  IsInUserDefinedSoundBank: 1
+  IsAutoBankLoaded: 0

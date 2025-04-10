@@ -36,6 +36,7 @@ namespace Player {
         public AK.Wwise.Event sfx_album_full;
         public AK.Wwise.Event sfx_album_almost_full;
         public AK.Wwise.Event sfx_win;
+        public AK.Wwise.Event sfx_catFound;
         
         // MeshRenderer hand_renderer;
         MeshRenderer camera_renderer;
@@ -326,6 +327,7 @@ namespace Player {
             
             /* Check if the cat is captured before */
             if (finalCat != null && !Brochure.CollectedCats.Contains(finalCat.catBreed)) {
+                sfx_catFound.Post(gameObject);
                 Server.Server.Instance.CatFoundUI.StartFlash();
                 Brochure.CollectedCats.Add(finalCat.catBreed);
                 Server.Server.Instance.newCatNotification.SetActive(true);
@@ -333,28 +335,28 @@ namespace Player {
                 // if (Brochure.CollectedCats.Count == Server.Server.Instance.CatDictionary.Count) {
                 //     AkUnitySoundEngine.PostEvent("mus_AllCatsFound", gameObject);
                 // } else {
-                string catBreed = finalCat.catBreed.ToLower();
-                switch (catBreed) {
-                    case "ragdoll":
-                        AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
-                        break;
-                    case "grey cat":
-                        AkUnitySoundEngine.PostEvent("mus_GreyCat_Pose", gameObject);
-                        break;
-                    case "grey tabby":
-                        AkUnitySoundEngine.PostEvent("mus_Tabby_Pose", gameObject);
-                        break;
-                    case "tuxedo":
-                        AkUnitySoundEngine.PostEvent("mus_Tuxedo_Pose", gameObject);
-                        break;
-                    case "bengal":
-                        AkUnitySoundEngine.PostEvent("mus_Bengal_Pose", gameObject);
-                        break;
-                    default:
-                        AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
-                        break;
-                    // }
-                }
+                // string catBreed = finalCat.catBreed.ToLower();
+                // switch (catBreed) {
+                //     case "ragdoll":
+                //         AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                //         break;
+                //     case "grey cat":
+                //         AkUnitySoundEngine.PostEvent("mus_GreyCat_Pose", gameObject);
+                //         break;
+                //     case "grey tabby":
+                //         AkUnitySoundEngine.PostEvent("mus_Tabby_Pose", gameObject);
+                //         break;
+                //     case "tuxedo":
+                //         AkUnitySoundEngine.PostEvent("mus_Tuxedo_Pose", gameObject);
+                //         break;
+                //     case "bengal":
+                //         AkUnitySoundEngine.PostEvent("mus_Bengal_Pose", gameObject);
+                //         break;
+                //     default:
+                //         AkUnitySoundEngine.PostEvent("mus_Ragdoll_Pose", gameObject);
+                //         break;
+                //     // }
+                // }
             }
             
             /* Set the cats in view */

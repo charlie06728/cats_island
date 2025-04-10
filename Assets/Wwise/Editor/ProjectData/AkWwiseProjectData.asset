@@ -452,8 +452,8 @@ MonoBehaviour:
         guid: 79e3ec40b1a58a4d9aae8b08b3122cc2
       Path: Events\Anthony\sfx_Camera\sfx_CameraOff
       maxAttenuation: 0
-      maxDuration: 0.1875
-      minDuration: 0.1875
+      maxDuration: 0.21046163
+      minDuration: 0.1670435
     - name: sfx_CameraOn
       guid: 6a5527da0cb4bc4c9aec93c6ea636251
       id: 2801607203
